@@ -83,3 +83,4 @@ dist/
 .output/
 .json/
 .code-workspace
+vetsSite.code-workspace
