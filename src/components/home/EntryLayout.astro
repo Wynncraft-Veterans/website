@@ -34,7 +34,7 @@ const { image, imageAlt, title, content, button } = entry.data;
               
             )
           }
-          <div class="glass h-1/3 rounded-lg">
+          <div class="glass h-auto rounded-lg">
           <h1 set:html={markdownify(title)} class="mb-4" />
           <p set:html={markdownify(content)} class="mb-8" />
           </div>
