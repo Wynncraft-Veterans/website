@@ -11,7 +11,6 @@ export type HomeEntry = CollectionEntry<"home">;
 export type IndexCardsEntry = CollectionEntry<"indexCards">;
 export type PoetryEntry = CollectionEntry<"poetry">;
 export type PortfolioEntry = CollectionEntry<"portfolio">;
-export type RecipesEntry = CollectionEntry<"recipes">;
 export type SubcommunitiesEntry = CollectionEntry<"subcommunities">;
 export type TermsEntry = CollectionEntry<"terms">;
 
@@ -22,7 +21,6 @@ export type SearchableEntry =
   | DocsEntry
   | PoetryEntry
   | PortfolioEntry
-  | RecipesEntry
   | SubcommunitiesEntry
   | TermsEntry;
 

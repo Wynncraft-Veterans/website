@@ -132,31 +132,6 @@ const portfolio = defineCollection({
   }),
 });
 
-const recipes = defineCollection({
-  loader: glob({
-    pattern: "**\/[^_]*.{md,mdx}",
-    base: "./src/content/recipes",
-  }),
-  schema: ({ image }) =>
-    searchable.extend({
-      date: z.date().optional(),
-      image: image().optional(),
-      imageAlt: z.string().default("image"),
-      author: reference("authors").optional(),
-      prepTime: z.number().optional(),
-      servings: z.number().optional(),
-      diet: z.string().optional(),
-      ingredients: z
-        .object({
-          list: z.array(z.string()),
-          qty: z.array(z.string()),
-        })
-        .optional(),
-      instructions: z.array(z.string()).optional(),
-      notes: z.array(z.string()).optional(),
-    }),
-});
-
 const subcommunities = defineCollection({
   loader: glob({
     pattern: "**\/[^_]*.{md,mdx}",
@@ -197,7 +172,6 @@ export const collections = {
   indexCards,
   poetry,
   portfolio,
-  recipes,
   subcommunities,
   terms,
 };
