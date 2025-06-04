@@ -12,6 +12,7 @@ export type IndexCardsEntry = CollectionEntry<"indexCards">;
 export type PoetryEntry = CollectionEntry<"poetry">;
 export type PortfolioEntry = CollectionEntry<"portfolio">;
 export type RecipesEntry = CollectionEntry<"recipes">;
+export type SubcommunitiesEntry = CollectionEntry<"subcommunities">;
 export type TermsEntry = CollectionEntry<"terms">;
 
 export type SearchableEntry =
@@ -22,6 +23,7 @@ export type SearchableEntry =
   | PoetryEntry
   | PortfolioEntry
   | RecipesEntry
+  | SubcommunitiesEntry
   | TermsEntry;
 
 export type SocialLinks = {

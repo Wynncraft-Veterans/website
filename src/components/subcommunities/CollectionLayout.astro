@@ -1,13 +1,13 @@
 ---
 import BaseLayout from "@components/base/BaseLayout.astro";
-import RecipeCard from "@components/recipes/Card.astro";
+import CommunityCard from "@components/subcommunities/Card.astro";
 import Pagination from "@components/common/Pagination.astro";
 import PageHeader from "@components/common/PageHeader.astro";
-import type { RecipesEntry } from "@/types";
+import type { SubcommunitiesEntry } from "@/types";
 
 interface Props {
-  entryIndex: RecipesEntry;
-  entries: RecipesEntry[];
+  entryIndex: SubcommunitiesEntry;
+  entries: SubcommunitiesEntry[];
   pageIndex: number;
   pageCount: number;
 }
@@ -27,13 +27,13 @@ const { entryIndex, entries, pageIndex, pageCount }: Props = Astro.props;
         {
           entries.map((entry) => (
             <div class="md:col-6 lg:col-4 h-min p-2">
-              <RecipeCard entry={entry} />
+              <CommunityCard entry={entry} />
             </div>
           ))
         }
       </div>
       <Pagination
-        collection="recipes"
+        collection="subcommunities"
         pageIndex={pageIndex}
         pageCount={pageCount}
       />
