@@ -2,22 +2,9 @@
 title:
 description:
 image: "@assets/subcommunities/.jpg"
-imageAlt:
-author:
-prepTime: 0
-servings: 0
-diet:
-draft: true
-
-ingredients:
-  list:
-    - Ingredient
-  qty:
-    - qty
-
-instructions:
+date: 2025-08-06
+location: https://example.com
+imageAlt: image
+category:
   - Step
-
-notes:
-  - Note
 ---

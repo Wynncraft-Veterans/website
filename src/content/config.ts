@@ -111,7 +111,6 @@ const history = defineCollection({
     searchable.extend({
       date: z.date().optional(),
       image: image().optional(),
-      imageAlt: z.string().default("image"),
       author: reference("authors").optional(),
     }),
 });
@@ -128,6 +127,7 @@ const projects = defineCollection({
         location: z.string().optional(),
         labels: z.array(z.string()).optional(),
         content: z.array(z.string()).optional(),
+        imageAlt: z.string().default("image"),
       }),
     ),
   }),
@@ -140,21 +140,12 @@ const subcommunities = defineCollection({
   }),
   schema: ({ image }) =>
     searchable.extend({
+      // Title and Description Inherited
       date: z.date().optional(),
       image: image().optional(),
       imageAlt: z.string().default("image"),
-      author: reference("authors").optional(),
-      prepTime: z.number().optional(),
-      servings: z.number().optional(),
-      diet: z.string().optional(),
-      ingredients: z
-        .object({
-          list: z.array(z.string()),
-          qty: z.array(z.string()),
-        })
-        .optional(),
-      instructions: z.array(z.string()).optional(),
-      notes: z.array(z.string()).optional(),
+      category: z.array(z.string()).optional(),
+      location: z.string().optional(),
     }),
 });
 
