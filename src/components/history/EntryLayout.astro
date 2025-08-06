@@ -3,12 +3,12 @@ import BaseLayout from "@components/base/BaseLayout.astro";
 import Pagination from "@components/common/Pagination.astro";
 import Share from "@components/common/Share.astro";
 import { plainify } from "@lib/textConverter";
-import type { PoetryEntry } from "@/types";
+import type { HistoryEntry } from "@/types";
 
 import { render } from "astro:content";
 import EntryHeader from "@components/common/EntryHeader.astro";
 interface Props {
-  entry: PoetryEntry;
+  entry: HistoryEntry;
   pageIDs: string[];
   pageIndex: number;
   pageCount: number;
@@ -44,13 +44,13 @@ const entryDescription =
       <Share
         title={title}
         description={entryDescription}
-        folder={"poetry"}
+        folder={"history"}
         id={entry.id}
       />
     </div>
   </section>
   <Pagination
-    collection="poetry"
+    collection="history"
     pageIDs={pageIDs}
     pageIndex={pageIndex}
     pageCount={pageCount}

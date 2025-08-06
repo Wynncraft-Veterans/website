@@ -104,8 +104,8 @@ const indexCards = defineCollection({
   }),
 });
 
-const poetry = defineCollection({
-  loader: glob({ pattern: "**\/[^_]*.{md,mdx}", base: "./src/content/poetry" }),
+const history = defineCollection({
+  loader: glob({ pattern: "**\/[^_]*.{md,mdx}", base: "./src/content/history" }),
   schema: ({ image }) =>
     searchable.extend({
       date: z.date().optional(),
@@ -170,7 +170,7 @@ export const collections = {
   docs,
   home,
   indexCards,
-  poetry,
+  history,
   portfolio,
   subcommunities,
   terms,
