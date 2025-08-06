@@ -112,6 +112,7 @@ const history = defineCollection({
       date: z.date().optional(),
       image: image().optional(),
       author: reference("authors").optional(),
+      imageAlt: z.string().default("image"),
     }),
 });
 
