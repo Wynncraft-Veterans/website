@@ -115,17 +115,17 @@ const history = defineCollection({
     }),
 });
 
-const portfolio = defineCollection({
+const projects = defineCollection({
   loader: glob({
     pattern: "-index.{md,mdx}",
-    base: "./src/content/portfolio",
+    base: "./src/content/projects",
   }),
   schema: searchable.extend({
     projects: z.array(
       z.object({
         title: z.string(),
-        github: z.string().optional(),
-        technologies: z.array(z.string()).optional(),
+        location: z.string().optional(),
+        labels: z.array(z.string()).optional(),
         content: z.array(z.string()).optional(),
       }),
     ),
@@ -171,7 +171,7 @@ export const collections = {
   home,
   indexCards,
   history,
-  portfolio,
+  projects,
   subcommunities,
   terms,
 };

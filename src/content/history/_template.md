@@ -1,7 +1,7 @@
 ---
 title:
 description:
-image: "@assets/history/.jpg"
+image: "@assets/history/.png"
 imageAlt:
 author:
 date: YYYY-MM-DD
