@@ -16,14 +16,14 @@ const { image, imageAlt, title, content, button } = entry.data;
 <BaseLayout>
   <!-- Banner -->
   <section class="section">
-    <div class="container ">
+    <div class="container">
       <div class="row justify-center">
         <div class="text-center lg:col-6">
           {
             image && (
               <div class="blur-[0px]">
                 <Image
-                class="mb-6 w-64"
+                class="mb-5 w-48"
                 src={image}
                 alt={imageAlt}
                 width={1024}
@@ -36,7 +36,7 @@ const { image, imageAlt, title, content, button } = entry.data;
           }
           <div class="glass h-auto rounded-lg">
           <h1 set:html={markdownify(title)} class="mb-4" />
-          <p set:html={markdownify(content)} class="mb-8" />
+          <p set:html={markdownify(content)} class="mb-4 mx-2" />
           </div>
           <br>
           {

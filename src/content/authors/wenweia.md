@@ -2,7 +2,7 @@
 title: Wenweia
 image: "@assets/profile/Wenweia.png"
 social:
-  discord: "discordapp.com/users/887089019190640640"
+  discord: "https://discordapp.com/users/887089019190640640"
   wynncraft: "https://wynncraft.com/stats/player/085d0e58-29d4-44aa-8379-92a4568a59d6"
 ---
 
