@@ -18,6 +18,7 @@ const social = z.object({
   github: z.string().optional(),
   instagram: z.string().optional(),
   linkedIn: z.string().optional(),
+  wynncraft: z.string().optional(),
   pinterest: z.string().optional(),
   tiktok: z.string().optional(),
   website: z.string().optional(),

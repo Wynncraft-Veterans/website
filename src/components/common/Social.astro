@@ -14,6 +14,8 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
+import { TbBrandMinecraft } from "react-icons/tb";
+
 interface Props {
   links: SocialLinks;
 }
@@ -166,6 +168,22 @@ const iconClass =
         >
           <span class="sr-only">Website</span>
           <FaGlobe className="w-6 h-6" />
+        </a>
+      </li>
+    )
+  }
+  {
+    links.wynncraft && (
+      <li class={liClass}>
+        <a
+          class={iconClass}
+          aria-label="Wynncraft"
+          href={links.wynncraft}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          <span class="sr-only">Wynncraft</span>
+          <TbBrandMinecraft className="w-6 h-6" />
         </a>
       </li>
     )
