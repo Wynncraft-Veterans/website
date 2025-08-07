@@ -39,8 +39,8 @@ modDate: 2024-08-03
 
 ### The Guild Island
 ​	A recent update to Wynncraft added housing islands! Notably these include an assortment of NPCs (featuring a parallel banking system for ingredients/keys/whatnot!) and buildings. **Everyone in the guild gets to leave the mark on the island by claiming an apartment**. Let a strategist know if you want to take us up on the offer!
-![Image of an empty VETS member apartment](assets/docs/general/image-20250806211235524.png)
-![Image of the VETS guild island](@assets/docs/general/image-20250806210844962.png)![Image of some NPCs on the VETS island](assets/general/image-20250806210956212.png)
+![Image of an empty VETS member apartment](@assets/docs/general/image-20250806211235524.png)
+![Image of the VETS guild island](@assets/docs/general/image-20250806210844962.png)![Image of some NPCs on the VETS island](@assets/general/image-20250806210956212.png)
 
 ### The Guild Discord
 ​	The guild is only part of the VETS experience! **Most announcements get posted on our Discord, and a good portion of our community hangs out there!** You can join our discord [here](https://wynnvets.org/discord)
