@@ -35,13 +35,13 @@ modDate: 2024-08-03
 ### The Guild Library
 ​	After you have been onboarded, you will have access to **a library of teleport scrolls**. Soul points were removed recently, and as such, scrolls can be infinitely reused. We share a copy of every scroll on the server. To access them, do `gu man` and left click the chest.
 
-<img src="@assets/docs/general/image-20250806210011990.png" alt="image-20250806210011990" style="zoom:53%;" />
+<img src="assets/docs/general/image-20250806210011990.png" alt="image-20250806210011990" style="zoom:53%;" />
 
 ### The Guild Island
 ​	A recent update to Wynncraft added housing islands! Notably these include an assortment of NPCs (featuring a parallel banking system for ingredients/keys/whatnot!) and buildings. **Everyone in the guild gets to leave the mark on the island by claiming an apartment**. Let a strategist know if you want to take us up on the offer!
 
-<img src="@assets/assets/docs/general/image-20250806211235524.png" alt="image-20250806211235524" style="zoom:20%;" />
-<img src="@assets/assets/docs/general/image-20250806210844962.png" alt="image-20250806210844962" style="zoom:10%;" /><img src="@assets/docs/general/image-20250806210956212.png" alt="image-20250806210956212" style="zoom:10%;" />
+<img src="assets/docs/general/image-20250806211235524.png" alt="image-20250806211235524" style="zoom:20%;" />
+<img src="assets/docs/general/image-20250806210844962.png" alt="image-20250806210844962" style="zoom:10%;" /><img src="assets/docs/general/image-20250806210956212.png" alt="image-20250806210956212" style="zoom:10%;" />
 
 ### The Guild Discord
 ​	The guild is only part of the VETS experience! **Most announcements get posted on our Discord, and a good portion of our community hangs out there!** You can join our discord [here](https://wynnvets.org/discord)
@@ -55,4 +55,4 @@ modDate: 2024-08-03
 ### Weekly Objectives
 ​	This is not an obligation per se, but every week, Wynn will assign every member of the guild a task. We are greatly appreciative of those who are able to finish their tasks since it directly funds the Weekly Return, but again, completing these is completely optional.
 
-<img src="@assets/docs/general/image-20250806211919787.png" alt="image-20250806211919787" style="zoom:45%;" />
+<img src="assets/docs/general/image-20250806211919787.png" alt="image-20250806211919787" style="zoom:45%;" />
