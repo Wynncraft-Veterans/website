@@ -35,12 +35,12 @@ modDate: 2024-08-03
 ### The Guild Library
 ​	After you have been onboarded, you will have access to **a library of teleport scrolls**. Soul points were removed recently, and as such, scrolls can be infinitely reused. We share a copy of every scroll on the server. To access them, do `gu man` and left click the chest.
 
-<img src="https://github.com/Wynncraft-Veterans/website/blob/main/src/assets/docs/general/docs/general/image-20250806210011990.png" alt="Image of the guild scroll library." style="zoom:53%;" />
+![Image of the guild scroll library.](https://github.com/Wynncraft-Veterans/website/blob/main/src/assets/docs/general/docs/general/image-20250806210011990.png)
 
 ### The Guild Island
 ​	A recent update to Wynncraft added housing islands! Notably these include an assortment of NPCs (featuring a parallel banking system for ingredients/keys/whatnot!) and buildings. **Everyone in the guild gets to leave the mark on the island by claiming an apartment**. Let a strategist know if you want to take us up on the offer!
-<img src="https://github.com/Wynncraft-Veterans/website/blob/main/src/assets/docs/general/image-20250806211235524.png" alt="Image of an empty VETS member appartment" style="zoom:20%;" />
-<img src="https://github.com/Wynncraft-Veterans/website/blob/main/src/assets/docs/general/image-20250806210844962.png" alt="Image of the VETS guild island" style="zoom:10%;" /><img src="https://github.com/Wynncraft-Veterans/website/blob/main/src/assets/docs/general/image-20250806210956212.png" alt="Image of some NPCs on the VETS island" style="zoom:10%;" />
+![Image of an empty VETS member apartment](assets/docs/general/image-20250806211235524.png)
+![Image of the VETS guild island](@assets/docs/general/image-20250806210844962.png)![Image of some NPCs on the VETS island](../../../assets/general/image-20250806210956212.png)
 
 ### The Guild Discord
 ​	The guild is only part of the VETS experience! **Most announcements get posted on our Discord, and a good portion of our community hangs out there!** You can join our discord [here](https://wynnvets.org/discord)
@@ -54,4 +54,4 @@ modDate: 2024-08-03
 ### Weekly Objectives
 ​	This is not an obligation per se, but every week, Wynn will assign every member of the guild a task. We are greatly appreciative of those who are able to finish their tasks since it directly funds the Weekly Return, but again, completing these is completely optional.
 
-<img src="@https://github.com/Wynncraft-Veterans/website/blob/main/src/assets/docs/general/image-20250806211919787.png" alt="Image of a weekly guild objective" style="zoom:45%;" />
+<img src="assets/docs/general/image-20250806211919787.png" alt="Image of a weekly guild objective" style="zoom:45%;" />
