@@ -54,4 +54,4 @@ modDate: 2024-08-03
 ### Weekly Objectives
 ​	This is not an obligation per se, but every week, Wynn will assign every member of the guild a task. We are greatly appreciative of those who are able to finish their tasks since it directly funds the Weekly Return, but again, completing these is completely optional.
 
-![Image of a weekly guild objectitve]("https://github.com/Wynncraft-Veterans/website/blob/main/src/assets/docs/general/docs/general/image-20250806211919787.png)
+![Image of a weekly guild objectitve](https://github.com/Wynncraft-Veterans/website/blob/main/src/assets/docs/general/docs/general/image-20250806211919787.png)
