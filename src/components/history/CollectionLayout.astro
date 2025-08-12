@@ -20,11 +20,9 @@ const { entryIndex, entries } = Astro.props;
           <ul>
             {
               entries.map((entry) => (
-                <li class="my-2">
                   <a href={`/history/${entry.id}`}>
-                    <h4>{entry.data.title}</h4>
-                  </a>
-                </li>
+                    <button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">{entry.data.title}</button>
+                  </a>  
               ))
             }
           </ul>

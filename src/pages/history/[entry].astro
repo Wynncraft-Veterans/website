@@ -5,7 +5,7 @@ import EntryLayout from "@components/history/EntryLayout.astro";
 import { getEntries } from "@lib/contentParser";
 
 export async function getStaticPaths() {
-  const entries = (await getEntries("history", sortByDate)) as HistryEntry[];
+  const entries = (await getEntries("history", sortByDate)) as HistoryEntry[];
   const pageIDs: string[] = entries.map((entry) => entry.id);
   const pageCount = pageIDs.length;
 
