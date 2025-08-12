@@ -18,13 +18,11 @@ const { entryIndex, entries } = Astro.props;
       <div class="col lg:col-8">
         <div class="glass rounded-lg p-4 intersect:animate-fadeUp opacity-0">
           <ul>
-            {
-              entries.map((entry) => (
-                  <a href={`/history/${entry.id}`}>
-                    <button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">{entry.data.title}</button>
-                  </a>  
-              ))
-            }
+            {entries.sort((a, b) => Number.parseInt(b.data.title) - Number.parseInt(a.data.title)).map((entry) => (
+                <a href={`/history/${entry.id}`}>
+                  <button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">{entry.data.title}</button>
+                </a>  
+            ))}
           </ul>
         </div>
       </div>
