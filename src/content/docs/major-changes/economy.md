@@ -13,20 +13,48 @@ It aims to explain in broad strokes how such changes are relevant to modern game
 
 This is **not a changelog**, and this is also **not a guide**. For exact changes, see the changelogs linked on [the wiki](https://wynncraft.wiki.gg/wiki/Version_history).
 
+<div class="flex items-center glass text-white text-sm font-bold px-4 py-1" role="alert">
+  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z"/></svg>
+  <p>This article is under construction and is incomplete!</p>
+</div>
 
-*Note: This update also featured a pretty fundamental overhaul of the guild warring system, which will be ignored for the purposes of this guide.*
-
-> **NOTE** This is under construction!
 ---
+
 ## Professions
-> To be written.
+<p class="glass">To be written!</p>
+
 ### Role of Professions in Wynn
-> To be written.
+<p class="glass">To be written!</p>
+
 ### Gatherings vs. Craftings
-> To be written.
+<p class="glass">To be written!</p>
+
 ### Crafted Items
-> To be written.
+<p class="glass">To be written!</p>
+
+---
+
+<small>Article by Metrafish</small>
 ## Challenge Gamemodes
-> To be written.
+When making a new character, you can now choose to start them in up to four gamemodes that add an extra challenge to your playthrough:
+
+Special gamemodes are designed for experienced players who want to test themselves with higher difficulty settings. Aside from Ironman/Ultimate Ironman, none of them are mutually exclusive, and you can have one character with multiple gamemodes at a time. 
+
+### Hardcore
+For hardcore users, death results in all items dropping, as well as a cosmetic icon beside their username turning grey to indicate a failed challenge. (Req. Lvl 30+ character)
+### Craftsman
+Craftsman limits players to only equipping [crafted items](/docs/major-changes/economy#crafted-items). (req. Lvl 50+ character)
+### Ironman
+Old ironman (now called ultra-ironman) limited players to just their inventory their [ingredient pouch](/docs/major-changes/expanse#ingredient-pouch) (which they are allowed to store anything in). (req. Lvl 50+ character).
+
+New Ironman (now called ironman) was subsequently introduced in the spellbound update and gives its users access to the new [character banks](/docs/major-changes/spellbound#character-banks) (but not account banks).
+
+### Hunted
+See [hunted](/docs/major-changes/expanse#hunted-gamemode).
+
+![The logos for assorted challenges](/assets/changes/challenges.png)
+
+---
+
 ## Trade Market
-> To be written.
+<p class="glass">To be written!</p>
