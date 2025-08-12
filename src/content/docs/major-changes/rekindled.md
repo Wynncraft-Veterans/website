@@ -41,3 +41,9 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 ## Website Stuffs
 (Wynn accounts, etc.)
 <p class="glass">To be written!</p>
+
+---
+
+## Outer Void
+(Wynn accounts, etc.)
+<p class="glass">To be written!</p>
