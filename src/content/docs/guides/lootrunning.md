@@ -7,6 +7,7 @@ pubDate: 2025-08-16
 modDate: 2025-08-16
 
 ---
+<small>Article Written by Saunts</small>
 
 What is lootrunning? It's one of the endgame mode provided by wynncraft and is one of the best moneymaking method in the game with the mythics you can acquire (Unless you have [really bad luck](https://wynnvets.org/wenluck).
 
