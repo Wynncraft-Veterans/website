@@ -38,11 +38,35 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 ---
 
 ## Dungeons Rework
+<small>Article written by Felixfex:</small>
+
+With the exception of the Timelost Sanctum (formerly known as the Lost Sanctuary or Animal Dungeon), each Dungeon had an associated quest. Previously, these quests were required to access the dungeon, but this is no longer the case.
+
+Completing a Dungeon rewards the Fragments/Token, a bit of XP, a few Emeralds and occasionally falling unidentified items. Every dungeon has both a minimum level requirement and a recommended level for completion.
+
+A Dungeon Key is required to enter any dungeon. These keys are dropped by Key Guardians, which are powerful monsters found in areas with levels corresponding to their respective dungeons. Key Guardians consistently spawn in the same locations, so once you find a spawn point, they will reappear there after a short time.
+
 ### Fragments vs. Tokens
-<p class="glass">To be written!</p>
+<small>Article written by Felixfex:</small>
+
+Upon completing a dungeon, you will receive three untradable Fragments and one untradable Boss Token. 
+
+Located near each dungeon entrance is a Dungeon Merchant NPC from whom you can purchase various [items](https://wynncraft.wiki.gg/wiki/Dungeon_Merchant). Boss Tokens can be exchanged for armor, weapons, necklaces, bracelets, and rings (generally with a few fragments also required). These items come pre-identified and are untradable, so you will need to complete the dungeons yourself to obtain them. The cost of these items ranges from one to six Tokens each.
+
+Fragments are also used to buy Gathering Tools of corresponding levels/tiers to the dungeon, and these tools are tradable with other players.
 
 ### Corrupted vs. Uncorrupted
-<p class="glass">To be written!</p>
+<small>Article written by Felixfex:</small>
+
+As of September 2025, Wynncraft features 18 dungeons: 10 Regular and 8 Corrupted. Corrupted Dungeons are higher-level, more challenging variants of their Regular counterparts. Additionally, Regular Dungeons offer a "second chance" if you die during a run. 
+
+While the Regular Dungeons have been significantly reworked over the years including the addition of more complex boss mechanics, the Corrupted Dungeons for the most part retain their original gameplay style as of writing. 
+
+Regular Dungeons are scattered throughout the in-game world, whereas all Corrupted Dungeons are accessed through the Forgery, a structure built in Gavel.
+
+To enter Corrupted Dungeons, you will need Corrupted Keys. These can be crafted by obtaining Broken Keys from Corrupted Key Guardians (or through Lootruns) and repairing them at the Keyforge Merchant in the Forgery. The crafting process requires specific runes (Nii, Uth, Tol).
+
+For a detailed list of dungeons, including their level requirements, associated quests, locations, and bosses, visit [this wiki page](https://wynncraft.wiki.gg/wiki/Dungeons). A list of corrupted keys and their crafting costs can be found on [this wiki page](https://wynncraft.wiki.gg/wiki/Key_Forge_Merchant).
 
 ### Managing Key States
 <small>Article written by Felixfex:</small>
