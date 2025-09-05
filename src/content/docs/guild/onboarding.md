@@ -30,7 +30,7 @@ modDate: 2024-08-03
 
 ## Guild Amenities
 ### Informational Resources
-​	Our goal is to support old players as they reacquaint themselves with the modern game. To that end, **this website has several resources** to help you get acclimated. This includes a [high-level overview of the game's new systems](https://cdn.wynnvets.org/docs/major-changes/), an [assortment of guides](https://cdn.wynnvets.org/docs/guides/), and a [guide on what to do with your old gear (it's valuable and fragile now!](https://cdn.wynnvets.org/docs/guides/old-items).
+​	Our goal is to support old players as they reacquaint themselves with the modern game. To that end, **this website has several resources** to help you get acclimated. This includes a [high-level overview of the game's new systems](https://www.wynnvets.org/docs/major-changes/), an [assortment of guides](https://www.wynnvets.org/docs/guides/), and a [guide on what to do with your old gear (it's valuable and fragile now!](https://www.wynnvets.org/docs/guides/old-items).
 
 ### The Guild Library
 ​	After you have been onboarded, you will have access to **a library of teleport scrolls**. Soul points were removed recently, and as such, scrolls can be infinitely reused. We share a copy of every scroll on the server. To access them, do `gu man` and left click the chest.

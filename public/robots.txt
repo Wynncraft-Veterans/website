@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /api/*
 
-Sitemap: http://cdn.wynnvets.org/sitemap-0.xml
+Sitemap: http://www.wynnvets.org/sitemap-0.xml
