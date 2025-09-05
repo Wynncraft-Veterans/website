@@ -2,7 +2,7 @@
 title: Metagrinding and You
 description: "The intended way to level up is through quests, but in certain situations, you may want to level up a character faster than that. This guide intends to explain how to quickly grind combat experience levels."
 image: "@assets/docs/guides/knight.jpg"
-imageAlt: "Wynncraft's prof logo superimposed on a sky."
+imageAlt: "A painting of a knight.."
 pubDate: 2025-08-16
 modDate: 2025-08-16
 ---
