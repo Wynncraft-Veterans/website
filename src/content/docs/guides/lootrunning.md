@@ -8,13 +8,20 @@ modDate: 2025-08-16
 
 ---
 ## Introduction
-<small>Article written by Wenweia</small>
-### How has lootrunning changed since when I last played?
+<small>At a glance written by Wenweia</small>
+
+### Changes from Legacy Lootrunning
+
+> How has lootrunning changed since when I last played?
+
 You may remember that, in older versions of the game, lootrunning emerged as the ubiquitous end-game strategy for making money. Simply put, mobs had a very rare chance of dropping valuable items, loot chests simulated a certain number of drops, and opening a large numbers of chests as quickly as possible while wearing loot improving armour became a surefire way to obtain items you could then sell. It is often surprising to learn that this was never actually an intended mechanic; legacy lootrunning is an example of emergent gameplay.
 
 In line with efforts to make the game more accessible, **in 2022, lootruns were introduced as an official, core, gameplay mechanic**. They aim to gameify the previous chest-running strats people did previously. Lootrunning is now the game's principle intended end-game money making stratregy, and generally results in upwards of 1stx per hour (unless you have [really bad luck](https://wynnvets.org/wenluck)). **Additionally, due to the increased rate at which mythics are introduced through lootrunning, in general, mythic prices are an order of magnitude cheaper than they likely were when you last played**.
 
-### Broadly speaking, how does modern lootrunning work?
+### Workings of Modern Lootrunning
+
+> Broadly speaking, how does modern lootrunning work?
+
 Modern lootrunning entails travelling to a Lootrun Camp (there are several, each unlocked by fulfiling an assortment of prerequisites) and starting what is effectively a clock. Thereafter, **lootrunning consists of running between a bunch of nearby locations and completing various objectives**. For each objective completed, you gain additional time on your clock and an assortment of buffs/curses (akin to status effects). As you complete more and more objectives, you gain reward pulls. When you return to the Lootrun Camp you started at to finish your run, you get to redeem reward pulls for rewards (including but not limited to mythics).
 
 ---
