@@ -218,11 +218,10 @@ In addition to the detailed info on the wiki, several other this section aims to
 You may have noticed that **Jester's Trick** and **Complete Chaos** fulfill multiple roles at the same time. These are your best missions to take early because they are flexible and allows you to pivot into any other synergies.
 </details>
 
-<details>
-<summary><strong>A robust overview of the trials you may end up with.</strong></summary>
-
 #### Trials
 
+<details>
+<summary><strong>A robust overview of the trials you may end up with.</strong></summary>
 - Trials are new additions to the lootrun system since 2.1.3 (Wardrobe Wonders).
 - After completing a Crimson beacon (rarely available after challenge 20), you have a choice of 2 (up to 4) trials. They stop appearing after around challenge 50 and you can pick up to 2 trials in a run.
 - Completing trials is your main way to get chest rerolls and sacrifices, so try to complete both trials in your runs.
