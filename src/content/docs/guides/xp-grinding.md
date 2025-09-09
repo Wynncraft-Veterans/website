@@ -12,7 +12,7 @@ modDate: 2025-09-09
 ### What is Metagrinding?
 You may have experienced, in older versions of the game, a discrepancy between Wynn's level cap and its content offerings. This is to say that, for the longest time, leveling a character to its maximum level required an amount of experience points greater than what you would accrue through normal gameplay.
 
-In response to this discrepancy, grinding mechanics have always emerged. These are various repeatable methods through which to farm experience. Optimising these methods (i.e. endeavouring to farm as much experience as possible, as quickly as possible) is referred to as metagrinding. The precise nature of grinding meta has changed over the years, undergoing a full loop from mob grinding to dungeons (remember CSST!), and back to the current meta, mob grinding.
+In response to this discrepancy, grinding mechanics have always emerged. These are various repeatable methods through which to farm experience. Optimising these methods (i.e. endeavouring to farm as much experience as possible, as quickly as possible) is referred to as metagrinding. The precise nature of grinding meta has changed over the years, undergoing a full loop from mob grinding, to dungeons (remember CSST?), and back to the current meta, mob grinding.
 
 ### Should you Metagrind?
 Before detailing *how* to metagrind, we should first discuss if it is neccessary.
