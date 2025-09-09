@@ -729,3 +729,25 @@ The list for Assassins is a bit longer because there are only a few XP-focused w
 
 </details>
 </details>
+
+
+<details><summary><small><i>Some concluding thoughts</i></small></summary>
+
+*Conclusion*
+
+And that brings us to the end of the Meta-Grinding guide! By following these strategies, using the recommended gear, and understanding the best spots for your level, you should be well on your way to reaching level 105 in record time.
+
+This guide is a compilation of my own experiences and what I've found to be the most efficient methods for leveling multiple characters. However, the world of Wynncraft is always evolving, and what works best can sometimes come down to personal preference and playstyle. Don't be afraid to experiment and find what works best for you.
+
+Thank you for reading, and I hope this has been a tremendous help on your journey. Happy grinding!
+
+---
+
+*Questions or Suggestions?*
+
+If you have any questions, need clarification on a specific point, or have suggestions for improving this guide, please feel free to reach out to me. The best way to contact us is on Discord.
+
+**Discord:** Felixfex
+
+Feel free to send a friend request and a message. I'm always happy to help fellow players!
+</details>
