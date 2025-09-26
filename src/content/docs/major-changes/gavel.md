@@ -20,20 +20,59 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 
 ---
 
+## World Expansion & Wynnpack
+
+<div class="glass px-4 my-2 py-2"><center>Large portions of this section originate from <a href="https://forums.wynncraft.com/threads/returning-players-read-this-what-has-changed-updated.250419/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Viro335's Thread</button></a></center></div>
+
+### The Gavel Province
+
+First of all, they added the **GAVEL PROVINCE**, a new landmass across the ocean from Wynn. You can make your way there via the seaskipper, ending up at the the quartz city of Llevigar (the province's starter town).
+
+You will end up making your way through the province's varied  environments, completing various quests and exploring. Gavel is large and varied,  from volcanoes to swamps to floating islands.
+
+### Wynnpack
+
+Wynncraft now has a mandatory resource pack! This downloads automatically and retextures everything in the game. These days, the game is effectively unplayable without Wynnpack; everything is potions and unicode symbols!
+
+
 ## The Item System
+
+<div class="glass px-4 my-2 py-2"><center>Large portions of this section originate from <a href="https://forums.wynncraft.com/threads/returning-players-read-this-what-has-changed-updated.250419/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Viro335's Thread</button></a></center></div>
+
+The item system was completely revamped!
+
+### Item Identifications
+Now, when you get any item other than those of the normal class, it is Unidentified and thus unusable. You must go to an item identifier and pay a small fee to identify the item. It will then be Identified and usable, although some items have skill point requirements (as in, you need [x] amount of skill points to use the item) or quest requirements. For a full list of identifications, or attributes your item gets upon identification, and what they do, visit [this wiki page](https://wynncraft.wiki.gg/wiki/Identifications).
+
+Items now also have powder slots, which will be explained in the next section.
+
 ### Mythic Rarity
-<p class="glass">To be written!</p>
+This update added a new tier of items, known as Mythic Items. The chances of finding one out of the blue were for the longest time roughly 1 in 150 000. Although there are now other, easier, ways to obtain them, they remain some of the rarer items in the game.
 
-### Item Identifications, Requirements, & Attack Speeds
-<p class="glass">To be written!</p>
-
-### Item Identifiers, Rolling, Rerolling
-<p class="glass">To be written!</p>
+The game's current item tiers are Mythic > Fabled > Legendary > Rare > Unique > Normal. Set items also now exist as a tier; the more items you have of the same set, the stronger the items in question will become.
 
 ---
 
-## Powder System
-<p class="glass">To be written!</p>
+## Elements
+
+<div class="glass px-4 my-2 py-2"><center>Large portions of this section originate from <a href="https://forums.wynncraft.com/threads/returning-players-read-this-what-has-changed-updated.250419/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Viro335's Thread</button></a></center></div>
+
+### Elements And Mobs
+
+If a mob has a tag like ***<font color="#3cd0e4">❉</font> Weak***, that means it is weak to water damage and will take *more* water damage than your weapon normally deals. If it says ***<font color="#e43c3c">✹</font> Def*** that means it takes *less* fire damage than your weapon normally deals. If it says ***<font color="#e4e13c">✦</font> Dam***, that means it *deals* thunder damage. The full list of elements are:
+
+- <font color="#50e43c">✤</font> Earth
+- <font color="#e4e13c">✦</font> Thunder
+- <font color="#3cd0e4">❉</font> Water
+- <font color="#e43c3c">✹</font> Fire
+- <font color="#7a7a7a">❋</font> Air
+ 
+### Elements And Items
+You may notice that your armour has IDs such as "Earth Defense: +120" or "Thunder Defense: -50". You may also notice that weapons have IDs such as Earth [Damage]: +20%. 
+
+How do Elemental Defenses/Resistances work? They're just an addition/subtraction to weapon damage (before the spell and attack speed multipliers but after any gear damage increases/other boosts). Abusing weaknesses is much better with superfast weapons with that element, because you're just adding the weakness to each hit (also a better attack speed multiplier). Faster weaps struggle against resistances for the same reason.
+
+Your own elemental defenses work the same way, so they don't really do much unless mobs hit rapidly/you have an extreme negative. 
 
 ---
 
