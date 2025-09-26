@@ -1,22 +1,119 @@
 ---
 title: Other Tools/Guides
-description: "There are many tools and guides floating about! This article tries to compile some of the more useful ones"
+description: "There are many guides floating about! This article tries to compile some of the more useful ones"
 image: "@assets/docs/guides/guide.png"
 imageAlt: "The guide thumbnail."
 pubDate: 2025-08-16
 modDate: 2025-08-16
 ---
 
-This article contains a collection of useful resources created and published by the Wynn community more broadly.
+The VETS website contains a wide assortment of guides primarily focused on helping older players return to the game.
+It also includes a roundup of the server's main [tools and communities](https://www.wynnvets.org/subcommunities/).
 
-<div class="flex items-center glass text-white text-sm font-bold px-4 py-1" role="alert">
-  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z"/></svg>
-  <p>This list is just a placeholder and is incomplete! A better version will be made soon!</p>
+**Yet, in addition to all those, the Wynn community more broadly has created many guides that are helpful for everyone, new or old!**
+
+*This article aims to compile the most relevant, generally applicable, guides currently present within the community*.
+
+# Wynncraft Community Guides
+
+<div class="container">
+    <div class="row">
+        <div class="md:col-6 lg:col-6 h-min p-2">
+            <div class="h-full m-2 pl-0 bg-gradient-to-br gradient rounded-lg intersect:animate-fadeUp opacity-0">
+                <div class="glass h-full rounded-lg"> <a class="group hover:opacity-100" href="https://forums.wynncraft.com/threads/the-powder-guide.180305/">
+                        <div class="relative rounded-lg pb-9/16 overflow-hidden"> <img style="opacity:0.5;"
+                                src="/assets/guides/otherguides/powders.png" alt="image" width="1280" height="720"
+                                loading="lazy" decoding="async"
+                                class="absolute object-cover -translate-y-[22%] scale-[105%] w-full h-full group-hover:scale-[110%] transition-all duration-300">
+                            <div
+                                class="glass-t absolute text-center rounded-lg px-2 py-1 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
+                                <h4 class=""> Powdering </h4>
+                            </div>
+                        </div>
+                    </a> </div>
+            </div>
+        </div>
+        <div class="md:col-6 lg:col-6 h-min p-2">
+            <div class="h-full m-2 pl-0 bg-gradient-to-br gradient rounded-lg intersect:animate-fadeUp opacity-0">
+                <div class="glass h-full rounded-lg"> <a class="group hover:opacity-100" href="https://forums.wynncraft.com/threads/the-experience-of-collecting-all-t3-ingredients-my-terrible-guide-on-collecting-tier-3-ingredients.293949/">
+                        <div class="relative rounded-lg pb-9/16 overflow-hidden"> <img style="opacity:0.5;" src="/assets/guides/otherguides/ingredients.png" alt="image" width="1280" height="720"
+                                loading="lazy" decoding="async"
+                                class="absolute object-cover -translate-y-[22%] scale-[105%] w-full h-full group-hover:scale-[110%] transition-all duration-300">
+                            <div
+                                class="glass-t absolute text-center rounded-lg px-2 py-1 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
+                                <h5 class=""> Tier Three </h5>
+                                <h4 class=""> Ingredients </h4>
+                            </div>
+                        </div>
+                    </a> </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="md:col-6 lg:col-6 h-min p-2">
+            <div class="h-full m-2 pl-0 bg-gradient-to-br gradient rounded-lg intersect:animate-fadeUp opacity-0">
+                <div class="glass h-full rounded-lg"> <a class="group hover:opacity-100" href="https://forums.wynncraft.com/threads/wip-the-ultimate-guide-to-completing-an-huic-h-playthrough-v0-3-3.307604/">
+                        <div class="relative rounded-lg pb-9/16 overflow-hidden"> <img style="opacity:0.5;"
+                                src="/assets/guides/otherguides/challenges.webp" alt="image" width="1280" height="720"
+                                loading="lazy" decoding="async"
+                                class="absolute object-cover -translate-y-[22%] scale-[105%] w-full h-full group-hover:scale-[110%] transition-all duration-300">
+                            <div
+                                class="glass-t absolute text-center rounded-lg px-2 py-1 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
+                                <h4 class=""> Challenge Classes </h4>
+                                <small><b> (HUIC[H]) </b></small>
+                            </div>
+                        </div>
+                    </a> </div>
+            </div>
+        </div>
+        <div class="md:col-6 lg:col-6 h-min p-2">
+            <div class="h-full m-2 pl-0 bg-gradient-to-br gradient rounded-lg intersect:animate-fadeUp opacity-0">
+                <div class="glass h-full rounded-lg"> <a class="group hover:opacity-100" href="https://forums.wynncraft.com/threads/a-comprehensive-guide-to-professions-v1-7-3.268901/">
+                        <div class="relative rounded-lg pb-9/16 overflow-hidden"> <img style="opacity:0.5;"
+                                src="/assets/guides/otherguides/profs.webp" alt="image" width="1280" height="720"
+                                loading="lazy" decoding="async"
+                                class="absolute object-cover -translate-y-[22%] scale-[105%] w-full h-full group-hover:scale-[110%] transition-all duration-300">
+                            <div
+                                class="glass-t absolute text-center rounded-lg px-2 py-1 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
+                                <h4 class=""> Professions </h4>
+                            </div>
+                        </div>
+                    </a> </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="md:col-6 lg:col-6 h-min p-2">
+            <div class="h-full m-2 pl-0 bg-gradient-to-br gradient rounded-lg intersect:animate-fadeUp opacity-0">
+                <div class="glass h-full rounded-lg"> <a class="group hover:opacity-100" href="https://forums.wynncraft.com/threads/lore-quest-guide.315347/">
+                        <div class="relative rounded-lg pb-9/16 overflow-hidden"> <img style="opacity:0.5;"
+                                src="/assets/guides/otherguides/quests.png" alt="image" width="1280" height="720"
+                                loading="lazy" decoding="async"
+                                class="absolute object-cover -translate-y-[22%] scale-[105%] w-full h-full group-hover:scale-[110%] transition-all duration-300">
+                            <div
+                                class="glass-t absolute text-center rounded-lg px-2 py-1 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
+                                <small><b> Prioritisation for those who dislike </b></small>
+                                <h4 class=""> Quests </h4>
+                            </div>
+                        </div>
+                    </a> </div>
+            </div>
+        </div>
+        <div class="md:col-6 lg:col-6 h-min p-2">
+            <div class="h-full m-2 pl-0 bg-gradient-to-br gradient rounded-lg intersect:animate-fadeUp opacity-0">
+                <div class="glass h-full rounded-lg"> <a class="group hover:opacity-100" href="https://forums.wynncraft.com/threads/how-damage-is-calculated-rekindled-edition.320808/">
+                        <div class="relative rounded-lg pb-9/16 overflow-hidden"> <img style="opacity:0.5;"
+                                src="/assets/guides/otherguides/technical.webp" alt="image" width="1280" height="720"
+                                loading="lazy" decoding="async"
+                                class="absolute object-cover -translate-y-[22%] scale-[105%] w-full h-full group-hover:scale-[110%] transition-all duration-300">
+                            <div
+                                class="glass-t absolute text-center rounded-lg px-2 py-1 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
+                                <small><b> Technical Details of </b></small>
+                                <h4 class=""> Damage </h4>
+                            </div>
+                        </div>
+                    </a> </div>
+            </div>
+        </div>
+    </div>
 </div>
-
----
-
-- A guide of [leveling gear](https://forums.wynncraft.com/threads/meta-gear-for-leveling.275840/) for XP
-- The main [wynncraft wiki](https://wynncraft.wiki.gg/) for general information
-- The main [classbuilder](https://wynnbuilder.github.io/items/) that replaced Wynndata.
-  - A [mana calculation tool](https://wynnmana.github.io/) supplementing that.
