@@ -116,4 +116,22 @@ It also includes a roundup of the server's main [tools and communities](https://
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="md:col-6 lg:col-6 h-min p-2">
+            <div class="h-full m-2 pl-0 bg-gradient-to-br gradient rounded-lg intersect:animate-fadeUp opacity-0">
+                <div class="glass h-full rounded-lg"> <a class="group hover:opacity-100" href="https://forums.wynncraft.com/threads/the-ultimate-build-guide.320092/">
+                        <div class="relative rounded-lg pb-9/16 overflow-hidden"> <img style="opacity:0.5;"
+                                src="/assets/guides/otherguides/classbuild.webp" alt="image" width="1280" height="720"
+                                loading="lazy" decoding="async"
+                                class="absolute object-cover -translate-y-[22%] scale-[105%] w-full h-full group-hover:scale-[110%] transition-all duration-300">
+                            <div
+                                class="glass-t absolute text-center rounded-lg px-2 py-1 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
+                                <h4 class=""> Metabuilds </h4>
+                                <small><b> For all Mythics </b></small>
+                            </div>
+                        </div>
+                    </a> </div>
+            </div>
+        </div>
+    </div>
 </div>
