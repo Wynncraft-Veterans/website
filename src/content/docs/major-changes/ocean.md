@@ -39,8 +39,3 @@ This was technically added a year or so later, but this felt like a good section
 
 ## Item Tiers
 <p class="glass">To be written!</p>
-
----
-
-## Daily Objectives
-<p class="glass">To be written!</p>
