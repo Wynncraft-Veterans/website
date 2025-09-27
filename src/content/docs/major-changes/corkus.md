@@ -23,26 +23,41 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 
 ---
 
-## Content Types
+## Map Expansion
+<small>Section written by Wenweia</small>
+
+This update added an entirely new island (the **CORKUS PROVINCE**) in the ocean, northwest of Wynn and southwest of Gavel. Although not serviced by the Seaskipper, this questline is accessible through The Envoy questline (starting in Selchar). It can also be accessed by jumping west across the ocean from Pirate Cove using movement spells. 
+
+## Content & Tracking
+
+<div class="glass px-4 my-2 py-2"><center>Large portions of this section originate from <a href="https://forums.wynncraft.com/threads/returning-players-read-this-what-has-changed-updated.250419/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Viro335's Thread</button></a></center></div>
+<small>Section written by Wenweia</small>
+
+The quest book was completely redesigned to be a GUI instead of an actual book. 
+
 ### Discoveries
-**Normal**
-<p class="glass">To be written!</p>
+#### Normal
+There are also territorial discoveries. Every major area gives some XP when discovered, and outputs a bit of lore about the region. These generally correspond to guild territories, but there are quite a few exceptions to that norm.
 
-**Secret**
-<p class="glass">To be written!</p>
+#### Secret
+Secret discoveries are easter eggs -- little secrets in the world of Wynncraft that the player is meant to find. When you find a discovery, you will gain some lore as well as an XP reward or (rarely) an item. 
 
-**Ultimate**
-<p class="glass">To be written!</p>
+#### Ultimate
+Certain secret discoveries reequire the completion of a large task and/or puzzle. They can also require other prerequisites. The most significant revolations in Wynn's lore are generally (but not always) locked behind ultimate discoveries.
 
 ### Other
-The following types have been added to the content book, in addition to quests:
-**Miniquests**
-<p class="glass">To be written!</p>
+The following content types were actually added well after the corkus update, but this felt like a good section to talk about them:
 
-**Caves**
-<p class="glass">To be written!</p>
+#### Miniquests
+Certain tasks have been incentivised through something called a miniquest. These are effectively big signs scattered around the world requesting the player to do some nearby task. Generally, this involves either killing a certain mob and submitting a certain number of items to the sign, or farming a certain profession item and submitting it to the sign.
+
+#### Caves
+Certain parts of the world (underground) were added to replace higher level loot chests. These are generally puzzles one needs to go through to get to a reward at the end.
 
 ---
 
 ## Bank Pages
-<p class="glass">To be written!</p>
+
+<div class="glass px-4 my-2 py-2"><center>Large portions of this section originate from <a href="https://forums.wynncraft.com/threads/returning-players-read-this-what-has-changed-updated.250419/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Viro335's Thread</button></a></center></div>
+
+The bank got a lot more space -- this update expanded it to include up to 462 slots worth of items! Later updates have since expanded it to include an acccount bank and a character b ank. Bank pages have certain requirements (usually combat levels) to unlock, and after each new page is unlocked, the price becomes exponentially higher.

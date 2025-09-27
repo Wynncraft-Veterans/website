@@ -20,7 +20,7 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 
 ---
 
-## World Expansion & Wynnpack
+## Map Expansion & Wynnpack
 
 <div class="glass px-4 my-2 py-2"><center>Large portions of this section originate from <a href="https://forums.wynncraft.com/threads/returning-players-read-this-what-has-changed-updated.250419/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Viro335's Thread</button></a></center></div>
 
@@ -44,7 +44,7 @@ The item system was completely revamped!
 ### Item Identifications
 Now, when you get any item other than those of the normal class, it is Unidentified and thus unusable. You must go to an item identifier and pay a small fee to identify the item. It will then be Identified and usable, although some items have skill point requirements (as in, you need [x] amount of skill points to use the item) or quest requirements. For a full list of identifications, or attributes your item gets upon identification, and what they do, visit [this wiki page](https://wynncraft.wiki.gg/wiki/Identifications).
 
-Items now also have powder slots, which will be explained in the next section.
+Items can also be re-identified! If you put an identified item into an an item identifier, it will ask you to pay 5x the cost you paid last time, will redo your item's stats, and will increase the item's reroll count Item Tier [n]. Items also now have powder slots, which will be explained in the next section.
 
 ### Mythic Rarity
 This update added a new tier of items, known as Mythic Items. The chances of finding one out of the blue were for the longest time roughly 1 in 150 000. Although there are now other, easier, ways to obtain them, they remain some of the rarer items in the game.
@@ -53,7 +53,7 @@ The game's current item tiers are Mythic > Fabled > Legendary > Rare > Unique > 
 
 ---
 
-## Elements
+## Elements and Powders
 
 <div class="glass px-4 my-2 py-2"><center>Large portions of this section originate from <a href="https://forums.wynncraft.com/threads/returning-players-read-this-what-has-changed-updated.250419/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Viro335's Thread</button></a></center></div>
 
@@ -66,13 +66,23 @@ If a mob has a tag like ***<font color="#3cd0e4">❉</font> Weak***, that means 
 - <font color="#3cd0e4">❉</font> Water
 - <font color="#e43c3c">✹</font> Fire
 - <font color="#7a7a7a">❋</font> Air
- 
+
 ### Elements And Items
 You may notice that your armour has IDs such as "Earth Defense: +120" or "Thunder Defense: -50". You may also notice that weapons have IDs such as Earth [Damage]: +20%. 
 
 How do Elemental Defenses/Resistances work? They're just an addition/subtraction to weapon damage (before the spell and attack speed multipliers but after any gear damage increases/other boosts). Abusing weaknesses is much better with superfast weapons with that element, because you're just adding the weakness to each hit (also a better attack speed multiplier). Faster weaps struggle against resistances for the same reason.
 
 Your own elemental defenses work the same way, so they don't really do much unless mobs hit rapidly/you have an extreme negative. 
+
+### Powders
+
+Powders were also redone. There are powders for each element and six tiers of said powders. On weapons, they **decrease** neutral damage but **increase** elemental damage (based on the powder you're adding, the amounts are different. If you add two Tier 4 (or higher) powders *of the same element* to the same item, you gain a powder special. Powder specials are like  secondary spells, they charge up as you damage mobs and will notify you  when they are fully charged. Then you shift + attack to cast them. You  cannot have more than one powder special per weapon.
+
+ On armour, they **increase** elemental defense in one element and **decrease** it in another. If you put two Tier 4 (or higher) powders *of the same element* on the same armour piece, you gain an armour Powder Special. These are  passive buffs. Again, you can only have one per armour piece.
+
+ Visit this [link](https://forums.wynncraft.com/threads/the-powder-guide.180305/) for more information on all powder-related things.
+
+
 
 ---
 
@@ -138,4 +148,3 @@ Note that you will need **two players** besides yourself to <ins>begin</ins> the
 One of the rewards for completing ??? is the [Cosmic Set](https://wynncraft.wiki.gg/wiki/Cosmic_Set), a set of armor useful for its high XP bonus. This set can be used for XP grinding at high levels, so long as you are able to survive while wearing it.
 
 ![Yahya](/assets/changes/yahya.jpeg)
-

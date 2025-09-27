@@ -20,8 +20,26 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 
 ---
 
+## Map Expansion
+
+Formerly known as the Road to Dern, the Silent Expanse is an area of the Wynn Province that was consumed by the Realm of Dern (an update slated for the future). In order to enter the Expanse and gain access to its content, you will have to go through the endgame quests A Journey Beyond and A Journey  Further. 
+
 ## The Shaman Class
-<p class="glass">To be written!</p>
+
+<div class="glass px-4 my-2 py-2"><center>Large portions of this section originate from <a href="https://forums.wynncraft.com/threads/returning-players-read-this-what-has-changed-updated.250419/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Viro335's Thread</button></a></center></div>
+
+For the first time since release, this update added a completely new class, the Shaman. The theme of shaman is a squishy class with AOE spells and abilities relative to a totem. Notwithstanding abilities added in subsequent years, shaman's base spells are Totem (spawns a physical totem object and throws it in front of your character), Haul (pulls oneself towards said totem), Aura (does damage within a certain radius of said totem), and Uproot (a ranged blast spell, unique for shaman in that it does not involve the Totem).
+
+More information on this class will be outlined in subsequent sections due to an update a few years alter that overhauled classes to incorporate archetype variants.
+
+---
+
+## Player Ghosts
+Player ghosts are, as the name implies, ghosts of players on other worlds. They are enabled by default and are semitransparent. 
+
+Playerghosts are not fully interactable in that, although you can talk to them and they can see your actions, they can't damage mobs on your server nor can they join you in quests or other local activities.
+
+If you are experiencing lag, you can `/toggle playerghosts none` to hide all other players from other worlds. Conversely, if you are lonely, you can `/toggle playerghosts all` to do the opposite and display all players from all worlds.
 
 ---
 

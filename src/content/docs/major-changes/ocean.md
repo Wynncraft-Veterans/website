@@ -24,11 +24,13 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 ### Horses
 <p class="glass">To be written!</p>
 
-### Seaskipper
-<p class="glass">To be written!</p>
-
 ### Fast Travel
 <p class="glass">To be written!</p>
+
+### Seaskipper
+<div class="glass px-4 my-2 py-2"><center>Large portions of this section originate from <a href="https://forums.wynncraft.com/threads/returning-players-read-this-what-has-changed-updated.250419/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Viro335's Thread</button></a></center></div>
+
+This was technically added a year or so later, but this felt like a good section to put it. The VSS Seaskipper is a boat docked at most major water-facing cities in the game. You can use to fast travel across the ocean.
 
 ### Teleport Scrolls
 <p class="glass">To be written!</p>
