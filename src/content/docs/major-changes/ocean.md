@@ -13,29 +13,47 @@ It aims to explain in broad strokes how such changes are relevant to modern game
 
 This is **not a changelog**, and this is also **not a guide**. For exact changes, see the changelogs linked on [the wiki](https://wynncraft.wiki.gg/wiki/Version_history).
 
-<div class="flex items-center glass text-white text-sm font-bold px-4 py-1" role="alert">
-  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z"/></svg>
-  <p>This article is under construction and is incomplete!</p>
-</div>
+---
+
+## Map Expansion
+<small>Section written by Wenweia</small>
+
+In addition to adding a multitude of new islands, this update updated all existing islands in the ocean. 
 
 ---
 
 ## Transportation
+<small>Section written by Wenweia</small>
+
 ### Horses
-<p class="glass">To be written!</p>
+This update added horses! Although less useful than they once were, horses still have their place in the game. They are faster than walking, but not as fast as using spells on moderately leveled characters using archetypes with good mobility, or by using high level walkspeed builds. In-game, horses are a saddle item: right-clicking it will spawn your horse.
+
+**Horses have four levels: Brown (1), Black (2), Chestnut (3), and White (4). Level one (brown) horses can be purchased from merchants** in Ternaves (requres the Stable Story quest line to be completed) or from Bucie. **Higher level (black, chestnut, and white) horses can be purchased from the trade market**.
+
+There also exist three intermediate horse levels: Upgraded Brown (1.5), Upgraded Black (2.5), and Upgraded Chestnut (3.5). These can be obtained via the Ice Barrows, Galleon's Graveyard, and Corrupted Decrepit Sewers dungeons respectively. Note that upgrading a horse makes it untradable and therefore eliminates any resale value.
+
+An alternative method to upgrade horses is gambling. Combining two horses of the same tier has a 20% chance of giving you a higher leveled horse, a 50% chance of doing nothing, and a 30% chance of making things worse. For historical reasons, statistically, this will almost always end up being more expensive then just buying a higher level horse on the trade market.
 
 ### Fast Travel
-<p class="glass">To be written!</p>
+With the release of the questing update, a new quest reward was introduced to the game: fast travel. Basically, these are locations that, following the completion of a quest, allow one to travel directly from one place to another without the delay of having to actually walk there.
+
+These are less useful than they used to be as a result of subsequent teleportation scroll changes, but they still have their uses. For a full list of them, look [here](https://wynncraft.wiki.gg/wiki/Fast_Travel)
 
 ### Seaskipper
-<div class="glass px-4 my-2 py-2"><center>Large portions of this section originate from <a href="https://forums.wynncraft.com/threads/returning-players-read-this-what-has-changed-updated.250419/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Viro335's Thread</button></a></center></div>
-
 This was technically added a year or so later, but this felt like a good section to put it. The VSS Seaskipper is a boat docked at most major water-facing cities in the game. You can use to fast travel across the ocean.
 
 ### Teleport Scrolls
-<p class="glass">To be written!</p>
+This update added teleportation scrolls, items from a given city that teleport a player to that city upon activation. Originally single-use, teleport scrolls have since been updated to be reusable. All teleport scrolls now have three charges that regenerate over time, effectively making them infinite!
+
+Teleport scrolls have become one of the server's main means of transportation. Some guilds also keep a copy of every scroll in the game in their bank, allowing you to easily travel from any town to any other town at no cost.
 
 ---
 
 ## Item Tiers
-<p class="glass">To be written!</p>
+<small>Section written by Wenweia</small>
+
+Around this time there was an item update! Items can now be of different tiers. The original tiers were Normal, Unique, Rare, and Legendary, although other tiers have subsequently been added.
+
+Currently, the item tier ladder in the game is **Normal < Unique < Rare < Legendary < Fabled < Mythic**. Notwithstanding modification by loot quality/bonuses, mythic items have a 0.0007% chance of dropping from a chest/mob, whereas normal items appear to have over a 7% of dropping from the same. Other tiers have drop rates between those two bounds.
+
+Several special tiers now also exist as detailed in later sections, namely the set tier and crafted tier, which function differently in that their usefulness varies based respectively on the number of pieces you have and on the item's composition.
