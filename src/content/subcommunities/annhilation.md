@@ -8,4 +8,5 @@ imageAlt: The wynncraft annihilation boss.
 category:
   - Activities
   - Information
+  - Services
 ---
