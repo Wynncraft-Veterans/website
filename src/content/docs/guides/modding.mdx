@@ -1,0 +1,328 @@
+---
+title: Modding Your Wynn
+description: "Over the past decade, Wynncraft's community have used client modding platforms to implement a vast array of tweaks and improvements that would not otherwise be possible server-side. This guide covers how to set up a modded Minecraft client to take advantage of these features."
+image: "@assets/docs/guides/modding.png"
+imageAlt: "The logo of Wynncraft's main mod"
+pubDate: 2025-08-16
+modDate: 2025-08-16
+---
+import Carousel from "astro-simple-carousel";
+import { Image } from "astro:assets";
+
+
+<div class="text-center glass px-4 rounded relative" role="alert">
+    <b>Sliders are active on this page to save space!</b><br/>
+    When you see an image, look for <b><icode>&lt;&gt;</icode></b> icons above it to scroll through its slides!<br/>
+    
+    <div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <p>This is slide one of an example!</p>
+        </div>
+        <div slot="2">
+            <p>This is slide two of an example!</p>
+        </div>
+    </Carousel>
+</div>
+</div>
+
+**Out of the box, Wynncraft works with unmodified (i.e. vanilla) clients** [released](https://www.minecraft.net/en-us/download) by Mojang/Microsoft. Yet, despite being perfectly functional, **less than 10% of the server's users play without mods**. This figure speaks to the significant improvements in quality of life made possible by the server's third-party development community over the years.
+
+**This article seeks to provide a walkthrough for users from all backgrounds on how to go about modifying your client to best take advantage of Wynncraft's current 3rd party ecosystem**. Note, this is NOT a modpack, but rather, instructions on how to go about choosing and installing Wynn mods, resources, and if need be, packs.
+
+## Some General Notes
+
+One cannot make a modding guide without brushing upon some frequently asked questions on the topics of safety and selection. Those will be answered in the collapsed section below. If you have any of those questions ('is modding safe', 'why did you choose x instead of y', etc.) feel free to expand this section otherwise, if not, this section is safe to ignore.
+
+<details>
+<summary><strong>Some frequently asked questions and rationales for some choices.</strong></summary>
+
+### Is Modding Safe?
+
+By using 3rd party launcher, launching a 3rd party client wrapper, or loading a 3rd party client modifcation (listed in descending order of access although all occur in this guide), you are taking an inherent risk. You are trusting the 3rd party with access to execute code on your computer. While the amount of damage it can do varies, that risk remains.
+
+Having said that, there are many checks in place to prevent that from happening. If you use open source software with large userbases, regardless of the 3rd party themselves, thousands of users have had time to run the application and look for abnormalities. Moreover, technical users have had a chance to look at the code themselves, further ensuring nothing suspicious is occuring. There is still a risk, but it is thoroughly mitigated.
+
+Another mitigation of risk happens when one uses software that has been uploaded to large moderated platforms (such as modrinth and curseforge). In addition to the checks above, these platforms use automated and manual tools to review the submitted code as to make sure it isn't doing anything it shouldn't be doing. Again, there is still risk, but this mitigates it further.
+
+Finally, one can install software created by 3rd parties they trust. Even if software has no users, is closed, and/or not on a moderated platform, if one trusts the software's author, then one can trust the software. This is the rarest and least advisable form of mitigation, but it adds another layer in conjunction with the above (although some risk remains).
+
+The resources suggested by this guide are open sourced, have a reasonable amount of users, and have been posted to moderated platforms. Or, in the case of launchers and wrappers, are open sourced and used by enough users for the safety concern to be almost completely mitigated in and of themselves. Or, in the case of launchy specifically, open source and released by a team closely connected to Wynn (although that connection remains unofficial; the lead developer for launchy and wynntils is the same as the lead developer for Wynn).
+
+### Why does this guide promote x over y?
+
+#### Fabric v. Forge v. Others
+Currently, within the modding system, fabric is the goto ecosystem for client side modification within server connected contexts. The vast majority of active development, within a Wynncraft context, occurs within the Fabric ecosystem.
+
+This is not to say that there are not alternatives. Many current wynn mods are translated into the (neo)forge ecosystem, which technically remains an option. But this is a worse choice, in general, than just running things in/with fabric since that is the most tested ecosystem and where most active development occurs. The same goes for obscure and/or deprecated ecosystems such as liteloader.
+
+#### Prism v. Modrinth v. CurseForge v. Others
+CurseForge has quickly become a bloated proprietary ecosystem wherein the platform's foremost priority is no longer its users. Modrinth arose as an alternative to that, although its focus primarily remains the curation and distribution of mods as opposed to launching them (although it has expanded into that vertical). Prism, meanwhile, has recived the vast majority of open source development over the past decade (in the form of its upstreams).
+
+It is open source, it is performant, it is intuitive, and it has a very large userbase that results in both security and community support. It is also capable of loading mods and wrappers/apis from the entire ecosystem and is therefore a great starting point. Having said that, both modrinth and prism are valid choices notwithstanding.
+
+Lunar's support for wynncraft is very outdated and buggy, not to mention incompatible with several key aspects of functionality. For this reason, as with CurseForge, this guide's authors do not recommend it be used in Wynncraft contexts.
+
+#### Custom v. Optimized Family v. Skyward Family
+This guide recommends the use of a performance modpack as the basis of installations of type two and three. This is opposes the common practice of dumping anything with the word "performance" into your mods folder and hoping for the best.
+
+This opposition stems both from the frequency at which performance mods update and the frequent incompatibilities between various performance mods. Without spending time to debug your performance mods as to avoid cases wherein they fight with each other, the best option is to just let someone else do it, in the form of a modpack.
+
+As for the specific choice of performance modpack, currently, the options are between two ecosystems: HyperSoop's Optimised family of modpacks, and Devin's Skyward family of modpacks. This article chooses the later family on account of it being open sourced, more communal, more focused, and more targeted.
+</details>
+
+## The Easiest, Quickest, Approach
+Would you prefer not to mess around with the dozens of menus needed to create the more advanced installations? Is your computer decent *enough* as not to need extreme optimisations or skeletal installs? You've come to the right place.
+
+*This tutorial will walk you through downloading and installing the Wynntils' Team's Launchy wrapper.* It is a system designed specifically for Wynn, and specifically to simplify modding.
+
+<details>
+<summary><strong>Expand this for more information about how to create a simple launchy install!</strong></summary>
+
+### Downloading Minecraft
+Wynntils Launchy is a wrapper, meaning it is effectively an interface to simplify modding the Official Minecraft Launcher. **If you already have the official launcher downloaded and installed, you can skip this step!**
+
+<details>
+<summary><strong>If you do not have the Mojang Launcher installed or are unsure, expand this!</strong></summary>
+#### Fetching The Exe
+First things first, we need to fetch the Minecraft installer from [this page](https://minecraft.net/en-us/download)!
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/mojang/mojang_site.png" alt="The Minecraft Website" />
+            <p class="glass px-2 text-center">The first thing we will need is the Minecraft Launcher's exe!<br/>This can be found from <a href="https://minecraft.net/en-us/download">this page</a> of the Minecraft Website!</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/mojang/mojang_installer.png" alt="The Minecraft Installer" />
+            <p class="glass px-2 text-center">Once you have selected your installer, downloading it should give you a file to click.</p>
+        </div>
+        <div slot="3">
+            <img src="/assets/guides/modding/mojang/mojang_install.png" alt="Install" />
+            <p class="glass px-2 text-center">It's now time to install Minecraft!<br/><br/>
+            <b>If you see the text indicated with the blue arrow</b><br/>
+            Unfortunately, Microsoft requires your computer to be configured with a MS account.<br/>
+            We will be doing that in the next step!<br/><br/>
+            <b>If you do not see the red text, you're all set!</b><br/>
+            Agree to the terms (red arrow), install (green arrow), and skip the next step!</p>
+        </div>
+    </Carousel>
+</div>
+
+#### Attaching a Microsoft Account to Windows
+Microsoft only lets their official launcher active on computers with an added MS Account<sup><acronym title="This is going to be a recurrent theme. Microsoft loves adding stupid restrictions on top of the official launcher.">1</acronym></sup>.<br/><br/>
+<b>If you ended the previous step with red *"Before installing this version ..."* error text, you will need to do this step.
+If not, you are free to skip this step!</b>
+
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/mojang/store_account.png" alt="Logging in to the windows store" />
+            <p class="glass px-2 text-center">Opening the Microsoft Store (available through your start menu) will ask for a MS account.<br/>This can be any account and does not need to match your minecraft account.</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/mojang/store_active.png" alt="The windows store" />
+            <p class="glass px-2 text-center">Once you are done with that, close the windows store, re-open the minecraft launcher, and click launch.</p>
+        </div>
+    </Carousel>
+</div>
+
+#### Installing Minecraft
+Now that you've managed to click the "Install" button on the launcher, it's mostly just a matter of waiting!
+Note that you will probably be asked to provide user account control during this step.
+
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/mojang/mojang_update.png" alt="The client installing itself" />
+            <p class="glass px-2 text-center">Chances are the launcher will install a bunch of runtime environments and whatnot.<br/> This can take a while.</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/mojang/mojang_uac.png" alt="UAC dialog" />
+            <p class="glass px-2 text-center">At some point, the launcher will probably give you a user account control dialog.<br/> This is safe to accept.</p>
+        </div>
+    </Carousel>
+</div>
+
+#### Authenticating Minecraft
+So... we've installed Minecraft, but that isn't enough for Microsoft. Time for more authentication!
+After you click "Let's Go", it will ask you to sign in a few times before it actually launches.
+
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/mojang/mojang_launch.png" alt="The second stage launch button" />
+            <p class="glass px-2 text-center">First things first, we need to click the "Let's Go" button!</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/mojang/mojang_xbox.jpg" alt="An xbox login screen" />
+            <p class="glass px-2 text-center">At some point, the launcher will probably ask you to sign in to an xbox account.<sup><acronym title="Why MS wants you to sign into THREE microsoft accounts before it will let you launch we will never know.">2</acronym></sup><br/> This does not need to be the MS account associated with your Minecraft account.</p>
+        </div>
+        <div slot="3">
+            <img src="/assets/guides/modding/mojang/mojang_fetch.png" alt="Launcher Update" />
+            <p class="glass px-2 text-center">At this point, the launcher will probably spend a few mins downloading more assets.</p>
+        </div>
+        <div slot="4">
+            <img src="/assets/guides/modding/mojang/mojang_account.png" alt="Launcher Update" />
+            <p class="glass px-2 text-center">Finally, you will be asked to sign in one last time.<br/><b>This time, it is the account you will be playing on (i.e. your minecraft account)!</b></p>
+        </div>
+    </Carousel>
+</div>
+
+#### You're Done!
+The Minecraft launcher has now been installed... too bad we won't be using it!
+The last step for this part is to close your launcher and start with the launchy instructions below.
+
+<div class="glass h-auto rounded-lg h-auto">
+    <div>
+        <img src="/assets/guides/modding/mojang/mojang_done.png" alt="The second stage launch button" />
+        <p class="glass px-2 text-center">When you see this screen, you are done!<br/>Close this window and move on to Launchy</p>
+    </div>
+</div>
+</details>
+
+### Downloading Launchy
+Now that we have Minecraft, it's time to modify it for Wynn. **Compared to setting up Minecraft itself, this part is much easier!**
+
+<details>
+<summary><strong>For instructions on how to install launchy, expand this!</strong></summary>
+
+#### Fetching Launchy
+First, we need to download and run the Launchy installer.<br/>
+<b>Because launchy is Wynn-specific, it isn't used by that many people.<br/>
+Your OS will probably complain about this fact. This is normal.</b>
+
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/launchy/launchy_page.png" alt="Launchy's GitHub" />
+            <p class="glass px-2 text-center">First things first, we need to visit Launchy's <a href="https://github.com/Wynntils/launchy">web page</a></p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/launchy/launchy_releases.png" alt="Launchy's Releases" />
+            <p class="glass px-2 text-center">From there, we will need to click the latest release.</p>
+        </div>
+        <div slot="3">
+            <img src="/assets/guides/modding/launchy/launchy_files.png" alt="Launchy's Latest" />
+            <p class="glass px-2 text-center">There will be several files within the latest release.<br/>We want to choose our installer.</p>
+        </div>
+        <div slot="4">
+            <img src="/assets/guides/modding/launchy/launchy_download.png" alt="Launchy's Download" />
+            <p class="glass px-2 text-center">Then we just need to wait for it to download and run the file.</p>
+        </div>
+        <div slot="5">
+            <img src="/assets/guides/modding/launchy/launchy_defender.png" alt="Windows Defender" />
+            <p class="glass px-2 text-center">One problem with Launchy is that there aren't *that* many people who use it.<br/>Its frequent releases compound this problem. <a href="/docs/guides/modding#is-modding-safe">We trust launchy</a> on account of its open source and the significant overlaps between Wynn's dev team and Wynntils'.<br/><br/>But although we do, your operating system probably won't.<br/><b>If you get this alert, you will need to click "More Info".</b></p>
+        </div>
+        <div slot="6">
+            <img src="/assets/guides/modding/launchy/launchy_defended.png" alt="Windows Defended" />
+            <p class="glass px-2 text-center">Click "Run Anyways"</p>
+        </div>
+        <div slot="7">
+            <img src="/assets/guides/modding/launchy/launchy_uac.png" alt="Windows UAC" />
+            <p class="glass px-2 text-center">Around this point, you will probably get prompted with windows User Account Control.<br/>This is safe to accept.</p>
+        </div>
+        <div slot="8">
+            <img src="/assets/guides/modding/launchy/launchy_fetch.png" alt="Launchy Fetch" />
+            <p class="glass px-2 text-center">You're done! Launchy will now install the needed files and put a shortcut on your desktop.</p>
+        </div>
+    </Carousel>
+</div>
+
+#### Configuring Launchy
+Now that we have the wrapper installed, it's time to set up our Wynncraft instance! Compared to the last steps, this part is fairly straight foward!
+
+**Click the Launchy icon on your desktop and follow its instructions, closing it when you are done!**
+
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/launchy/launchy_desktop.png" alt="Launchy desktop shortcut" />
+            <p class="glass px-2 text-center">At the end of the previous step, a shortcut will have appeared on your desktop: now is the time to click it!</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/launchy/launchy_welcome.png" alt="Launchy's welcome screen" />
+            <p class="glass px-2 text-center">You will be greeted you with a welcome screen reminder stating that, as a wrapper, Launchy only works if you already have the official launcher installed.<br/><br/><b>We've already done that! Feel free to click "ok"</b></p>
+        </div>
+        <div slot="3">
+            <img src="/assets/guides/modding/launchy/launchy_import.png" alt="Launchy's welcome screen" />
+            <p class="glass px-2 text-center">You will be asked if you want to import any settings form the launcher you just installed<br/><br/><b>If you just installed the MC launcher via the earlier steps of this guide, importing won't do much. Otherwise, it is probably worthwhile.</b><br/><br/><b>When you are done importing, click the Install button!</b></p>
+        </div>
+        <div slot="4">
+            <img src="/assets/guides/modding/launchy/launchy_install.png" alt="Launchy's install screen" />
+            <p class="glass px-2 text-center">Launchy will give you a menu offering several different categories of mods chosen by the Wynntils team. These are just general mods that are popular within the community and that work well with wynntils.<br/><br/><b>Select the mod categories you would like to use.<br/>Then click the install button in the bottom left</b></p>
+        </div>
+        <div slot="5">
+            <img src="/assets/guides/modding/launchy/launchy_done.png" alt="Launchy's welcome screen" />
+            <p class="glass px-2 text-center">And just like that, you are done! A new Wynncraft-related profile has been added to your instance of the official launcher!<br/><br/><b>Close Launchy.</b></p>
+        </div>
+    </Carousel>
+</div>
+
+#### Launching Wynncraft
+In the previous steps, we used a wrapper to make a new Wynncraft instance in the Vanilla launcher. It's time to play that instance!
+
+**Simply open your vanilla launcher and open your new "Wynncraft" instance!**
+
+
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/launchy/launching_desktop.png" alt="The Minecraft launcher opened via the start menu" />
+            <p class="glass px-2 text-center"><b>Open the official Minecraft launcher!</b><br/><br/>On windows, this can probably be found via your start menu!</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/launchy/launching_java.png" alt="The java menu in the official launcher" />
+            <p class="glass px-2 text-center"><b>Click on the Java Edition tab!</b></p>
+        </div>
+        <div slot="3">
+            <img src="/assets/guides/modding/launchy/launching_installations.png" alt="The installations subtab" />
+            <p class="glass px-2 text-center">Under the Java Edition tab, <b>click on the installations sub-tab!</b></p>
+        </div>
+        <div slot="4">
+            <img src="/assets/guides/modding/launchy/launching_wynn.png" alt="The the wynn instance" />
+            <p class="glass px-2 text-center">Find the new Wynncraft instance and click on it!<br/><i>It should have a Wynn logo</i></p>
+        </div>
+        <div slot="5">
+            <img src="/assets/guides/modding/launchy/launching_launched.png" alt="The instance clicked" />
+            <p class="glass px-2 text-center">Hovering over the wynn instance, <b>find and click the green play button!</b></p>
+        </div>
+        <div slot="6">
+            <img src="/assets/guides/modding/launchy/launching_disclaim.png" alt="The instance warning" />
+            <p class="glass px-2 text-center">Mojang will prevent you a nag message reminding you that this client is modified.<br/><br/><b>Acknowledge the disclaimer and click play!</b><br/><b><i>You're done!</i></b></p>
+        </div>
+    </Carousel>
+</div>
+
+</details>
+</details>
+
+## The Most Performant Approach
+Is your computer a potato? Are you willing to spend a few extra moments to mash as much performance out of your potato as possible?
+You've come to the right place! 
+
+*This tutorial will walk through how to make a bare-bones wynntils installation with a boatload of performance enhancements/optimisations... and not a whole lot else.*
+
+<details>
+<summary><strong>Expand this for instructions on how to build a performance-focused bare-bones wynntils instance!</strong></summary>
+
+<div class="flex items-center glass text-white text-sm font-bold px-4 py-1" role="alert">
+  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z"/></svg>
+  <p>This section has not yet been written!<br/>Stay tuned as we suspect this subarticle will be ready later this week!</p>
+</div>
+
+</details>
+
+## The Maximum Quality Approach
+Is your computer somewhat functional? Are you willing to spend a few extra moments to tweak Wynn to work exactly how you want it? Are you jealous of the cool mods other people are using? You've come to the right place!
+
+*This tutorial will give you the foundations needed to install basically any wynn mods imaginable. It will also point out a lot of the more popular ones and some important notes with respect to how you can set them up (dependancies galore)!*
+
+<details>
+<summary><strong>Expand this for a foundation primer on how to create a wynn install tailored to you!</strong></summary>
+
+<div class="flex items-center glass text-white text-sm font-bold px-4 py-1" role="alert">
+  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z"/></svg>
+  <p>This section has not yet been written!<br/>Stay tuned as we suspect this subarticle will be ready later this week!</p>
+</div>
+
+</details>
