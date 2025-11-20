@@ -13,7 +13,7 @@ import { Image } from "astro:assets";
 <div class="text-center glass px-4 rounded relative" role="alert">
     <b>Sliders are active on this page to save space!</b><br/>
     When you see an image, look for <b><icode>&lt;&gt;</icode></b> icons above it to scroll through its slides!<br/>
-    
+
     <div class="glass h-auto rounded-lg h-auto">
     <Carousel>
         <div slot="1">
@@ -39,32 +39,32 @@ One cannot make a modding guide without brushing upon some frequently asked ques
 
 ### Is Modding Safe?
 
-By using 3rd party launcher, launching a 3rd party client wrapper, or loading a 3rd party client modifcation (listed in descending order of access although all occur in this guide), you are taking an inherent risk. You are trusting the 3rd party with access to execute code on your computer. While the amount of damage it can do varies, that risk remains.
+By using 3rd party launcher, launching a 3rd party client wrapper, or loading a 3rd party client modification (listed in descending order of access although all occur in this guide), you are taking an inherent risk. You are trusting the 3rd party with access to execute code on your computer. While the amount of damage it can do varies, that risk remains.
 
-Having said that, there are many checks in place to prevent that from happening. If you use open source software with large userbases, regardless of the 3rd party themselves, thousands of users have had time to run the application and look for abnormalities. Moreover, technical users have had a chance to look at the code themselves, further ensuring nothing suspicious is occuring. There is still a risk, but it is thoroughly mitigated.
+Having said that, there are many checks in place to prevent that from happening. If you use open-source software with large userbases, regardless of the 3rd party themselves, thousands of users have had time to run the application and look for abnormalities. Moreover, technical users have had a chance to look at the code themselves, further ensuring nothing suspicious is occurring. There is still a risk, but it is thoroughly mitigated.
 
 Another mitigation of risk happens when one uses software that has been uploaded to large moderated platforms (such as modrinth and curseforge). In addition to the checks above, these platforms use automated and manual tools to review the submitted code as to make sure it isn't doing anything it shouldn't be doing. Again, there is still risk, but this mitigates it further.
 
 Finally, one can install software created by 3rd parties they trust. Even if software has no users, is closed, and/or not on a moderated platform, if one trusts the software's author, then one can trust the software. This is the rarest and least advisable form of mitigation, but it adds another layer in conjunction with the above (although some risk remains).
 
-The resources suggested by this guide are open sourced, have a reasonable amount of users, and have been posted to moderated platforms. Or, in the case of launchers and wrappers, are open sourced and used by enough users for the safety concern to be almost completely mitigated in and of themselves. Or, in the case of launchy specifically, open source and released by a team closely connected to Wynn (although that connection remains unofficial; the lead developer for launchy and wynntils is the same as the lead developer for Wynn).
+The resources suggested by this guide are open sourced, have a reasonable amount of users, and have been posted to moderated platforms. Or, in the case of launchers and wrappers, are open-sourced and used by enough users for the safety concern to be almost completely mitigated in and of themselves. Or, in the case of launchy specifically, open source and released by a team closely connected to Wynn (although that connection remains unofficial; the lead developer for launchy and wynntils is the same as the lead developer for Wynn).
 
 ### Why does this guide promote x over y?
 
 #### Fabric v. Forge v. Others
-Currently, within the modding system, fabric is the goto ecosystem for client side modification within server connected contexts. The vast majority of active development, within a Wynncraft context, occurs within the Fabric ecosystem.
+Currently, within the modding system, fabric is the go-to ecosystem for client side modification within server connected contexts. The vast majority of active development, within a Wynncraft context, occurs within the Fabric ecosystem.
 
 This is not to say that there are not alternatives. Many current wynn mods are translated into the (neo)forge ecosystem, which technically remains an option. But this is a worse choice, in general, than just running things in/with fabric since that is the most tested ecosystem and where most active development occurs. The same goes for obscure and/or deprecated ecosystems such as liteloader.
 
 #### Prism v. Modrinth v. CurseForge v. Others
-CurseForge has quickly become a bloated proprietary ecosystem wherein the platform's foremost priority is no longer its users. Modrinth arose as an alternative to that, although its focus primarily remains the curation and distribution of mods as opposed to launching them (although it has expanded into that vertical). Prism, meanwhile, has recived the vast majority of open source development over the past decade (in the form of its upstreams).
+CurseForge has quickly become a bloated proprietary ecosystem wherein the platform's foremost priority is no longer its users. Modrinth arose as an alternative to that, although its focus primarily remains the curation and distribution of mods as opposed to launching them (although it has expanded into that vertical). Prism, meanwhile, has received the vast majority of open source development over the past decade (in the form of its upstreams).
 
 It is open source, it is performant, it is intuitive, and it has a very large userbase that results in both security and community support. It is also capable of loading mods and wrappers/apis from the entire ecosystem and is therefore a great starting point. Having said that, both modrinth and prism are valid choices notwithstanding.
 
 Lunar's support for wynncraft is very outdated and buggy, not to mention incompatible with several key aspects of functionality. For this reason, as with CurseForge, this guide's authors do not recommend it be used in Wynncraft contexts.
 
 #### Custom v. Optimized Family v. Skyward Family
-This guide recommends the use of a performance modpack as the basis of installations of type two and three. This is opposes the common practice of dumping anything with the word "performance" into your mods folder and hoping for the best.
+This guide recommends the use of a performance modpack as the basis of installations of type two and three. This opposes the common practice of dumping anything with the word "performance" into your mods folder and hoping for the best.
 
 This opposition stems both from the frequency at which performance mods update and the frequent incompatibilities between various performance mods. Without spending time to debug your performance mods as to avoid cases wherein they fight with each other, the best option is to just let someone else do it, in the form of a modpack.
 
@@ -229,7 +229,7 @@ Your OS will probably complain about this fact. This is normal.</b>
 </div>
 
 #### Configuring Launchy
-Now that we have the wrapper installed, it's time to set up our Wynncraft instance! Compared to the last steps, this part is fairly straight foward!
+Now that we have the wrapper installed, it's time to set up our Wynncraft instance! Compared to the last steps, this part is fairly straight forward!
 
 **Click the Launchy icon on your desktop and follow its instructions, closing it when you are done!**
 
@@ -305,24 +305,371 @@ You've come to the right place!
 <details>
 <summary><strong>Expand this for instructions on how to build a performance-focused bare-bones wynntils instance!</strong></summary>
 
-<div class="flex items-center glass text-white text-sm font-bold px-4 py-1" role="alert">
-  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z"/></svg>
-  <p>This section has not yet been written!<br/>Stay tuned as we suspect this subarticle will be ready later this week!</p>
+### Installing Prism
+For this tutorial, we will be using [PrismMC](https://prismlauncher.org/)'s launcher.
+
+Prism is an alternative to Mojang's vanilla launcher developed by the [community](https://prismlauncher.org/#get-involved) as a means to make it easier for users to create and modify independently customisable clients of Minecraft. It provides easy integration between most loaders (forge, fabric, etc.) and repositories (curseforge, modrinth, etc.) to simplify launching, monitoring, and using separate instances of the game.
+
+First things first, we need to fetch the Prism installer from [this page](https://prismlauncher.org/download/windows/)!
+
+<details>
+<summary><strong>If you would like more details on installing your prism client, expand this section!</strong></summary>
+
+#### Fetching Prism
+
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/prism/download.png" alt="The prism downloads page" />
+            <p class="glass px-2 text-center">The first thing we will need is the Prism Launcher's exe!<br/>This can be found from <a href="https://prismlauncher.org/download/windows/">this page</a> of the PrismMC Website!</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/prism/downloaded.png" alt="The prism exe" />
+            <p class="glass px-2 text-center">Then we just need to download the file and run it!</p>
+        </div>
+        <div slot="3">
+            <img src="/assets/guides/modding/prism/installer.png" alt="The prism installer's initial page" />
+            <p class="glass px-2 text-center">Follow through the prompts on the installer.</p>
+        </div>
+        <div slot="4">
+            <img src="/assets/guides/modding/prism/install.png" alt="The second page of the prism installer" />
+            <p class="glass px-2 text-center">Note that the visual studio runtime makes Prism a lot more useful!</p>
+        </div>
+        <div slot="5">
+            <img src="/assets/guides/modding/prism/location.png" alt="The third page of the prism installer" />
+            <p class="glass px-2 text-center">Note that the location chosen on this step is just where the launcher's files are stored, not where the instances end up.</p>
+        </div>
+        <div slot="6">
+            <img src="/assets/guides/modding/prism/installing.png" alt="The fourth page of the prism installer" />
+            <p class="glass px-2 text-center">This may take quite a while to install.</p>
+        </div>
+        <div slot="7">
+            <img src="/assets/guides/modding/prism/uac.png" alt="The user account control dialog." />
+            <p class="glass px-2 text-center">You will also likely be asked for user account control permission a few times. Don't worry, this is normal.</p>
+        </div>
+        <div slot="7">
+            <img src="/assets/guides/modding/prism/installed.png" alt="The final page of the prism installer" />
+            <p class="glass px-2 text-center">You will also likely be asked for user account control permission a few times. Don't worry, this is normal.</p>
+        </div>
+    </Carousel>
 </div>
 
+#### Configuring Prism
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/prism/language.png" alt="The prism languages page" />
+            <p class="glass px-2 text-center">Opening prism for the first time, you will be prompted for a few things. The first is your language (just the interface for prism itself, not your minecraft client).</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/prism/appearance.png" alt="The prism appearances page" />
+            <p class="glass px-2 text-center">You are also given a chance to choose your cat! (And some other visual tweaks).</p>
+        </div>
+        <div slot="3">
+            <img src="/assets/guides/modding/prism/auth.png" alt="The prism authentication page" />
+            <p class="glass px-2 text-center">This step is important! The minecraft account(s) you log in with are the ones you will be able to launch clients for!</p>
+        </div>
+        <div slot="4">
+            <img src="/assets/guides/modding/prism/auth2.png" alt="The prism microsoft authentication page" />
+            <p class="glass px-2 text-center">Prism offers several ways to authenticate with your microsoft account. The easiest is probably the "sign in with microsoft" button, which opens ms' account login website</p>
+        </div>
+        <div slot="5">
+            <img src="/assets/guides/modding/prism/login.png" alt="The prism microsoft authentication page" />
+            <p class="glass px-2 text-center">This is just a standard microsoft login. Login with the same account your Minecraft account was created/migrated with.</p>
+        </div>
+        <div slot="6">
+            <img src="/assets/guides/modding/prism/loggedin.png" alt="An authenticated prism launcher" />
+            <p class="glass px-2 text-center">You're done!</p>
+        </div>
+    </Carousel>
+</div>
+</details>
+
+### Creating Your Instance
+We're ready to create the foundation for your Wynn instance!
+The first step is to create your instance.
+
+We will be using the Adrenaline modpack as the basis for this install, centred on [the version Wynncraft is currently running](https://wynnvets.org/WynnVersion)
+
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/adrenaline/prism.png" alt="The prism home page" />
+            <p class="glass px-2 text-center">To get started, open prism and click 'add instance' (top left).</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/adrenaline/modrinth.png" alt="The modrinth tab of the Prism version page" />
+            <p class="glass px-2 text-center">Ignoring the default page, go directly to the Modrinth tab of your new instance.</p>
+        </div>
+        <div slot="3">
+            <img src="/assets/guides/modding/adrenaline/adrenaline.png" alt="The modrinth tab of the Prism version page" />
+            <p class="glass px-2 text-center">Search the modrinth page for the 'Adrenaline' modpack, click it, navigate to the bottom right, and click the version slider</p>
+        </div>
+        <div slot="4">
+            <img src="/assets/guides/modding/adrenaline/wynnversion.png" alt="The modrinth tab of the Prism version page" />
+            <p class="glass px-2 text-center">Select [whatever version](https://wynnvets.org/WynnVersion) Wynncraft happens to be running right now, and click the 'ok' buton.</p>
+        </div>
+    </Carousel>
+</div>
+
+### Modding your instance
+We're ready to install Wynn mods! For the reasons outlined in the general notes section, although Wynn modpacks exist, it is generally preferable to install mods yourself.
+
+In this case, since we are assuming your computer is a potato, the only mod we will be installing is Wynntils.
+
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/adrenaline/edit.png" alt="The newly created instance's edit tab" />
+            <p class="glass px-2 text-center">After giving it a few moments to install, right click on your newely created instance and click 'edit'.</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/adrenaline/mods.png" alt="The newly created instance's modding tab" />
+            <p class="glass px-2 text-center">In your instance's edit menu, click on the 'Mods' tab.</p>
+        </div>
+        <div slot="3">
+            <img src="/assets/guides/modding/adrenaline/download.png" alt="The modding tab's downloads button" />
+            <p class="glass px-2 text-center">From within the modding tab, click 'download mods' button.</p>
+        </div>
+        <div slot="4">
+            <img src="/assets/guides/modding/adrenaline/downloading.png" alt="The modding tab searching for Wynntils" />
+            <p class="glass px-2 text-center">(red) Search for Wynntils, (blue) click it, (green) select it for download, and (pink) review and confirm.</p>
+        </div>
+        <div slot="5">
+            <img src="/assets/guides/modding/adrenaline/finish.png" alt="The final confirmation message" />
+            <p class="glass px-2 text-center">Having selected review and confirm in the previous step, you should now be presented with this screen. Click 'ok', and you are done!</p>
+        </div>
+        <div slot="6">
+            <img src="/assets/guides/modding/adrenaline/launch.png" alt="The final screen" />
+            <p class="glass px-2 text-center">You're done! You can click Launch (red) now; in future, you can also double click the client icon (blue) from your prism launcher to do the same thing!</p>
+        </div>
+    </Carousel>
+</div>
 </details>
 
 ## The Maximum Quality Approach
 Is your computer somewhat functional? Are you willing to spend a few extra moments to tweak Wynn to work exactly how you want it? Are you jealous of the cool mods other people are using? You've come to the right place!
 
-*This tutorial will give you the foundations needed to install basically any wynn mods imaginable. It will also point out a lot of the more popular ones and some important notes with respect to how you can set them up (dependancies galore)!*
+*This tutorial will give you the foundations needed to install basically any wynn mods imaginable. It will also point out a lot of the more popular ones and some important notes with respect to how you can set them up (dependencies galore)!*
 
 <details>
 <summary><strong>Expand this for a foundation primer on how to create a wynn install tailored to you!</strong></summary>
 
-<div class="flex items-center glass text-white text-sm font-bold px-4 py-1" role="alert">
-  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z"/></svg>
-  <p>This section has not yet been written!<br/>Stay tuned as we suspect this subarticle will be ready later this week!</p>
+### Installing Prism
+For this tutorial, we will be using [PrismMC](https://prismlauncher.org/)'s launcher.
+
+Prism is an alternative to Mojang's vanilla launcher developed by the [community](https://prismlauncher.org/#get-involved) as a means to make it easier for users to create and modify independently customisable clients of Minecraft. It provides easy integration between most loaders (forge, fabric, etc.) and repositories (curseforge, modrinth, etc.) to simplify launching, monitoring, and using separate instances of the game.
+
+First things first, we need to fetch the Prism installer from [this page](https://prismlauncher.org/download/windows/)!
+
+<details>
+<summary><strong>If you would like more details on installing your prism client, expand this section!</strong></summary>
+
+#### Fetching Prism
+
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/prism/download.png" alt="The prism downloads page" />
+            <p class="glass px-2 text-center">The first thing we will need is the Prism Launcher's exe!<br/>This can be found from <a href="https://prismlauncher.org/download/windows/">this page</a> of the PrismMC Website!</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/prism/downloaded.png" alt="The prism exe" />
+            <p class="glass px-2 text-center">Then we just need to download the file and run it!</p>
+        </div>
+        <div slot="3">
+            <img src="/assets/guides/modding/prism/installer.png" alt="The prism installer's initial page" />
+            <p class="glass px-2 text-center">Follow through the prompts on the installer.</p>
+        </div>
+        <div slot="4">
+            <img src="/assets/guides/modding/prism/install.png" alt="The second page of the prism installer" />
+            <p class="glass px-2 text-center">Note that the visual studio runtime makes Prism a lot more useful!</p>
+        </div>
+        <div slot="5">
+            <img src="/assets/guides/modding/prism/location.png" alt="The third page of the prism installer" />
+            <p class="glass px-2 text-center">Note that the location chosen on this step is just where the launcher's files are stored, not where the instances end up.</p>
+        </div>
+        <div slot="6">
+            <img src="/assets/guides/modding/prism/installing.png" alt="The fourth page of the prism installer" />
+            <p class="glass px-2 text-center">This may take quite a while to install.</p>
+        </div>
+        <div slot="7">
+            <img src="/assets/guides/modding/prism/uac.png" alt="The user account control dialog." />
+            <p class="glass px-2 text-center">You will also likely be asked for user account control permission a few times. Don't worry, this is normal.</p>
+        </div>
+        <div slot="7">
+            <img src="/assets/guides/modding/prism/installed.png" alt="The final page of the prism installer" />
+            <p class="glass px-2 text-center">You will also likely be asked for user account control permission a few times. Don't worry, this is normal.</p>
+        </div>
+    </Carousel>
+</div>
+
+#### Configuring Prism
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/prism/language.png" alt="The prism languages page" />
+            <p class="glass px-2 text-center">Opening prism for the first time, you will be prompted for a few things. The first is your language (just the interface for prism itself, not your minecraft client).</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/prism/appearance.png" alt="The prism appearances page" />
+            <p class="glass px-2 text-center">You are also given a chance to choose your cat! (And some other visual tweaks).</p>
+        </div>
+        <div slot="3">
+            <img src="/assets/guides/modding/prism/auth.png" alt="The prism authentication page" />
+            <p class="glass px-2 text-center">This step is important! The minecraft account(s) you log in with are the ones you will be able to launch clients for!</p>
+        </div>
+        <div slot="4">
+            <img src="/assets/guides/modding/prism/auth2.png" alt="The prism microsoft authentication page" />
+            <p class="glass px-2 text-center">Prism offers several ways to authenticate with your microsoft account. The easiest is probably the "sign in with microsoft" button, which opens ms' account login website</p>
+        </div>
+        <div slot="5">
+            <img src="/assets/guides/modding/prism/login.png" alt="The prism microsoft authentication page" />
+            <p class="glass px-2 text-center">This is just a standard microsoft login. Login with the same account your Minecraft account was created/migrated with.</p>
+        </div>
+        <div slot="6">
+            <img src="/assets/guides/modding/prism/loggedin.png" alt="An authenticated prism launcher" />
+            <p class="glass px-2 text-center">You're done!</p>
+        </div>
+    </Carousel>
+</div>
+</details>
+
+### Creating Your Instance
+We're ready to create the foundation for your Wynn instance!
+The first step is to create your instance.
+
+We will be using the Additive modpack as the basis for this install, centred on [the version Wynncraft is currently running](https://wynnvets.org/WynnVersion)
+
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/adrenaline/prism.png" alt="The prism home page" />
+            <p class="glass px-2 text-center">To get started, open prism and click 'add instance' (top left).</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/adrenaline/modrinth.png" alt="The modrinth tab of the Prism version page" />
+            <p class="glass px-2 text-center">Ignoring the default page, go directly to the Modrinth tab of your new instance.</p>
+        </div>
+        <div slot="3">
+            <img src="/assets/guides/modding/additive/additive.png" alt="The modrinth tab of the Prism version page" />
+            <p class="glass px-2 text-center">Search the modrinth page for the 'additive' modpack, click it, navigate to the bottom right, and click the version slider</p>
+        </div>
+        <div slot="4">
+            <img src="/assets/guides/modding/additive/wynnversion.png" alt="The modrinth tab of the Prism version page" />
+            <p class="glass px-2 text-center">Select [whatever version](https://wynnvets.org/WynnVersion) Wynncraft happens to be running right now, and click the 'ok' buton.</p>
+        </div>
+    </Carousel>
+</div>
+
+### Modding your instance
+We're ready to install Wynn mods! For the reasons outlined in the general notes section, although Wynn modpacks exist, it is generally preferable to install mods yourself.
+
+#### How to add a mod to your instance's 'shopping cart'.
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/additive/edit.png" alt="The newly created instance's edit tab" />
+            <p class="glass px-2 text-center">After giving it a few moments to install, right click on your newely created instance and click 'edit'.</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/additive/mods.png" alt="The newly created instance's modding tab" />
+            <p class="glass px-2 text-center">In your instance's edit menu, click on the 'Mods' tab.</p>
+        </div>
+        <div slot="3">
+            <img src="/assets/guides/modding/additive/download.png" alt="The modding tab's downloads button" />
+            <p class="glass px-2 text-center">From within the modding tab, click 'download mods' button.</p>
+        </div>
+        <div slot="4">
+            <img src="/assets/guides/modding/additive/downloading.png" alt="The modding tab searching for whatever it is you are looking for" />
+            <p class="glass px-2 text-center">(red) Search for whatever mod you are adding to your cart, (blue) click it, and (green) select it for download (basically adding it you your cart).</p>
+            <p>Repeat this as many times as may be needed to install all the mods you are interested in.</p>
+        </div>
+    </Carousel>
+</div>
+
+#### Suggested Mods
+This is your installation! Add anything you want! One of the best ways to do this is by simply typing 'wynn' into the mod search bar and adding the desired mods to your cart (i.e. selecting them for download).
+
+Some specific mods we suggest are:
+
+##### Dependencies
+Although prism is generally pretty good at handling dependencies, a great many Wynn mods rely on a few specific resources. Therefore, we recommend installing:
+
+- [Wynntils](https://modrinth.com/mod/wynntils)
+- [Variants-CIT](https://modrinth.com/mod/variants-cit)
+
+##### Other mods to add to your cart
+In no particular order, ***some*** of the more popular/useful wynn mods at the time of writing are:
+
+- [Wynnventory](https://modrinth.com/mod/wynnventory)
+  - Shows market prices for items, among other things
+- [Distant Horizons](https://modrinth.com/mod/distanthorizons) (w/ [WynnVista](https://modrinth.com/mod/wynnvista) & [WynnLODGrabber](https://modrinth.com/mod/wynnlodgrabber))
+  - Shows the entire world at the same time 
+- [WynnAspects](https://modrinth.com/mod/wynnaspects)
+  - Keeps track of your aspects.
+- [WynnLimbo](https://modrinth.com/mod/wynnlimbo)
+  - Makes queuing for worlds less annoying
+- [Wynncraft World Event Tracker](https://modrinth.com/mod/world-event-tracker)
+  - Keeps track of when world events are happening, and where.
+- [Avomod](https://modrinth.com/mod/avomod)
+  - Used primarily for wars, but adds several quality of life features such as consumable colours.
+
+#### Installing your mods (i.e. 'checking out')
+Once you have selected everything you need, click 'Review and Confirm'
+
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/additive/checkout.png" alt="The review and confirm button" />
+            <p class="glass px-2 text-center">Once you have everything you need, 'check out' by clicking 'Review and Confirm'.</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/additive/checkedout.png" alt="The review and confirm screen" />
+            <p class="glass px-2 text-center">You will be given a list of the mods you have selected; simply press ok to install them all.</p>
+        </div>
+    </Carousel>
+</div>
+
+#### Other Resources
+We have the mods, but there are other ways to customise your client!
+Check out the Resource Packs and Shader Packs tabs as well!
+
+##### How to add Resource & Shader Packs to your 'cart'
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/additive/resources.png" alt="The review and confirm button" />
+            <p class="glass px-2 text-center">The resource and shader packs tabs function exactly the same way as the modding tab.</p>
+        </div>
+        <div slot="2">
+            <img src="/assets/guides/modding/additive/resourcedownload.png" alt="The resourec download buttons" />
+            <p class="glass px-2 text-center">Simply click the 'download' button and repeat the same process from the modding section of this guide.</p>
+        </div>
+    </Carousel>
+</div>
+
+##### What to add to your 'cart'
+Again, this is a simple case of searching for "Wynn".
+With that in mind, some specifically worthwhile mentions are:
+
+###### Model (Resource) Packs
+- [Wynnic Fables & Legends 2](https://modrinth.com/resourcepack/wynn-fl2)
+- [Mythos](https://modrinth.com/resourcepack/mythos_)
+
+###### QOL (Resource) Packs
+- [Unobtrusive Fire Creep](https://modrinth.com/resourcepack/wynn-unobtrusive-fire-creep)
+- ["Lighter" Wynn Mages' Spells](https://modrinth.com/resourcepack/light-wynncraft-mages-spells)
+### Launching
+You are done! Feel free to launch your client!
+
+<div class="glass h-auto rounded-lg h-auto">
+    <Carousel>
+        <div slot="1">
+            <img src="/assets/guides/modding/additive/launch.png" alt="The final screen" />
+            <p class="glass px-2 text-center">You're done! You can click Launch (red) now; in future, you can also double click the client icon (blue) from your prism launcher to do the same thing!</p>
+        </div>
+    </Carousel>
 </div>
 
 </details>
