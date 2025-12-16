@@ -28,7 +28,22 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 ---
 
 ## World Events
-<p class="glass">To be written!</p>
+
+<small>Section written by Holidaze and edited by Wenweia</small>
+
+### Regular
+World Events were introduced to replace the swarm mechanic you might remember. In essence, in specific areas of the map, large quantities of mobs will spawn at random intervals.
+
+Defeating all such mobs will result in a reward chest appearing, with rewards unique to each event spawning in said chest. These events appear at all levels, and are scaled roughly to the average level of the participating party.
+
+When a world event is set to occur, it will be announced both in the content book and in chat to nearby players.
+
+### Major
+Major world events consist of large bosses, surrounded by weaker mobs, that require an experienced parties to defeat. As of 2025-12-15, the only event of this sort that has been implemented is Prelude to Annhilation.
+
+A party successful in defeating all such mobs will be rewarded with a chest with valuable rewards up to and including caches -- unique mythics only available through these infrequent major world events.
+
+Note that, unlike regular world events, dying in a major world event does not preclude your receipt of rewards, provided at least one member in your party survives. Major world events are announced 11-12 hours in advance.
 
 ---
 
@@ -45,5 +60,9 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 ---
 
 ## Outer Void
-(Wynn accounts, etc.)
-<p class="glass">To be written!</p>
+
+<small>Section written by Holidaze and edited by Wenweia</small>
+
+The Outer Void was introduced with the intention of providing another mechanic through which for players to make money. The Outer Void is physically located in the southern end of the Void -- an area which can be unlocked in the "One Thousand Meters Under" quest. 
+
+Gameplay in the Outer Void consists of using a unique mobility system to jump around floating platforms to collect different items. These items can be directly sold to The Scavenger, used to craft gear used outside of the outer void (sometimes quite valuable), or used to craft various upgrades to help make traversing the Outer Void easier. Upgrades of this sort include a grappling hook or the ability to grab onto walls; the more you upgrade your mobility, the more effectively you collect items from this area!
