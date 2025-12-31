@@ -1,5 +1,5 @@
 ---
-title: VETS Memes
+title: Wynnvets Memes
 description: "An overview of the inside jokes that have developed over the years within VETS."
 image: "@assets/docs/guild/braincell.png"
 imageAlt: "A guild braincell."

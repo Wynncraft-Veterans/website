@@ -1,5 +1,5 @@
 ---
-title: Wynn Veterans Cape
+title: Wynnvets Cape
 description: "VETS has a cape, and it is free for everyone to use! This article contains the instructions on how to apply it to your character."
 image: "@assets/docs/guild/cape.png"
 imageAlt: "A user wearing the Wynnvets cape."
