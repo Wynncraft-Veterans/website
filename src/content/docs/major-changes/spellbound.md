@@ -21,8 +21,19 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 ---
 
 ## The Ability Tree
+
+<small>Section written by Wenweia and Holidaze</small>
+
 ### Abilities
-<p class="glass">To be written!</p>
+In one of the most fundamental gameplay reworks since the introduction of skill points, this version introduced the ability tree system! In addition to skill points, you now get ability points every few levels, which let you select abilities. Unlike skill points, *each* ability node allows to do some specific new thing (described by hovering over the node itself).
+
+Abilities are found in the ability tree named such because, for any given ability node, you generally need the ability above it as a prerequisite. Abilities can also be restricted to archetypes, which refer to the left/centre/right sides of a given tree. For example, if a node on the right side of your tree says "Min Acolyte Archetype 7", it probably means you need 7 more ability points of nodes on the right side of your tree (specifically, those with "Acolyte Archetype" written under them in bold.
+
+#### Resetting Abilities
+To clear your tree, you need to have completed [this quest](https://wynncraft.wiki.gg/wiki/Recover_the_Past) on any of your characters. Resetting your tree requires ability shards, but they are incredibly cheap/abundant. You will probably quickly end up with a surplus of them, and your guild probably likewise has an endless supply available should you ask.
+
+### Aspects
+Obtained primarily by completing raids, aspects generally enhance specific abilities within your tree. These get put in a separate window and are unlocked account-wide.
 
 ### Archetypes
 <p class="glass">To be written!</p>
