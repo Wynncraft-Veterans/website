@@ -9,6 +9,8 @@ modDate: 2025-08-16
 
 # The Returners Guide to Returning
 
+<small>This section was written by Metrafish</small>
+
 ## Legacy Items
 
 [This spreadsheet](https://wynnvets.org/legacy-items) contains all known discontinued items in the game, as well as their approximate worth. If you have any of these in your bank, be sure not to throw them out! If you wish to sell them, **do NOT put them on the Trade Market** (the new global store) or else they will break.
@@ -17,7 +19,7 @@ For more information about legacy items, check out [this page](https://www.wynnv
 
 ## Major Changes
 
-Over the past several years, **numerous additions have been made.** You can learn more about all major changes by update [here](https://www.wynnvets.org/docs/major-changes/). Here is a brief overview:
+Over the past several years, **numerous additions have been made.** You can learn more about all major changes by update [here](https://www.wynnvets.org/docs/major-changes/). Here is a brief overview of some of the most impactful changes:
 
 [Housing](https://www.wynnvets.org/docs/major-changes/reborn/#housing). A balloon was added to every major city that lets you access your own private island to build on, as well as your guild's.
 
@@ -27,9 +29,9 @@ Over the past several years, **numerous additions have been made.** You can lear
 
 [Lootruns](https://www.wynnvets.org/docs/guides/lootrunning/). A new gamemode replaced the old method of lootrunning. Currently, there are five lootruns.
 
-[Gavel](https://www.wynnvets.org/docs/major-changes/gavel/#the-gavel-province), [Corkus](https://www.wynnvets.org/docs/major-changes/corkus/#map-expansion), and the [Silent Expanse](https://www.wynnvets.org/docs/major-changes/expanse/#map-expansion). Three more provinces were added to the game, with a fourth slated for release sometime soon.
+[The Ocean Expansion](https://www.wynnvets.org/docs/major-changes/ocean/#map-expansion), [The Gavel Expansion](https://www.wynnvets.org/docs/major-changes/gavel/#the-gavel-province), [The Corkus Expansion](https://www.wynnvets.org/docs/major-changes/corkus/#map-expansion), and the [Silent Expansion](https://www.wynnvets.org/docs/major-changes/expanse/#map-expansion). More provinces were added to the game, four expansions, with a fifth slated for release sometime soon.
 
-[Annihilation](https://www.wynnvets.org/docs/guides/anni/). A new endgame boss was added, Annihilation, which is only able to be fought every three days. It is normally fought in parties of five to ten players at max level.
+[Annihilation](https://www.wynnvets.org/docs/guild/anni/). A new endgame boss was added, Annihilation, which is only able to be fought every three days. It is normally fought in parties of five to ten players at max level.
 
 ## Where to Start
 
