@@ -9,7 +9,7 @@ modDate: 2025-08-16
 
 Annihilation (or Anni for short) is currently the only major world event in Wynncraft, and appears roughly once every 3 days. A countdown will be shown 11-12 hours in advance, allowing players to plan accordingly. The event itself involves facing off against Annihilation at the nether portal near Detlas.
 
-## Annihilation as a VETS member
+## Annihilation in VETS
 In the VETS guild, we try to organise our parties so that we can fit as many guild members as possible, often including new (i.e. freshly returning) players.
 
 To attend, **we recommend you RSVP in the [VETS' discord's](https://wynnvets.org/discord)  #annihilation channel in our discord**, or, failing that, to **please show up** ***AT LEAST*** **one hour early**.
@@ -21,7 +21,8 @@ To help make planning guild Annihilation parties easier, **we frequently send ou
 
 To help us complete runs relatively easily, even with newly returning players joining, we try to differentiate our roles into those listed as follows:
 
-### Main DPS (aka Primary)
+### Main DPS
+This role is also known as "Primary"
 #### What they need to do:
 The main DPS is mostly self-explanatory. This is the person whose primary role is to deal damage to the boss itself. They usually stand directly behind the tank, as close to Anni herself as they can safely get..
 
@@ -31,7 +32,8 @@ Usually this is a labyrinth or resonance user, but there can be some exceptions,
 ##### Requirements
 Generally, a non-buffed damage of (consistently) 400kdps is sufficient to fulfil this role.
 
-### Secondary DPS (aka Secondary)
+### Secondary DPS
+This role is also known as "Secondary"
 #### What they do:
 The secondary DPS's main role is to defeat the sun, a large mob that spawns well above the ground when main boss is at 50% and 25% health. This role typically stays a bit farther back from the main DPS, and helps clear smaller mobs that attack them.
 
@@ -43,6 +45,7 @@ This is usually a tstack epoch user, but is much more flexible than most roles.
 They also should be able to clear out random (lower-health) mobs spawning on the ground around the party core.
 
 ### Primary Healer
+This role is also known as "Heal"
 #### What they do:
 The primary healer is in charge of keeping the main DPS alive, with the tank being a secondary priority unless they have high health regeneration. 
 
@@ -64,7 +67,9 @@ The tank role is essentially exclusive to guardian users.
 ##### Requirements:
 This role refers to tanks in general, but they are usually able to tank *AT LEAST* 70kehp while running a skill tree (almost always paladin) and MIDs (almost always guardian) that sufficiently protect the primary.
 
-### Healer DPS (Aka Healer Damage)
+### Healer DPS
+This role is also known as "Healdmg"
+
 > **NOTE** The healer DPS is **NOT** a healer role.<br>
 > The healer DPS *kills* healer *MOBS* and is does NOT heal players.
 > 
