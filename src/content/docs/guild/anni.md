@@ -14,7 +14,7 @@ Annihilation (or Anni for short) is currently the only major world event in Wynn
 ## Annihilation in VETS
 In the VETS guild, we try to organise our parties so that we can fit as many guild members as possible, often including new (i.e. freshly returning) players.
 
-To attend, **we recommend you RSVP in the [VETS' discord's](https://wynnvets.org/discord)  #annihilation channel in our discord**, or, failing that, to **please show up** ***AT LEAST*** **one hour early**.
+To attend, **we recommend you RSVP in the [VETS' discord's](https://wynnvets.org/discord)  #annihilation channel**, or, failing that, to **please show up** ***AT LEAST*** **one hour early**.
 
 That channel also has a bot that shows when Anni is announced, allowing you to stay in the loop without having to get online.
 
