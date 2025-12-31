@@ -52,6 +52,8 @@ Teleport scrolls have become one of the server's main means of transportation. S
 ## Item Tiers
 <small>Section written by Wenweia</small>
 
+<div class="glass px-4 my-2 py-2"><center>For further information, reference our <a href="https://www.wynnvets.org/docs/guides/classbuilding/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Guide on Items</button></a></center></div>
+
 Around this time there was an item update! Items can now be of different tiers. The original tiers were Normal, Unique, Rare, and Legendary, although other tiers have subsequently been added.
 
 Currently, the item tier ladder in the game is **Normal < Unique < Rare < Legendary < Fabled < Mythic**. Notwithstanding modification by loot quality/bonuses, mythic items have a 0.0007% chance of dropping from a chest/mob, whereas normal items appear to have over a 7% of dropping from the same. Other tiers have drop rates between those two bounds.

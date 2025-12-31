@@ -22,6 +22,8 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 
 ## Map Expansion
 
+<small>Article written by Wenweia:</small>
+
 Formerly known as the Road to Dern, the Silent Expanse is an area of the Wynn Province that was consumed by the Realm of Dern (an update slated for the future). In order to enter the Expanse and gain access to its content, you will have to go through the endgame quests A Journey Beyond and A Journey  Further. 
 
 ## The Shaman Class
@@ -35,6 +37,8 @@ More information on this class will be outlined in subsequent sections due to an
 ---
 
 ## Player Ghosts
+<small>Article written by Wenweia:</small>
+
 Player ghosts are, as the name implies, ghosts of players on other worlds. They are enabled by default and are semitransparent. 
 
 Playerghosts are not fully interactable in that, although you can talk to them and they can see your actions, they can't damage mobs on your server nor can they join you in quests or other local activities.
@@ -54,8 +58,9 @@ If you are experiencing lag, you can `/toggle playerghosts none` to hide all oth
 
 ---
 
-<small>Article written by Metrafish:</small>
 ## Hunted Gamemode
+<small>Article written by Metrafish:</small>
+
 A [challenge gamemode](/docs/major-changes/economy#challenge-gamemodes) that rewards players with +50% mob XP and 50% gathering XP, but at the cost of other players within a 10 level range of you being able to attack you via PVP.
 
 Being killed by another player in hunted mode causes some of your gear to drop.
@@ -66,4 +71,10 @@ Being killed by another player in hunted mode causes some of your gear to drop.
 ---
 
 ## Ingredient Pouch
-<p class="glass">To be written!</p>
+<small>Article written by Wenweia:</small>
+
+Shortly after professions (and the ingredients associated with them) were added, a new utility slot got added to the inventory to accomodate the myriad of new items. This slot only accepts ingredients (and has a built-in option to blacksmith them), automatically collects any ingredients you pick up (as long as you have at least one open slot), and offers storage for up to 27 ingredient types and 1728 items (i.e. it is a 9x3x64 chest).
+
+Note that there are two common exceptions to the above:
+1. If you are a returning player who happened to have an item in that particular slot of your inventory when the pouch got added, said item will be put into your ingredient pouch. This is quite common among returning players, and is probably how you ended up with a single helmet in your ingredient pouch.
+2. If you are playing the [UltraIronman]((/docs/major-changes/economy#challenge-gamemodes) challenge (previously known as normal ironman), you can use your pouch without any restrictions (as you would use a class bank, if you had one).

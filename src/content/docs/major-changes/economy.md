@@ -18,6 +18,8 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 ## Professions
 <small>Article by Wenweia</small>
 
+<div class="glass px-4 my-2 py-2"><center>For further information, reference our <a href="https://www.wynnvets.org/docs/guides/professions/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Guide on Professions</button></a></center></div>
+
 ### New Item Tier: Crafted
 The headline feature of the economy update, professions, added a new segment to the item system in the form of crafting. Unlike traditional items (for which the ID values and ranges for which are set by staff and governed by chance), crafted items are more flexible.
 
