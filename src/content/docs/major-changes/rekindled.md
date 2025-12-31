@@ -46,20 +46,16 @@ Note that, unlike regular world events, dying in a major world event does not pr
 ---
 
 ## Store Stuffs
-(Silverbull shares, armour trims/cosmetics, tokens)
-<p class="glass">To be written!</p>
 
 <small>Section written by Wenweia</small>
 
 Due both to some policy changes at Microsoft, some expanded technical capabilities afforded by the game itself, and increased capacity on Wynn's side, cosmetics and monetisation were completely overhauled in this update.
 
-### Cosmetics
-
-#### Obtaining
+### Obtaining Cosmetics
 
 The main source of cosmetics is Wynncraft's [`/store`](https://wynncraft.com/store), specifically its crates. These crates are now grouped into collections (generally associated with the new [festivals](https://www.wynnvets.org/docs/major-changes/spellbound/#festivals), and opening a `/crate` will select a cosmetic from said collection at random.
 
-#### Managing
+### Managing Cosmetics
 
 The scrap menu still exists, and functions in a manner quite similar to how it used to. It has, however, been moved to a button at the bottom of the `/crate` menu.
 
@@ -67,15 +63,13 @@ Cosmetics retain their old tiers and still require five items of the same tier t
 
 Ranks get an assortment of daily crates, with [Wynn's new subscription rank](https://www.wynnvets.org/docs/major-changes/spellbound/#silverbull) increasing the number of crates afforded. During festivals, an additional daily crate is made available by completing daily objectives.
 
-#### Using
+### Using Cosmetics
 
 The new cosmetic equipment system has been completely redone. The new command to access cosmetics in general is `/use`, which has now been combined with the `/store`. Refer to the below picture; the red bar is for buying stuff, the green bar is for using stuff.
 
 ![The cosmetic interface](/assets/changes/store.png)
 
-Cosmetics now come in five types:
-
-##### Wardrobe
+#### Wardrobe
 
 This is where most things that are visible to other players are kept and primarily change your appearance. The wardrobe is divided into eight styles, two slots per style. The left slots select what cosmetic to use for a given style, and the right slots are used for glints.
 
@@ -85,23 +79,23 @@ Glints, part of (and locked behind) the new [Silverbull](https://www.wynnvets.or
 
 As an example of how one might use the wardrobe, assigning a hat cosmetic awarded in a crate to one's helmet slot would replace one's visible helmet with that hat. Applying a green glint would then dye said hat model green.
 
-### Pets
+#### Pets
 
 Pets are very similar to the old system they are replacing, except you now have three slots for them, pets level up over time with xp, and higher level pets have assorted functionalities accessible by right clicking them in the `/pet` menu. Notably, the ability to sell and dump items. Like cosmetics, pets come from crates.
 
-### Consumables
+#### Consumables
 
 Previously known as (but still including) bombs, these are purchased items consumed on use. Items labeled bombs generally apply a server-wide effect for a set period of time (with the exception being shout bombs). Unlike most of the other items on this list, consumables must be purchased.
 
-#### New Bombs
+##### New Bombs
 
 The new types of bombs are loot chest bombs (increase the rate of items spawning in loot chests), world event bombs (activating the new world events), and scroll charge bombs (basically a replacement for the rarely used soul point bomb, resulting in the equally niche effect of letting you use a teleport scroll before your uses naturally regen).
 
-#### Tokens
+##### Tokens
 
 In addition to bombs, tokens are a new type of consumable. They function similarly to bombs, but accomplish a specific, one-off, effect on use. Examples of tokens include shiny tracker rerolls and resets, renaming a guild, and early refreshes of the daily bonuses available every 24h for raids, lootruns, and the like.
 
-### Emotes
+#### Emotes
 
 Also from crates, these play a specific animation when you do /emote. 
 
