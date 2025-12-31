@@ -30,16 +30,30 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 ---
 
 ## Festivals
+
+<small>Section written by Wenweia</small>
+
 ### Festival Seasons
-<p class="glass">To be written!</p>
+Previously, Wynn wouuld organise a unique event or quest for each major holiday. These have been standardised and replaced with a rotation of four seasonal festivals. Each festival redecorates detlas, has an event area reachable from detlas, implements some recurring minigames, and adds some cosmetics.
+
+*Wynnter/Craftsmas* festivities were replaced with the *Festival of the Blizzard* (Winter) and *Hallowynn* festivities were replaced with the *Festival of the Spirits* (Autumn). Although spring and summer did not previously have their own events, they do now in the form of the *Festival of  the Heroes* (Spring) and the *Festival of the Bonfire* (Summer).
 
 ### Isles of Fiction
-<p class="glass">To be written!</p>
+With the systemisation of seasonal content, unique items introduced in past holiday events are can now be accessed year-round via a newly introduced merchant island. For inflated prices, merchants on the Isles of Fiction will sell you armour, accessories, weapons, and the like temporarily introduced in past events.
 
 ---
 
 ## Lootruns
-<p class="glass">To be written!</p>
+
+<small>Section written by Wenweia</small>
+
+In older versions of the game, lootrunning was an emergant gameplay wherein players would run around the world opening as many chests as possible with as much loot bonus as possible. *This has changed.* Wynn's recent goal has been to increase the game's accessibility, and in line with that, lootrunning was made an official, user-friendly, mechanic. It's effectively a minigame now. 
+
+Modern lootrunning entails travelling to a Lootrun Camp (there are several, each unlocked by fulfiling an assortment of prerequisites) and starting what is effectively a clock. Thereafter, *lootrunning consists of running between a bunch of nearby locations and completing various objectives*. For each objective completed, you gain additional time on your clock and an assortment of buffs/curses (akin to status effects). As you complete more and more objectives, you gain reward pulls.
+
+Due to reward pulls and the accessibility of this mechanic, *mythic prices have dropped drastically across the board, such that they are now within reach for most players*. Items replacing mythic-priced items in rarity are shinies (described in the guide) and anni mythics (mythics that do not get dropped via lootruns, but instead spawn in via [Annhilation](https://www.wynnvets.org/docs/major-changes/rekindled/#major))
+
+<div class="glass px-4 my-2 py-2"><center>For further information, reference our <a href="https://www.wynnvets.org/docs/guides/lootrunning/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Guide on Lootruns</button></a></center></div>
 
 ---
 
