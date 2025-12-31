@@ -67,9 +67,12 @@ This role refers to tanks in general, but they are usually able to tank *AT LEAS
 ### Healer DPS (Aka Healer Damage)
 > **NOTE** The healer DPS is **NOT** a healer role.
 > The healer DPS *kills* healer *MOBS* and is does NOT heal players.
+> 
+> ![The healer mob](https://wynncraft.wiki.gg/images/InfernalSubjugate.png)
+> *(Your job is to kill this mob specifically!)*
 
 #### What they do:
-This role is responsible for killing healers (big tall mobs that heal the boss) during the fight.
+This role is responsible for killing healers (big tall mobs that heal the boss) during the fight. Generally, people in this role wait at the back of the arena until a healer mob spawns.
 
 Two healers are summoned on the sides of the arena after the sun appears at 50% and 25% health. Additionally, Anni will sometimes raise its left (our right) hand with a sigil, indicating that a healer was summoned behind the players.
 
@@ -90,3 +93,12 @@ For this reason, it can be useful for folks in this role to bring the lowest lev
 
 ##### Requirements:
 None, although as a courtesy, if you have a build that can participate in another role, we encourage you to let us know by adding yourself to the Annhilation Roles sheet (again, ask for the link when ready).
+
+## General Considerations
+### Sigils
+![The sigil warning](/assets/guides/sigil.webp)
+If you see this thing forming under you, run away.
+### Scrolls
+Scrolls are consumable items that apply a variety of effect buffs to nearby players; all VETS annhilation parties provide scrolls, which are applied 30 seconds before the event starts.
+
+To make sure you gain those effects, ensure you are within a 10 block spherical radius of your party's leader (almost always a captain/strategist/chief)!
