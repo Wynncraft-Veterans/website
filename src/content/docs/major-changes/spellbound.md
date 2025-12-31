@@ -72,7 +72,7 @@ Having said that, despite professions now being far more accessible, they are st
 Historically, everyone had one multi-page account bank, shared between all their classes and accessible via using the enderchest in many major cities. Spellbound added an *additional* set of pages per character (class). These new pages are unique in that they can only contain contents from (i.e. can only be accessed by) the class you are currently using.
 
 > **When you first log in after returning, you may an empty bank. This is normal!**
-> **Your [items] (https://www.wynnvets.org/docs/guides/old-items/) moved to your account bank!**
+> **Your [items] (https://www.wynnvets.org/docs/guides/old-items/) moved to your account bank!**<br>
 > The new default page shown when opening an enderchest is your character bank.
 > To switch to your account bank, click the chest symbol at the bottom of the UI!
 
