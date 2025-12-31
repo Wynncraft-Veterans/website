@@ -1,23 +1,23 @@
 ---
 title: VETS' Annihilation
-description: "A quick overview of the Annhilation Major Event Boss for members of the VETS guild."
+description: "A quick overview of the Annihilation Major Event Boss for members of the VETS guild."
 image: "@assets/docs/guides/anni.png"
 imageAlt: "Wynncraft's anni boss."
 pubDate: 2025-08-16
 modDate: 2025-08-16
 ---
 
-Annhilation (or Anni for short) is currently the only major world event in Wynncraft, and appears roughly once every 3 days. A countdown will be shown 11-12 hours in advance, allowing players to plan accordingly. The event itself involves facing off against Annhilation at the nether portal near Detlas.
+Annihilation (or Anni for short) is currently the only major world event in Wynncraft, and appears roughly once every 3 days. A countdown will be shown 11-12 hours in advance, allowing players to plan accordingly. The event itself involves facing off against Annihilation at the nether portal near Detlas.
 
-## Annhilation as a VETS member
+## Annihilation as a VETS member
 In the VETS guild, we try to organise our parties so that we can fit as many guild members as possible, often including new (i.e. freshly returning) players.
 
-To attend, **we recommend you RSVP in the [VETS' discord's](https://wynnvets.org/discord)  #annhilation channel in our discord**, or, failing that, to **please show up** ***AT LEAST*** **one hour early**.
+To attend, **we recommend you RSVP in the [VETS' discord's](https://wynnvets.org/discord)  #annihilation channel in our discord**, or, failing that, to **please show up** ***AT LEAST*** **one hour early**.
 
 That channel also has a bot that shows when Anni is announced, allowing you to stay in the loop without having to get online.
 
-## Annhilation Roles
-To help make planning guild Annhilation parties easier, **we frequently send out a link asking you to put in your roles and region**. If you dont see it anywhere, just ask any staff member to link it.
+## Annihilation Roles
+To help make planning guild Annihilation parties easier, **we frequently send out a link asking you to put in your roles and region**. If you don't see it anywhere, just ask any staff member to link it.
 
 To help us complete runs relatively easily, even with newly returning players joining, we try to differentiate our roles into those listed as follows:
 
@@ -65,7 +65,7 @@ The tank role is essentially exclusive to guardian users.
 This role refers to tanks in general, but they are usually able to tank *AT LEAST* 70kehp while running a skill tree (almost always paladin) and MIDs (almost always guardian) that sufficiently protect the primary.
 
 ### Healer DPS (Aka Healer Damage)
-> **NOTE** The healer DPS is **NOT** a healer role.
+> **NOTE** The healer DPS is **NOT** a healer role.<br>
 > The healer DPS *kills* healer *MOBS* and is does NOT heal players.
 > 
 > ![The healer mob](https://wynncraft.wiki.gg/images/InfernalSubjugate.png)
@@ -92,13 +92,14 @@ Generally, the lower level the class, the less extra health they add to the boss
 For this reason, it can be useful for folks in this role to bring the lowest level >30 class they have.
 
 ##### Requirements:
-None, although as a courtesy, if you have a build that can participate in another role, we encourage you to let us know by adding yourself to the Annhilation Roles sheet (again, ask for the link when ready).
+None, although as a courtesy, if you have a build that can participate in another role, we encourage you to let us know by adding yourself to the Annihilation Roles sheet (again, ask for the link when ready).
 
 ## General Considerations
 ### Sigils
-![The sigil warning](/assets/guides/sigil.webp)
+![The sigil warning](/assets/guides/otherguides/sigil.webp)
 If you see this thing forming under you, run away.
+
 ### Scrolls
-Scrolls are consumable items that apply a variety of effect buffs to nearby players; all VETS annhilation parties provide scrolls, which are applied 30 seconds before the event starts.
+Scrolls are consumable items that apply a variety of effect buffs to nearby players; all VETS annihilation parties provide scrolls, which are applied 30 seconds before the event starts.
 
 To make sure you gain those effects, ensure you are within a 10 block spherical radius of your party's leader (almost always a captain/strategist/chief)!
