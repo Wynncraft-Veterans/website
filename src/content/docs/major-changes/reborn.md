@@ -32,6 +32,9 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 ---
 
 ## (G)raids
+
+<div class="glass px-4 my-2 py-2"><center>For further information, reference our <a href="https://www.wynnvets.org/docs/guides/raiding/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Guide on (G)raids</button></a></center></div>
+
 <p class="glass">To be written!</p>
 
 ---

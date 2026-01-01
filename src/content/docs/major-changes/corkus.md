@@ -55,4 +55,4 @@ Certain parts of the world (underground) were added to replace higher level loot
 
 <div class="glass px-4 my-2 py-2"><center>Large portions of this section originate from <a href="https://forums.wynncraft.com/threads/returning-players-read-this-what-has-changed-updated.250419/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Viro335's Thread</button></a></center></div>
 
-The bank got a lot more space -- this update expanded it to include up to 462 slots worth of items! Later updates have since expanded it to include an acccount bank and a character b ank. Bank pages have certain requirements (usually combat levels) to unlock, and after each new page is unlocked, the price becomes exponentially higher.
+The bank got a lot more space -- this update expanded it to include up to 462 slots worth of items! Later updates have since expanded it to include an account bank and a character bank. Bank pages have certain requirements (usually combat levels) to unlock, and after each new page is unlocked, the price becomes exponentially higher.

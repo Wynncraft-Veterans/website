@@ -22,9 +22,7 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 <div class="glass px-4 my-2 py-2"><center>For further information, reference our <a href="https://www.wynnvets.org/docs/guides/classbuilding/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Guide on Classbuilding</button></a></center></div>
 
 ### Abilities
-In one of the most fundamental gameplay reworks since the introduction of skill points, this version introduced the ability tree system! In addition to skill points, you now get ability points every few levels, which let you select abilities. Unlike skill points, *each* ability node allows to do some specific new thing (described by hovering over the node itself).
-
-Abilities are found in the ability tree named such because, for any given ability node, you generally need the ability above it as a prerequisite. Abilities can also be restricted to archetypes, which refer to the left/centre/right sides of a given tree. For example, if a node on the right side of your tree says "Min Acolyte Archetype 7", it probably means you need 7 more ability points of nodes on the right side of your tree (specifically, those with "Acolyte Archetype" written under them in bold.
+In one of the most fundamental gameplay reworks since the introduction of skill points, this version introduced the ability tree system! In addition to skill points, you now get ability points every few levels, which let you select abilities. Unlike skill points, *each* ability node allows to do some specific new thing (described by hovering over the node itself). As you get more ability points, you are able to progress further down the ability tree, and the nodes you select get increasingly powerful.
 
 #### Resetting Abilities
 To clear your tree, you need to have completed [this quest](https://wynncraft.wiki.gg/wiki/Recover_the_Past) on any of your characters. Resetting your tree requires ability shards, but they are incredibly cheap/abundant. You will probably quickly end up with a surplus of them, and your guild probably likewise has an endless supply available should you ask.
@@ -33,7 +31,153 @@ To clear your tree, you need to have completed [this quest](https://wynncraft.wi
 Obtained primarily by completing raids, aspects generally enhance specific abilities within your tree. These get put in a separate window and are unlocked account-wide.
 
 ### Archetypes
-<p class="glass">To be written!</p>
+<small>Section written by Holidaze</small>
+
+Wynn retained its classes, but expanded upon them, using the ability tree to make subclasses (i.e. the left, middle, and right sides of the ability tree). Subclasses tend to be unique, with gameplay drastically different even between archetypes of the same class. Moreover, archetypes can be combined for mixed classes, assuming one can allocate their ability points well.
+
+#### Archer
+The archer is a class that focuses almost exclusively on dealing damage at varying ranges, with very few supportive capabilites overall. Its three subclasses are Boltslinger (close-up), Trapper (aoe/summons), and Sharpshooter (ranged melee).
+
+<details>
+<summary><strong>Expand this to see an overview of archer's archetypes!</strong></summary>
+
+##### Boltslinger
+The Boltslinger is the close-range option for the archer, allowing the player to summon bows that float around the player and acts as a "death by a thousand cuts" style. This subclass' main damage comes from its arrow storm, which is upgraded to spew out extremely high numbers of arrows. This is cycled with arrow bombs, creating a cycle of rapidly using each ability to do constant damage and keep guardian angels buffed.
+
+This subclass also features some of the highest walk speed buffs in the game, with an upgraded windy feet buff for the user and allies, and frenzy allowing the player to stack extreme amounts of walk speed as they hit rapidly.
+
+The weaknesses of this subclass are the very high mana requirements and vulnerability in close range, while not having the normal arrow shield to reduce damage
+
+##### Trapper
+The Trapper is similar to a summoner character, being able to summon 3 different pets to attack for them, while shooting traps around with bomb arrows that split up. This is the more medium-ranged option for the archer, and is usually played by charging up traps by laying them on the ground with bomb arrows, or spamming then under the boss rapidly. 
+
+The weaknesses of this class come from dealing with traps, and getting them to charge quickly and getting enemies into them.
+
+##### Sharpshooter
+The Sharpshooter is one of few classes that can utilize main attacks (AKA melee attacks) well. The Sharpshooter functions best at long range at a safe distance, and is based around the Focus ability, allowing the player to stack up a damage buff as they attack enemies without missing.
+
+The Sharpshooter can be built in different ways; sharpshooter can be both a spell class and a melee class. In the former case, spell damage, building focuses on the Crepuscular Ray and Phantom Ray abilities.  In the latter case, melee, one can build with high melee damage and low attack speed weapons to enhance the Twain's Arc ability, dealing heavy damage at a slower rate. It is also worth noting that sharpshooter can also be combined with elements of boltslinger to rapidly fire off melee attacks from a distance.
+
+Depending on playstyle, the weaknesses of this subclass varies, but is quite weak and vulnerable when enemies get close, and cannot stack focus.
+
+</details>
+
+#### Warrior
+The Warrior is one of two close range classes in the game, and focuses on getting up in enemies faces with ease. Warrior's playstyles are diverse, and can fit into just about any team. The Warrior's subclasses are Fallen (glass cannon/brute), Battlemonk (ability combo), and Paladin (tank).
+
+<details>
+<summary><strong>Expand this to see an overview of warrior's archetypes!</strong></summary>
+
+##### Fallen
+Fallen is the glass cannon, brute damage, class, allowing the player to enter a corrupted mode where they cannot gain health by any means, but drastically increasing their damage as they use their health to cast enhanced abilities. After exiting corrupted, their health is restored based on the player's attacks and kills while in corrupted mode.
+
+This is one of the most difficult subclasses to play, as you must be comfortable being on low health constantly and be able to stay alive while avoiding enemy attacks at extremely low hp. This subclass functions extremely well with the right supports, with overhealth allowing them to build up their damage while being at high health.
+
+The weaknesses of the subclass are how weak it can often feel without proper support, its corrupted cooldown, and constant low health.
+
+##### Battlemonk
+The Battlemonk is the ability combo subclass in Wynn. It functions around the Generalist ability, allowing the player to cast a spell for 1 mana after casting 3 different spells. This allows the player to cycle the same 3 spells repeatedly for huge cost reductions. This gives the ability to create "surf" builds, where players use a combination of charge for horizontal movement, uppercut for vertical movement, and either war scream or bash for damage.
+
+Idol is the signature weapon for this subclass, making the charge spell very easy to use without consuming almost any mana. Being able to surf correctly can be difficult for new players, along with good cycling of spells, making this one of the harder subclasses to play in Wynn. 
+
+##### Paladin
+The Paladin is the full tank playstyle for the warrior. Almost all of its abilities focus on damage reduction and supporting allies in general. This subclass is almost always run with the Guardian mythic spear, increasing its ability to protect allies drastically by redirecting damage.
+
+This subclass always wants to be up in the enemies' faces, using provoke to redirect attention and keep high damage allies safe. The primary weakness of this class is its lack of damage. Unless you are using a hybrid damage build, it has quite low damage output, but works fine in most normal content.
+
+</details>
+
+#### Assassin
+The Assassin is another class that focuses almost entirely on damage at close range, with its subclasses affecting the class' positoning, damage styles, and drawbacks/difficulties. The three assassin subclasses are Shadestepper (burst/invisibility), Trickster (burst/clones), and Acrobat (consistent/mobility).
+
+<details>
+<summary><strong>Expand this to see an overview of assassin's archetypes!</strong></summary>
+
+##### Shadestepper
+
+The Shadestepper is probably what you think of when you imagine assassins. This subclass revolves around stacking many different buffs and debuffs together, and unleashing massive bursts of damage from invisibility.
+
+This is done by putting marks on enemies with smoke bombs, which increases the damage enemies take, and using those marks to gain daggers to increase damage dealt, and allowing many different abilities to come together with a backstab to often hit for over a million damage in the late game.
+
+The shadestepper typically ends up having lower health than many classes, while having to be very close to enemies, making it one of the biggest glass-cannon archetypes in the game. 
+
+##### Trickster
+
+The Trickster is another burst-type subclass, allowing the player to summon many clones, which copy the player's spells, along with casting some of their own in certain circumstances.
+
+This subclass revolves around the trick debuff, which is stacked when the player's clones deal damage, and can be consumed to provide different elemental buffs based on which were selected in the ability tree. This subclass is a bit sturdier than the shadestepper, but lacks the invisibility uptime that lets the shadestepper stay alive. In return, some summoned clones will reduce the damage the player takes.
+
+The weaknesses of this subclass are its survivability, along with getting into and out of range of enemies while surviving. 
+
+##### Acrobat
+
+The Acrobat is very different from the other assassin subclasses, instead focusing on mobility and constant damage over time rather than big bursts of damage. The acrobat can permanently fly given enough mana, and stays out of enemy reach while dishing out constant enhanced multihit attacks from above.
+
+This is yet another assassin subclass with its own high difficulty, featuring precise spell cycles to stay airborne and being able to safely use its stomp ability at the right time. While the subclass can stay out of range of most attacks, many enemies have counters to it, such as pulling spells and various ranged attacks.
+
+</details>
+
+#### Mage
+
+The Mage is a very diverse class that can fit well on just about any team, featuring damage subclasses, and one of two healing-focused subclasses in the game. Its three subclasses are Riftwalker (burst), Lightbender (healing), and Arcanist (glass damage).
+
+<details>
+<summary><strong>Expand this to see an overview of mage's archetypes!</strong></summary>
+
+##### Riftwalker
+
+The Riftwalker is the more burst-focused subclass for mage. It revolves around the winded mechanic,which can be stacked through melee attacks or ice snake, and increases meteor damage dealt. Winded can be consumed for a massive buff, allowing spells to be free, keeping winded on enemies to maintain the damage increase, and allowing the player to gain creative mode flight.
+
+The primary weakness of this subclass is that same winded mechanic, which can often be hard to stack up properly, or take too much time to stack to maintain a good damage cycle.
+
+##### Light bender
+
+The Light Bender is a healing focused subclass that provides great support to nearby allies. It also features good single-target damage through its orb mechanics, which will follow up as the player uses melee attacks.
+
+This subclass is almost always run with parts of the Riftwalker tree, which has great synergy with winded. The playstyle of the Light Bender involves constantly healing to keep its orb health high, so they can keep the orbs attacking constantly, while standing near other players to share that healing.
+
+The Light Bender's weaknesses are that even with the winded buff, it can still take time to ramp up damage.
+
+##### Arcanist
+
+The Arcanist is the only Mage subclass that cannot heal, instead trading the heal ability for a mana bank that can be given to the player. The Arcanist is a full damage mage subclass, dealing damage over time through massive amounts of spells being cast at once.
+
+The Arcanist's mana bank is charged through hitting enemies with abilities, and when used with enough mana, will recast the last 5 spells used. This allows the player to be casting spells through the mana bank, and as normal at the same time, while gaining a self-sustaining amount of mana to draw from.
+
+The biggest weakness of the subclass is its survivability, since it cannot heal and does not gain very high movement buffs like the Riftwalker does.
+
+</details>
+
+#### Shaman 
+
+The Shaman is the lowest effective health class in the game, taking significantly more damage than other classes, but can be used in an extremely diverse set of playstyles. The Shaman's subclasses are the Summoner (general), Ritualist (utility), and Acolyte (healing).
+
+<details>
+<summary><strong>Expand this to see an overview of assassin's archetypes!</strong></summary>
+
+##### Summoner
+
+The Summoner is quite self-explanatory in its name. This subclass focuses on summoning many totems and minions to constantly attack enemies with ease. The majority of damage that comes from this subclass comes from its puppet summons, and the aura spell from 3-4 totems at once.
+
+The Summoner is one of the easier classes to play in many situations, but can sometimes be difficult to keep track of ability uptime and totem locations. In addition, the summoner features low amounts of healing for themselves and nearby players, and is able to fuel mana into allies, giving it decent supportive capabilities.
+
+The weaknesses of the summoner are that the minions can be unpredictable at times, and can have low single target damage if they are split up, along with the Shaman's naturally low effective health.
+
+##### Ritualist
+
+The Ritualist is a subclass, focusing on different masks that give varying buffs and debuffs that the player can switch between, with a final ability allowing all masks to be used at once under the right circumstances.
+
+The Ritualist is usually used to support the other shaman subclasses, but can sometimes be used alone in some builds. It can be quite useful for certain forms of utility, for example, some ingredient farming. It can also be convenient for casual content, although rarely excels at specific things.
+
+This is the subclass' primary weakness, the challenges associated with being a pure ritualist (i.e. not branching off into the other subclasses as well).
+
+##### Acolyte
+The Acolyte is one of two healing focused subclasses in the game, however, it does not lack damage at all. The Acolyte focuses on a resource bar of blood that the entire kit is based around. This is filled few a few different means, but can primarily come from draining the user's health, and bleeding enemies within the totem's range.
+
+The acolyte can use three different abilities to consume this blood, with aura now casting a healing and damaging wave. Additionally, holding shift while casting totem or uproot can cast entirely new abilities. When shift-casting totem, tentacles give bleeding enemies damage vulerability and deal damage, while shift-casting uproot can cast a beam that gives allies overhealth and damages enemies.
+
+Though this subclass does not lack damage, it is one of the most vulnerable classes in the game, since the user must deal with decreased Shaman effective health, along with constant health drain from totems.
+</details>
 
 ---
 
@@ -42,7 +186,7 @@ Obtained primarily by completing raids, aspects generally enhance specific abili
 <small>Section written by Wenweia</small>
 
 ### Festival Seasons
-Previously, Wynn wouuld organise a unique event or quest for each major holiday. These have been standardised and replaced with a rotation of four seasonal festivals. Each festival redecorates detlas, has an event area reachable from detlas, implements some recurring minigames, and adds some cosmetics.
+Previously, Wynn would organise a unique event or quest for each major holiday. These have been standardised and replaced with a rotation of four seasonal festivals. Each festival redecorates detlas, has an event area reachable from detlas, implements some recurring minigames, and adds some cosmetics.
 
 *Wynnter/Craftsmas* festivities were replaced with the *Festival of the Blizzard* (Winter) and *Hallowynn* festivities were replaced with the *Festival of the Spirits* (Autumn). Although spring and summer did not previously have their own events, they do now in the form of the *Festival of  the Heroes* (Spring) and the *Festival of the Bonfire* (Summer).
 
