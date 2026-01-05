@@ -20,9 +20,14 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 
 ### Building
 <p class="glass">To be written!</p>
+
 ### NPCS
-(including the new ones such as the misc bin and tome shelf)
-<p class="glass">To be written!</p>
+<small>Section written by Wenweia</small>
+	There are several types of utility NPCs exclusive to islands! In addition to purely cosmetic ones (such as message boards), and decorative / decofunctional ones (teleporters and furniture), several NPCs now have gameplay uses!
+
+​	Misc bins are like another bank! They are per-account (not per island or per class), and can store anything that isn't an item. They are a perfect solution to powders, quest items, ingredients, and the like clogging up your bank pages. Likewise, the tome shelf is another bank, albeit only for storing your excess tomes (see below).
+
+​	Build stands are ranklocked armour stands that can store an entire build (skill points, items, etc, albeit not skill trees) and item pedestals can display a single item. Both of these NPCs have historically been buggy, and as such, people are often hesitant to put overly valuable things in them.
 
 ---
 
@@ -33,6 +38,10 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 <p class="glass">To be written!</p>
 
 ---
+
+## Party Finder
+<small>Section by Wenweia</small>
+	Another new system/NPC is the party finder! Ever wanted to find people to do a dungeon with, to help with a quest, or to grind something? Finding them just got a lot easier! Added due to the fact that raids require multiple people to function, the party finder simply aggregates together people looking to form a party around some end. In certain cases (raids, events, etc) they will also notify random people with chat reminders in an attempt to find people to join you. 
 
 ## New Item Types
 ### Tomes
