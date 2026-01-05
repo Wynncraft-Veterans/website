@@ -58,9 +58,16 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
   - Can be obtained from the *The Nameless Anomaly* raid, and grants the player bonus gathering XP for all the gathering professions.
   </details>
 
-
 ### Amplifiers
-<p class="glass">To be written!</p>
+
+<small>Section written by Wenweia</small>
+
+​	Corkian amplifiers are a new type of reward that primarily appear through raids. T1 amps are very common, T2 amps are fairly common, and T3 amps are less common (your guild probably has a bunch floating around their bank for you to use).
+
+​	These items simply slightly boost the rolls you receive on items after you identify them (T1 amps give the smallest boost, T3 amps give you the strongest). This isn't always enough to counteract your luck though; if you have [terrible luck](https://www.wynnvets.org/docs/guild/culture/#wenluck--arxluck), it is still possible to end up with a truly bad roll despite having used amplifiers.
 
 ### Emerald Pouches
-<p class="glass">To be written!</p>
+
+<small>Section written by Wenweia</small>
+
+​	Wynn added another way to store items! This is not a slot, per se, but rather an item that can consume other items for storage. Imagine an emerald pouch as a little portable chest that only holds emeralds and emerald derivatives. If currency enters your inventory, it will be consumed by your pouch (if your pouch is a high enough level to hold it; t7 pouches can hold liquid emeralds, anything beyond that is pretty much a vanity item). If you buy something, the merchant and/or trademarket will consume emeralds from your pouch. If you need to access your emeralds, you can right click on the pouch.
