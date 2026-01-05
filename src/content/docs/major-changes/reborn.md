@@ -13,11 +13,6 @@ It aims to explain in broad strokes how such changes are relevant to modern game
 
 This is **not a changelog**, and this is also **not a guide**. For exact changes, see the changelogs linked on [the wiki](https://wynncraft.wiki.gg/wiki/Version_history).
 
-<div class="flex items-center glass text-white text-sm font-bold px-4 py-1" role="alert">
-  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z"/></svg>
-  <p>This article is under construction and is incomplete!</p>
-</div>
-
 ---
 
 ## Housing
@@ -44,7 +39,25 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 <p class="glass">To be written!</p>
 
 ### Charms
-<p class="glass">To be written!</p>
+<small>Section by JustGatze</small>
+
+​	Charms are a new type of items which are active by just being in your inventory. These items are received as rewards from raids and, unlike other items, provide effect when placed anywhere in your inventory (except for your bank). Usually, charms have a downside in addition to their upside.
+
+​	As with most other items, charms have identifications and, therefore, their quality depends on your RNG luck when rolling them. Currently, there are four different raids in the game, and therefore four different charms.
+
+<details>
+    <summary><strong>Expand this to see all charms currently in the game.</strong></summary>
+
+- **Charm of the Worm**
+  - Can be obtained  from the *Nest of the Grootslang* raid, and grants the player bonus combat XP from Lv. 60-80 content.
+- **Charm of the Light**
+  - Can be obtained from the *Orphion's Nexus of Light* raid, and grants the player bonus combat XP from Lv. 80-100 content.
+- **Charm of the Stone**
+  - Can be obtained from the *The Canyon Colussus* raid, and grants the player bonus loot from Lv. 90-110 content.
+- **Charm of the Void**
+  - Can be obtained from the *The Nameless Anomaly* raid, and grants the player bonus gathering XP for all the gathering professions.
+  </details>
+
 
 ### Amplifiers
 <p class="glass">To be written!</p>

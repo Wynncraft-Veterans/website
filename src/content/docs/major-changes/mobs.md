@@ -13,38 +13,67 @@ It aims to explain in broad strokes how such changes are relevant to modern game
 
 This is **not a changelog**, and this is also **not a guide**. For exact changes, see the changelogs linked on [the wiki](https://wynncraft.wiki.gg/wiki/Version_history).
 
-<div class="flex items-center glass text-white text-sm font-bold px-4 py-1" role="alert">
-  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z"/></svg>
-  <p>This article is under construction and is incomplete!</p>
-</div>
-
 ---
 
 ## EULA Changes
+
+<small>Section written by Wenweia.</small>
+
+​	In the middle of 2014, Mojang tightened its policies on third party server monetisation, enforcing the ways that third party servers could -- and crucially, could not -- collect funding from their users. Primarily a response to a bunch of low effort, copy/paste, servers that charged exorbitant sums of real life currency to lock/unlock portions of Mojang's own game design, the wording of these policy changes ended up being so broad as to profoundly impact all multiplayer servers.
+
+​	In essence, the changes meant that deriving income on anything that changed the way one's game (or minigame) played got prohibited (notwithstanding several interpretive exceptions and later changes).
+
+​	**For Wynn, this meant a removal of most of the features that had previously been  part of VIP. If you had VIP prior to this point, and are on your old account, you will see a veteran tag on your account**. The primary removed features are listed below, as are some of the ways Wynn expanded monetisation to try and sustain development costs without gameplay-driven VIP revenue (i.e. new complaint products and an expanded slate of ranks).
+
 ### Removal of Coins
-<p class="glass">To be written!</p>
+
+​	Previously, it was possible to buy an in-game currency, known as gold coins, in exchange for various vanity items and offerings. Mojang's changes prohibited in-game currencies from being directly pinned to real world value; gold coins were therefore removed for compliance.
+
+​	If you had gold coins after 2014, you could redeem them using an in-game interface for various modern offerings (bombs, etc; see below). **The ability to directly redeem gold coins was removed in 2025; if you still have gold coins, you can indirectly redeem them via a support ticket. Each gold coin is worth approximately two cents USD.**
+
+​	The mob update also overhauled its pet offerings; pets bought with gold coins still exist, are now unique, and cannot be obtained by anyone else!
 
 ### Changes to Rank Rewards
-<p class="glass">To be written!</p>
+
+​	Pretty much everything the previous VIP rank offered ended up being impacted by the policy changes in some way or another. Classes can no longer be paywalled (assassin is now available to everyone) and were replaced with class reskins (every class type has a paid reskin variant that just changes some textures). Areas of the map can no longer be paywalled (Rymek, for example, is now available to everyone), and were replaced with paid beta access to upcoming features. Larger parties were removed, with all parties now being limited to 10 players. Extra soul point regeneration and the rank's permanent xp bonus were also removed in favour of bombs (see below). Donator gear and VIP town were also removed (see below).
 
 ### Per-World Rewards (Bombs)
-<p class="glass">To be written!</p>
+
+​	Although permanent and/or personal gameplay bonuses are now prohibited, offerings impacting the entire server are exempted. This is interpreted to include worlds, and as a result, bombs were implemented. Bombs simply apply effects to an entire world instead of just to you. For example, an XP bomb will give everyone on your world 20 minutes of double XP gain.
+
 
 ### VIP Town Removal
-<p class="glass">To be written!</p>
+​	Since rank restricted items and gear were prohibited, there was no longer any purpose in keeping a place through which to distribute them. VIP town was therefore removed, in its entirety; in the game's lore, [Bak'al's army reduced the town to the ruins that still exist outside of detlas](https://wynncraft.wiki.gg/wiki/Bak%27al%27s_Destruction_2)! Don't worry, the [Scam Merchant](https://wynncraft.wiki.gg/wiki/Scam_Merchant) survived, and now exists near Llevigar as an easter egg!) 
+
 
 ---
 
 ## Different Mob Types
-<p class="glass">To be written!</p>
+​	Surprising nobody, the mob update changed mobs! This fairly thorough overhaul changed both the types of mobs available in the game and their behaviours. In general, mobs can now be one of several different types (shown through the colour of their nametag) and can exhibit one of several different types of behaviour AIs (of which there now exist so many that it is impractical to list -- in effect, mobs can use spells to attack you).
+
+​	The new mob types are as follows: red is  hostile, and attacks you; light green is passive, and will never attack you; yellow is neutral, and will only attack you upon being damaged; blue is defending, and will attack other mobs to protect you; dark green is an NPC in some way related to a quest; pink is a merchant, peaceful and interactable; and white is an NPC that, while providing dialog, is unrelated to any quests/progression).
+
+
+
 
 ---
 
 ## Guilds
-<p class="glass">To be written!</p>
+
+​	Guilds were added in this update! Effectively, they are subcommunities of players who often play the game together. Guilds have a certain number of slots and generally have an ever changing in-game membership as people come and go. In essence, there are two types of guilds:
+
+### Competitive (On-Map) Guilds
+
+​	These are usually groups of highly active, highly motivated, meta-attuned players who come together to compete with other similar groups. Through careful management, balancing obligations, etc. these guilds maintain a strong enough, nearly 24/7, presence to defend claims (portions of the map) through a mechanic known as warring. By so doing, they climb various [https://www.wynnpool.com/stats/leaderboard](leaderboards). Sometimes, they also host events for their members.
+
+### Casual (Off-Map) Guilds
+
+​	These function primarily as extended friend groups who take advantage of a guild's quality of life features (a shared global chat, bank, island, etc.) to hang out with each other. There are generally far less obligations, with everyone progressing through the game and their interests at their own pace. In general, off-map guilds tend to be far less formal.
 
 ---
 
 ## Tower-Style Quests
-(TOA, later Qira & LI)
-<p class="glass">To be written!</p>
+
+​	The mob update introduced the Tower of Ascension, a unique type of quest we will term 'TOA style quests'. Generally, each provincial level expansion adds one of these, with Gavel Province's TOA being Qira, and Corkus Province's TOA being Legendary Island. Although technically completable at lower levels, these quests are designed to be content for later in the game.
+
+​	In effect, you repeatedly fight your way through floors of minions en route to floor boss rooms. After fighting all the floor bosses, you get to fight a final boss. Beating any boss, especially the final boss, unlocks boss-specific untradable items that are used in most end-game builds. 
