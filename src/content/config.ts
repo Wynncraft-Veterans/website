@@ -96,7 +96,7 @@ const home = defineCollection({
 const indexCards = defineCollection({
   loader: glob({
     pattern: "-index.{md,mdx}",
-    base: "./src/content/index-cards",
+    base: "./src/content/facts",
   }),
   schema: z.object({
     title: z.string(),

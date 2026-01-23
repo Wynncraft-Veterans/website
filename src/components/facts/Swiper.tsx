@@ -90,13 +90,13 @@ const ConversationSwiper = ({ cards }: Props) => {
                     setCurrentIndex(newIndex);
                   }
                 }}
-                aria-label="Jump to card number"
+                aria-label="Jump to fact number"
               />
             </div>
             <div
               className="cursor-pointer col-4 p-0 text-txt-p dark:text-darkmode-txt-p text-center"
               onClick={() => swiper?.slideNext()}
-              aria-label="Next card"
+              aria-label="Next fact"
             >
               <FaArrowRight className="m-2 inline-block" />
             </div>
@@ -105,8 +105,8 @@ const ConversationSwiper = ({ cards }: Props) => {
             <div
               className="cursor-pointer col-4 p-0 text-txt-p dark:text-darkmode-txt-p text-center"
               onClick={() => swiper?.slideTo(todayIndex)}
-              title="Jump to today's card"
-              aria-label="Jump to today's card"
+              title="Jump to most recent fact"
+              aria-label="Jump to most recent fact"
             >
               <FaCalendarDay className={"m-2 inline-block"} />
             </div>
@@ -115,8 +115,8 @@ const ConversationSwiper = ({ cards }: Props) => {
               onClick={() =>
                 swiper?.slideTo(Math.floor(Math.random() * cards.length))
               }
-              title="Jump to random card"
-              aria-label="Jump to random card"
+              title="Jump to random fact"
+              aria-label="Jump to random fact"
             >
               <FaQuestion className={"m-2 inline-block"} />
             </div>
