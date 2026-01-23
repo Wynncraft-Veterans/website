@@ -7,7 +7,7 @@ pubDate: 2025-08-06
 modDate: 2025-08-06
 ---
 
-This guide aims to acquaint pre-ocean players with the broad strokes of changes implemented between Wynn versions [1.10](http://localhost:4321/history/2013) and [1.11.2](http://localhost:4321/history/2014).
+This guide aims to acquaint pre-ocean players with the broad strokes of changes implemented between Wynn versions [1.10](http://wynnvets.org/history/2013) and [1.11.2](http://wynnvets.org/history/2014).
 
 It aims to explain in broad strokes how such changes are relevant to modern gameplay and provide enough information to get started with the mentioned features.
 

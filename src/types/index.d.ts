@@ -10,6 +10,7 @@ export type DocsEntry = CollectionEntry<"docs">;
 export type HomeEntry = CollectionEntry<"home">;
 export type IndexCardsEntry = CollectionEntry<"indexCards">;
 export type HistoryEntry = CollectionEntry<"history">;
+export type PageEntry = CollectionEntry<"page">;
 export type ProjectsEntry = CollectionEntry<"projects">;
 export type SubcommunitiesEntry = CollectionEntry<"subcommunities">;
 export type TermsEntry = CollectionEntry<"terms">;
@@ -20,6 +21,7 @@ export type SearchableEntry =
   | BlogEntry
   | DocsEntry
   | HistoryEntry
+  | PageEntry
   | ProjectsEntry
   | SubcommunitiesEntry
   | TermsEntry;

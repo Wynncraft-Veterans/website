@@ -116,6 +116,17 @@ const history = defineCollection({
     }),
 });
 
+const page = defineCollection({
+  loader: glob({ pattern: "**\/[^_]*.{md,mdx}", base: "./src/content/page" }),
+  schema: ({ image }) =>
+    searchable.extend({
+      date: z.date().optional(),
+      image: image().optional(),
+      author: reference("authors").optional(),
+      imageAlt: z.string().default("image"),
+    }),
+});
+
 const projects = defineCollection({
   loader: glob({
     pattern: "-index.{md,mdx}",
@@ -164,6 +175,7 @@ export const collections = {
   home,
   indexCards,
   history,
+  page,
   projects,
   subcommunities,
   terms,
