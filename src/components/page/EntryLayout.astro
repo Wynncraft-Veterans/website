@@ -26,20 +26,14 @@ const entryDescription =
 ---
 
 <BaseLayout title={title} description={entryDescription} image={image?.src}>
-  <section class="flex container justify-center my-8">
-    <div class="col md:col-8">
-      <article class="">
-        <section>
-          <EntryHeader entry={entry} showImage showAuthor showDate />
-        </section>
-        <section class="content mb-4 glass px-4 rounded-lg">
-          <Content />
-        </section>
-      </article>
-    </div>
+  <section class="section row">
+    <!--<div class="container">
+      <div class="row">-->
+        <Content />
+      <!--</div>
+    </div>-->
   </section>
-  <section class=`container mt-4 mb-8 col md:col-8`>
-    <hr />
+  <section class="container mt-4 mb-8 col md:col-8">
     <div class="flex items-center justify-center lg:justify-end mt-4">
       <Share
         title={title}
@@ -49,10 +43,4 @@ const entryDescription =
       />
     </div>
   </section>
-  <Pagination
-    collection="page"
-    pageIDs={pageIDs}
-    pageIndex={pageIndex}
-    pageCount={pageCount}
-  />
 </BaseLayout>

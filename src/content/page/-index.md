@@ -1,4 +1,4 @@
 ---
-title: History
-description: A collection of information about the early history of Wynncraft
+title: Pages
+description: Random supplemental pages and applications.
 ---
