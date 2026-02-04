@@ -23,6 +23,13 @@ modDate: 2024-08-03
 
 ​	The only caveat is that, due to limited slots in the guild, we may need to kick you if you are <u>away for more than two weeks</u>. If this happens, you can always re-join, no questions asked.
 
+<div class="glass rounded p-2 text-center">
+    <b>Fruma Policy</b><br/>
+    Due to high slot demand, temporarily, the bot's autokick has been reduced to 9 days.<br/>
+    As always, if you get kicked from this, you are welcome to rejoin no questions asked!<br/>
+    <small>This is a temporary measure which will be reverted once the fruma spike dies down.</small>
+</div>
+
 ### Recruiting Others
 ​	We love making new friends! **You can add others to the guild** with `gu invite <username>`! Just please make sure they are a good match for our atmosphere and that they joined Wynn <2020. 
 
@@ -38,7 +45,7 @@ modDate: 2024-08-03
 ![Image of the guild scroll library.](https://raw.githubusercontent.com/Wynncraft-Veterans/website/refs/heads/main/src/assets/docs/general/image-20250806210011990.png)
 
 ### The Guild Island
-​	A recent update to Wynncraft added housing islands! Notably these include an assortment of NPCs (featuring a parallel banking system for ingredients/keys/whatnot!) and buildings. **Everyone in the guild gets to leave the mark on the island by claiming an apartment**. Let a strategist know if you want to take us up on the offer!
+​	A recent update to Wynncraft added housing islands! Notably these include an assortment of NPCs (featuring a parallel banking system for ingredients/keys/whatnot!) and buildings. **Everyone in the guild gets to leave the mark on the island by claiming an apartment**. For more information, see [this article](http://wynnvets.org/docs/guild/housing)!
 ![Image of an empty VETS member apartment](https://raw.githubusercontent.com/Wynncraft-Veterans/website/refs/heads/main/src/assets/docs/general/image-20250806211235524.png)
 ![Image of the VETS guild island](https://raw.githubusercontent.com/Wynncraft-Veterans/website/refs/heads/main/src/assets/docs/general/image-20250806210844962.png)![Image of some NPCs on the VETS island](https://raw.githubusercontent.com/Wynncraft-Veterans/website/refs/heads/main/src/assets/docs/general/image-20250806210956212.png)
 
