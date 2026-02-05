@@ -100,7 +100,7 @@ input, select, textarea {
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/vets_background.png");
 		background-size: auto,
  cover;
 		background-attachment: fixed,
@@ -3581,7 +3581,7 @@ input, select, textarea {
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/vets_background.png");
 			background-size: auto,
  cover;
 			background-position: center,
@@ -3911,6 +3911,76 @@ input, select, textarea {
 					box-shadow: inset 0 -1px 0 0 #2d3a69, 0 1px 0 0 #2d3a69;
 				}
 
+		/* ===== Spotlight Image Background Sections ===== */
+
+			.wrapper.spotlight.style1,
+			.wrapper.spotlight.style2,
+			.wrapper.spotlight.style3 {
+				background-color: transparent;
+				isolation: isolate;
+			}
+
+			.wrapper.spotlight.style1 .inner,
+			.wrapper.spotlight.style2 .inner,
+			.wrapper.spotlight.style3 .inner {
+				position: relative;
+				z-index: 1;
+			}
+
+			.wrapper.spotlight.style1:after,
+			.wrapper.spotlight.style2:after,
+			.wrapper.spotlight.style3:after {
+				display: none;
+			}
+
+			/* Section 1 - Day (non-alt: slants right-upward) */
+			.wrapper.spotlight.style1:before {
+				top: -6.5em;
+				bottom: -6.5em;
+				left: 0;
+				height: auto;
+				background-image: url("../../images/bwca-night.png");
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				clip-path: polygon(0 6.5em, 100% 0, 100% 100%, 0 calc(100% - 6.5em));
+				box-shadow: none;
+				transform: none;
+				z-index: 0;
+			}
+
+			/* Section 2 - Dusk (alt: slants left-upward) */
+			.wrapper.spotlight.style2:before {
+				top: -6.5em;
+				bottom: -6.5em;
+				left: 0;
+				height: auto;
+				background-image: url("../../images/bwca-dusk.png");
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				clip-path: polygon(0 0, 100% 6.5em, 100% calc(100% - 6.5em), 0 100%);
+				box-shadow: none;
+				transform: none;
+				z-index: 0;
+			}
+
+			/* Section 3 - Night (non-alt: slants right-upward) */
+			.wrapper.spotlight.style3:before {
+				top: -6.5em;
+				bottom: -6.5em;
+				left: 0;
+				height: auto;
+				background-image: url("../../images/bwca-night.png");
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				clip-path: polygon(0 6.5em, 100% 0, 100% 100%, 0 calc(100% - 6.5em));
+				box-shadow: none;
+				transform: none;
+				z-index: 0;
+			}
+
 		@media screen and (max-width: 980px) {
 
 			.wrapper {
@@ -4009,6 +4079,51 @@ input, select, textarea {
 
 		}
 
+		/* Responsive: Image spotlight backgrounds */
+		@media screen and (max-width: 980px) {
+
+			.wrapper.spotlight.style1:before {
+				top: -4.75em;
+				bottom: -4.75em;
+				clip-path: polygon(0 4.75em, 100% 0, 100% 100%, 0 calc(100% - 4.75em));
+			}
+
+			.wrapper.spotlight.style2:before {
+				top: -4.75em;
+				bottom: -4.75em;
+				clip-path: polygon(0 0, 100% 4.75em, 100% calc(100% - 4.75em), 0 100%);
+			}
+
+			.wrapper.spotlight.style3:before {
+				top: -4.75em;
+				bottom: -4.75em;
+				clip-path: polygon(0 4.75em, 100% 0, 100% 100%, 0 calc(100% - 4.75em));
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.wrapper.spotlight.style1:before {
+				top: -2.5em;
+				bottom: -2.5em;
+				clip-path: polygon(0 2.5em, 100% 0, 100% 100%, 0 calc(100% - 2.5em));
+			}
+
+			.wrapper.spotlight.style2:before {
+				top: -2.5em;
+				bottom: -2.5em;
+				clip-path: polygon(0 0, 100% 2.5em, 100% calc(100% - 2.5em), 0 100%);
+			}
+
+			.wrapper.spotlight.style3:before {
+				top: -2.5em;
+				bottom: -2.5em;
+				clip-path: polygon(0 2.5em, 100% 0, 100% 100%, 0 calc(100% - 2.5em));
+			}
+
+		}
+
 /* Footer */
 
 	#footer .inner {
@@ -4075,7 +4190,7 @@ input, select, textarea {
 
 		#footer {
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/vets_background.png");
 			background-size: auto,
  cover;
 			background-position: center,
