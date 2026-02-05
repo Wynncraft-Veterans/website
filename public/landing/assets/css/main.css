@@ -4012,6 +4012,37 @@ input, select, textarea {
 				z-index: 0;
 			}
 
+		/* ===== Discord CTA Section (#five) ===== */
+
+			#five {
+				background-color: transparent;
+				isolation: isolate;
+			}
+
+			#five .inner {
+				position: relative;
+				z-index: 1;
+			}
+
+			#five:after {
+				display: none;
+			}
+
+			#five:before {
+				top: -6.5em;
+				bottom: -6.5em;
+				left: 0;
+				height: auto;
+				background-image: url("https://images.unsplash.com/photo-1685391722227-df9eec0583ec");
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				clip-path: polygon(0 6.5em, 100% 0, 100% 100%, 0 calc(100% - 6.5em));
+				box-shadow: none;
+				transform: none;
+				z-index: 0;
+			}
+
 		@media screen and (max-width: 980px) {
 
 			.wrapper {
@@ -4137,6 +4168,12 @@ input, select, textarea {
 				clip-path: polygon(0 0, 100% 4.75em, 100% calc(100% - 4.75em), 0 100%);
 			}
 
+			#five:before {
+				top: -4.75em;
+				bottom: -4.75em;
+				clip-path: polygon(0 4.75em, 100% 0, 100% 100%, 0 calc(100% - 4.75em));
+			}
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -4163,6 +4200,12 @@ input, select, textarea {
 				top: -2.5em;
 				bottom: -2.5em;
 				clip-path: polygon(0 0, 100% 2.5em, 100% calc(100% - 2.5em), 0 100%);
+			}
+
+			#five:before {
+				top: -2.5em;
+				bottom: -2.5em;
+				clip-path: polygon(0 2.5em, 100% 0, 100% 100%, 0 calc(100% - 2.5em));
 			}
 
 		}
