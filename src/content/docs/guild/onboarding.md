@@ -31,7 +31,16 @@ modDate: 2024-08-03
 </div>
 
 ### Recruiting Others
-​	We love making new friends! **You can add others to the guild** with `gu invite <username>`! Just please make sure they are a good match for our atmosphere and that they joined Wynn <2020. 
+​	We love making new friends! **You can add others to the guild** with `gu invite <username>`! Just please make sure they are a good match for our atmosphere and that they joined Wynn <2018. 
+
+<div class="glass rounded p-2 text-center">
+    <b>Fruma Policy</b><br/>
+    <i>Usually</i> you can invite people directly to the guild!<br/>
+    Unfortunately, slots are currently in extremely high demand and we are full!<br/><br/>
+    Instead, for the time being, please add people to the waitlist on our discord<br/>
+    This can be done with `~waitlist add <username>`<br/><br/>
+    <small>This is a temporary measure which will be reverted once the fruma spike dies down.</small>
+</div>
 
 ---
 
