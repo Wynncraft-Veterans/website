@@ -7,6 +7,14 @@ pubDate: 2025-08-16
 modDate: 2025-08-16
 ---
 
+<div class="glass rounded p-2 text-center">
+    <b>Construction</b><br/>
+    VETS anni parties have undergone many changes over the past year!<br/>
+    This article is currently being edited to bring it up to date with current practices.<br/><br/>
+    Reading this will still be informative, but please check back later!<br/>
+</div>
+
+
 <small>This section was written by Holidaze and edited by Wenweia</small>
 
 Annihilation (or Anni for short) is currently the only major world event in Wynncraft, and appears roughly once every 3 days. A countdown will be shown 11-12 hours in advance, allowing players to plan accordingly. The event itself involves facing off against Annihilation at the nether portal near Detlas.
