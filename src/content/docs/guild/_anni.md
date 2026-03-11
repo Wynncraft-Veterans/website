@@ -9,9 +9,8 @@ modDate: 2026-03-11
 
 <div class="glass rounded p-2 text-center">
     <b>Construction</b><br/>
-    VETS anni parties have undergone many changes over the past year!<br/>
-    This article is currently being edited to bring it up to date with current practices.<br/><br/>
-    Reading this will still be informative, but please check back later!<br/>
+    This page is under construction!<br/>
+    Please ignore the mess!
 </div>
 
 

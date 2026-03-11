@@ -1,0 +1,1070 @@
+---
+title: VETS' Annihilation
+description: "A quick overview of the Annihilation Major Event Boss for members of the VETS guild."
+image: "@assets/docs/guides/anni.png"
+imageAlt: "Wynncraft's anni boss."
+pubDate: 2025-08-16
+modDate: 2026-03-11
+---
+
+**Wynn's only [Major World Event](http://localhost:4321/docs/major-changes/rekindled#major), Anni, is a group boss battle occuring every few days.** <br/>
+Occuring at effectively random times, this is a 10 player boss battle announced 8h in advance. We track the event and send out pings in [#annihilation](https://discord.com/channels/1313769181321236490/1339393368672702567), which you can [subscribe](https://discord.com/channels/1313769181321236490/1318077157938954270/1458149624924733521) to.
+
+The VETS anni system is designed to be as inclusive as possible, with a focus on helping returning players get involved and learn the mechanics. 
+**If you are a member of the in-game guild (or on the waitlist), we will do our best to get you a slot in the event and ensure you have the support needed to succeed.** <small>This is usually a guarantee, but our capacity is <abbr title="Click this for an explanatory popup!"><button type="button" popovertarget="anni-capacity-popover" class="underline bg-transparent border-0 p-0 m-0 cursor-pointer text-inherit">limited</button></abbr></small>.
+
+
+<div id="anni-capacity-popover" popover class="glass rounded p-4 max-w-lg">
+	<button type="button" popovertarget="anni-capacity-popover" popovertargetaction="hide" class="float-right bg-transparent border-0 p-0 m-0 cursor-pointer text-inherit" aria-label="Close">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5" aria-hidden="true">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+		</svg>
+	</button>
+	<h3>Capacity Limits</h3>
+	<p>Guild Annihilation parties consist of multiple parties spread across multiple worlds: each party has a wynn-imposed limit of 10 users. Before filling a party, we make sure to assign it a composition we are confident can succeed; generally, this means a <em>minimum</em> of 5 users with highly capable builds.</p>
+	
+	<p><strong>Sometimes, we do not have enough builds to form enough parties to fit everyone, and other times, we have enough builds but the core number is insufficiently divisible.</strong> In these cases, we have to make the difficult decision to limit the number of attendees as to ensure that the parties we do run retain a high chance of success.</p>
+
+	<p>Finally, we also have to consider the practical limitations of creating parties, giving people time to get ready, and ensuring everyone fits on a world.
+	Even in cases where enough people show up later to have allowed us to split into more parties (and thus handle more people), we may simply not have the time to do so.</p>
+
+	<blockquote>
+		<p><strong>TLDR:</strong> We are always working to improve our capacity, and will do our best to guarantee a slot, but sometimes circumstances may prevent us from adding you to a party.
+		We thank you for your understanding.</p>
+	</blockquote>
+</div>
+
+In the case of extra slots, friends from the wider wynnvets community are welcome to fill them.
+
+<div class="grid gap-4 md:grid-cols-3 my-6">
+	<a href="#preparing" class="glass rounded p-4 block text-center transition hover:scale-[1.02] hover:no-underline no-underline">
+		<div class="flex justify-center">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-9 w-9" aria-hidden="true">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m5.25 10.5a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V5.25A2.25 2.25 0 0 1 6 3h6.879a2.25 2.25 0 0 1 1.591.659l5.121 5.121a2.25 2.25 0 0 1 .659 1.591V20.25Z" />
+			</svg>
+		</div>
+		<h3 class="mt-2 mb-1">Preparing</h3>
+		<p>Become eligible to attend future (not-yet-announced) Anni events!</p>
+	</a>
+
+	<a href="#attending" class="glass rounded p-4 block text-center transition hover:scale-[1.02] hover:no-underline no-underline">
+		<div class="flex justify-center">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-9 w-9" aria-hidden="true">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3.75 8.25h16.5M5.25 4.5h13.5a1.5 1.5 0 0 1 1.5 1.5v13.5a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5V6a1.5 1.5 0 0 1 1.5-1.5Zm9.75 8.25h.008v.008H15v-.008Zm-3 0h.008v.008H12v-.008Zm-3 0h.008v.008H9v-.008Z" />
+			</svg>
+		</div>
+		<h3 class="mt-2 mb-1">Attending</h3>
+		<p>Indicate your intention to attend a specific, announced, Anni.</p>
+	</a>
+
+	<a href="#partaking" class="glass rounded p-4 block text-center transition hover:scale-[1.02] hover:no-underline no-underline">
+		<div class="flex justify-center">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-9 w-9" aria-hidden="true">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6a4.5 4.5 0 1 0-4.5 4.5A4.5 4.5 0 0 0 14.25 6ZM3.75 20.25a8.25 8.25 0 0 1 12.99-6.76M17.25 14.25l1.5 1.5 3-3" />
+			</svg>
+		</div>
+		<h3 class="mt-2 mb-1">Partaking</h3>
+		<p>What to do during the event itself once you are all set to attend.</p>
+	</a>
+</div>
+
+---
+
+## Preparing
+
+<a id="preparing"></a>
+
+**As our <abbr title="Click this for an explanatory popup!"><button type="button" popovertarget="anni-capacity-popover" class="underline bg-transparent border-0 p-0 m-0 cursor-pointer text-inherit">capacity limitations</button></abbr> permit, we prioritise, in order:**
+
+<div class="not-prose text-txt-s dark:text-darkmode-txt-s">
+	<ol class="my-0 list-decimal pl-6 leading-tight">
+		<li class="my-0">Members of the guild.</li>
+		<li class="my-0">Members on the waitlist.</li>
+		<li class="my-0">Members of the wider wynnvets community <em>not</em> in other guilds.</li>
+		<li class="my-0">Members of allied guilds.</li>
+		<li class="my-0">
+			Members of the community in other guilds.
+			<ul class="my-0 list-disc pl-6">
+				<li class="my-0">Most other guilds have their own parties, and to conserve our capacity, we prefer you attend those.</li>
+			</ul>
+		</li>
+	</ol>
+</div>
+
+If you are a member of one of these groups, you are eligible!<br/>
+
+**Please determine your role (below), ask staff for a link to the Anni Roles form, and indicate your capabilities and preferences!** If you need help determining your capabilities, or help with builds, ask [here](https://discord.com/channels/1313769181321236490/1359228120623878394)!
+
+<div class="rounded p-2" id="role-builds">
+	<style>{`
+		#role-builds {
+			background: rgba(0,0,0,0.25);
+			border: 1px solid rgba(255,255,255,0.08);
+		}
+		#role-builds [role="tablist"] {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding-bottom: 0;
+			margin-bottom: 0;
+			position: relative;
+			z-index: 1;
+		}
+		#role-builds [role="tab"] {
+			background: rgba(255,255,255,0.2);
+			border: 1px solid rgba(255,255,255,0.11);
+			border-bottom: none;
+			border-radius: 0.375rem 0.375rem 0 0;
+			padding: 0.4rem 0.75rem;
+			cursor: pointer;
+			color: inherit;
+			font-size: 0.85rem;
+			transition: background 0.15s, border-color 0.15s;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			line-height: 1.2;
+			margin-bottom: -1px;
+			opacity: 0.9;
+		}
+		#role-builds [role="tab"] .tab-alt {
+			font-size: 0.6rem;
+			opacity: 0.55;
+			font-weight: 400;
+		}
+		#role-builds [role="tab"]:hover {
+			background: rgba(255,255,255,0.3);
+			opacity: 0.95;
+		}
+		#role-builds [role="tab"][aria-selected="true"] {
+			background: rgba(255,255,255,0.32);
+			border-color: rgba(255,255,255,0.2);
+			border-bottom: 1px solid rgba(255,255,255,0.32);
+			border-bottom-color: transparent;
+			font-weight: 600;
+			opacity: 1;
+		}
+		#role-builds [role="tabpanel"] { display: none; }
+		#role-builds [role="tabpanel"].active {
+			display: block;
+			background: rgba(255,255,255,0.32);
+			border: 1px solid rgba(255,255,255,0.2);
+			border-top: none;
+			border-radius: 0 0 0.375rem 0.375rem;
+			padding: 1rem;
+		}
+		#role-builds .rb-header { margin-bottom: 0.75rem; }
+		#role-builds .rb-label { font-size: 1.15rem; font-weight: 700; }
+		#role-builds .rb-sublabel { font-size: 0.8rem; opacity: 0.7; }
+		#role-builds .rb-title { font-style: italic; margin-bottom: 0.5rem; opacity: 0.85; }
+		#role-builds .rb-req-bar {
+			display: flex;
+			align-items: baseline;
+			gap: 0.6rem;
+			border: 1px solid rgba(255,255,255,0.15);
+			background: rgba(90, 150, 255, 0.12);
+			border-radius: 0.375rem;
+			padding: 0.45rem 0.7rem;
+			margin-bottom: 0.5rem;
+		}
+		#role-builds .rb-req-label {
+			font-weight: 600;
+			font-size: 0.8rem;
+			text-transform: uppercase;
+			letter-spacing: 0.04em;
+			opacity: 0.75;
+			white-space: nowrap;
+		}
+		#role-builds .rb-req-content {
+			font-size: 0.95rem;
+		}
+		#role-builds .rb-builds {
+			border: 1px solid rgba(255,255,255,0.15);
+			border-radius: 0.375rem;
+			padding: 0.45rem 0.7rem;
+			margin-bottom: 0.5rem;
+			background: rgba(255,255,255,0.04);
+		}
+		#role-builds .rb-builds > summary {
+			font-weight: 600;
+			font-size: 0.8rem;
+			text-transform: uppercase;
+			letter-spacing: 0.04em;
+			opacity: 0.75;
+			cursor: pointer;
+			list-style: none;
+		}
+		#role-builds .rb-builds > summary::-webkit-details-marker { display: none; }
+		#role-builds .rb-builds > summary::after {
+			content: '▾';
+			float: right;
+			opacity: 0.75;
+			transition: transform 0.15s ease;
+		}
+		#role-builds .rb-builds[open] > summary::after { transform: rotate(180deg); }
+		#role-builds .rb-builds ul {
+			margin: 0.5rem 0 0;
+			padding-left: 1.1rem;
+		}
+		#role-builds .rb-builds li { margin: 0.2rem 0; }
+		.dark #role-builds [role="tabpanel"],
+		.dark #role-builds [role="tab"],
+		.dark #role-builds [role="tab"] .tab-alt,
+		.dark #role-builds .rb-header,
+		.dark #role-builds .rb-title,
+		.dark #role-builds .rb-req-bar,
+		.dark #role-builds .rb-req-label,
+		.dark #role-builds .rb-req-content,
+		.dark #role-builds .rb-builds,
+		.dark #role-builds .rb-builds > summary {
+			color: #fff;
+		}
+	`}</style>
+
+	<div role="tablist" aria-label="Anni role builds">
+		<button role="tab" aria-selected="true" aria-controls="rb-fill" id="rb-tab-fill" tabindex="0">Fill<span class="tab-alt">aka. Carry</span></button>
+		<button role="tab" aria-selected="false" aria-controls="rb-hmk" id="rb-tab-hmk" tabindex="-1">Healing Mob Killer<span class="tab-alt">aka. Tertiary</span></button>
+		<button role="tab" aria-selected="false" aria-controls="rb-sk" id="rb-tab-sk" tabindex="-1">Sun Killer<span class="tab-alt">aka. Secondary</span></button>
+		<button role="tab" aria-selected="false" aria-controls="rb-bk" id="rb-tab-bk" tabindex="-1">Boss Killer<span class="tab-alt">aka. Primary</span></button>
+		<button role="tab" aria-selected="false" aria-controls="rb-ph" id="rb-tab-ph" tabindex="-1">Party Healer<span class="tab-alt">aka. Healer</span></button>
+		<button role="tab" aria-selected="false" aria-controls="rb-tank" id="rb-tab-tank" tabindex="-1">Party Tank<span class="tab-alt">aka. Tank</span></button>
+	</div>
+
+	{/* ── Fill (Carry) ── */}
+	<div role="tabpanel" id="rb-fill" aria-labelledby="rb-tab-fill" class="active">
+		<div class="rb-header">
+			<div class="rb-label">Players still learning the ropes or with unknown capabilities.</div>
+		</div>
+		<div class="rb-req-bar">
+			<span class="rb-req-label">Requirements</span>
+			<span class="rb-req-content">None!</span>
+		</div>
+		<p>
+			<strong>By default, you are placed in what we call a fill slot.</strong>
+			This effectively means we are not sure what you will be bringing to the event or where to slot you in.
+            Since there are no concrete expectations for fill players' contributions, you are free to experiment!
+		</p>
+		<p>
+			<strong>Fill slots are great for recent returners still working on their builds, but our capacity to offer them is limited!</strong>
+			For VETS' anni format to be viable, at most 30–40% of attendees can attend in fill slots.
+		</p>
+		<p>
+			<strong>In the likely event that we are unable to offer enough fill slots, we will prioritize those who have attended the least Annis.</strong>
+		</p>
+		<details class="rb-builds">
+			<summary>Recommended Builds</summary>
+			<ul>
+				<li><b>Any! Feel free to experiment!</b></li>
+				<li><a href="https://discord.com/channels/1313769181321236490/1359228120623878394" target="_blank" rel="noopener noreferrer">Feel free to ask the build channel if you need some help!</a></li>
+			</ul>
+		</details>
+	</div>
+
+	{/* ── Healing Mob Killer (Tertiary) ── */}
+	<div role="tabpanel" id="rb-hmk" aria-labelledby="rb-tab-hmk">
+		<div class="rb-header">
+			<div class="rb-label">Players tasked with eliminating mobs that regen the boss' health!</div>
+		</div>
+		<div class="rb-req-bar">
+			<span class="rb-req-label">Requirements</span>
+			<span class="rb-req-content"><strong>100kdps+ in mobile damage</strong><br/><small>Able to reliably jump (using movement spells) across a 15+ block lava pit.</small></span>
+		</div>
+		<p>
+			<strong>This is the most relaxed, accessible, role, but no less important!</strong>
+			Half way through the fight (and several times thereafter), several mobs will spawn and begin healing the boss.
+			It is important for these to be quickly killed as they reverse the party's progress.
+
+			<strong>These mobs do not have much health (100kdps is sufficient to reliably kill them), but they spawn in inconvenient places.</strong>
+			Having reliable mobility is integral to be able to reach these mobs (especially considering that movement during Anni is laggy!).
+		</p>
+		<details class="rb-builds">
+			<summary>Example Builds</summary>
+			<ul>
+				<li><strong>Warrior:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Shaman:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Mage:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Assassin:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Archer:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+			</ul>
+		</details>
+	</div>
+
+	{/* ── Sun Killer (Secondary) ── */}
+	<div role="tabpanel" id="rb-sk" aria-labelledby="rb-tab-sk">
+		<div class="rb-header">
+			<div class="rb-label">Players tasked with killing a giant floating orb that instakills everyone!</div>
+		</div>
+		<div class="rb-req-bar">
+			<span class="rb-req-label">Requirements</span>
+			<span class="rb-req-content"><strong>200kdps+ in ranged damage</strong><br/><small>The target of your damage floats about 10 blocks above the ground.</small></span>
+		</div>
+		<p>
+			<strong>Half way through the fight (and sometimes a few times thereafter), a giant floating orb spawns and hovers 10 blocks above the ground.</strong>
+			It grows over about 10 seconds, and if it isn't killed by then, it explodes, killing everyone.
+			Despite lacking health health, this mob needs to be killed <i>fast</i>, thus neccessiating about 200kdps.
+		</p>
+		<p>
+			<strong>It is this role's job to kill the orb whenever it spawns</strong>.
+			When not killing a sun (this role's first and only priority), sunkillers are also tasked with general crowd control
+			(i.e. killing other random mobs that spawn as to protect the primary and healer).
+		</p>
+
+		<details class="rb-builds">
+			<summary>Example Builds</summary>
+			<ul>
+				<li><strong>Warrior:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Shaman:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Mage:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Assassin:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Archer:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+			</ul>
+		</details>
+	</div>
+
+	{/* ── Boss Killer (Primary) ── */}
+	<div role="tabpanel" id="rb-bk" aria-labelledby="rb-tab-bk">
+		<div class="rb-header">
+			<div class="rb-label">The player tasked with melting the boss itself!</div>
+		</div>
+		<div class="rb-req-bar">
+			<span class="rb-req-label">Requirements</span>
+			<span class="rb-req-content"><strong>450kdps+ in close-range damage</strong><br/><small>The target of your damage is the boss itself (and its giant hitbox).</small></span>
+		</div>
+
+		<p>
+			<strong>Standing behind a tank and fueled by a healer, the player in this role has one job: dealing consistent and continuous damage to the boss itself.</strong>
+			There are other elements of the boss fight: those other elements are only of concern to other roles.
+		</p>
+		<p>
+			<strong>Since this role's sole job is to damage the boss itself, this role works best with <em>extremely</em> high dps builds</strong>.
+			Given its importance, we usually assign this role to experienced players, often using meta builds.
+		</p>
+		<details class="rb-builds">
+			<summary>Example Builds</summary>
+			<ul>
+				<li><strong>Warrior:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Shaman:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Mage:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Assassin:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Archer:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+			</ul>
+		</details>
+	</div>
+
+	{/* ── Party Healer (Healer) ── */}
+	<div role="tabpanel" id="rb-ph" aria-labelledby="rb-tab-ph">
+		<div class="rb-header">
+			<div class="rb-label">The player tasked with keeping the party alive!</div>
+		</div>
+		<div class="rb-req-bar">
+			<span class="rb-req-label">Requirements</span>
+			<span class="rb-req-content"><strong>40khps+ in healing</strong><br/><small>You only need to heal players in the core (roughly 5 blocks wide).</small></span>
+		</div>
+		<p>
+			<strong>Only a few players need to stand close to Anni: the healer's job is to keep those players alive.</strong>
+			Standing behind the tank, the healer is responsible for consistently healing (and sometimes overhealthing) those around them.
+			Like primary/secondary, this role never needs to leave the vicinity of the core (except for sigils).
+		</p>
+		<p>
+			Healing is this role's priority, but sometimes (especially if the party there are multiple healers and other roles have died), the healer can also do some crowd control.
+		</p>
+		<details class="rb-builds">
+			<summary>Example Builds</summary>
+			<ul>
+				<li><strong>Warrior:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Shaman:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Mage:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Assassin:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Archer:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+			</ul>
+		</details>
+	</div>
+
+	{/* ── Party Tank (Tank) ── */}
+	<div role="tabpanel" id="rb-tank" aria-labelledby="rb-tab-tank">
+		<div class="rb-header">
+			<div class="rb-label">The player tasked with protecting everyone from Anni's wrath!</div>
+		</div>
+		<div class="rb-req-bar">
+			<span class="rb-req-label">Requirements</span>
+			<span class="rb-req-content"><strong>100kehp+ with 15khpr+</strong><br/><small>You need to survive an insane amount of damage at close range.</small></span>
+		</div>
+
+		<p>
+			<strong>This role stands in the boss' face, directly in front of the portal, and absorbs all of Anni's direct damage.</strong>
+			Nobody should ever be in front of the tank, nor should the tank retreat for any reason.
+		</p>
+		<p>	
+			With the tank constantly absorbing all the boss' damage, the core can fulfil their other responsibilities in relative safety.
+		</p>
+
+		<details class="rb-builds">
+			<summary>Example Builds</summary>
+			<ul>
+				<li><strong>Warrior:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Shaman:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Mage:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Assassin:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+				<li><strong>Archer:</strong> <a href="https://wynnbuilder.github.io/builder/" target="_blank" rel="noopener noreferrer">Build</a></li>
+				<small><ul><li>Blank placeholder, build not yet available! Check back soon!</li></ul></small>
+			</ul>
+		</details>
+	</div>
+
+	<script>{`
+		(function() {
+			const container = document.getElementById('role-builds');
+			const tabs = container.querySelectorAll('[role="tab"]');
+			const panels = container.querySelectorAll('[role="tabpanel"]');
+
+			const hashToTab = {
+				'#fillBuild': 'rb-tab-fill',
+				'#tertiaryBuild': 'rb-tab-hmk',
+				'#secondaryBuild': 'rb-tab-sk',
+				'#primaryBuild': 'rb-tab-bk',
+				'#healerBuild': 'rb-tab-ph',
+				'#tankBuild': 'rb-tab-tank'
+			};
+
+			const tabToHash = {};
+			for (const [h, id] of Object.entries(hashToTab)) tabToHash[id] = h;
+
+			function activate(tab, updateHash) {
+				tabs.forEach(t => { t.setAttribute('aria-selected', 'false'); t.tabIndex = -1; });
+				panels.forEach(p => p.classList.remove('active'));
+				tab.setAttribute('aria-selected', 'true');
+				tab.tabIndex = 0;
+				container.querySelector('#' + tab.getAttribute('aria-controls')).classList.add('active');
+				if (updateHash && tabToHash[tab.id]) {
+					history.replaceState(null, '', tabToHash[tab.id]);
+				}
+			}
+
+			tabs.forEach(tab => {
+				tab.addEventListener('click', () => activate(tab, true));
+				tab.addEventListener('keydown', e => {
+					const idx = [...tabs].indexOf(tab);
+					let next;
+					if (e.key === 'ArrowRight') next = tabs[(idx + 1) % tabs.length];
+					else if (e.key === 'ArrowLeft') next = tabs[(idx - 1 + tabs.length) % tabs.length];
+					else if (e.key === 'Home') next = tabs[0];
+					else if (e.key === 'End') next = tabs[tabs.length - 1];
+					if (next) { e.preventDefault(); next.focus(); activate(next, true); }
+				});
+			});
+
+			const hash = window.location.hash;
+			if (hashToTab[hash]) {
+				const target = container.querySelector('#' + hashToTab[hash]);
+				if (target) {
+					activate(target, false);
+					container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				}
+			}
+		})();
+	`}</script>
+</div>
+
+<div class="not-prose my-8">
+	<a
+		href="#attending"
+		class="block rounded-xl p-6 md:p-8 text-center text-black dark:text-white no-underline hover:no-underline transition hover:scale-[1.005] bg-sky-500/15 dark:bg-sky-400/20 border border-black/10 dark:border-white/15 shadow-md"
+	>
+		<div class="text-xs md:text-sm tracking-[0.12em] font-semibold opacity-90">Once we know your role capabilities,<br/>you are ready for the next stage:</div>
+		<div class="text-2xl md:text-4xl font-extrabold mt-1">Attending The Event</div>
+		<div class="text-sm md:text-base mt-2 font-semibold opacity-90">Click to Move to the Next Section -></div>
+	</a>
+</div>
+
+---
+
+## Attending
+
+<a id="attending"></a>
+
+### Attendance RSVP
+
+#### RSVP Requirements
+To RSVP, simply make a post in [this channel](https://discord.com/channels/1313769181321236490/1339393368672702567) stating something to the effect of "I, username, will [probably/definitely] be able to attend".
+
+**If one is not a member of the in-game VETS guild, RSVPs are *required*.**<br/>
+**If one is a member of the in-game VETS guild, RSVPS are *only required if you can't show up 1hr early*.**
+<small>(notwithstanding the above, RSVPs are *always* appreciated)</small>
+
+#### Prioritization
+Given our <button type="button" popovertarget="anni-capacity-popover" class="underline bg-transparent border-0 p-0 m-0 cursor-pointer text-inherit">limitations</button>, we often need to prioritize attendees.
+
+<div id="anni-priority" class="not-prose rounded p-2 my-4">
+	<style>{`
+		#anni-priority {
+			background: rgba(0,0,0,0.25);
+			border: 1px solid rgba(255,255,255,0.08);
+		}
+		#anni-priority details > summary {
+			font-weight: 600;
+			font-size: 0.95rem;
+			cursor: pointer;
+			list-style: none;
+			padding: 0.5rem 0.4rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		#anni-priority details > summary::-webkit-details-marker { display: none; }
+		#anni-priority details > summary::after {
+			content: '▾';
+			opacity: 0.75;
+			transition: transform 0.15s ease;
+		}
+		#anni-priority details[open] > summary::after { transform: rotate(180deg); }
+		#anni-priority table {
+			width: 100%;
+			border-collapse: collapse;
+			font-size: 0.82rem;
+			line-height: 1.3;
+			background: rgba(255,255,255,0.4);
+			border-radius: 0.375rem;
+			overflow: hidden;
+		}
+		#anni-priority thead th {
+			background: rgba(255,255,255,0.15);
+			border: 1px solid rgba(255,255,255,0.1);
+			padding: 0.35rem 0.55rem;
+			text-align: left;
+			font-weight: 700;
+			font-size: 0.72rem;
+			text-transform: uppercase;
+			letter-spacing: 0.04em;
+			opacity: 0.85;
+		}
+		#anni-priority tbody td {
+			border: 1px solid rgba(255,255,255,0.07);
+			padding: 0.3rem 0.55rem;
+			vertical-align: middle;
+		}
+		#anni-priority .sub {
+			display: block;
+			font-size: 0.65rem;
+			opacity: 0.45;
+			font-weight: 400;
+			line-height: 1.2;
+			margin-top: 1px;
+		}
+		#anni-priority .lk-guaranteed { background: rgba(34,197,94,0.18); }
+		#anni-priority .lk-more-often { background: rgba(45,212,191,0.15); }
+		#anni-priority .lk-frequently { background: rgba(234,179,8,0.13); }
+		#anni-priority .lk-often { background: rgba(249,155,22,0.13); }
+		#anni-priority .lk-sometimes { background: rgba(239,68,68,0.12); }
+		#anni-priority .lk-rarely { background: rgba(239,68,68,0.22); }
+		#anni-priority .circ-guild { background: rgba(99,102,241,0.15); }
+		#anni-priority .circ-community { background: rgba(168,85,247,0.12); }
+		#anni-priority .circ-allied { background: rgba(236,72,153,0.12); }
+		#anni-priority .circ-external { background: rgba(239,68,68,0.14); }
+		#anni-priority .role-nonfill { background: rgba(59,130,246,0.14); }
+		#anni-priority .role-fill { background: rgba(156,163,175,0.14); }
+		#anni-priority .res-early { background: rgba(34,197,94,0.14); }
+		#anni-priority .res-strong { background: rgba(234,179,8,0.12); }
+		#anni-priority .res-weak { background: rgba(249,115,22,0.12); }
+		.dark #anni-priority,
+		.dark #anni-priority details > summary,
+		.dark #anni-priority th,
+		.dark #anni-priority td {
+			color: #fff;
+		}
+	`}</style>
+	<details>
+		<summary><span style="color: #cecece;">Attendance Prioritization</span></summary>
+		<table>
+			<thead>
+				<tr>
+					<th>Circumstances</th>
+					<th>Role</th>
+					<th>Reservation</th>
+					<th>Likelihood</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="circ-guild">Guild Member</td>
+					<td class="role-nonfill">Non-Fill</td>
+					<td class="res-early">1hr Early</td>
+					<td class="lk-guaranteed"><strong>Virtually Guaranteed</strong></td>
+				</tr>
+				<tr>
+					<td class="circ-guild">Guild Member</td>
+					<td class="role-fill">Fill<span class="sub">or not on AnniRoles</span></td>
+					<td class="res-early">1hr Early</td>
+					<td class="lk-guaranteed"><strong>Virtually Guaranteed</strong></td>
+				</tr>
+				<tr>
+					<td class="circ-guild">Guild Member<span class="sub">or Waitlist</span></td>
+					<td class="role-nonfill">Non-Fill</td>
+					<td class="res-strong">Strong RSVP</td>
+					<td class="lk-guaranteed"><strong>Virtually Guaranteed</strong><span class="sub">if 20+ min early</span></td>
+				</tr>
+				<tr>
+					<td class="circ-guild">Guild Member<span class="sub">or Waitlist</span></td>
+					<td class="role-fill">Fill<span class="sub">or not on AnniRoles</span></td>
+					<td class="res-strong">Strong RSVP</td>
+					<td class="lk-more-often">More Often Than Not<span class="sub">if 20+ min early</span></td>
+				</tr>
+				<tr>
+					<td class="circ-guild">Guild Member<span class="sub">or Waitlist</span></td>
+					<td class="role-nonfill">Non-Fill</td>
+					<td class="res-weak">Weak RSVP</td>
+					<td class="lk-more-often">More Often Than Not<span class="sub">if 20+ min early</span></td>
+				</tr>
+				<tr>
+					<td class="circ-guild">Guild Member<span class="sub">or Waitlist</span></td>
+					<td class="role-fill">Fill<span class="sub">or not on AnniRoles</span></td>
+					<td class="res-weak">Weak RSVP</td>
+					<td class="lk-frequently">Frequently<span class="sub">if 20+ min early</span></td>
+				</tr>
+				<tr>
+					<td class="circ-community">Community<span class="sub">Guildless</span></td>
+					<td class="role-nonfill">Non-Fill</td>
+					<td class="res-strong">Strong RSVP</td>
+					<td class="lk-frequently">Frequently<span class="sub">if 20+ min early</span></td>
+				</tr>
+				<tr>
+					<td class="circ-community">Community<span class="sub">Guildless</span></td>
+					<td class="role-fill">Fill<span class="sub">or not on AnniRoles</span></td>
+					<td class="res-strong">Strong RSVP</td>
+					<td class="lk-often">Often<span class="sub">if 20+ min early</span></td>
+				</tr>
+				<tr>
+					<td class="circ-community">Community<span class="sub">Guildless</span></td>
+					<td class="role-nonfill">Non-Fill</td>
+					<td class="res-weak">Weak RSVP</td>
+					<td class="lk-often">Often<span class="sub">if 20+ min early</span></td>
+				</tr>
+				<tr>
+					<td class="circ-allied">Ally<span class="sub">Member of Allied Guild</span></td>
+					<td class="role-nonfill">Non-Fill</td>
+					<td class="res-strong">Strong RSVP</td>
+					<td class="lk-often">Often<span class="sub">if 20+ min early</span></td>
+				</tr>
+				<tr>
+					<td class="circ-allied">Ally<span class="sub">Member of Allied Guild</span></td>
+					<td class="role-nonfill">Non-Fill</td>
+					<td class="res-weak">Weak RSVP</td>
+					<td class="lk-sometimes">Sometimes<span class="sub">if 20+ min early</span></td>
+				</tr>
+				<tr>
+					<td class="circ-community">Community<span class="sub">Guildless</span></td>
+					<td class="role-fill">Fill<span class="sub">or not on AnniRoles</span></td>
+					<td class="res-weak">Weak RSVP</td>
+					<td class="lk-sometimes">Sometimes<span class="sub">if 20+ min early</span></td>
+				</tr>
+				<tr>
+					<td class="circ-allied">Ally<span class="sub">Member of Allied Guild</span></td>
+					<td class="role-fill">Fill<span class="sub">or not on AnniRoles</span></td>
+					<td class="res-weak">Weak RSVP</td>
+					<td class="lk-rarely">Rarely</td>
+				</tr>
+				<tr>
+					<td class="circ-external">Other<span class="sub">External Guild</span></td>
+					<td class="role-nonfill">Non-Fill</td>
+					<td class="res-strong">Strong RSVP</td>
+					<td class="lk-rarely">Rarely</td>
+				</tr>
+			</tbody>
+		</table>
+	</details>
+</div>
+
+### Joining Your Party
+**Once you are online, please wait for staff to invite you to one of our parties!**<br/>
+On quiet days, parties are usually formed 60mins before the event; on busy days, you may need to wait up to 40mins, with parties being formed as late as 20mins before the event.
+
+**Even if parties are not yet announced, please remain online and attuned to chat!**<br/>
+You can do other things while you wait, but please be ready to switch over once the invites go out! It's also a good idea to have some [potions](https://wynncraft.wiki.gg/wiki/Stat_Potion) ready from your highest level town!
+
+### 15 Mins Before
+**Once you are in your party, your party's staff leader will assign you a role based on what you indicated on AnniRoles and the party's needs!**
+At least 15 mins before the event, please collect your [potions](https://wynncraft.wiki.gg/wiki/Stat_Potion), switch to your build, and head to the portal (`313 -1289`)!
+
+### 5 Mins Before
+**At least 5 before (usually well earlier), your party leader will announce a scroll spot and its coordinates. Be sure to stand there when it gets announced!**
+
+(The guild provides consumable [scroll buffs](http://wynnvets.org/docs/major-changes/economy#types-of-crafted-items) that will be used by your party leader 30 seconds before the event starts.
+You need to be within 3 blocks of them to get these effects; once the scrolls have been used, feel free to jump down and into the world event arena)
+
+<div class="not-prose my-8">
+	<a
+		href="#partaking"
+		class="block rounded-xl p-6 md:p-8 text-center text-black dark:text-white no-underline hover:no-underline transition hover:scale-[1.005] bg-sky-500/15 dark:bg-sky-400/20 border border-black/10 dark:border-white/15 shadow-md"
+	>
+		<div class="text-xs md:text-sm tracking-[0.12em] font-semibold opacity-90">You're now ready!<br/>Here is an overview of how to play your role:</div>
+		<div class="text-2xl md:text-4xl font-extrabold mt-1">Anni Gameplay</div>
+		<div class="text-sm md:text-base mt-2 font-semibold opacity-90">Click to Move to the Next Section -></div>
+	</a>
+</div>
+
+---
+
+## Event Gameplay
+
+<a id="partaking"></a>
+
+<div class="rounded p-2" id="role-gameplay">
+	<style>{`
+		#role-gameplay {
+			background: rgba(0,0,0,0.25);
+			border: 1px solid rgba(255,255,255,0.08);
+		}
+		#role-gameplay [role="tablist"] {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding-bottom: 0;
+			margin-bottom: 0;
+			position: relative;
+			z-index: 1;
+		}
+		#role-gameplay [role="tab"] {
+			background: rgba(255,255,255,0.2);
+			border: 1px solid rgba(255,255,255,0.11);
+			border-bottom: none;
+			border-radius: 0.375rem 0.375rem 0 0;
+			padding: 0.4rem 0.75rem;
+			cursor: pointer;
+			color: inherit;
+			font-size: 0.85rem;
+			transition: background 0.15s, border-color 0.15s;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			line-height: 1.2;
+			margin-bottom: -1px;
+			opacity: 0.9;
+		}
+		#role-gameplay [role="tab"] .tab-alt {
+			font-size: 0.6rem;
+			opacity: 0.55;
+			font-weight: 400;
+		}
+		#role-gameplay [role="tab"]:hover {
+			background: rgba(255,255,255,0.3);
+			opacity: 0.95;
+		}
+		#role-gameplay [role="tab"][aria-selected="true"] {
+			background: rgba(255,255,255,0.32);
+			border-color: rgba(255,255,255,0.2);
+			border-bottom: 1px solid rgba(255,255,255,0.32);
+			border-bottom-color: transparent;
+			font-weight: 600;
+			opacity: 1;
+		}
+		#role-gameplay [role="tabpanel"] { display: none; }
+		#role-gameplay [role="tabpanel"].active {
+			display: block;
+			background: rgba(255,255,255,0.32);
+			border: 1px solid rgba(255,255,255,0.2);
+			border-top: none;
+			border-radius: 0 0 0.375rem 0.375rem;
+			padding: 1rem;
+		}
+		#role-gameplay .rg-header { margin-bottom: 0.75rem; }
+		#role-gameplay .rg-label { font-size: 1.15rem; font-weight: 700; }
+		#role-gameplay .rg-sublabel { font-size: 0.8rem; opacity: 0.7; }
+		#role-gameplay .rg-title { font-style: italic; margin-bottom: 0.5rem; opacity: 0.85; }
+		#role-gameplay .rg-priority-bar {
+			display: flex;
+			align-items: baseline;
+			gap: 0.6rem;
+			border: 1px solid rgba(255,255,255,0.15);
+			background: rgba(56, 189, 248, 0.12);
+			border-radius: 0.375rem;
+			padding: 0.45rem 0.7rem;
+			margin-bottom: 0.5rem;
+		}
+		#role-gameplay .rg-priority-label {
+			font-weight: 600;
+			font-size: 0.8rem;
+			text-transform: uppercase;
+			letter-spacing: 0.04em;
+			opacity: 0.75;
+			white-space: nowrap;
+		}
+		#role-gameplay .rg-priority-content {
+			font-size: 0.95rem;
+		}
+		#role-gameplay .rg-class-notes {
+			border: 1px solid rgba(255,255,255,0.15);
+			border-radius: 0.375rem;
+			padding: 0.45rem 0.7rem;
+			margin-bottom: 0.5rem;
+			background: rgba(255,255,255,0.04);
+		}
+		#role-gameplay .rg-class-notes > summary {
+			font-weight: 600;
+			font-size: 0.8rem;
+			text-transform: uppercase;
+			letter-spacing: 0.04em;
+			opacity: 0.75;
+			cursor: pointer;
+			list-style: none;
+		}
+		#role-gameplay .rg-class-notes > summary::-webkit-details-marker { display: none; }
+		#role-gameplay .rg-class-notes > summary::after {
+			content: '▾';
+			float: right;
+			opacity: 0.75;
+			transition: transform 0.15s ease;
+		}
+		#role-gameplay .rg-class-notes[open] > summary::after { transform: rotate(180deg); }
+		#role-gameplay .rg-class-notes ul {
+			margin: 0.5rem 0 0;
+			padding-left: 1.1rem;
+		}
+		#role-gameplay .rg-class-notes li { margin: 0.2rem 0; }
+		.dark #role-gameplay [role="tabpanel"],
+		.dark #role-gameplay [role="tab"],
+		.dark #role-gameplay [role="tab"] .tab-alt,
+		.dark #role-gameplay .rg-header,
+		.dark #role-gameplay .rg-title,
+		.dark #role-gameplay .rg-priority-bar,
+		.dark #role-gameplay .rg-priority-label,
+		.dark #role-gameplay .rg-priority-content,
+		.dark #role-gameplay .rg-class-notes,
+		.dark #role-gameplay .rg-class-notes > summary {
+			color: #fff;
+		}
+	`}</style>
+
+	<div role="tablist" aria-label="Anni role gameplay">
+		<button role="tab" aria-selected="true" aria-controls="rg-fill" id="rg-tab-fill" tabindex="0">Fill<span class="tab-alt">aka. Carry</span></button>
+		<button role="tab" aria-selected="false" aria-controls="rg-hmk" id="rg-tab-hmk" tabindex="-1">Healing Mob Killer<span class="tab-alt">aka. Tertiary</span></button>
+		<button role="tab" aria-selected="false" aria-controls="rg-sk" id="rg-tab-sk" tabindex="-1">Sun Killer<span class="tab-alt">aka. Secondary</span></button>
+		<button role="tab" aria-selected="false" aria-controls="rg-bk" id="rg-tab-bk" tabindex="-1">Boss Killer<span class="tab-alt">aka. Primary</span></button>
+		<button role="tab" aria-selected="false" aria-controls="rg-ph" id="rg-tab-ph" tabindex="-1">Party Healer<span class="tab-alt">aka. Healer</span></button>
+		<button role="tab" aria-selected="false" aria-controls="rg-tank" id="rg-tab-tank" tabindex="-1">Party Tank<span class="tab-alt">aka. Tank</span></button>
+	</div>
+
+	<div role="tabpanel" id="rg-fill" aria-labelledby="rg-tab-fill" class="active">
+		<div class="rg-header">
+			<div class="rg-label">Fill Guide</div>
+			<div class="rg-sublabel">You're in the most flexible, relaxing, role! Have fun with it!</div>
+		</div>
+		<div class="rg-priority-bar">
+			<span class="rg-priority-label">Top Priority</span>
+			<span class="rg-priority-content">None!<br/><small>Feel free to learn Anni's mechanics by watching what everyone else does!</small></span>
+		</div>
+		<p>
+			<strong>Whether or not you survive to the end of the event, you will still get the rewards!</strong>
+			This is the perfect oppertunity to observe what everyone else is doing and learn the mechanics!
+
+			<strong>One particularly good way to help the party is to help your party's heal-mob killer (see <a href="#tertiaryPlay">this</a>)</strong>
+			But in general, any contributions you make will be helpful!			
+			Don't worry too much about hindering the party: fill slots are only created when we are confident the party can handle it!
+
+			<small>Having said that, if you do not think you can contribute, you can help reduce the battle's difficulty by using lowest lvl 30+ character you have, thereby minimizing the additional health/damage added by MWE scaling.</small>
+
+			<h4>Tips</h4>
+
+			##### 1. If you see this thing forming below you, Run!
+			![The sigil warning](/assets/guides/otherguides/sigil.webp)
+
+			##### 2. Try not to stand in the red area (Anni throws meteors here!) or the blue area (Never stand in front of the tank!).
+			![Where not to go as fill](/assets/guides/otherguides/fillzone.png)
+
+		</p>
+	</div>
+
+	<div role="tabpanel" id="rg-hmk" aria-labelledby="rg-tab-hmk">
+		<div class="rg-header">
+			<div class="rg-label">Healing Mob Killer Guide</div>
+			<div class="rg-sublabel">When mobs spawn to heal the boss, we're relying on you to take them out!.</div>
+		</div>
+		<div class="rg-priority-bar">
+			<span class="rg-priority-label">Top Priority</span>
+			<span class="rg-priority-content">Kill `Infernal Subjugates` when and where they spawn<br/><small>Apart from that, survive until they spawn again!</small></span>
+		</div>
+		<h5>Your task is to kill this mob:</h5>
+		![Infernal Subjugate](https://wynncraft.wiki.gg/images/InfernalSubjugate.png)
+		
+		<h5>It can spawn in 3 spots:</h5>
+		![Infernal Subjugate](/assets/guides/otherguides/healspot.png)
+
+		<h5>When not killing that mob, try to survive</h5>
+		<h6>Best places to survive are anywhere other than these two spots (red = frequent meteors, blue = never stand in front of a tank)</h6>
+		![Where not to go as fill](/assets/guides/otherguides/fillzone.png)
+
+		<h6>If you see this thing forming below you, run!</h6>
+		![The sigil warning](/assets/guides/otherguides/sigil.webp)
+
+	</div>
+
+	<div role="tabpanel" id="rg-sk" aria-labelledby="rg-tab-sk">
+		<div class="rg-header">
+			<div class="rg-label">Sun Killer Guide</div>
+			<div class="rg-sublabel">A bunch of flying stuff will spawn for you to kill.</div>
+		</div>
+		<div class="rg-priority-bar">
+			<span class="rg-priority-label">Top Priority</span>
+			<span class="rg-priority-content">Kill the floating sun orb when it spawns<br/><small>When not killing the sun, help the core with crowd control</small></span>
+		</div>
+		<h5>Your task is to kill this big floating orb:</h5>
+		![The Sun](/assets/guides/otherguides/Sun.png)
+		<small>Somehow, this is the only screenshot of the New Sun wen could find on the internet. We will replace it later.</small>
+		
+		<h5>It spawns above the core spot, where you will be standing.</h5>
+		<small>(In this image, your spot is in blue. You will be standing there with the healer (who keeps you alive) and primary. The tank will be in front of you in the blue spot; never stand in front of the tank!)</small><br/>
+		![Core Spot](/assets/guides/otherguides/core.png)
+
+		<h6>If you are not currently killing a sun, take out nearby mobs threatening the core area.</h6>
+		<h5>In particular, if you see these things floating around you, kill them</h5>
+		![Annoying mob](https://wynncraft.wiki.gg/images/BurningIris.png)
+
+		<h5>If you see this thing forming below you, run, but get back to the core spot quickly once it is gone!</h5>
+		![The sigil warning](/assets/guides/otherguides/sigil.webp)
+
+		<h5>Unless your party is falling apart, do not bother killing mobs outside the core area!</h5>
+		<small>If all Healing Mob Killers have died, *then* you should help killing the healer mobs when they spawn</small>
+
+	</div>
+
+	<div role="tabpanel" id="rg-bk" aria-labelledby="rg-tab-bk">
+		<div class="rg-header">
+			<div class="rg-label">Boss Killer Guide</div>
+			<div class="rg-sublabel">Your job is to get rid of Anni herself!</div>
+		</div>
+		<div class="rg-priority-bar">
+			<span class="rg-priority-label">Top Priority</span>
+			<span class="rg-priority-content">Kill Anni herself.<br/><small>This is your sole job, apart from running away from sigils to survive.</small></span>
+		</div>		
+		<h4>You will be standing in the core area.</h4>
+		<small>(In this image, your spot is in blue. You will be standing there with the healer (who keeps you alive) and secondary dps. The tank will be in front of you in the blue spot; never stand in front of the tank!)</small><br/>
+		![Core Spot](/assets/guides/otherguides/core.png)
+
+		<h4>Your only job is to unload into the boss.</h4>
+		![Annoying mob](https://wynncraft.wiki.gg/images/Annihilation.png)
+
+		<h5>If you see this thing forming below you, run, but get back to the core spot quickly once it is gone!</h5>
+		![The sigil warning](/assets/guides/otherguides/sigil.webp)
+
+		Unless your party has collapsed, do not bother doing anything other than damaging anni!
+	</div>
+
+	<div role="tabpanel" id="rg-ph" aria-labelledby="rg-tab-ph">
+		<div class="rg-header">
+			<div class="rg-label">Party Healer Guide</div>
+			<div class="rg-sublabel">You are protected by the core! Your job is to spam heals to keep them alive!</div>
+		</div>
+		<div class="rg-priority-bar">
+			<span class="rg-priority-label">Top Priority</span>
+			<span class="rg-priority-content">Spam heals for your primary and secondary.<br/><small>The tank has their own heals (usually).</small></span>
+		</div>
+		<h4>You will be standing in the core area.</h4>
+		<small>(In this image, your spot is in blue. You will be healing the primary and secondary dps. The tank will be in front of you in the blue spot; never stand in front of the tank!)</small><br/>
+		![Core Spot](/assets/guides/otherguides/core.png)
+		
+		<h4>If you see this thing forming below you, run, but get back to the core spot quickly once it is gone!</h4>
+		![The sigil warning](/assets/guides/otherguides/sigil.webp)
+
+		<h5>If the party already has a surplus of healing, and there is a clear target that needs damage (i.e. the sun), you can help kill it.</h5>
+		<small>Immediately after the sun is dead, go back to healing</small>
+		![The Sun](/assets/guides/otherguides/Sun.png)
+		<small>Somehow, this is the only screenshot of the New Sun wen could find on the internet. We will replace it later.</small>
+	</div>
+
+	<div role="tabpanel" id="rg-tank" aria-labelledby="rg-tab-tank">
+		<div class="rg-header">
+			<div class="rg-label">Party Tank Guide</div>
+			<div class="rg-sublabel">You are in front of everyone, soaking up all the damage!</div>
+		</div>
+		<div class="rg-priority-bar">
+			<span class="rg-priority-label">Top Priority</span>
+			<span class="rg-priority-content">Stay alive and protect the party from Anni's damage.<br/><small>Tanks cannot retreat *EVER*</small></span>
+		</div>
+		<h4>You will be standing in tank spot.</h4>
+		<small>You should always be right in Anni's face; nobody should be in front of you, *ever*</small><br/>
+		![Core Spot](/assets/guides/otherguides/core.png)
+		
+		<h4>If you see this thing forming below you, STAY. You should be able to tank it.</h4>
+		![The sigil warning](/assets/guides/otherguides/sigil.webp)
+
+		<h5>Don't do anything else!</h5>
+		<small>Dealing damage is a job for other roles!</small>
+	</div>
+
+	<script>{`
+		(function() {
+			const container = document.getElementById('role-gameplay');
+			if (!container) return;
+
+			const tabs = container.querySelectorAll('[role="tab"]');
+			const panels = container.querySelectorAll('[role="tabpanel"]');
+
+			const hashToTab = {
+				'#fillPlay': 'rg-tab-fill',
+				'#tertiaryPlay': 'rg-tab-hmk',
+				'#secondaryPlay': 'rg-tab-sk',
+				'#primaryPlay': 'rg-tab-bk',
+				'#healerPlay': 'rg-tab-ph',
+				'#tankPlay': 'rg-tab-tank'
+			};
+
+			const tabToHash = {};
+			for (const [h, id] of Object.entries(hashToTab)) tabToHash[id] = h;
+
+			function activate(tab, updateHash) {
+				tabs.forEach(t => { t.setAttribute('aria-selected', 'false'); t.tabIndex = -1; });
+				panels.forEach(p => p.classList.remove('active'));
+				tab.setAttribute('aria-selected', 'true');
+				tab.tabIndex = 0;
+				container.querySelector('#' + tab.getAttribute('aria-controls')).classList.add('active');
+				if (updateHash && tabToHash[tab.id]) {
+					history.replaceState(null, '', tabToHash[tab.id]);
+				}
+			}
+
+			tabs.forEach(tab => {
+				tab.addEventListener('click', () => activate(tab, true));
+				tab.addEventListener('keydown', e => {
+					const idx = [...tabs].indexOf(tab);
+					let next;
+					if (e.key === 'ArrowRight') next = tabs[(idx + 1) % tabs.length];
+					else if (e.key === 'ArrowLeft') next = tabs[(idx - 1 + tabs.length) % tabs.length];
+					else if (e.key === 'Home') next = tabs[0];
+					else if (e.key === 'End') next = tabs[tabs.length - 1];
+					if (next) { e.preventDefault(); next.focus(); activate(next, true); }
+				});
+			});
+
+			const hash = window.location.hash;
+			if (hashToTab[hash]) {
+				const target = container.querySelector('#' + hashToTab[hash]);
+				if (target) {
+					activate(target, false);
+					container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				}
+			}
+		})();
+	`}</script>
+</div>
