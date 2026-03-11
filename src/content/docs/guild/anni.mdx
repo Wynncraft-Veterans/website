@@ -452,52 +452,56 @@ If you are a member of one of these groups, you are eligible!<br/>
 
 	<script>{`
 		(function() {
-			const container = document.getElementById('role-builds');
-			const tabs = container.querySelectorAll('[role="tab"]');
-			const panels = container.querySelectorAll('[role="tabpanel"]');
+			function initTabWidget(containerId, hashMap) {
+				const container = document.getElementById(containerId);
+				if (!container || container.dataset.bound) return;
+				container.dataset.bound = '1';
+				const tabs = container.querySelectorAll('[role="tab"]');
+				const panels = container.querySelectorAll('[role="tabpanel"]');
 
-			const hashToTab = {
+				const tabToHash = {};
+				for (const [h, id] of Object.entries(hashMap)) tabToHash[id] = h;
+
+				function activate(tab, updateHash) {
+					tabs.forEach(t => { t.setAttribute('aria-selected', 'false'); t.tabIndex = -1; });
+					panels.forEach(p => p.classList.remove('active'));
+					tab.setAttribute('aria-selected', 'true');
+					tab.tabIndex = 0;
+					container.querySelector('#' + tab.getAttribute('aria-controls')).classList.add('active');
+					if (updateHash && tabToHash[tab.id]) {
+						history.replaceState(null, '', tabToHash[tab.id]);
+					}
+				}
+
+				tabs.forEach(tab => {
+					tab.addEventListener('click', () => activate(tab, true));
+					tab.addEventListener('keydown', e => {
+						const idx = [...tabs].indexOf(tab);
+						let next;
+						if (e.key === 'ArrowRight') next = tabs[(idx + 1) % tabs.length];
+						else if (e.key === 'ArrowLeft') next = tabs[(idx - 1 + tabs.length) % tabs.length];
+						else if (e.key === 'Home') next = tabs[0];
+						else if (e.key === 'End') next = tabs[tabs.length - 1];
+						if (next) { e.preventDefault(); next.focus(); activate(next, true); }
+					});
+				});
+
+				return { activate, hashMap, tabs, container };
+			}
+
+			const rb = initTabWidget('role-builds', {
 				'#fillBuild': 'rb-tab-fill',
 				'#tertiaryBuild': 'rb-tab-hmk',
 				'#secondaryBuild': 'rb-tab-sk',
 				'#primaryBuild': 'rb-tab-bk',
 				'#healerBuild': 'rb-tab-ph',
 				'#tankBuild': 'rb-tab-tank'
-			};
-
-			const tabToHash = {};
-			for (const [h, id] of Object.entries(hashToTab)) tabToHash[id] = h;
-
-			function activate(tab, updateHash) {
-				tabs.forEach(t => { t.setAttribute('aria-selected', 'false'); t.tabIndex = -1; });
-				panels.forEach(p => p.classList.remove('active'));
-				tab.setAttribute('aria-selected', 'true');
-				tab.tabIndex = 0;
-				container.querySelector('#' + tab.getAttribute('aria-controls')).classList.add('active');
-				if (updateHash && tabToHash[tab.id]) {
-					history.replaceState(null, '', tabToHash[tab.id]);
-				}
-			}
-
-			tabs.forEach(tab => {
-				tab.addEventListener('click', () => activate(tab, true));
-				tab.addEventListener('keydown', e => {
-					const idx = [...tabs].indexOf(tab);
-					let next;
-					if (e.key === 'ArrowRight') next = tabs[(idx + 1) % tabs.length];
-					else if (e.key === 'ArrowLeft') next = tabs[(idx - 1 + tabs.length) % tabs.length];
-					else if (e.key === 'Home') next = tabs[0];
-					else if (e.key === 'End') next = tabs[tabs.length - 1];
-					if (next) { e.preventDefault(); next.focus(); activate(next, true); }
-				});
 			});
-
-			const hash = window.location.hash;
-			if (hashToTab[hash]) {
-				const target = container.querySelector('#' + hashToTab[hash]);
-				if (target) {
-					activate(target, false);
-					container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			if (rb) {
+				const hash = window.location.hash;
+				if (rb.hashMap[hash]) {
+					const target = rb.container.querySelector('#' + rb.hashMap[hash]);
+					if (target) rb.activate(target, false);
 				}
 			}
 		})();
@@ -1058,54 +1062,56 @@ You need to be within 3 blocks of them to get these effects; once the scrolls ha
 
 	<script>{`
 		(function() {
-			const container = document.getElementById('role-gameplay');
-			if (!container) return;
+			function initTabWidget(containerId, hashMap) {
+				const container = document.getElementById(containerId);
+				if (!container || container.dataset.bound) return;
+				container.dataset.bound = '1';
+				const tabs = container.querySelectorAll('[role="tab"]');
+				const panels = container.querySelectorAll('[role="tabpanel"]');
 
-			const tabs = container.querySelectorAll('[role="tab"]');
-			const panels = container.querySelectorAll('[role="tabpanel"]');
+				const tabToHash = {};
+				for (const [h, id] of Object.entries(hashMap)) tabToHash[id] = h;
 
-			const hashToTab = {
+				function activate(tab, updateHash) {
+					tabs.forEach(t => { t.setAttribute('aria-selected', 'false'); t.tabIndex = -1; });
+					panels.forEach(p => p.classList.remove('active'));
+					tab.setAttribute('aria-selected', 'true');
+					tab.tabIndex = 0;
+					container.querySelector('#' + tab.getAttribute('aria-controls')).classList.add('active');
+					if (updateHash && tabToHash[tab.id]) {
+						history.replaceState(null, '', tabToHash[tab.id]);
+					}
+				}
+
+				tabs.forEach(tab => {
+					tab.addEventListener('click', () => activate(tab, true));
+					tab.addEventListener('keydown', e => {
+						const idx = [...tabs].indexOf(tab);
+						let next;
+						if (e.key === 'ArrowRight') next = tabs[(idx + 1) % tabs.length];
+						else if (e.key === 'ArrowLeft') next = tabs[(idx - 1 + tabs.length) % tabs.length];
+						else if (e.key === 'Home') next = tabs[0];
+						else if (e.key === 'End') next = tabs[tabs.length - 1];
+						if (next) { e.preventDefault(); next.focus(); activate(next, true); }
+					});
+				});
+
+				return { activate, hashMap, tabs, container };
+			}
+
+			const rg = initTabWidget('role-gameplay', {
 				'#fillPlay': 'rg-tab-fill',
 				'#tertiaryPlay': 'rg-tab-hmk',
 				'#secondaryPlay': 'rg-tab-sk',
 				'#primaryPlay': 'rg-tab-bk',
 				'#healerPlay': 'rg-tab-ph',
 				'#tankPlay': 'rg-tab-tank'
-			};
-
-			const tabToHash = {};
-			for (const [h, id] of Object.entries(hashToTab)) tabToHash[id] = h;
-
-			function activate(tab, updateHash) {
-				tabs.forEach(t => { t.setAttribute('aria-selected', 'false'); t.tabIndex = -1; });
-				panels.forEach(p => p.classList.remove('active'));
-				tab.setAttribute('aria-selected', 'true');
-				tab.tabIndex = 0;
-				container.querySelector('#' + tab.getAttribute('aria-controls')).classList.add('active');
-				if (updateHash && tabToHash[tab.id]) {
-					history.replaceState(null, '', tabToHash[tab.id]);
-				}
-			}
-
-			tabs.forEach(tab => {
-				tab.addEventListener('click', () => activate(tab, true));
-				tab.addEventListener('keydown', e => {
-					const idx = [...tabs].indexOf(tab);
-					let next;
-					if (e.key === 'ArrowRight') next = tabs[(idx + 1) % tabs.length];
-					else if (e.key === 'ArrowLeft') next = tabs[(idx - 1 + tabs.length) % tabs.length];
-					else if (e.key === 'Home') next = tabs[0];
-					else if (e.key === 'End') next = tabs[tabs.length - 1];
-					if (next) { e.preventDefault(); next.focus(); activate(next, true); }
-				});
 			});
-
-			const hash = window.location.hash;
-			if (hashToTab[hash]) {
-				const target = container.querySelector('#' + hashToTab[hash]);
-				if (target) {
-					activate(target, false);
-					container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			if (rg) {
+				const hash = window.location.hash;
+				if (rg.hashMap[hash]) {
+					const target = rg.container.querySelector('#' + rg.hashMap[hash]);
+					if (target) rg.activate(target, false);
 				}
 			}
 		})();
@@ -1116,37 +1122,129 @@ You need to be within 3 blocks of them to get these effects; once the scrolls ha
 
 <script>{`
 (function() {
-	const sectionMap = {
-		'overview': 'section-overview',
-		'preparing': 'section-preparing',
-		'attending': 'section-attending',
-		'partaking': 'section-partaking'
+	var allTabHashes = {
+		'#fillBuild': { container: 'role-builds', tab: 'rb-tab-fill' },
+		'#tertiaryBuild': { container: 'role-builds', tab: 'rb-tab-hmk' },
+		'#secondaryBuild': { container: 'role-builds', tab: 'rb-tab-sk' },
+		'#primaryBuild': { container: 'role-builds', tab: 'rb-tab-bk' },
+		'#healerBuild': { container: 'role-builds', tab: 'rb-tab-ph' },
+		'#tankBuild': { container: 'role-builds', tab: 'rb-tab-tank' },
+		'#fillPlay': { container: 'role-gameplay', tab: 'rg-tab-fill' },
+		'#tertiaryPlay': { container: 'role-gameplay', tab: 'rg-tab-hmk' },
+		'#secondaryPlay': { container: 'role-gameplay', tab: 'rg-tab-sk' },
+		'#primaryPlay': { container: 'role-gameplay', tab: 'rg-tab-bk' },
+		'#healerPlay': { container: 'role-gameplay', tab: 'rg-tab-ph' },
+		'#tankPlay': { container: 'role-gameplay', tab: 'rg-tab-tank' }
 	};
 
-	function showSection(name) {
-		document.querySelectorAll('.anni-section').forEach(s => s.classList.remove('active'));
-		const target = document.getElementById(sectionMap[name]);
-		if (target) {
-			target.classList.add('active');
+	function showSection(section, scrollTarget) {
+		document.querySelectorAll('.anni-section').forEach(function(s) { s.classList.remove('active'); });
+		section.classList.add('active');
+		if (scrollTarget) {
+			requestAnimationFrame(function() {
+				scrollTarget.scrollIntoView({ behavior: 'instant', block: 'start' });
+			});
+		} else {
 			window.scrollTo({ top: 0, behavior: 'instant' });
 		}
 	}
 
-	document.addEventListener('click', function(e) {
-		const link = e.target.closest('a[href]');
-		if (!link) return;
-		const href = link.getAttribute('href');
-		if (href && sectionMap[href.replace('#', '')]) {
-			e.preventDefault();
-			const name = href.replace('#', '');
-			showSection(name);
-			history.replaceState(null, '', href);
-		}
-	});
-
-	var hash = window.location.hash.replace('#', '');
-	if (sectionMap[hash]) {
-		showSection(hash);
+	function activateTab(containerId, tabId) {
+		var container = document.getElementById(containerId);
+		if (!container) return;
+		var tab = document.getElementById(tabId);
+		if (!tab) return;
+		container.querySelectorAll('[role="tab"]').forEach(function(t) {
+			t.setAttribute('aria-selected', 'false'); t.tabIndex = -1;
+		});
+		container.querySelectorAll('[role="tabpanel"]').forEach(function(p) {
+			p.classList.remove('active');
+		});
+		tab.setAttribute('aria-selected', 'true');
+		tab.tabIndex = 0;
+		var panelId = tab.getAttribute('aria-controls');
+		var panel = document.getElementById(panelId);
+		if (panel) panel.classList.add('active');
 	}
+
+	function resolveHash(hash) {
+		if (!hash) return null;
+
+		/* Check tab hashes first (these are virtual - no DOM element with this id) */
+		var tabInfo = allTabHashes[hash];
+		if (tabInfo) {
+			var container = document.getElementById(tabInfo.container);
+			if (container) {
+				var section = container.closest('.anni-section');
+				if (section) {
+					return { section: section, scrollTarget: container, tabContainer: tabInfo.container, tabId: tabInfo.tab };
+				}
+			}
+		}
+
+		var id = hash.replace('#', '');
+		if (!id) return null;
+
+		/* Direct section id match (e.g. #overview -> section-overview) */
+		var directSection = document.getElementById('section-' + id);
+		if (directSection && directSection.classList.contains('anni-section')) {
+			return { section: directSection, scrollTarget: null };
+		}
+
+		/* Find the element by id, then walk up to its parent anni-section */
+		var el = document.getElementById(id);
+		if (el) {
+			var parent = el.closest('.anni-section');
+			if (parent) {
+				return { section: parent, scrollTarget: el };
+			}
+		}
+
+		return null;
+	}
+
+	function handleHash() {
+		var hash = window.location.hash;
+		if (!hash) return;
+		var result = resolveHash(hash);
+		if (result) {
+			showSection(result.section, result.scrollTarget);
+			if (result.tabId) {
+				activateTab(result.tabContainer, result.tabId);
+			}
+		}
+	}
+
+	/* Bind click handler (delegated on document, deduplicated) */
+	if (!window._anniClickBound) {
+		window._anniClickBound = true;
+		document.addEventListener('click', function(e) {
+			var link = e.target.closest('a[href]');
+			if (!link) return;
+			var href = link.getAttribute('href');
+			if (!href) return;
+
+			var hashIdx = href.indexOf('#');
+			if (hashIdx === -1) return;
+			var hash = href.substring(hashIdx);
+
+			var result = resolveHash(hash);
+			if (result) {
+				e.preventDefault();
+				showSection(result.section, result.scrollTarget);
+				if (result.tabId) {
+					activateTab(result.tabContainer, result.tabId);
+				}
+				history.replaceState(null, '', hash);
+			}
+		});
+	}
+
+	/* Run on initial load */
+	handleHash();
+	/* Run after Astro client-side navigations */
+	document.addEventListener('astro:page-load', handleHash);
+	/* Run after Astro swaps DOM content */
+	document.addEventListener('astro:after-swap', handleHash);
 })();
 `}</script>
