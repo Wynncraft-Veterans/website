@@ -7,6 +7,13 @@ pubDate: 2025-08-16
 modDate: 2026-03-11
 ---
 
+<style>{`
+	.anni-section { display: none; }
+	.anni-section.active { display: block; }
+`}</style>
+
+<div id="section-overview" class="anni-section active">
+
 **Wynn's only [Major World Event](http://localhost:4321/docs/major-changes/rekindled#major), Anni, is a group boss battle occuring every few days.** <br/>
 Occuring at effectively random times, this is a 10 player boss battle announced 8h in advance. We track the event and send out pings in [#annihilation](https://discord.com/channels/1313769181321236490/1339393368672702567), which you can [subscribe](https://discord.com/channels/1313769181321236490/1318077157938954270/1458149624924733521) to.
 
@@ -68,7 +75,15 @@ In the case of extra slots, friends from the wider wynnvets community are welcom
 	</a>
 </div>
 
----
+</div>
+
+<div id="section-preparing" class="anni-section">
+
+<div class="not-prose mb-4">
+	<a href="#overview" class="text-sm opacity-70 hover:opacity-100 no-underline">
+		<span aria-hidden="true">&larr;</span> Back to Overview
+	</a>
+</div>
 
 ## Preparing
 
@@ -500,7 +515,15 @@ If you are a member of one of these groups, you are eligible!<br/>
 	</a>
 </div>
 
----
+</div>
+
+<div id="section-attending" class="anni-section">
+
+<div class="not-prose mb-4">
+	<a href="#overview" class="text-sm opacity-70 hover:opacity-100 no-underline">
+		<span aria-hidden="true">&larr;</span> Back to Overview
+	</a>
+</div>
 
 ## Attending
 
@@ -725,7 +748,15 @@ You need to be within 3 blocks of them to get these effects; once the scrolls ha
 	</a>
 </div>
 
----
+</div>
+
+<div id="section-partaking" class="anni-section">
+
+<div class="not-prose mb-4">
+	<a href="#overview" class="text-sm opacity-70 hover:opacity-100 no-underline">
+		<span aria-hidden="true">&larr;</span> Back to Overview
+	</a>
+</div>
 
 ## Event Gameplay
 
@@ -1068,3 +1099,42 @@ You need to be within 3 blocks of them to get these effects; once the scrolls ha
 		})();
 	`}</script>
 </div>
+
+</div>
+
+<script>{`
+(function() {
+	const sectionMap = {
+		'overview': 'section-overview',
+		'preparing': 'section-preparing',
+		'attending': 'section-attending',
+		'partaking': 'section-partaking'
+	};
+
+	function showSection(name) {
+		document.querySelectorAll('.anni-section').forEach(s => s.classList.remove('active'));
+		const target = document.getElementById(sectionMap[name]);
+		if (target) {
+			target.classList.add('active');
+			window.scrollTo({ top: 0, behavior: 'instant' });
+		}
+	}
+
+	document.addEventListener('click', function(e) {
+		const link = e.target.closest('a[href]');
+		if (!link) return;
+		const href = link.getAttribute('href');
+		if (href && sectionMap[href.replace('#', '')]) {
+			e.preventDefault();
+			const name = href.replace('#', '');
+			showSection(name);
+			history.replaceState(null, '', href);
+		}
+	});
+
+	var hash = window.location.hash.replace('#', '');
+	if (sectionMap[hash]) {
+		showSection(hash);
+	}
+})();
+`}</script>
