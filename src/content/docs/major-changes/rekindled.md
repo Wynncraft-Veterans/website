@@ -4,7 +4,7 @@ description: Navigating the modern impacts of features added between w2.0.4 (F23
 image: "@assets/docs/major-changes/update-thumbnails/Rekindled-Update.png"
 imageAlt: The logo of the Rekindled Update.
 pubDate: 2025-08-06
-modDate: 2025-08-06
+modDate: 2025-12-31
 ---
 
 This guide aims to acquaint pre-rekindled players with the broad strokes of changes implemented since Wynn version 2.1.

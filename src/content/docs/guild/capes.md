@@ -4,7 +4,7 @@ description: "VETS has a cape, and it is free for everyone to use! This article 
 image: "@assets/docs/guild/cape.png"
 imageAlt: "A user wearing the Wynnvets cape."
 pubDate: 2024-07-15
-modDate: 2024-08-03
+modDate: 2026-02-03
 ---
 
 The VETs guild has a cape, made possible through Wynntils' cape rendering feature. When wearing this cape, it will be visible to everyone else on the server -- not just VETS members!

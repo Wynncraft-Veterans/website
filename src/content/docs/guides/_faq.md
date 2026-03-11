@@ -3,8 +3,8 @@ title: Misc. FAQ
 description: "Some of the game's changes more impactful changes over the past few years have been comparatively small. This article tries to group them together into one place."
 image: "@assets/docs/guides/cover.jpg"
 imageAlt: "Painting of a hooded figure with light beaming out from his chest"
-pubDate: 2025-08-16
-modDate: 2025-08-16
+pubDate: 2025-08-06
+modDate: 2025-08-06
 ---
 
 Note: The following article was copied directly from an old discord post.<br>It is slated to be urgently rewritten.

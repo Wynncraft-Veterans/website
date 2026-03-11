@@ -4,7 +4,7 @@ description: Navigating the modern impacts of features added between w1.12 (S14)
 image: "@assets/docs/major-changes/update-thumbnails/Mob-Update.png"
 imageAlt: The logo of the Wynncraft Mob Update.
 pubDate: 2025-08-06
-modDate: 2025-08-06
+modDate: 2026-01-05
 ---
 
 This guide aims to acquaint pre-mob players with the broad strokes of changes implemented between Wynn versions 1.12 and 1.13.

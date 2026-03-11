@@ -3,8 +3,8 @@ title: Handling Old Items
 description: "Your old items are worth a lot more than they used to be! And, they are very fragile. Learn how to handle them here!"
 image: "@assets/docs/guides/iron_shovel.png"
 imageAlt: "An old item superimposed on an old wynn build"
-pubDate: 2025-08-16
-modDate: 2025-08-16
+pubDate: 2025-08-12
+modDate: 2025-08-12
 ---
 
 <div class="flex items-center glass text-white text-sm font-bold px-4 py-1" role="alert">

@@ -4,7 +4,7 @@ description: "There are many guides floating about! This article tries to compil
 image: "@assets/docs/guides/guide.png"
 imageAlt: "The guide thumbnail."
 pubDate: 2025-08-16
-modDate: 2025-08-16
+modDate: 2025-10-12
 ---
 
 The VETS website contains a wide assortment of guides primarily focused on helping older players return to the game.

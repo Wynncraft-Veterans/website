@@ -3,8 +3,8 @@ title: Raiding & Graiding
 description: "Dungeons are no longer the only grindable mechanical content in town! Raids are effectively multiplayer dungeons."
 image: "@assets/docs/guides/raids.png"
 imageAlt: "Wynncraft's raids release art."
-pubDate: 2025-08-16
-modDate: 2025-08-16
+pubDate: 2025-08-12
+modDate: 2025-08-12
 ---
 
 Dungeons used to be the game's primary form of repeatably grindable mechanical content. Raids are a new form of multiplayer dungeon. This guide attempts to walk you through everything you need to know to successfully run them!

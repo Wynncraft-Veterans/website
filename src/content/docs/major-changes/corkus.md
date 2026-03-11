@@ -4,7 +4,7 @@ description: Navigating the modern impacts of features added between w1.16 (s17)
 image: "@assets/docs/major-changes/update-thumbnails/Corkus-Update.png"
 imageAlt: The logo of the Wynncraft Corkus Expansion.
 pubDate: 2025-08-06
-modDate: 2025-08-06
+modDate: 2025-12-31
 ---
 
 This guide aims to acquaint pre-corkus players with the broad strokes of changes implemented between Wynn versions 1.16 and 1.17.

@@ -4,7 +4,7 @@ description: "Lootruns are no longer an unofficial system of community-run chest
 image: "@assets/docs/guides/lootruns.png"
 imageAlt: "Wynncraft's lootrun release art."
 pubDate: 2025-08-16
-modDate: 2025-08-16
+modDate: 2025-09-07
 
 ---
 ## Introduction

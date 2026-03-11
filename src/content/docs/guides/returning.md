@@ -4,7 +4,7 @@ description: "Welcome back to Wynncraft! A lot has changed since you last played
 image: "@assets/backgrounds/vets_background.png"
 imageAlt: "A painting of a Returner, standing on the walls of Ragni, looking out over Nivla Forest."
 pubDate: 2025-08-16
-modDate: 2025-08-16
+modDate: 2025-12-31
 ---
 
 # The Returners Guide to Returning

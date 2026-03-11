@@ -3,8 +3,8 @@ title: Items & Classbuilding
 description: "Wynn's current item system is robust! This guide intends to introduce you to the basics of making a viable build."
 image: "@assets/docs/guides/classbuild.png"
 imageAlt: "A painting of a knight"
-pubDate: 2025-08-16
-modDate: 2025-08-16
+pubDate: 2025-08-12
+modDate: 2025-08-12
 ---
 
 Wynncraft's new item system, new ID system, and new ability trees have made classbuilding an involved and immersive process! This guide attempts to walk you through everything you need to know to start building in the current versions of the game! 

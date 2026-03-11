@@ -4,7 +4,7 @@ description: "An overview of the inside jokes that have developed over the years
 image: "@assets/docs/guild/braincell.png"
 imageAlt: "A guild braincell."
 pubDate: 2024-07-15
-modDate: 2024-08-03
+modDate: 2026-02-03
 ---
 
 # [VETS] Guild Memes

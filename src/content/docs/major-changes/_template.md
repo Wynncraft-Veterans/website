@@ -4,7 +4,7 @@ description: A description for your article should go here. It is the thing that
 image: "@assets/docs/major-changes/update-logos/Economy-Update.png"
 imageAlt: Description of the image you will be using.
 pubDate: 2025-08-06
-modDate: 2025-08-06
+modDate: 2025-08-12
 ---
 
 You can type multiple sections

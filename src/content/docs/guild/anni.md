@@ -4,7 +4,7 @@ description: "A quick overview of the Annihilation Major Event Boss for members 
 image: "@assets/docs/guides/anni.png"
 imageAlt: "Wynncraft's anni boss."
 pubDate: 2025-08-16
-modDate: 2025-08-16
+modDate: 2026-03-11
 ---
 
 <div class="glass rounded p-2 text-center">

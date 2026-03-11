@@ -4,7 +4,7 @@ description: Navigating the modern impacts of features added between w2.0 (W21) 
 image: "@assets/docs/major-changes/update-thumbnails/Spellbound-Update.png"
 imageAlt: The logo of the Spellbound Update.
 pubDate: 2025-08-06
-modDate: 2025-08-06
+modDate: 2026-01-19
 ---
 
 This guide aims to acquaint pre-spellbound players with the broad strokes of changes implemented between Wynn versions 2.0 and 2.0.4.

@@ -4,7 +4,7 @@ description: "Everything new Vets members need to know in order to thrive in the
 image: "@assets/backgrounds/vets_background.png"
 imageAlt: "A player returning to Ragni after years away from the game."
 pubDate: 2024-07-15
-modDate: 2024-08-03
+modDate: 2026-02-18
 ---
 
 # Welcome to VETS!

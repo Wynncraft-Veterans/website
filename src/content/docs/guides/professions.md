@@ -3,8 +3,8 @@ title: An Intro To Profs
 description: "Professions are a new part of Wynn's economy. Thus guide aims to give you a crash course on what they are used for, how to level them, etc.."
 image: "@assets/docs/guides/professions.png"
 imageAlt: "Wynncraft's prof logo superimposed on a sky."
-pubDate: 2025-08-16
-modDate: 2025-08-16
+pubDate: 2025-08-12
+modDate: 2025-08-12
 ---
 
 Professions are a new part of Wynn's economy. Not everyone decides to grind them, but if you do, this guide aims to help you out with that!
