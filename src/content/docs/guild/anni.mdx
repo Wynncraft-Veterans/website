@@ -10,6 +10,10 @@ modDate: 2026-03-11
 <style>{`
 	.anni-section { display: none; }
 	.anni-section.active { display: block; }
+	#fill-builds, #primary-builds, #secondary-builds, #tertiary-builds, #healer-builds, #tank-builds,
+	#fill, #primary-dps, #secondary-dps, #tertiary-dps, #healer, #tank {
+		display: none !important;
+	}
 `}</style>
 
 <div id="section-overview" class="anni-section active">
@@ -88,6 +92,18 @@ In the case of extra slots, friends from the wider wynnvets community are welcom
 ## Preparing
 
 <a id="preparing"></a>
+
+### Fill Builds
+
+### Primary Builds
+
+### Secondary Builds
+
+### Tertiary Builds
+
+### Healer Builds
+
+### Tank Builds
 
 **As our <abbr title="Click this for an explanatory popup!"><button type="button" popovertarget="anni-capacity-popover" class="underline bg-transparent border-0 p-0 m-0 cursor-pointer text-inherit">capacity limitations</button></abbr> permit, we prioritise, in order:**
 
@@ -766,6 +782,18 @@ You need to be within 3 blocks of them to get these effects; once the scrolls ha
 
 <a id="partaking"></a>
 
+### Fill
+
+### Primary DPS
+
+### Secondary DPS
+
+### Tertiary DPS
+
+### Healer
+
+### Tank
+
 <div class="rounded p-2" id="role-gameplay">
 	<style>{`
 		#role-gameplay {
@@ -1134,7 +1162,19 @@ You need to be within 3 blocks of them to get these effects; once the scrolls ha
 		'#secondaryPlay': { container: 'role-gameplay', tab: 'rg-tab-sk' },
 		'#primaryPlay': { container: 'role-gameplay', tab: 'rg-tab-bk' },
 		'#healerPlay': { container: 'role-gameplay', tab: 'rg-tab-ph' },
-		'#tankPlay': { container: 'role-gameplay', tab: 'rg-tab-tank' }
+		'#tankPlay': { container: 'role-gameplay', tab: 'rg-tab-tank' },
+		'#fill-builds': { container: 'role-builds', tab: 'rb-tab-fill' },
+		'#primary-builds': { container: 'role-builds', tab: 'rb-tab-bk' },
+		'#secondary-builds': { container: 'role-builds', tab: 'rb-tab-sk' },
+		'#tertiary-builds': { container: 'role-builds', tab: 'rb-tab-hmk' },
+		'#healer-builds': { container: 'role-builds', tab: 'rb-tab-ph' },
+		'#tank-builds': { container: 'role-builds', tab: 'rb-tab-tank' },
+		'#fill': { container: 'role-gameplay', tab: 'rg-tab-fill' },
+		'#primary-dps': { container: 'role-gameplay', tab: 'rg-tab-bk' },
+		'#secondary-dps': { container: 'role-gameplay', tab: 'rg-tab-sk' },
+		'#tertiary-dps': { container: 'role-gameplay', tab: 'rg-tab-hmk' },
+		'#healer': { container: 'role-gameplay', tab: 'rg-tab-ph' },
+		'#tank': { container: 'role-gameplay', tab: 'rg-tab-tank' }
 	};
 
 	function showSection(section, scrollTarget) {
