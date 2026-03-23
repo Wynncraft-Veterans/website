@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wynncraft Return 65 Painter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <h1>Wynnvets Leaderboard Hologram Painter</h1>
+    <p class="muted">Part of Return 65, this app allows you to paint 19&times;19 badge designs pixel by pixel.</p>
+    <p class="muted">This will be displayed for the top 3 users on either return, guild xp, or graid leaderboards.</p>
+
+    <div class="card">
+      <!-- Mode slider -->
+      <div class="mode-control">
+        <label for="modeSlider">Show As:</label>
+        <input type="range" id="modeSlider" min="0" max="3" step="1" value="0" />
+        <div class="mode-labels" id="modeLabels">
+          <span class="active">None</span>
+          <span>1st</span>
+          <span>2nd</span>
+          <span>3rd</span>
+        </div>
+      </div>
+
+      <!-- Palette -->
+      <div class="palette" id="palette">
+        <span class="palette-label">Shade:</span>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid-wrapper">
+        <img class="grid-underlay" id="gridUnderlay" alt="" />
+        <div class="grid" id="grid"></div>
+      </div>
+
+      <div class="actions">
+        <button id="saveBtn">&#128190; Save as PNG</button>
+        <button id="clearBtn" class="secondary">&#128465; Clear</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const SIZE = 19;
+      const SHADES = 10;
+      const MODE_NAMES = ['none', '1st', '2nd', '3rd'];
+
+      const LAUREL_SRC = {
+        '1st': '1st_place_laurel.svg',
+        '2nd': '2nd_place_laurel.svg',
+        '3rd': '3rd_place_laurel.svg'
+      };
+
+      const LAUREL_FILTER = {
+        '1st': 'sepia(1) saturate(3) brightness(1.1) hue-rotate(5deg)',
+        '2nd': 'grayscale(1) brightness(1.2) contrast(0.9)',
+        '3rd': 'sepia(1) saturate(2) brightness(0.85) hue-rotate(-15deg)'
+      };
+
+      /* Grid data: 0 = empty, 1–10 = shade intensity */
+      const gridData = Array.from({ length: SIZE }, () => Array(SIZE).fill(0));
+      let selectedShade = 1;
+      let currentMode = 0;
+      let isDrawing = false;
+
+      /* ---- Colour helpers ---- */
+
+      function lerp(a, b, t) {
+        return Math.round(a + (b - a) * t);
+      }
+
+      function getColor(shade, mode) {
+        if (shade === 0) return 'transparent';
+        const t = (shade - 1) / (SHADES - 1);
+        let r, g, b;
+        switch (mode) {
+          case 'none': {
+            const v = lerp(200, 50, t);
+            r = g = b = v;
+            break;
+          }
+          case '1st':
+            r = lerp(245, 139, t);
+            g = lerp(230, 105, t);
+            b = lerp(163, 20, t);
+            break;
+          case '2nd': {
+            const v = lerp(216, 90, t);
+            r = g = b = v;
+            break;
+          }
+          case '3rd':
+            r = lerp(232, 109, t);
+            g = lerp(201, 58, t);
+            b = lerp(160, 28, t);
+            break;
+          default:
+            return 'transparent';
+        }
+        return 'rgb(' + r + ',' + g + ',' + b + ')';
+      }
+
+      /* ---- Palette ---- */
+
+      const paletteEl = document.getElementById('palette');
+
+      function buildPalette() {
+        /* keep the <span class="palette-label"> */
+        while (paletteEl.children.length > 1) paletteEl.removeChild(paletteEl.lastChild);
+
+        const mode = MODE_NAMES[currentMode];
+
+        /* eraser swatch */
+        const eraser = document.createElement('div');
+        eraser.className = 'palette-swatch eraser' + (selectedShade === 0 ? ' selected' : '');
+        eraser.textContent = '\u2715';
+        eraser.dataset.shade = '0';
+        eraser.title = 'Eraser';
+        eraser.addEventListener('click', () => selectShade(0));
+        paletteEl.appendChild(eraser);
+
+        /* shade swatches 1–10 */
+        for (let i = 1; i <= SHADES; i++) {
+          const sw = document.createElement('div');
+          sw.className = 'palette-swatch' + (selectedShade === i ? ' selected' : '');
+          sw.style.backgroundColor = getColor(i, mode);
+          sw.dataset.shade = String(i);
+          sw.title = 'Shade ' + i;
+          sw.addEventListener('click', () => selectShade(i));
+          paletteEl.appendChild(sw);
+        }
+      }
+
+      function selectShade(s) {
+        selectedShade = s;
+        paletteEl.querySelectorAll('.palette-swatch').forEach(el => {
+          el.classList.toggle('selected', parseInt(el.dataset.shade) === s);
+        });
+      }
+
+      /* ---- Grid ---- */
+
+      const gridEl = document.getElementById('grid');
+      const underlayEl = document.getElementById('gridUnderlay');
+
+      function buildGrid() {
+        for (let y = 0; y < SIZE; y++) {
+          for (let x = 0; x < SIZE; x++) {
+            const cell = document.createElement('div');
+            cell.className = 'cell';
+            cell.dataset.x = x;
+            cell.dataset.y = y;
+
+            cell.addEventListener('mousedown', e => {
+              e.preventDefault();
+              isDrawing = true;
+              paint(x, y);
+            });
+            cell.addEventListener('mouseenter', () => {
+              if (isDrawing) paint(x, y);
+            });
+            cell.addEventListener('touchstart', e => {
+              e.preventDefault();
+              isDrawing = true;
+              paint(x, y);
+            }, { passive: false });
+
+            gridEl.appendChild(cell);
+          }
+        }
+
+        document.addEventListener('mouseup', () => { isDrawing = false; });
+        document.addEventListener('touchend', () => { isDrawing = false; });
+
+        /* touch-drag across cells */
+        gridEl.addEventListener('touchmove', e => {
+          e.preventDefault();
+          const touch = e.touches[0];
+          const el = document.elementFromPoint(touch.clientX, touch.clientY);
+          if (el && el.classList.contains('cell')) {
+            paint(parseInt(el.dataset.x), parseInt(el.dataset.y));
+          }
+        }, { passive: false });
+      }
+
+      function paint(x, y) {
+        gridData[y][x] = selectedShade;
+        refreshCell(x, y);
+      }
+
+      function refreshCell(x, y) {
+        const cell = gridEl.children[y * SIZE + x];
+        cell.style.backgroundColor = getColor(gridData[y][x], MODE_NAMES[currentMode]);
+      }
+
+      function refreshAllCells() {
+        for (let y = 0; y < SIZE; y++)
+          for (let x = 0; x < SIZE; x++)
+            refreshCell(x, y);
+      }
+
+      /* ---- Mode ---- */
+
+      const modeSlider = document.getElementById('modeSlider');
+      const modeLabels = document.getElementById('modeLabels').children;
+
+      function updateMode() {
+        const mode = MODE_NAMES[currentMode];
+
+        for (let i = 0; i < modeLabels.length; i++)
+          modeLabels[i].classList.toggle('active', i === currentMode);
+
+        if (mode === 'none') {
+          underlayEl.style.display = 'none';
+        } else {
+          underlayEl.src = LAUREL_SRC[mode];
+          underlayEl.style.filter = LAUREL_FILTER[mode];
+          underlayEl.style.display = 'block';
+        }
+
+        buildPalette();
+        refreshAllCells();
+      }
+
+      modeSlider.addEventListener('input', e => {
+        currentMode = parseInt(e.target.value);
+        updateMode();
+      });
+
+      /* ---- Save ---- */
+
+      document.getElementById('saveBtn').addEventListener('click', async () => {
+        const exportScale = 10;
+        const sourceCanvas = document.createElement('canvas');
+        sourceCanvas.width = SIZE;
+        sourceCanvas.height = SIZE;
+        const sourceCtx = sourceCanvas.getContext('2d');
+        const exportCanvas = document.createElement('canvas');
+        exportCanvas.width = SIZE * exportScale;
+        exportCanvas.height = SIZE * exportScale;
+        const exportCtx = exportCanvas.getContext('2d');
+        const exportMode = 'none';
+
+        /* draw painted pixels */
+        for (let y = 0; y < SIZE; y++) {
+          for (let x = 0; x < SIZE; x++) {
+            if (gridData[y][x] > 0) {
+              sourceCtx.fillStyle = getColor(gridData[y][x], exportMode);
+              sourceCtx.fillRect(x, y, 1, 1);
+            }
+          }
+        }
+
+        exportCtx.imageSmoothingEnabled = false;
+        exportCtx.drawImage(sourceCanvas, 0, 0, exportCanvas.width, exportCanvas.height);
+
+        const a = document.createElement('a');
+        a.download = 'badge-none-x10.png';
+        a.href = exportCanvas.toDataURL('image/png');
+        a.click();
+      });
+
+      /* ---- Clear ---- */
+
+      document.getElementById('clearBtn').addEventListener('click', () => {
+        for (let y = 0; y < SIZE; y++)
+          for (let x = 0; x < SIZE; x++)
+            gridData[y][x] = 0;
+        refreshAllCells();
+      });
+
+      /* ---- Init ---- */
+
+      buildGrid();
+      buildPalette();
+      updateMode();
+    })();
+  </script>
+</body>
+</html>
