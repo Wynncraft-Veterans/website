@@ -5,6 +5,7 @@
   <title>Wynncraft Return 65 Painter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 </head>
 <body>
   <div class="page">
@@ -37,7 +38,7 @@
       </div>
 
       <div class="actions">
-        <button id="saveBtn">&#128190; Save as PNG</button>
+        <button id="saveBtn">&#128190; Save as ZIP</button>
         <button id="clearBtn" class="secondary">&#128465; Clear</button>
       </div>
     </div>
@@ -282,18 +283,38 @@
         return exportCanvas;
       }
 
+      function canvasToBlob(canvas) {
+        return new Promise(resolve => {
+          canvas.toBlob(resolve, 'image/png');
+        });
+      }
+
       /* ---- Save ---- */
 
       document.getElementById('saveBtn').addEventListener('click', async () => {
+        if (typeof JSZip === 'undefined') {
+          alert('ZIP library failed to load. Please refresh and try again.');
+          return;
+        }
+
         const exportScale = 10;
+        const zip = new JSZip();
+
         for (const mode of MODE_NAMES) {
           const exportCanvas = await renderExportCanvas(mode, exportScale);
-          const a = document.createElement('a');
-          a.download = 'badge-' + mode + '-x10.png';
-          a.href = exportCanvas.toDataURL('image/png');
-          a.click();
-          await new Promise(resolve => setTimeout(resolve, 100));
+          const blob = await canvasToBlob(exportCanvas);
+          if (blob) {
+            zip.file('badge-' + mode + '-x10.png', blob);
+          }
         }
+
+        const zipBlob = await zip.generateAsync({ type: 'blob' });
+        const url = URL.createObjectURL(zipBlob);
+        const a = document.createElement('a');
+        a.download = 'badge-exports-x10.zip';
+        a.href = url;
+        a.click();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
       });
 
       /* ---- Clear ---- */
