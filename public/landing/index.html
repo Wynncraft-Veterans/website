@@ -47,8 +47,11 @@
 				text-align: center;
 				padding: 0.65em 1em;
 				font-size: 0.95em;
-				position: relative;
-				z-index: 10000;
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				z-index: 10001;
 			}
 			#wip-banner a.wip-btn {
 				display: inline-block;
@@ -74,6 +77,15 @@
 			&#9888; This page is still a work in progress, contains placeholders, and is incomplete.
 			<a class="wip-btn" href="https://wynnvets.org/about/">Visit the main site</a>
 		</div>
+		<script>
+			(function() {
+				var banner = document.getElementById('wip-banner');
+				var header = document.getElementById('header');
+				if (banner && header) {
+					header.style.top = banner.offsetHeight + 'px';
+				}
+			})();
+		</script>
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
