@@ -3018,15 +3018,19 @@ input, select, textarea {
 			.features article .image {
 				border-radius: 5px 5px 0 0;
 				display: block;
+				height: 20.8rem;
 				margin-bottom: 1.75em;
 				margin-left: -1.75em;
 				margin-top: -1.75em;
+				overflow: hidden;
 				position: relative;
 				width: calc(100% + 3.5em);
 			}
 
 				.features article .image img {
 					border-radius: 5px 5px 0 0;
+					height: 100%;
+					object-fit: cover;
 					width: 100%;
 				}
 
@@ -3048,6 +3052,7 @@ input, select, textarea {
 			}
 
 				.features article .image {
+					height: 18.2rem;
 					margin-bottom: 1.5em;
 					margin-left: -1.5em;
 					margin-top: -1.5em;
@@ -3807,6 +3812,7 @@ input, select, textarea {
 				width: 22em;
 				overflow: hidden;
 				-ms-flex: 1;
+				flex: 1;
 			}
 
 				.wrapper.spotlight .image img {
@@ -3817,6 +3823,7 @@ input, select, textarea {
 			.wrapper.spotlight .content {
 				width: 100%;
 				-ms-flex: 2;
+				flex: 2;
 			}
 
 			.wrapper.spotlight:nth-child(2n - 1) .inner {
@@ -4002,7 +4009,7 @@ input, select, textarea {
 				bottom: -6.5em;
 				left: 0;
 				height: auto;
-				background-image: url("../../images/placeholder3.jpg");
+				background-image: url("../../images/bwca-dusk.png");
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
@@ -4033,7 +4040,7 @@ input, select, textarea {
 				bottom: -6.5em;
 				left: 0;
 				height: auto;
-				background-image: url("../../images/placeholder1.jpg");
+				background-image: url("../../images/bwca-night.png");
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
@@ -4243,6 +4250,45 @@ input, select, textarea {
 			width: calc(50% - 1.5em);
 		}
 
+		#footer .inner #message {
+			height: 10.3em;
+			max-width: none;
+			width: 220%;
+		}
+
+		#footer .inner label[for="message"] {
+			white-space: nowrap;
+		}
+
+		#footer .inner .contact .actions {
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
+			margin-left: 0;
+			width: 220%;
+		}
+
+		#footer .inner .contact .actions li {
+			width: 100%;
+			padding-left: 0;
+		}
+
+		#footer .inner .contact .actions li input[type="submit"] {
+			display: block;
+			width: 100%;
+			background-color: rgba(255, 255, 255, 0.14);
+			box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.24);
+		}
+
+		#footer .inner .contact .actions li input[type="submit"]:hover {
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+
+		#footer .inner .contact .actions li input[type="submit"]:active {
+			background-color: rgba(255, 255, 255, 0.26);
+		}
+
 		#footer .inner .copyright {
 			border-top: solid 2px rgba(255, 255, 255, 0.125);
 			list-style: none;
@@ -4308,6 +4354,15 @@ input, select, textarea {
 				#footer .inner .contact {
 					width: 100%;
 					margin: 0 0 4em 0;
+				}
+
+				#footer .inner #message {
+					width: 100%;
+					height: auto;
+				}
+
+				#footer .inner .contact .actions {
+					width: 100%;
 				}
 
 				#footer .inner .copyright {
