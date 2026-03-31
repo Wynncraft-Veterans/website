@@ -3946,7 +3946,7 @@ input, select, textarea {
 				bottom: -6.5em;
 				left: 0;
 				height: auto;
-				background-image: url("../../images/major_changes.png");
+				background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url("../../images/major_changes.png");
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
