@@ -15,7 +15,7 @@ interface SearchResult {
 }
 
 const getPath = (entry: SearchableEntry) => {
-  return `${entry.collection}/${entry.id.replace("-index", "")}`;
+  return `/${entry.collection}/${entry.id.replace("-index", "")}`;
 };
 
 const SearchPage = ({ searchList }: Props) => {
