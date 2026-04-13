@@ -9,16 +9,62 @@ modDate: 2025-08-16
 import Carousel from "@components/docs/Carousel.astro";
 import { Image } from "astro:assets";
 
+<style>{`
+	.mod-section { display: none; }
+	.mod-section.active { display: block; }
+`}</style>
+
+<div id="section-overview" class="mod-section active">
+
 **Out of the box, Wynncraft works with unmodified (i.e. vanilla) clients** [released](https://www.minecraft.net/en-us/download) by Mojang/Microsoft. Yet, despite being perfectly functional, **less than 10% of the server's users play without mods**. This figure speaks to the significant improvements in quality of life made possible by the server's third-party development community over the years.
 
 **This article seeks to provide a walkthrough for users from all backgrounds on how to go about modifying your client to best take advantage of Wynncraft's current 3rd party ecosystem**. Note, this is NOT a modpack, but rather, instructions on how to go about choosing and installing Wynn mods, resources, and if need be, packs.
 
+<div class="grid gap-4 md:grid-cols-2 my-6">
+	<a href="#easy" class="glass rounded-lg p-6 block text-center transition hover:scale-[1.02] hover:no-underline no-underline">
+		<div class="flex justify-center">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-12 w-12" aria-hidden="true">
+				<path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+			</svg>
+		</div>
+		<h3 class="mt-3 mb-1 text-xl">Quick &amp; Easy</h3>
+		<p class="text-sm opacity-80">This Modrinth-based guide will walk you through setting up a basic modded Wynn client as quickly and intuitively as possible.</p>
+	</a>
+
+	<a href="#involved" class="glass rounded-lg p-6 block text-center transition hover:scale-[1.02] hover:no-underline no-underline">
+		<div class="flex justify-center">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-12 w-12" aria-hidden="true">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z" />
+				<path stroke-linecap="round" stroke-linejoin="round" d="M4.867 19.125h.008v.008h-.008v-.008Z" />
+			</svg>
+		</div>
+		<h3 class="mt-3 mb-1 text-xl">In-Depth</h3>
+		<p class="text-sm opacity-80">This Prism-based guide will set you on the path to deeper customisation for a more involved and tailored Wynn experience.</p>
+	</a>
+</div>
+
+<div class="my-4">
+	<a href="#info" class="glass rounded p-3 flex items-center justify-center gap-2 transition hover:scale-[1.01] hover:no-underline no-underline text-sm opacity-80 hover:opacity-100">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5 shrink-0" aria-hidden="true">
+			<path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+		</svg>
+		<span>More Info &amp; Explanations</span>
+	</a>
+</div>
+
+</div>
+
+<div id="section-info" class="mod-section">
+
+<div class="not-prose mb-4">
+	<a href="#overview" class="text-sm opacity-70 hover:opacity-100 no-underline">
+		<span aria-hidden="true">&larr;</span> Back to Overview
+	</a>
+</div>
+
 ## Some General Notes
 
-One cannot make a modding guide without brushing upon some frequently asked questions on the topics of safety and selection. Those will be answered in the collapsed section below. If you have any of those questions ('is modding safe', 'why did you choose x instead of y', etc.) feel free to expand this section: if not, this section is safe to ignore.
-
-<details>
-<summary><strong>Some frequently asked questions and rationales for some choices.</strong></summary>
+One cannot make a modding guide without brushing upon some frequently asked questions on the topics of safety and selection. If you have any of those questions ('is modding safe', 'why did you choose x instead of y', etc.) this section is for you.
 
 ### Is Modding Safe?
 
@@ -69,13 +115,22 @@ Designed to be functional, expansive, and open, Prism is an open force launcher 
 All sections of this guide recommend the use of a barebones, clean, performance modpack as the foundation on which to build the ensuing Wynn installation. This is, in our opinion, far preferable to dumping a single fabric jar in and hoping for the best. It is also far preferable to using the closed source and outdated optifine ecosystem, or the common practice of filling your mod folder with every "performance" mod you can find.
 
 An open source, sodium based, installation ensures performance while ensuring compatability and integration. Notably, this choice also provides some very useful safeguards that make the rest of your setup far easier. There are only two contenders for this requirement: HyperSoop's Optimised family of modpacks, and Devin's Skyward family of modpacks. This article uses the latter family on account of it being open sourced, more communal, more focused, more selective, and more targeted. 
-</details>
+
+</div>
+
+<div id="section-easy" class="mod-section">
+
+<div class="not-prose mb-4">
+	<a href="#overview" class="text-sm opacity-70 hover:opacity-100 no-underline">
+		<span aria-hidden="true">&larr;</span> Back to Overview
+	</a>
+</div>
 
 ## A Quick and Easy Approach
-Would you prefer not to mess around with the dozens of menus needed to create the more advanced installations? Do you just want to get a basic modded client up and running as quickly as possible? This approach may not be the most expandable or the most fully featured, but it is certainly the easiest!
 
-<details>
-<summary><strong>Expand this for instructions on how to build a performance-focused bare-bones Wynntils instance!</strong></summary>
+<a id="easy"></a>
+
+Would you prefer not to mess around with the dozens of menus needed to create the more advanced installations? Do you just want to get a basic modded client up and running as quickly as possible? This approach may not be the most expandable or the most fully featured, but it is certainly the easiest!
 
 ### Installing Modrinth
 For this tutorial, we will be using [Modrinth](https://modrinth.com/app)'s launcher.
@@ -176,15 +231,24 @@ The first step is to create your instance.
         </div>
     </Carousel>
 </div>
-</details>
+
+</div>
+
+<div id="section-involved" class="mod-section">
+
+<div class="not-prose mb-4">
+	<a href="#overview" class="text-sm opacity-70 hover:opacity-100 no-underline">
+		<span aria-hidden="true">&larr;</span> Back to Overview
+	</a>
+</div>
 
 ## A More Involved Approach
+
+<a id="involved"></a>
+
 Is your computer somewhat functional? Are you willing to spend a few extra moments to tweak Wynn to work exactly how you want it? Are you jealous of the cool mods other people are using? You've come to the right place!
 
 *This tutorial will give you the foundations needed to install basically any wynn mods imaginable. It will also point out a lot of the more popular ones and some important notes with respect to how you can set them up (dependencies galore)!*
-
-<details>
-<summary><strong>Expand this for a foundation primer on how to create a wynn install tailored to you!</strong></summary>
 
 ### Installing Prism
 For this tutorial, we will be using [PrismMC](https://prismlauncher.org/)'s launcher.
@@ -409,4 +473,75 @@ You are done! Feel free to launch your client!
     </Carousel>
 </div>
 
-</details>
+</div>
+
+<script>{`
+(function() {
+	function showSection(section, scrollTarget) {
+		document.querySelectorAll('.mod-section').forEach(function(s) { s.classList.remove('active'); });
+		section.classList.add('active');
+		if (scrollTarget) {
+			requestAnimationFrame(function() {
+				scrollTarget.scrollIntoView({ behavior: 'instant', block: 'start' });
+			});
+		} else {
+			window.scrollTo({ top: 0, behavior: 'instant' });
+		}
+	}
+
+	function resolveHash(hash) {
+		if (!hash) return null;
+		var id = hash.replace('#', '');
+		if (!id) return null;
+
+		var directSection = document.getElementById('section-' + id);
+		if (directSection && directSection.classList.contains('mod-section')) {
+			return { section: directSection, scrollTarget: null };
+		}
+
+		var el = document.getElementById(id);
+		if (el) {
+			var parent = el.closest('.mod-section');
+			if (parent) {
+				return { section: parent, scrollTarget: el };
+			}
+		}
+
+		return null;
+	}
+
+	function handleHash() {
+		var hash = window.location.hash;
+		if (!hash) return;
+		var result = resolveHash(hash);
+		if (result) {
+			showSection(result.section, result.scrollTarget);
+		}
+	}
+
+	if (!window._modClickBound) {
+		window._modClickBound = true;
+		document.addEventListener('click', function(e) {
+			var link = e.target.closest('a[href]');
+			if (!link) return;
+			var href = link.getAttribute('href');
+			if (!href) return;
+
+			var hashIdx = href.indexOf('#');
+			if (hashIdx === -1) return;
+			var hash = href.substring(hashIdx);
+
+			var result = resolveHash(hash);
+			if (result) {
+				e.preventDefault();
+				showSection(result.section, result.scrollTarget);
+				history.replaceState(null, '', hash);
+			}
+		});
+	}
+
+	handleHash();
+	document.addEventListener('astro:page-load', handleHash);
+	document.addEventListener('astro:after-swap', handleHash);
+})();
+`}</script>
