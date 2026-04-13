@@ -1,0 +1,38 @@
+---
+/**
+ * TEMPORARY BANNER — Added 2026-04-13
+ * Shows a notice on major-changes pages that content may be outdated
+ * due to the 2026 Fruma Expansion.
+ *
+ * TO REMOVE: Delete this file and remove the two lines referencing it
+ * in src/components/docs/EntryLayout.astro.
+ */
+
+const RELEASE_DATE = new Date("2026-04-04T00:00:00Z");
+const now = new Date();
+const diffMs = now.getTime() - RELEASE_DATE.getTime();
+const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+const daysAgoText =
+  diffDays === 0 ? "today" :
+  diffDays === 1 ? "1 day ago" :
+  `${diffDays} days ago`;
+---
+
+<div
+  class="fruma-outdated-banner relative mb-4 rounded-lg glass px-5 py-4 outline outline-2 -outline-offset-4 outline-red-800/70 dark:outline-red-400/35 overflow-hidden"
+  role="status"
+>
+  <div class="absolute inset-0 rounded-lg bg-red-800/10 dark:bg-red-500/10 pointer-events-none"></div>
+  <p class="font-primary font-bold text-lg md:text-xl text-txt-p dark:text-darkmode-txt-p leading-snug">
+    The 2026 Fruma Expansion was recently released!
+    <span class="font-secondary font-normal text-base md:text-lg text-txt-s dark:text-darkmode-txt-s">({daysAgoText})</span>
+  </p>
+  <p class="mt-1 font-medium text-sm md:text-base text-txt-p dark:text-darkmode-txt-p opacity-85">
+    This page is now slightly outdated: some of the features described below have changed.
+  </p>
+  <p class="mt-2 text-xs md:text-sm text-txt-s dark:text-darkmode-txt-s opacity-75 leading-relaxed">
+    We are working our way through these guides and anticipate everything will be
+    up to date again in the near future. Thank you for your patience.
+  </p>
+</div>

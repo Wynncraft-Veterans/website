@@ -3,6 +3,7 @@ import BaseLayout from "@components/base/BaseLayout.astro";
 import type { DocsEntry, MenuItem } from "@/types";
 import DocBrowser from "@components/docs/Browser.astro";
 import TableOfContents from "@components/common/TableOfContents.astro";
+import FrumaOutdatedBanner from "@components/docs/FrumaOutdatedBanner.astro"; // TEMPORARY — remove with FrumaOutdatedBanner.astro
 
 import { render } from "astro:content";
 import EntryHeader from "@components/common/EntryHeader.astro";
@@ -15,6 +16,7 @@ const { entry, browserMenu } = Astro.props;
 
 const { Content, headings } = await render(entry);
 const { title, description, hideNav, hideToc, image } = entry.data;
+const isMajorChanges = entry.id.startsWith("major-changes/"); // TEMPORARY — remove with FrumaOutdatedBanner.astro
 
 const globalHideNav = false;
 const globalHideToc = false;
@@ -40,6 +42,7 @@ const globalHideToc = false;
         <section class="">
           <EntryHeader entry={entry} showImage showPubDate />
         </section>
+        {isMajorChanges && <FrumaOutdatedBanner />}{/* TEMPORARY — remove with FrumaOutdatedBanner.astro */}
         <section class="content mb-4 glass px-4 rounded-lg">
           <Content />
         </section>
