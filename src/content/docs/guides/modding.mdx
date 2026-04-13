@@ -12,6 +12,8 @@ import { Image } from "astro:assets";
 <style>{`
 	.mod-section { display: none; }
 	.mod-section.active { display: block; }
+	.easy-card { box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); border: 1px solid rgba(0, 0, 0, 0.25); animation: easyPulse 4s ease-in-out infinite; }
+	@keyframes easyPulse { 0%, 100% { box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); } 50% { box-shadow: 0 0 18px rgba(0, 0, 0, 0.4); } }
 `}</style>
 
 <div id="section-overview" class="mod-section active">
@@ -21,7 +23,7 @@ import { Image } from "astro:assets";
 **This article seeks to provide a walkthrough for users from all backgrounds on how to go about modifying your client to best take advantage of Wynncraft's current 3rd party ecosystem**. Note, this is NOT a modpack, but rather, instructions on how to go about choosing and installing Wynn mods, resources, and if need be, packs.
 
 <div class="grid gap-4 md:grid-cols-2 my-6">
-	<a href="#easy" class="glass rounded-lg p-6 block text-center transition hover:scale-[1.02] hover:no-underline no-underline">
+	<a href="#easy" class="easy-card glass rounded-lg p-6 block text-center transition hover:scale-[1.02] hover:no-underline no-underline">
 		<div class="flex justify-center">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-12 w-12" aria-hidden="true">
 				<path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
