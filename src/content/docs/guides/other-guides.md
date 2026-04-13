@@ -14,7 +14,25 @@ It also includes a roundup of the server's main [tools and communities](https://
 
 *This article aims to compile the most relevant, generally applicable, guides currently present within the community*.
 
-# Wynncraft Community Guides
+<style>
+  .content h3 {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+</style>
+
+## Wynncraft Community Guides
+
+### Powdering
+
+### T3 Ingredients
 
 <div class="container">
     <div class="row">
@@ -49,6 +67,13 @@ It also includes a roundup of the server's main [tools and communities](https://
             </div>
         </div>
     </div>
+</div>
+
+### Challenge Classes
+
+### Professions
+
+<div class="container">
     <div class="row">
         <div class="md:col-6 lg:col-6 h-min p-2">
             <div class="h-full m-2 pl-0 bg-gradient-to-br gradient rounded-lg intersect:animate-fadeUp opacity-0">
@@ -82,6 +107,13 @@ It also includes a roundup of the server's main [tools and communities](https://
             </div>
         </div>
     </div>
+</div>
+
+### Quests
+
+### Damage Mechanics
+
+<div class="container">
     <div class="row">
         <div class="md:col-6 lg:col-6 h-min p-2">
             <div class="h-full m-2 pl-0 bg-gradient-to-br gradient rounded-lg intersect:animate-fadeUp opacity-0">
@@ -116,6 +148,11 @@ It also includes a roundup of the server's main [tools and communities](https://
             </div>
         </div>
     </div>
+</div>
+
+### Metabuilds
+
+<div class="container">
     <div class="row">
         <div class="md:col-6 lg:col-6 h-min p-2">
             <div class="h-full m-2 pl-0 bg-gradient-to-br gradient rounded-lg intersect:animate-fadeUp opacity-0">
