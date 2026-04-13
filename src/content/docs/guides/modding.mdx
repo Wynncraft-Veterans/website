@@ -6,24 +6,8 @@ imageAlt: "The logo of Wynncraft's main mod"
 pubDate: 2025-08-16
 modDate: 2025-08-16
 ---
-import Carousel from "astro-simple-carousel";
+import Carousel from "@components/docs/Carousel.astro";
 import { Image } from "astro:assets";
-
-<div class="text-center glass px-4 rounded relative bg-pink-600 dark:bg-red-600 border-4 border-red-800 shadow-lg" role="alert">
-    <b>Sliders are active on this page to save space!</b><br/>
-    When you see an image, look for <b><icode>&lt;&gt;</icode></b> icons above it to scroll through its slides!<br/>
-
-    <div class="glass h-auto rounded-lg h-auto">
-    <Carousel>
-        <div slot="1">
-            <p>This is slide one of an example!</p>
-        </div>
-        <div slot="2">
-            <p>This is slide two of an example!</p>
-        </div>
-    </Carousel>
-</div>
-</div>
 
 **Out of the box, Wynncraft works with unmodified (i.e. vanilla) clients** [released](https://www.minecraft.net/en-us/download) by Mojang/Microsoft. Yet, despite being perfectly functional, **less than 10% of the server's users play without mods**. This figure speaks to the significant improvements in quality of life made possible by the server's third-party development community over the years.
 

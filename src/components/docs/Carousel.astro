@@ -1,0 +1,308 @@
+---
+interface Props {
+    infinite?: boolean;
+    forcedClass?: string;
+}
+
+const { infinite = false, forcedClass } = Astro.props;
+
+const idGenerator = () => {
+    const S4 = function () {
+        return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+    };
+    return "carousel" + S4() + "-" + S4() + "-" + S4() + "-" + S4();
+};
+
+const carouselClass = forcedClass ?? idGenerator();
+const def = await Astro.slots.render("default");
+if (def) {
+    throw new Error(`Carousel component must use *named* slots, this isn't the case for ${def}`);
+}
+
+const slotKeys = Object.keys(Astro.slots).filter(k => k !== "default");
+const totalSlides = slotKeys.length;
+---
+
+<div class="carousel-outer" data-carousel-id={carouselClass}>
+    <div class="carousel-viewport">
+        <!-- Previous button -->
+        <button
+            id={`${carouselClass}-prev`}
+            class="carousel-arrow carousel-arrow--left"
+            aria-label="Previous slide"
+        >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+
+        <!-- Slides -->
+        <div class="carousel-slides">
+            {
+                slotKeys.map(async (slot_name) => {
+                    const html = await Astro.slots.render(slot_name);
+                    return (
+                        <div class={carouselClass} data-slide>
+                            <Fragment set:html={html} />
+                        </div>
+                    );
+                })
+            }
+        </div>
+
+        <!-- Next button -->
+        <button
+            id={`${carouselClass}-next`}
+            class="carousel-arrow carousel-arrow--right"
+            aria-label="Next slide"
+        >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Bottom controls: dots + counter -->
+    <div class="carousel-controls">
+        <div class="carousel-dots" id={`${carouselClass}-dots`}>
+            {
+                slotKeys.map((_, i) => (
+                    <button
+                        class={`carousel-dot ${i === 0 ? 'carousel-dot--active' : ''}`}
+                        data-slide-index={i}
+                        aria-label={`Go to slide ${i + 1}`}
+                    />
+                ))
+            }
+        </div>
+        <div class="carousel-counter" id={`${carouselClass}-counter`}>
+            <span>Slide</span> <strong>1</strong> / <strong>{totalSlides}</strong>
+        </div>
+    </div>
+
+    <script is:inline define:vars={{ carousel: { infinite, carouselClass, index: 1, totalSlides } }}>
+        const prev = document.getElementById(`${carousel.carouselClass}-prev`);
+        const next = document.getElementById(`${carousel.carouselClass}-next`);
+        const counter = document.getElementById(`${carousel.carouselClass}-counter`);
+        const dotsContainer = document.getElementById(`${carousel.carouselClass}-dots`);
+        const dots = dotsContainer.querySelectorAll('.carousel-dot');
+
+        prev.addEventListener("click", () => showSlides(-1));
+        next.addEventListener("click", () => showSlides(1));
+
+        dots.forEach((dot) => {
+            dot.addEventListener("click", () => {
+                const target = parseInt(dot.getAttribute('data-slide-index')) + 1;
+                carousel.index = target;
+                showSlides(0);
+            });
+        });
+
+        showSlides(0);
+
+        function showSlides(n) {
+            carousel.index += n;
+            let x = document.getElementsByClassName(carousel.carouselClass);
+
+            if (carousel.infinite) {
+                if (carousel.index > x.length) carousel.index = 1;
+                else if (carousel.index < 1) carousel.index = x.length;
+            }
+
+            // Update button states
+            if (!carousel.infinite) {
+                prev.disabled = carousel.index === 1;
+                next.disabled = carousel.index === x.length;
+                prev.classList.toggle('carousel-arrow--disabled', carousel.index === 1);
+                next.classList.toggle('carousel-arrow--disabled', carousel.index === x.length);
+            }
+
+            // Hide all slides, show current
+            for (let i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[carousel.index - 1].style.display = "block";
+
+            // Update counter
+            counter.innerHTML = `<span>Slide</span> <strong>${carousel.index}</strong> / <strong>${x.length}</strong>`;
+
+            // Update dots
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('carousel-dot--active', i === carousel.index - 1);
+            });
+        }
+    </script>
+</div>
+
+<style>
+    .carousel-outer {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .carousel-viewport {
+        position: relative;
+        display: flex;
+        align-items: stretch;
+    }
+
+    .carousel-slides {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Slide content: images flush, text snug */
+    .carousel-slides :global(img) {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    .carousel-slides :global([data-slide]) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-slides :global([data-slide] > *:first-child) {
+        margin-top: 0 !important;
+    }
+
+    .carousel-slides :global([data-slide] > *:last-child) {
+        margin-bottom: 0 !important;
+    }
+
+    .carousel-slides :global(p) {
+        margin: 0;
+    }
+
+    /* Arrow buttons on sides */
+    .carousel-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        min-width: 44px;
+        background: rgba(0, 0, 0, 0.45);
+        backdrop-filter: blur(4px);
+        border: none;
+        color: white;
+        cursor: pointer;
+        transition: background 0.2s, opacity 0.2s;
+        z-index: 2;
+        padding: 0;
+        flex-shrink: 0;
+    }
+
+    :global(.dark) .carousel-arrow {
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    .carousel-arrow--left {
+        border-radius: 0;
+    }
+
+    .carousel-arrow--right {
+        border-radius: 0;
+    }
+
+    .carousel-arrow:hover:not(.carousel-arrow--disabled) {
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    :global(.dark) .carousel-arrow:hover:not(.carousel-arrow--disabled) {
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .carousel-arrow--disabled {
+        opacity: 0.25;
+        cursor: default;
+    }
+
+    /* Bottom controls */
+    .carousel-controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 8px 0 6px;
+    }
+
+    /* Dots */
+    .carousel-dots {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid rgba(0, 0, 0, 0.35);
+        background: transparent;
+        cursor: pointer;
+        padding: 0;
+        transition: background 0.2s, border-color 0.2s;
+    }
+
+    :global(.dark) .carousel-dot {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .carousel-dot:hover {
+        border-color: rgba(0, 0, 0, 0.6);
+    }
+
+    :global(.dark) .carousel-dot:hover {
+        border-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .carousel-dot--active {
+        background: rgba(0, 0, 0, 0.7);
+        border-color: rgba(0, 0, 0, 0.7);
+    }
+
+    :global(.dark) .carousel-dot--active {
+        background: white;
+        border-color: white;
+    }
+
+    /* Counter */
+    .carousel-counter {
+        font-size: 0.85rem;
+        color: rgba(0, 0, 0, 0.55);
+        user-select: none;
+    }
+
+    :global(.dark) .carousel-counter {
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    .carousel-counter strong {
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    :global(.dark) .carousel-counter strong {
+        color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+        .carousel-arrow {
+            width: 32px;
+            min-width: 32px;
+        }
+        .carousel-arrow svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+</style>
