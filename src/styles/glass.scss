@@ -9,7 +9,7 @@
 
 .glass-t {
   @apply bg-bg-t dark:bg-darkmode-bg-t;
-  @apply bg-opacity-20 dark:bg-opacity-20;
+  @apply bg-opacity-65 dark:bg-opacity-50;
   @apply backdrop-blur;
   @apply bg-clip-padding backdrop-filter backdrop-saturate-100 backdrop-contrast-100;
   @apply border border-[rgba(255,255,255,0.6)] dark:border-[rgba(255,255,255,0.15)];
