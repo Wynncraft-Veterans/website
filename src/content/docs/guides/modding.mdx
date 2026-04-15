@@ -1,6 +1,6 @@
 ---
 title: Modding Your Wynn
-description: "Over the past decade, Wynncraft's community have used client modding platforms to implement a vast array of tweaks and improvements that would not otherwise be possible server-side. This guide covers how to set up a modded Minecraft client to take advantage of these features."
+description: "Over the past decade, Wynncraft's community has used client modding platforms to implement a vast array of tweaks and improvements that would not otherwise be possible server-side. This guide covers how to set up a modded Minecraft client to take advantage of these features."
 image: "@assets/docs/guides/modding.png"
 imageAlt: "The logo of Wynncraft's main mod"
 pubDate: 2025-08-16
@@ -70,11 +70,11 @@ One cannot make a modding guide without brushing upon some frequently asked ques
 
 ### Is Modding Safe?
 
-By using 3rd party launcher, launching a 3rd party client wrapper, or loading a 3rd party client modification (listed in descending order of access although all occur in this guide), you are taking an inherent risk. You are trusting the 3rd party with access to execute code on your computer. While the amount of damage it can do varies, that risk remains.
+By using a 3rd party launcher, launching a 3rd party client wrapper, or loading a 3rd party client modification (listed in descending order of access, although all occur in this guide), you are taking an inherent risk. You are trusting the 3rd party with access to execute code on your computer. While the amount of damage it can do varies, that risk remains.
 
 Having said that, there are many checks in place to prevent that from happening. If you use open-source software with large userbases, regardless of the 3rd party themselves, thousands of users have had time to run the application and look for abnormalities. Moreover, technical users have had a chance to look at the code themselves, further ensuring nothing suspicious is occurring. There is still a risk, but it is thoroughly mitigated.
 
-Another mitigation of risk happens when one uses software that has been uploaded to large moderated platforms (such as modrinth and curseforge). In addition to the checks above, these platforms use automated and manual tools to review the submitted code as to make sure it isn't doing anything it shouldn't be doing. Again, there is still risk, but this mitigates it further.
+Another mitigation of risk happens when one uses software that has been uploaded to large moderated platforms (such as modrinth and curseforge). In addition to the checks above, these platforms use automated and manual tools to review the submitted code to make sure it isn't doing anything it shouldn't be doing. Again, there is still risk, but this mitigates it further.
 
 Finally, one can install software created by 3rd parties they trust. Even if software has no users, is closed, and/or not on a moderated platform, if one trusts the software's author, then one can trust the software. This is the rarest and least advisable form of mitigation, but it adds another layer in conjunction with the above (although some risk remains).
 
@@ -83,40 +83,40 @@ The resources suggested by this guide are open sourced, have a reasonable amount
 ### Why does this guide promote x over y?
 
 #### Fabric v. Forge v. Others
-Currently, within the modding system, fabric is the go-to ecosystem for client side modifications on unmodified servers. The vast majority of active development, within a Wynncraft context, occurs within the Fabric ecosystem.
+Currently, within the modding ecosystem, Fabric is the go-to choice for client-side modifications on unmodified servers. The vast majority of active development, within a Wynncraft context, occurs within the Fabric ecosystem.
 
-This is not to say that there are not alternatives. Many current wynn mods are translated into the (neo)forge ecosystem, which technically remains an option. But this is a worse choice, in general, than just running things in/with fabric since that is the most tested ecosystem and where most active development occurs. The same goes for obscure and/or deprecated ecosystems such as liteloader.
+This is not to say that there are not alternatives. Many current Wynn mods are available in the (Neo)Forge ecosystem, which technically remains an option. However, this is generally a worse choice than running things with Fabric, since that is the most tested ecosystem and where most active development occurs. The same goes for obscure and/or deprecated ecosystems such as liteloader.
 
 #### Prism v. Modrinth v. CurseForge v. Others
 > [Insert Proprietary PvP Server Client] \<\< Vanilla \<\< Curseforge \<\< Modrinth \< Prism"<br/>
 > ~Wenweia, 2026
-##### Proprietary Server Launchers (Extremely For-Profit)
-There are many proprietary clients developed and marketed for PvP, 1.8, client side anticheat, specific (again usually PvP) servers, etc. Many made so much money that they branched out to try and become general launchers, bundling fabric and running 'official' server modpacks. Lunar in particular even got Wynn to 'recommend' them. **Clients of this sort are a terrible idea for Wynn, have terrible preset packs that are generally outdated, and are responsible for the vast majority of Wynntils bugs.**
+##### Proprietary Server Launchers
+There are many proprietary, for-profit, clients developed and marketed for PvP, 1.8, client-side anticheat, specific (again, usually PvP) servers, etc. Many became profitable enough to branch out into general-purpose launchers, bundling Fabric and running 'official' server modpacks. Lunar in particular even got Wynn to 'recommend' them. **Clients of this sort are a poor choice for Wynn, ship with outdated preset packs, and are responsible for the vast majority of Wynntils bugs.**
 
-Not only does this guide not suggest any such clients, it actively recommends against using any of the for-profit clients for Wynn. This includes but is not limited to *Lunar* Client (Very outdated and buggy in a wynn context not to mention incompatible with several key aspects of functionality), *Badlion* Client (same thing, initially a CSA, server-specific), *Feather* Client (another closed server client mutated to include illegally licensed sodium), and the like.
+Not only does this guide not suggest any such clients, it actively recommends against using any of them for Wynn. This includes but is not limited to *Lunar* Client (very outdated and buggy in a Wynn context, not to mention incompatible with several key aspects of functionality), *Badlion* Client (similarly limited; initially a CSA, server-specific), *Feather* Client (another closed server client that bundles improperly licensed Sodium), and the like.
 
 ##### The Vanilla Launcher (Microsoft)
-Mojang's vanilla launcher is the baseline for playing Wynn and is indeed perfectly functional. Indeed, it's Fine™. Unlike the proprietary bullshit above, the vanilla launcher is perfectly capable of installing a standard, modern, fabric environment and not messing with the results. We don't actively discourage using the vanilla launcher, its just not the best choice, and this guide reflects that point of view.
+Mojang's vanilla launcher is the baseline for playing Wynn and is perfectly functional. Unlike the for-profit clients above, the vanilla launcher is fully capable of installing a standard, modern, Fabric environment without interfering with the results. We don't actively discourage using the vanilla launcher; it's just not the best choice, and this guide reflects that.
 
-The vanilla launcher requires a convoluted maze of menus, microsoft account logins, and store interactions to get through what should be a simple process of getting a basic Wynn client up and running. **Compared to 3rd party options, Microsoft's launcher remains less clear to use, takes longer to navigate, and generally results in a slightly worse environment.** For that reason, this guide focuses on those 3rd party options instead.
+The vanilla launcher requires a convoluted maze of menus, Microsoft account logins, and store interactions to get through what should be a simple process of getting a basic Wynn client up and running. **Compared to 3rd party options, Microsoft's launcher remains less clear to use, takes longer to navigate, and generally results in a slightly worse environment.** For that reason, this guide focuses on those 3rd party options instead.
 
-##### The Curseforge Launcher (For Profit)
-Unlike the proprietary bullshit detailed earlier, the Curseforge client is not *as* actively shit. Like the Vanilla launcher, it is more than capable of making a modern, standard, installation without messing with the results. Unlike the Vanilla launcher, it is able to accomplish this in a way that is clear, integrated, and reasonably straightforward.
+##### The CurseForge Launcher (For-Profit)
+Unlike the server-specific proprietary clients detailed earlier, the CurseForge client is not as *actively* problematic. Like the Vanilla launcher, it is more than capable of producing a modern, standard installation without interfering with the results. Unlike the Vanilla launcher, it accomplishes this in a way that is clear, integrated, and reasonably straightforward.
 
-The reason we don't recommend using Curseforge is its platform's priorities. Curseforge is a for-profit company, and the ecosystem has enhittified to the point of no longer prioritising its users. **The user experience isn't horrible, but the ads and upsells push us to instead prefer the two options below as our recommendations for this guide**.
+The reason we don't recommend CurseForge is its platform's priorities. CurseForge is a for-profit company, and the ecosystem has degraded to the point of no longer prioritising its users. **The user experience isn't terrible, but the ads and upsells push us to instead prefer the two options below as our recommendations for this guide**.
 
 ##### The Modrinth Launcher (Not for Profit)
 Designed to be clear and easy to use, Modrinth is basically Curseforge, but developed by a not for profit. As with Curseforge, the paid development has resulted in a fairly polished, easy to use, experience with great documentation and supports. Unlike Curseforge, Modrinth has managed to accomplish this without sacrificing its users. Modrinth does have some ads, but they are not nearly as intrusive as Curseforge's, and the platform's priorities remain with its users.
 
-**We recommend modrinth as the best choice for a *simple*, *intuitive*, experience**.
+**We recommend Modrinth as the best choice for a *simple* and *intuitive* experience**.
 
 ##### The Prism Launcher (Open Source)
-Designed to be functional, expansive, and open, Prism is an open force launcher developed by volunteers in the community. It is slightly less easy to use than the above two, but it is more powerful, more customisable, and more open (especially compared to Curseforge). With more features, more providers, and ad-free, **Prism is our recommendation for users willing to sacrifice a bit of ease of use for more capabilities**.
+Designed to be functional, expansive, and open, Prism is an open-source launcher developed by volunteers in the community. It is slightly less easy to use than the above two, but it is more powerful, more customisable, and more open (especially compared to Curseforge). With more features, more providers, and ad-free, **Prism is our recommendation for users willing to sacrifice a bit of ease of use for more capabilities**.
 
 #### Custom v. Optimized Family v. Skyward Family
 All sections of this guide recommend the use of a barebones, clean, performance modpack as the foundation on which to build the ensuing Wynn installation. This is, in our opinion, far preferable to dumping a single fabric jar in and hoping for the best. It is also far preferable to using the closed source and outdated optifine ecosystem, or the common practice of filling your mod folder with every "performance" mod you can find.
 
-An open source, sodium based, installation ensures performance while ensuring compatability and integration. Notably, this choice also provides some very useful safeguards that make the rest of your setup far easier. There are only two contenders for this requirement: HyperSoop's Optimised family of modpacks, and Devin's Skyward family of modpacks. This article uses the latter family on account of it being open sourced, more communal, more focused, more selective, and more targeted. 
+An open-source, Sodium-based installation ensures performance while maintaining compatibility and integration. Notably, this choice also provides some very useful safeguards that make the rest of your setup far easier. There are only two contenders for this requirement: HyperSoop's Optimised family of modpacks, and Devin's Skyward family of modpacks. This article uses the latter family on account of it being open sourced, more communal, more focused, more selective, and more targeted. 
 
 </div>
 
@@ -210,7 +210,7 @@ The first step is to create your instance.
         <div slot="5">
             <img src="/assets/guides/modding/modrinth/install.png" alt="The install button on that version" />
             <p class="glass px-2 text-center">Of the now-filtered adrenaline (or additive) listings, click the install button (red arrow) of the most recent version.</p>
-            <p class="glass px-2 text-center">Again do NOT click the button circled yellow!</p>
+            <p class="glass px-2 text-center">Again, do NOT click the button circled yellow!</p>
         </div>
         <div slot="6">
             <img src="/assets/guides/modding/modrinth/extra.png" alt="The install button on that version" />
@@ -248,7 +248,7 @@ The first step is to create your instance.
 
 <a id="involved"></a>
 
-Is your computer somewhat functional? Are you willing to spend a few extra moments to tweak Wynn to work exactly how you want it? Are you jealous of the cool mods other people are using? You've come to the right place!
+Are you willing to spend a additional time and effort to tweak Wynn exactly the way you want it? Interested in some of the additional mods other players are using? You've come to the right place!
 
 *This tutorial will give you the foundations needed to install basically any wynn mods imaginable. It will also point out a lot of the more popular ones and some important notes with respect to how you can set them up (dependencies galore)!*
 
@@ -260,7 +260,7 @@ Prism is an alternative to Mojang's vanilla launcher developed by the [community
 First things first, we need to fetch the Prism installer from [this page](https://prismlauncher.org/download/windows/)!
 
 <details>
-<summary><strong>If you would like more details on installing your prism client, expand this section!</strong></summary>
+<summary><strong>If you would like more details on installing your Prism client, expand this section!</strong></summary>
 
 #### Fetching Prism
 
@@ -306,7 +306,7 @@ First things first, we need to fetch the Prism installer from [this page](https:
     <Carousel>
         <div slot="1">
             <img src="/assets/guides/modding/prism/language.png" alt="The prism languages page" />
-            <p class="glass px-2 text-center">Opening prism for the first time, you will be prompted for a few things. The first is your language (just the interface for prism itself, not your minecraft client).</p>
+            <p class="glass px-2 text-center">Opening Prism for the first time, you will be prompted for a few things. The first is your language (just the interface for Prism itself, not your Minecraft client).</p>
         </div>
         <div slot="2">
             <img src="/assets/guides/modding/prism/appearance.png" alt="The prism appearances page" />
@@ -314,15 +314,15 @@ First things first, we need to fetch the Prism installer from [this page](https:
         </div>
         <div slot="3">
             <img src="/assets/guides/modding/prism/auth.png" alt="The prism authentication page" />
-            <p class="glass px-2 text-center">This step is important! The minecraft account(s) you log in with are the ones you will be able to launch clients for!</p>
+            <p class="glass px-2 text-center">This step is important! The Minecraft account(s) you log in with are the ones you will be able to launch clients for!</p>
         </div>
         <div slot="4">
             <img src="/assets/guides/modding/prism/auth2.png" alt="The prism microsoft authentication page" />
-            <p class="glass px-2 text-center">Prism offers several ways to authenticate with your microsoft account. The easiest is probably the "sign in with microsoft" button, which opens ms' account login website</p>
+            <p class="glass px-2 text-center">Prism offers several ways to authenticate with your Microsoft account. The easiest is probably the "Sign in with Microsoft" button, which opens Microsoft's account login website.</p>
         </div>
         <div slot="5">
             <img src="/assets/guides/modding/prism/login.png" alt="The prism microsoft authentication page" />
-            <p class="glass px-2 text-center">This is just a standard microsoft login. Login with the same account your Minecraft account was created/migrated with.</p>
+            <p class="glass px-2 text-center">This is just a standard Microsoft login. Sign in with the same account your Minecraft account was created or migrated with.</p>
         </div>
         <div slot="6">
             <img src="/assets/guides/modding/prism/loggedin.png" alt="An authenticated prism launcher" />
@@ -336,13 +336,13 @@ First things first, we need to fetch the Prism installer from [this page](https:
 We're ready to create the foundation for your Wynn instance!
 The first step is to create your instance.
 
-We will be using the Additive modpack as the basis for this install, centred on [the version Wynncraft is currently running](https://wynnvets.org/ver)
+We will be using the Additive modpack as the basis for this install, centred on [the version Wynncraft is currently running](https://wynnvets.org/ver).
 
 <div class="glass h-auto rounded-lg h-auto">
     <Carousel>
         <div slot="1">
             <img src="/assets/guides/modding/adrenaline/prism.png" alt="The prism home page" />
-            <p class="glass px-2 text-center">To get started, open prism and click 'add instance' (top left).</p>
+            <p class="glass px-2 text-center">To get started, open Prism and click 'Add Instance' (top left).</p>
         </div>
         <div slot="2">
             <img src="/assets/guides/modding/adrenaline/modrinth.png" alt="The modrinth tab of the Prism version page" />
@@ -350,11 +350,11 @@ We will be using the Additive modpack as the basis for this install, centred on 
         </div>
         <div slot="3">
             <img src="/assets/guides/modding/additive/additive.png" alt="The modrinth tab of the Prism version page" />
-            <p class="glass px-2 text-center">Search the modrinth page for the 'additive' modpack, click it, navigate to the bottom right, and click the version slider</p>
+            <p class="glass px-2 text-center">Search the Modrinth page for the 'Additive' modpack, click it, navigate to the bottom right, and click the version slider.</p>
         </div>
         <div slot="4">
             <img src="/assets/guides/modding/additive/wynnversion.png" alt="The modrinth tab of the Prism version page" />
-            <p class="glass px-2 text-center">Select [whatever version](https://wynnvets.org/ver) Wynncraft happens to be running right now, and click the 'ok' buton.</p>
+            <p class="glass px-2 text-center">Select [whatever version](https://wynnvets.org/ver) Wynncraft happens to be running right now, and click the 'ok' button.</p>
         </div>
     </Carousel>
 </div>
@@ -362,12 +362,12 @@ We will be using the Additive modpack as the basis for this install, centred on 
 ### Modding your instance
 We're ready to install Wynn mods! For the reasons outlined in the general notes section, although Wynn modpacks exist, it is generally preferable to install mods yourself.
 
-#### How to add a mod to your instance's 'shopping cart'.
+#### How to add a mod to your instance's 'shopping cart'
 <div class="glass h-auto rounded-lg h-auto">
     <Carousel>
         <div slot="1">
             <img src="/assets/guides/modding/additive/edit.png" alt="The newly created instance's edit tab" />
-            <p class="glass px-2 text-center">After giving it a few moments to install, right click on your newely created instance and click 'edit'.</p>
+            <p class="glass px-2 text-center">After giving it a few moments to install, right click on your newly created instance and click 'edit'.</p>
         </div>
         <div slot="2">
             <img src="/assets/guides/modding/additive/mods.png" alt="The newly created instance's modding tab" />
@@ -375,11 +375,11 @@ We're ready to install Wynn mods! For the reasons outlined in the general notes 
         </div>
         <div slot="3">
             <img src="/assets/guides/modding/additive/download.png" alt="The modding tab's downloads button" />
-            <p class="glass px-2 text-center">From within the modding tab, click 'download mods' button.</p>
+            <p class="glass px-2 text-center">From within the modding tab, click the 'Download Mods' button.</p>
         </div>
         <div slot="4">
             <img src="/assets/guides/modding/additive/downloading.png" alt="The modding tab searching for whatever it is you are looking for" />
-            <p class="glass px-2 text-center">(red) Search for whatever mod you are adding to your cart, (blue) click it, and (green) select it for download (basically adding it you your cart).</p>
+            <p class="glass px-2 text-center">(red) Search for whatever mod you are adding to your cart, (blue) click it, and (green) select it for download (basically adding it to your cart).</p>
             <p>Repeat this as many times as may be needed to install all the mods you are interested in.</p>
         </div>
     </Carousel>
@@ -391,7 +391,7 @@ This is your installation! Add anything you want! One of the best ways to do thi
 Some specific mods we suggest are:
 
 ##### Dependencies
-Although prism is generally pretty good at handling dependencies, a great many Wynn mods rely on a few specific resources. Therefore, we recommend installing:
+Although Prism is generally quite good at handling dependencies, a great many Wynn mods rely on a few specific resources. Therefore, we recommend installing:
 
 - [Wynntils](https://modrinth.com/mod/wynntils)
 - [Variants-CIT](https://modrinth.com/mod/variants-cit)
@@ -404,17 +404,17 @@ In no particular order, ***some*** of the more popular/useful wynn mods at the t
 - [Distant Horizons](https://modrinth.com/mod/distanthorizons) (w/ [WynnVista](https://modrinth.com/mod/wynnvista) & [WynnLODGrabber](https://modrinth.com/mod/wynnlodgrabber))
   - Shows the entire world at the same time 
 - [WynnExtras](https://modrinth.com/mod/wynnextras)
-  - A large expansion to wynntils to include a bunch of quality of life features.
+  - A large expansion to Wynntils that adds a variety of quality of life features.
 - [Wynnmod](https://modrinth.com/mod/wynnmod)
-  - Another large expansion to wynntils adding another batch of quality of life features.
+  - Another large expansion to Wynntils adding additional quality of life features.
 - [WynnAspects](https://modrinth.com/mod/wynnaspects)
-  - Keeps track of your aspects.
+  - Keeps track of your aspects
 - [WynnLimbo](https://modrinth.com/mod/wynnlimbo)
-  - Makes queuing for worlds less annoying
+  - Makes queuing for worlds less boring
 - Your Guild's mod (if they have one)
-  - Many guilds have mods that specifically address their respective needs / use cases.
+  - Many guilds have mods that specifically address their respective needs and use cases.
   - For example, many community guilds include various chat features in their mods such as discord bridges and the like.
-  - Many war guilds have a variety of toolings to aid with various aspects of warring.
+  - Many war guilds have a variety of tools to aid with various elements of warring.
     - A common example of this category is [Avomod](https://modrinth.com/mod/avomod), which, although used primarily for wars, also adds several quality of life features such as consumable colours.
   - To find your guild's mod, the best bet is just to ask around.
 
