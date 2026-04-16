@@ -1,0 +1,23 @@
+---
+interface Props {
+  title?: string;
+}
+
+const { title = "Stub section" } = Astro.props;
+---
+
+<div
+  class="relative my-4 overflow-hidden rounded-lg glass px-5 py-4 outline outline-2 -outline-offset-4 outline-amber-700/60 dark:outline-amber-300/35"
+  role="status"
+  aria-label={title}
+>
+  <div class="pointer-events-none absolute inset-0 rounded-lg bg-amber-500/10 dark:bg-amber-300/10"></div>
+
+  <p class="font-primary text-lg font-bold leading-snug text-txt-p dark:text-darkmode-txt-p md:text-xl">
+    {title}
+  </p>
+
+  <div class="mt-1 text-sm leading-relaxed text-txt-s opacity-85 dark:text-darkmode-txt-s md:text-base">
+    <slot>This section has not yet been written! We hope to have it ready soon!.</slot>
+  </div>
+</div>

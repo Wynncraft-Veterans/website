@@ -1,13 +1,13 @@
 ---
 title: (24) Rekindled World
-description: Navigating the modern impacts of features added between w2.0.4 (F23) and the present. Intended to rapidly acquaint returning players with the relevant details of past changes.
+description: Navigating the modern impacts of features added between w2.0.4 (F23) and 2.1.7 (W26). Intended to rapidly acquaint returning players with the relevant details of past changes.
 image: "@assets/docs/major-changes/update-thumbnails/Rekindled-Update.png"
 imageAlt: The logo of the Rekindled Update.
 pubDate: 2025-08-06
 modDate: 2025-12-31
 ---
 
-This guide aims to acquaint pre-rekindled players with the broad strokes of changes implemented since Wynn version 2.1.
+This guide aims to acquaint pre-rekindled players with the broad strokes of changes implemented between Wynn versions 2.0.4 (F23) and 2.1.7 (W26).
 
 It aims to explain in broad strokes how such changes are relevant to modern gameplay and provide enough information to get started with the mentioned features.
 
