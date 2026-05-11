@@ -7,8 +7,6 @@ pubDate: 2026-04-15
 modDate: 2026-04-15
 ---
 
-import StubNotice from "@components/common/StubNotice.astro";
-
 <p class="!text-txt-p dark:!text-darkmode-txt-p">
   This guide aims to acquaint pre-fruma players with the broad strokes of changes implemented since Wynn version 2.2.
 </p>
@@ -24,83 +22,55 @@ import StubNotice from "@components/common/StubNotice.astro";
 ---
 
 ## Map Expansion
-<StubNotice>
-  This section has not yet been written! We hope to have it ready soon!
-</StubNotice>
+> This section has not yet been written! We hope to have it ready soon!
 
 ### Level Bumps
-<StubNotice>
-  This section has not yet been written! We hope to have it ready soon!
-</StubNotice>
+>  This section has not yet been written! We hope to have it ready soon!
+
 <small class="block leading-tight text-txt-s/85 dark:text-darkmode-txt-s/90">(Higher prof levels, higher combat levels, 8th ability tree page, +5 AP, etc.)</small>
 
 ## New Graphics
 ### Dialog System
-<StubNotice>
-  This section has not yet been written! We hope to have it ready soon! 
-</StubNotice>
+>  This section has not yet been written! We hope to have it ready soon!
 
 ### VFX Rework
-<StubNotice>
-  This section has not yet been written! We hope to have it ready soon! 
-</StubNotice>
+>  This section has not yet been written! We hope to have it ready soon!
 
 ## Ultimate Abilities
-<StubNotice>
-  This section has not yet been written! We hope to have it ready soon!
-</StubNotice>
+>  This section has not yet been written! We hope to have it ready soon!
 
 ## Item Overhaul
 <small class="block leading-tight text-txt-s/85 dark:text-darkmode-txt-s/90">(Items have been changed in their most fundamental way since the Gavel Expansion; link to that.)</small>
-<StubNotice>
-  This section has not yet been written! We hope to have it ready soon!
-</StubNotice>
+>  This section has not yet been written! We hope to have it ready soon!
 
 ### New Item Types
-<StubNotice>
-  This section has not yet been written! We hope to have it ready soon!
-</StubNotice>
+>  This section has not yet been written! We hope to have it ready soon!
 
 #### New Item Format
 <small class="block leading-tight text-txt-s/85 dark:text-darkmode-txt-s/90">(How to understand the new changes, each item having 3 states, switching with swap hand)</small>
-<StubNotice>
-  This section has not yet been written! We hope to have it ready soon!
-</StubNotice>
+>  This section has not yet been written! We hope to have it ready soon!
 
 #### Wards
-<StubNotice>
-  This section has not yet been written! We hope to have it ready soon!
-</StubNotice>
+>  This section has not yet been written! We hope to have it ready soon!
 
 #### Set Properties
 <small class="block leading-tight text-txt-s/85 dark:text-darkmode-txt-s/90">(Set rarity was removed, this will explain what replaced it)</small>
-<StubNotice>
-  This section has not yet been written! We hope to have it ready soon!
-</StubNotice>
+>  This section has not yet been written! We hope to have it ready soon!
 
 ## The Upgrader
-<StubNotice>
-  This section has not yet been written! We hope to have it ready soon!
-</StubNotice>
+>  This section has not yet been written! We hope to have it ready soon!
 
 ### Item Ascension
-<StubNotice>
-  This section has not yet been written! We hope to have it ready soon!
-</StubNotice>
+>  This section has not yet been written! We hope to have it ready soon!
 
 ### Powder Rework
 #### T7 Powders
-<StubNotice>
-  This section has not yet been written! We hope to have it ready soon!
-</StubNotice>
+>  This section has not yet been written! We hope to have it ready soon!
 
 #### Powder Restrictions
-<StubNotice>
-  This section has not yet been written! We hope to have it ready soon!
-</StubNotice>
+>  This section has not yet been written! We hope to have it ready soon!
 
 ## Mounts
-<StubNotice>
-  This section has not yet been written! We hope to have it ready soon!
-</StubNotice>
+>  This section has not yet been written! We hope to have it ready soon!
+
 <small class="block leading-tight text-txt-s/85 dark:text-darkmode-txt-s/90">(This will need to explain the 3 types in the game, the <em>basics</em> of <em>where</em> to breed them, what happened to old horses, and general info at a very superficial level. This is such a massive change that it will warrant a standalone guide-level article, which this should defer to.)</small>
