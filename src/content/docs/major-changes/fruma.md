@@ -67,6 +67,8 @@ modDate: 2026-04-15
 
 #### Set Properties
 
+![image](https://i.wynnvets.org/i/510ba241-85fa-44d6-b22f-435d73ed8f13.jpg)
+
 <small class="block leading-tight text-txt-s/85 dark:text-darkmode-txt-s/90">(Set rarity was removed, this will explain what replaced it)</small>
 
 >  This section has not yet been written! We hope to have it ready soon!

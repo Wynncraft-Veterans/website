@@ -84,3 +84,4 @@ dist/
 .json/
 .code-workspace
 vetsSite.code-workspace
+package-lock.json
