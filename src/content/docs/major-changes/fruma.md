@@ -22,55 +22,75 @@ modDate: 2026-04-15
 ---
 
 ## Map Expansion
-> This section has not yet been written! We hope to have it ready soon!
+
+> This section has not yet been written! We hope to have it ready soon! As in now!
 
 ### Level Bumps
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 <small class="block leading-tight text-txt-s/85 dark:text-darkmode-txt-s/90">(Higher prof levels, higher combat levels, 8th ability tree page, +5 AP, etc.)</small>
 
 ## New Graphics
+
 ### Dialog System
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 ### VFX Rework
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 ## Ultimate Abilities
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 ## Item Overhaul
+
 <small class="block leading-tight text-txt-s/85 dark:text-darkmode-txt-s/90">(Items have been changed in their most fundamental way since the Gavel Expansion; link to that.)</small>
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 ### New Item Types
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 #### New Item Format
+
 <small class="block leading-tight text-txt-s/85 dark:text-darkmode-txt-s/90">(How to understand the new changes, each item having 3 states, switching with swap hand)</small>
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 #### Wards
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 #### Set Properties
+
 <small class="block leading-tight text-txt-s/85 dark:text-darkmode-txt-s/90">(Set rarity was removed, this will explain what replaced it)</small>
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 ## The Upgrader
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 ### Item Ascension
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 ### Powder Rework
+
 #### T7 Powders
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 #### Powder Restrictions
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 ## Mounts
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 <small class="block leading-tight text-txt-s/85 dark:text-darkmode-txt-s/90">(This will need to explain the 3 types in the game, the <em>basics</em> of <em>where</em> to breed them, what happened to old horses, and general info at a very superficial level. This is such a massive change that it will warrant a standalone guide-level article, which this should defer to.)</small>
