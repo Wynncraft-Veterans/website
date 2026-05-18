@@ -617,21 +617,19 @@ Given our <button type="button" popovertarget="anni-capacity-popover" class="und
 			line-height: 1.2;
 			margin-top: 1px;
 		}
-		#anni-priority .lk-guaranteed { background: rgba(34,197,94,0.18); }
-		#anni-priority .lk-more-often { background: rgba(45,212,191,0.15); }
-		#anni-priority .lk-frequently { background: rgba(234,179,8,0.13); }
-		#anni-priority .lk-often { background: rgba(249,155,22,0.13); }
-		#anni-priority .lk-sometimes { background: rgba(239,68,68,0.12); }
-		#anni-priority .lk-rarely { background: rgba(239,68,68,0.22); }
+		#anni-priority .lk-most-likely { background: rgba(34,197,94,0.18); }
+		#anni-priority .lk-very-likely { background: rgba(45,212,191,0.15); }
+		#anni-priority .lk-likely { background: rgba(234,179,8,0.13); }
+		#anni-priority .lk-unlikely { background: rgba(249,155,22,0.13); }
+		#anni-priority .lk-very-unlikely { background: rgba(239,68,68,0.12); }
+		#anni-priority .lk-most-unlikely { background: rgba(239,68,68,0.22); }
+		#anni-priority .lk-na { background: rgba(255,255,255,0.04); opacity: 0.5; text-align: center; }
 		#anni-priority .circ-guild { background: rgba(99,102,241,0.15); }
 		#anni-priority .circ-community { background: rgba(168,85,247,0.12); }
 		#anni-priority .circ-allied { background: rgba(236,72,153,0.12); }
 		#anni-priority .circ-external { background: rgba(239,68,68,0.14); }
 		#anni-priority .role-nonfill { background: rgba(59,130,246,0.14); }
 		#anni-priority .role-fill { background: rgba(156,163,175,0.14); }
-		#anni-priority .res-early { background: rgba(34,197,94,0.14); }
-		#anni-priority .res-strong { background: rgba(234,179,8,0.12); }
-		#anni-priority .res-weak { background: rgba(249,115,22,0.12); }
 		.dark #anni-priority,
 		.dark #anni-priority details > summary,
 		.dark #anni-priority th,
@@ -641,99 +639,80 @@ Given our <button type="button" popovertarget="anni-capacity-popover" class="und
 	`}</style>
 	<details>
 		<summary><span style="color: #cecece;">Attendance Prioritization</span></summary>
+		<p style="color:#cecece; font-size:0.72rem; margin:0.45rem 0.4rem 0.55rem; line-height:1.35;">Slot chances depend on your relationship to the community, the strength of your RSVP, and the type of slot being requested.</p>
 		<table>
 			<thead>
 				<tr>
 					<th>Circumstances</th>
-					<th>Role</th>
-					<th>Reservation</th>
-					<th>Likelihood</th>
+					<th>Requested Slot</th>
+					<th>1hr+ Early</th>
+					<th>Strong RSVP<span class="sub">(and 20+ min early)</span></th>
+					<th>Weak RSVP<span class="sub">(and 40+ min early)</span></th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
 					<td class="circ-guild">Guild Member</td>
-					<td class="role-nonfill">Non-Fill</td>
-					<td class="res-early">1hr Early</td>
-					<td class="lk-guaranteed"><strong>Virtually Guaranteed</strong></td>
+					<td class="role-nonfill">Regular Slot</td>
+					<td class="lk-most-likely"><strong>Most Likely</strong></td>
+					<td class="lk-most-likely"><strong>Most Likely</strong></td>
+					<td class="lk-likely">Likely</td>
 				</tr>
 				<tr>
 					<td class="circ-guild">Guild Member</td>
-					<td class="role-fill">Fill<span class="sub">or not on AnniRoles</span></td>
-					<td class="res-early">1hr Early</td>
-					<td class="lk-guaranteed"><strong>Virtually Guaranteed</strong></td>
+					<td class="role-fill">Fill Slot<span class="sub">or not on AnniRoles</span></td>
+					<td class="lk-most-likely"><strong>Most Likely</strong></td>
+					<td class="lk-very-likely">Very Likely</td>
+					<td class="lk-unlikely">Unlikely</td>
 				</tr>
 				<tr>
-					<td class="circ-guild">Guild Member<span class="sub">or Waitlist</span></td>
-					<td class="role-nonfill">Non-Fill</td>
-					<td class="res-strong">Strong RSVP</td>
-					<td class="lk-guaranteed"><strong>Virtually Guaranteed</strong><span class="sub">if 20+ min early</span></td>
+					<td class="circ-guild">Waitlist<span class="sub">or Honourary</span></td>
+					<td class="role-nonfill">Regular Slot</td>
+					<td class="lk-most-likely"><strong>Most Likely</strong></td>
+					<td class="lk-very-likely">Very Likely</td>
+					<td class="lk-likely">Likely</td>
 				</tr>
 				<tr>
-					<td class="circ-guild">Guild Member<span class="sub">or Waitlist</span></td>
-					<td class="role-fill">Fill<span class="sub">or not on AnniRoles</span></td>
-					<td class="res-strong">Strong RSVP</td>
-					<td class="lk-more-often">More Often Than Not<span class="sub">if 20+ min early</span></td>
-				</tr>
-				<tr>
-					<td class="circ-guild">Guild Member<span class="sub">or Waitlist</span></td>
-					<td class="role-nonfill">Non-Fill</td>
-					<td class="res-weak">Weak RSVP</td>
-					<td class="lk-more-often">More Often Than Not<span class="sub">if 20+ min early</span></td>
-				</tr>
-				<tr>
-					<td class="circ-guild">Guild Member<span class="sub">or Waitlist</span></td>
-					<td class="role-fill">Fill<span class="sub">or not on AnniRoles</span></td>
-					<td class="res-weak">Weak RSVP</td>
-					<td class="lk-frequently">Frequently<span class="sub">if 20+ min early</span></td>
+					<td class="circ-guild">Waitlist<span class="sub">or Honourary</span></td>
+					<td class="role-fill">Fill Slot<span class="sub">or not on AnniRoles</span></td>
+					<td class="lk-very-likely">Very Likely</td>
+					<td class="lk-likely">Likely</td>
+					<td class="lk-unlikely">Unlikely</td>
 				</tr>
 				<tr>
 					<td class="circ-community">Community<span class="sub">Guildless</span></td>
-					<td class="role-nonfill">Non-Fill</td>
-					<td class="res-strong">Strong RSVP</td>
-					<td class="lk-frequently">Frequently<span class="sub">if 20+ min early</span></td>
+					<td class="role-nonfill">Regular Slot</td>
+					<td class="lk-na">&mdash;</td>
+					<td class="lk-unlikely">Unlikely</td>
+					<td class="lk-very-unlikely">Very Unlikely</td>
 				</tr>
 				<tr>
 					<td class="circ-community">Community<span class="sub">Guildless</span></td>
-					<td class="role-fill">Fill<span class="sub">or not on AnniRoles</span></td>
-					<td class="res-strong">Strong RSVP</td>
-					<td class="lk-often">Often<span class="sub">if 20+ min early</span></td>
+					<td class="role-fill">Fill Slot<span class="sub">or not on AnniRoles</span></td>
+					<td class="lk-na">&mdash;</td>
+					<td class="lk-unlikely">Unlikely</td>
+					<td class="lk-most-unlikely">Most Unlikely</td>
 				</tr>
 				<tr>
-					<td class="circ-community">Community<span class="sub">Guildless</span></td>
-					<td class="role-nonfill">Non-Fill</td>
-					<td class="res-weak">Weak RSVP</td>
-					<td class="lk-often">Often<span class="sub">if 20+ min early</span></td>
+					<td class="circ-allied">Community<span class="sub">Allied Guild</span></td>
+					<td class="role-nonfill">Regular Slot</td>
+					<td class="lk-na">&mdash;</td>
+					<td class="lk-unlikely">Unlikely</td>
+					<td class="lk-very-unlikely">Very Unlikely</td>
 				</tr>
 				<tr>
-					<td class="circ-allied">Ally<span class="sub">Member of Allied Guild</span></td>
-					<td class="role-nonfill">Non-Fill</td>
-					<td class="res-strong">Strong RSVP</td>
-					<td class="lk-often">Often<span class="sub">if 20+ min early</span></td>
+					<td class="circ-allied">Community<span class="sub">Allied Guild</span></td>
+					<td class="role-fill">Fill Slot<span class="sub">or not on AnniRoles</span></td>
+					<td class="lk-na">&mdash;</td>
+					<td class="lk-very-unlikely">Very Unlikely</td>
+					<td class="lk-most-unlikely">Most Unlikely</td>
 				</tr>
 				<tr>
-					<td class="circ-allied">Ally<span class="sub">Member of Allied Guild</span></td>
-					<td class="role-nonfill">Non-Fill</td>
-					<td class="res-weak">Weak RSVP</td>
-					<td class="lk-sometimes">Sometimes<span class="sub">if 20+ min early</span></td>
-				</tr>
-				<tr>
-					<td class="circ-community">Community<span class="sub">Guildless</span></td>
-					<td class="role-fill">Fill<span class="sub">or not on AnniRoles</span></td>
-					<td class="res-weak">Weak RSVP</td>
-					<td class="lk-sometimes">Sometimes<span class="sub">if 20+ min early</span></td>
-				</tr>
-				<tr>
-					<td class="circ-allied">Ally<span class="sub">Member of Allied Guild</span></td>
-					<td class="role-fill">Fill<span class="sub">or not on AnniRoles</span></td>
-					<td class="res-weak">Weak RSVP</td>
-					<td class="lk-rarely">Rarely</td>
-				</tr>
-				<tr>
-					<td class="circ-external">Other<span class="sub">External Guild</span></td>
-					<td class="role-nonfill">Non-Fill</td>
-					<td class="res-strong">Strong RSVP</td>
-					<td class="lk-rarely">Rarely</td>
+					<td class="circ-external">Community<span class="sub">Other Guild</span></td>
+					<td>Any Slot</td>
+					<td class="lk-na">&mdash;</td>
+					<td class="lk-very-unlikely">Very Unlikely</td>
+					<td class="lk-most-unlikely">Most Unlikely</td>
 				</tr>
 			</tbody>
 		</table>
