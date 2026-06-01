@@ -16,7 +16,7 @@ const { entry, browserMenu } = Astro.props;
 
 const { Content, headings } = await render(entry);
 const { title, description, hideNav, hideToc, image } = entry.data;
-const isMajorChanges = entry.id.startsWith("major-changes/"); // TEMPORARY — remove with FrumaOutdatedBanner.astro
+const isMajorChanges = entry.id === "major-changes/fruma"; // TEMPORARY — remove with FrumaOutdatedBanner.astro
 
 const globalHideNav = false;
 const globalHideToc = false;
