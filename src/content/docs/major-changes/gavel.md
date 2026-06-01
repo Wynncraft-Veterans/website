@@ -73,7 +73,7 @@ Your own elemental defenses work the same way, so they don't really do much unle
 
 Powders were also redone. There are powders for each element and six tiers of said powders. On weapons, they **decrease** neutral damage but **increase** elemental damage (based on the powder you're adding, the amounts are different. If you add two Tier 4 (or higher) powders *of the same element* to the same item, you gain a powder special. Powder specials are like  secondary spells, they charge up as you damage mobs and will notify you  when they are fully charged. Then you shift + attack to cast them. You  cannot have more than one powder special per weapon.
 
- On armour, they **increase** elemental defense in one element and **decrease** it in another. If you put two Tier 4 (or higher) powders *of the same element* on the same armour piece, you gain an armour Powder Special. These are  passive buffs. Again, you can only have one per armour piece.
+ On armour, they **increase** elemental defense in one element and **decrease** it in another. If you put two Tier 4 (or higher) powders *of the same element* on the same armour piece, you gain an armour Powder Special. These are  passive buffs. Again, you can only have one per armour piece. Note that higher level powders are no longer able to be applied to lower level items.
 
  Visit this [link](https://forums.wynncraft.com/threads/the-powder-guide.180305/) for more information on all powder-related things.
 
