@@ -9,4 +9,5 @@ category:
   - Discord
   - Economy
   - Trade
+type: tool
 ---

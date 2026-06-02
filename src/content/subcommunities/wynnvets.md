@@ -10,4 +10,5 @@ category:
   - Discord
   - Legacy
   - Information
+type: tool
 ---

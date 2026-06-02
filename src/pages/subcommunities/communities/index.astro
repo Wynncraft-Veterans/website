@@ -6,7 +6,7 @@ import type { SubcommunitiesEntry } from "@/types";
 
 const entryIndex = (await getIndex("subcommunities")) as SubcommunitiesEntry;
 const allEntries = (await getEntries("subcommunities", sortByDate)) as SubcommunitiesEntry[];
-const entries = allEntries.filter((e) => e.data.type === "tool");
+const entries = allEntries.filter((e) => e.data.type === "community");
 
 const entriesPerPage = 6;
 const pageCount = Math.ceil(entries.length / entriesPerPage);
@@ -18,5 +18,5 @@ const currentEntries = entries.slice(0, entriesPerPage);
   entries={currentEntries}
   pageIndex={1}
   pageCount={pageCount}
-  activeTab="tool"
+  activeTab="community"
 />

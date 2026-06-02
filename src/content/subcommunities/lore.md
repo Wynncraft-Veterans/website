@@ -8,4 +8,5 @@ imageAlt: The WynnTheory logo
 category:
   - Discord
   - Information
+type: community
 ---

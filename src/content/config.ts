@@ -158,6 +158,7 @@ const subcommunities = defineCollection({
       imageAlt: z.string().default("image"),
       category: z.array(z.string()).optional(),
       location: z.string().optional(),
+      type: z.enum(["tool", "community"]).optional(),
     }),
 });
 

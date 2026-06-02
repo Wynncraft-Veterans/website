@@ -8,5 +8,6 @@ imageAlt: The wynntils logo
 category:
   - Software
   - Support
+type: tool
 ---
 

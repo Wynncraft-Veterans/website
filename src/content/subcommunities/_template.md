@@ -7,4 +7,5 @@ location: https://example.com
 imageAlt: image
 category:
   - Step
+type: tool
 ---

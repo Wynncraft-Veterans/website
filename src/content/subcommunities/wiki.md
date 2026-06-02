@@ -8,4 +8,5 @@ imageAlt: The wynncraft wiki logo
 category:
   - Website
   - Information
+type: tool
 ---
