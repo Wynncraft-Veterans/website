@@ -14,6 +14,9 @@ export default defineConfig({
   site: "https://www.wynnvets.org",
   base: "",
   trailingSlash: "ignore",
+  redirects: {
+    "/subcommunities": "/subcommunities/community",
+  },
   prefetch: {
     prefetchAll: true
   },

@@ -9,5 +9,4 @@ category:
   - Information
   - Technical
   - Information
-type: community
 ---

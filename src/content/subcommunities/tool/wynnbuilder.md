@@ -8,5 +8,4 @@ imageAlt: The wynnbuilder logo
 category:
   - Website
   - Information
-type: tool
 ---

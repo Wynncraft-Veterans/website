@@ -17,7 +17,7 @@ interface Props {
 const { entryIndex, entries, pageIndex, pageCount, activeTab }: Props = Astro.props;
 
 const basePath =
-  activeTab === "tool" ? "/subcommunities" : "/subcommunities/communities";
+  activeTab === "tool" ? "/subcommunities/tool" : "/subcommunities/community";
 ---
 
 <BaseLayout

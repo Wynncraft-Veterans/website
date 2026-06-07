@@ -9,5 +9,4 @@ category:
   - Activities
   - Information
   - Services
-type: community
 ---

@@ -8,5 +8,4 @@ imageAlt: The nori logo
 category:
   - Website
   - Information
-type: tool
 ---

@@ -1,12 +1,11 @@
 ---
 import CollectionLayout from "@components/subcommunities/CollectionLayout.astro";
-import { getIndex, getEntries } from "@lib/contentParser";
+import { getIndex, getEntriesInGroup } from "@lib/contentParser";
 import { sortByDate } from "@lib/sortFunctions";
 import type { SubcommunitiesEntry } from "@/types";
 
 const entryIndex = (await getIndex("subcommunities")) as SubcommunitiesEntry;
-const allEntries = (await getEntries("subcommunities", sortByDate)) as SubcommunitiesEntry[];
-const entries = allEntries.filter((e) => e.data.type === "tool");
+const entries = (await getEntriesInGroup("subcommunities", "tool", sortByDate)) as SubcommunitiesEntry[];
 
 const entriesPerPage = 6;
 const pageCount = Math.ceil(entries.length / entriesPerPage);

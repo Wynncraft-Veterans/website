@@ -9,5 +9,4 @@ category:
   - Leaderboards
   - Activities
   - Information
-type: community
 ---

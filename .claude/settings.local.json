@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(New-Item -ItemType Directory -Path \"src\\\\pages\\\\subcommunities\\\\tool\" -Force)",
+      "PowerShell(Move-Item \"src\\\\pages\\\\subcommunities\\\\index.astro\" \"src\\\\pages\\\\subcommunities\\\\tool\\\\index.astro\")",
+      "PowerShell(Move-Item \"src\\\\pages\\\\subcommunities\\\\page\" \"src\\\\pages\\\\subcommunities\\\\tool\\\\page\")",
+      "PowerShell(Move-Item \"src\\\\pages\\\\subcommunities\\\\communities\" \"src\\\\pages\\\\subcommunities\\\\community\")",
+      "PowerShell(Remove-Item -Path \"src\\\\pages\\\\subcommunities\\\\communities\" -Recurse -Force; Get-ChildItem -Path \"src\\\\pages\\\\subcommunities\" -Recurse -Force | ForEach-Object { $_.FullName })",
+      "PowerShell(npm run build 2>&1)",
+      "PowerShell(Get-ChildItem -Path \"dist\\\\subcommunities\" -Recurse | ForEach-Object { $_.FullName })"
+    ]
+  }
+}

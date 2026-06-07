@@ -8,5 +8,4 @@ imageAlt: The brutecraft logo
 category:
   - Website
   - Tools
-type: tool
 ---

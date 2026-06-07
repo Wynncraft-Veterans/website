@@ -10,5 +10,4 @@ category:
   - Activity
   - Leaderboard
   - Information
-type: community
 ---

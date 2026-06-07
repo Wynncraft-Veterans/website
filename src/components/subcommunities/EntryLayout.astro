@@ -26,12 +26,11 @@ const {
   category,
   location,
   imageAlt,
-  type,
 } = entry.data
 
 const entryDate = date ? formatDate(date) : null;
 const linkLabel =
-  type === "community" ? "Link to Community" : "Link to Tool";
+  entry.id.startsWith("community/") ? "Link to Community" : "Link to Tool";
 ---
 
 <BaseLayout title={title} description={description} image={image?.src}>

@@ -8,5 +8,4 @@ imageAlt: The wynnpool logo
 category:
   - Website
   - Information
-type: tool
 ---
