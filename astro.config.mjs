@@ -1,4 +1,5 @@
 import mdx from "@astrojs/mdx";
+import { unified } from "@astrojs/markdown-remark";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import AutoImport from "astro-auto-import";
@@ -23,13 +24,16 @@ export default defineConfig({
     imports: ["@components/common/Button.astro", "@shortcodes/Accordion", "@shortcodes/Notice", "@shortcodes/Youtube", "@shortcodes/Tabs", "@shortcodes/Tab"]
   }), mdx()],
   markdown: {
-    remarkPlugins: [remarkToc, [remarkCollapse, {
-      test: "Table of contents"
-    }], remarkMath],
-    rehypePlugins: [[rehypeKatex, {}]],
+    processor: unified({
+      remarkPlugins: [
+        remarkToc,
+        [remarkCollapse, { test: "Table of contents" }],
+        remarkMath,
+      ],
+      rehypePlugins: [[rehypeKatex, {}]],
+    }),
     shikiConfig: {
       theme: "dark-plus", // https://shiki.style/themes
     },
-    extendDefaultPlugins: true
   },
 });
