@@ -37,9 +37,11 @@ In addition to adding a multitude of new islands, this update updated all existi
 <small>Section written by Wenweia</small>
 
 ### Horses
-This update added horses! These were subsequently replaced by the current mounts system, even though they are less popular than they once were, a decade later, horses still have a place in the game (albeit as one of three [mount](/docs/major-changes/fruma#Mounts) types). Note that your old horses will no longer function in current versions of Wynn: you will need to restore them through an [enclosure](/docs/major-changes/fruma#Enclosures).
+This update added horses! Historically, horses had four levels: Brown (1), Black (2), Chestnut (3), and White (4), upgradable via a mixture of gambling, dungeons, and riding. This system is no longer in the game, having been fully replaced by the new [mounts system](/docs/major-changes/fruma#Mounts); horses are now one of several types of mounts, and although less relevant than they once were, are still used within the game!
 
-Historically, horses had four levels: Brown (1), Black (2), Chestnut (3), and White (4), upgradable via a mixture of gambling, dungeons, and riding. This system is no longer in the game, having been fully replaced by the new [mounts system](/docs/major-changes/fruma#Mounts)
+Note that your old horses will no longer function in current versions of Wynn: you will need to restore them through an [enclosure](/docs/major-changes/fruma#Enclosures).
+
+
 
 ### Fast Travel
 With the release of the questing update, a new quest reward was introduced to the game: fast travel. Basically, these are locations that, following the completion of a quest, allow one to travel directly from one place to another without the delay of having to actually walk there.
@@ -101,4 +103,4 @@ Currently, the item tier ladder in the game is **Normal < Unique < Rare < Legend
 
 <figcaption style="margin-top: -20px !important;">One item of each rarity, highlighted by Wynntils.</figcaption></figure></div>
 
-Some other tiers were subsequently added that warrant further note here. [Fabled](https://www.wynnvets.org/docs/major-changes/expanse/#fabled-rarity), for instance, is a bit unique and will be detailed further in later sections. Another recent item tier, [crafted](https://www.wynnvets.org/docs/major-changes/economy/#types-of-crafted-items), does not fit cleanly on the normal < mythic ladder: its utility differs depending on a given item's composition. Finally, it is worth a passing mention of the now-removed set tier, which also didn't fit cleanly on the ladder.
+Some other tiers were subsequently added that warrant further note here. [Fableds](https://www.wynnvets.org/docs/major-changes/expanse/#fabled-rarity), for instance, are a bit unique and will be detailed further in later sections. Other unique tiers outside the above latter include [crafteds](https://www.wynnvets.org/docs/major-changes/economy/#types-of-crafted-items) and included sets (now-removed).

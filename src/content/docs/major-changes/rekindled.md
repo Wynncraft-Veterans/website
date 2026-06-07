@@ -105,9 +105,7 @@ Also from crates, these play a specific animation when you do /emote.
 
 <small>Section written by Wenweia</small>
 
-The Wynn website was redone again recently. Although the forums still exist, they are very much a legacy system. Instead, Wynn now allows you to make a single account that gets shared across all aspects of the website (store, stats, discord linking, apis, etc).
-
-The API has also become an acquired taste, by default hiding large portions of the stats older players are used to. Although these can be reenabled once you make an account, it is more common these days to view them through third party sites [such as this one](https://www.wynnpool.com/stats).
+The Wynn website was redone again recently. Although the forums still exist, they are very much a legacy system. Instead, Wynn now allows you to make a single account that gets shared across all elements of Wynn's online presence (store, stats, discord linking, apis, etc). Note that the official wynn stats website now by default hides most stats older players had grown used to: use of community-made leaderboards [such as this one](https://www.wynnpool.com/stats) provides a popular remedy Wynn's statistics interface simplification.
 
 ---
 

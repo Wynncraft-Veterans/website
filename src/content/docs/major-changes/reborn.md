@@ -93,7 +93,7 @@ Cost: 1 Tol Rune
 Prerequisite: *A Journey Further* (Lvl. 101)
 Cost: 1 Tol Rune
 
-**The Nameless Anomaly** (Lvl. 119)
+**The Wartorn Palace** (Lvl. 119)
 Prerequisite: *Apotheosis* (Lvl. 119)
 Cost: 1 Ek Rune
 
@@ -161,9 +161,9 @@ Most tomes can be acquired as end pull rewards from raids. Each raid has its own
 
 <small>Section written by Wenweia</small>
 
-​	Corkian amplifiers are a new type of reward that primarily appear through raids. T1 amps are very common, T2 amps are fairly common, and T4 amps are less common. Many guilds keep a supply of amplifiers in your their guild banks.
+​	Corkian amplifiers are a new type of reward that primarily appear through raids (although many guilds keep a supply of them in their guild banks). T1 amps are common, T4 amps are not, with the middle tiers in between, the former giving the smallest boost to your luck, the latter giving the strongest (More specifically, your roles are increased by a tier-dependant fixed percentage of the delta between what you would have rolled and what you could have rolled).
 
-​	These items simply slightly boost the rolls you receive on items after you identify them (T1 amps give the smallest boost, T4 amps give you the strongest). This isn't always enough to counteract your luck though; if you have [terrible luck](https://www.wynnvets.org/docs/guild/culture/#wenluck--arxluck), it is still possible to end up with a truly bad roll despite having used amplifiers.
+​	Amps are always beneficial (at least on paper), but aren't enough to counter [terrible luck](https://www.wynnvets.org/docs/guild/culture/#wenluck--arxluck) since bad rolls are still possible despite using amplifiers.
 
 ### Emerald Pouches
 
