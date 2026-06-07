@@ -9,7 +9,13 @@
       "PowerShell(npm run build 2>&1)",
       "PowerShell(Get-ChildItem -Path \"dist\\\\subcommunities\" -Recurse | ForEach-Object { $_.FullName })",
       "Bash(npm audit *)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(xargs grep -l \"swiper\")",
+      "Bash(npm list *)",
+      "Bash(npm view *)",
+      "Bash(npm install *)",
+      "Bash(npm uninstall *)",
+      "Bash(git mv *)"
     ]
   }
 }
