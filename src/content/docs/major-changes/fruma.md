@@ -38,6 +38,7 @@ This update bumped the server's combat level cap from 105 (106 bonus) to 120 (12
 In doing so, the new combat level added an 8th [ability tree](/docs/major-changes/spellbound/The Ability Tree) page with brand new [ultimate abilities](/docs/major-changes/fruma#Ultimate abilities), and the new effective profession level added two new resource tiers (Titanium/Sturgeon/Jute/Maple at level 110 and Cinnabar/Mahseer/Heather/Redwood at level 115). Dernic was moved from level 103 to level 105 to accommodate this new progression.
 
 ## New Graphics
+
 ### Dialog System
 
 <small>Article written by Wenweia:</small>
@@ -118,19 +119,25 @@ With the Fruma Expansion, set rarities were removed and replaced with special â€
 </div>
 
 ## The Upgrader
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 ### Item Ascension
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 ### Powder Rework
+
 #### T7 Powders
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 #### Powder Restrictions
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 ## Mounts
+
 >  This section has not yet been written! We hope to have it ready soon!
 
 <small class="block leading-tight text-txt-s/85 dark:text-darkmode-txt-s/90">(This will need to explain the 3 types in the game, the <em>basics</em> of <em>where</em> to breed them, what happened to old horses, and general info at a very superficial level. This is such a massive change that it will warrant a standalone guide-level article, which this should defer to.)</small>
