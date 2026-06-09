@@ -144,6 +144,7 @@ const idFor = (slug: string) => `${hashPrefix}-${slug}`;
 			}, { passive: false });
 		}
 		function populateToc() {
+			if (!document.querySelector('[data-icon-tabs-scroller]')) return true;
 			const tocHeading = Array.from(document.querySelectorAll('h2')).find(function(h) {
 				return h.textContent && h.textContent.trim() === 'Contents';
 			});
