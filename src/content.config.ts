@@ -64,7 +64,10 @@ const blog = defineCollection({
 });
 
 const docs = defineCollection({
-  loader: glob({ pattern: "**\/[^_]*.{md,mdx}", base: "./src/content/docs" }),
+  loader: glob({
+    pattern: ["**\/[^_]*.{md,mdx}", "!guild/memes/**"],
+    base: "./src/content/docs",
+  }),
   schema: ({ image }) =>
     searchable.extend({
       pubDate: z.date().optional(),
@@ -74,6 +77,18 @@ const docs = defineCollection({
       hideToc: z.boolean().default(false),
       hideNav: z.boolean().default(false),
     }),
+});
+
+const memes = defineCollection({
+  loader: glob({
+    pattern: "**\/[^_]*.{md,mdx}",
+    base: "./src/content/docs/guild/memes",
+  }),
+  schema: z.object({
+    title: z.string(),
+    author: z.string(),
+    icon: z.string(),
+  }),
 });
 
 const home = defineCollection({
@@ -175,6 +190,7 @@ export const collections = {
   home,
   indexCards,
   history,
+  memes,
   page,
   projects,
   subcommunities,

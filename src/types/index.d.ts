@@ -10,6 +10,7 @@ export type DocsEntry = CollectionEntry<"docs">;
 export type HomeEntry = CollectionEntry<"home">;
 export type IndexCardsEntry = CollectionEntry<"indexCards">;
 export type HistoryEntry = CollectionEntry<"history">;
+export type MemesEntry = CollectionEntry<"memes">;
 export type PageEntry = CollectionEntry<"page">;
 export type ProjectsEntry = CollectionEntry<"projects">;
 export type SubcommunitiesEntry = CollectionEntry<"subcommunities">;
