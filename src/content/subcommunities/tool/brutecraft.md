@@ -1,0 +1,12 @@
+---
+title: Brutecraft
+description: A tool for optimising crafting recipes (part of professions) through the brute force of your web browser's resources.
+image: "@assets/subcommunities/brutecraft.webp"
+date: 2026-06-08
+location: https://brutecraft.warze.org/
+imageAlt: The brutecraft logo
+category:
+  - Webapp
+  - Crafting Simulator
+  - Crafting Calculator
+---

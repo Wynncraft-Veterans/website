@@ -4,7 +4,7 @@ description: Navigating the modern impacts of features added between w2.2 (W26) 
 image: "@assets/docs/major-changes/update-thumbnails/Fruma-Update.png"
 imageAlt: The logo of the Fruma Expansion.
 pubDate: 2026-04-15
-modDate: 2026-04-15
+modDate: 2026-06-06
 ---
 
 <p class="!text-txt-p dark:!text-darkmode-txt-p">
@@ -23,78 +23,100 @@ modDate: 2026-04-15
 
 ## Map Expansion
 
-> This section has not yet been written! We hope to have it ready soon! As in now!
+<small>Article written by Wenweia:</small>
+
+This update added the long awaited **FRUMA PROVINCE**, located to the south of Corkus and to the west of Wynn. A 105-120 area, this new province is the player's original homeland.
+
+The new province has gates to the southwestern ocean (south of Relos), and to the Wynn plains (back of Ragni)
 
 ### Level Bumps
 
->  This section has not yet been written! We hope to have it ready soon!
+<small>Article written by Wenweia:</small>
 
-<small class="block leading-tight text-txt-s/85 dark:text-darkmode-txt-s/90">(Higher prof levels, higher combat levels, 8th ability tree page, +5 AP, etc.)</small>
+This update bumped the server's combat level cap from 105 (106 bonus) to 120 (121 bonus) and the server's effective profession maximum from 103 to 115 (level 130/131 remains the hard limit).
+
+In doing so, the new combat level added an 8th [ability tree](/docs/major-changes/spellbound/The Ability Tree) page with brand new [ultimate abilities](/docs/major-changes/fruma#Ultimate abilities), and the new effective profession level added two new resource tiers (Titanium/Sturgeon/Jute/Maple at level 110 and Cinnabar/Mahseer/Heather/Redwood at level 115). Dernic was moved from level 103 to level 105 to accommodate this new progression.
 
 ## New Graphics
 
 ### Dialog System
 
->  This section has not yet been written! We hope to have it ready soon!
+<small>Article written by Wenweia:</small>
+
+Using new features of Minecraft clients and enabled via Wynnpack, in this update, Wynn managed to extract character chats from the user's chat and move them to a new dedicated display format!
+
+Dialog from Quest NPCs and other characters will now appear in this new format, generally accompanied by a sprite image of the character speaking. The new format is able to offer users choices between several options, with this feature used frequently in newer quests (albeit rarely impacting progress beyond a single quest).
 
 ### VFX Rework
 
->  This section has not yet been written! We hope to have it ready soon!
+<small>Article written by Wenweia and akaPasta:</small>
 
-## Ultimate Abilities
+The new technical capabilities described above also enabled Wynn to move away from particles for spell actions and towards a new sprite system. Every single spell in the game, and most gameplay-related actions, now have animated art assets that render directly!
 
->  This section has not yet been written! We hope to have it ready soon!
+Since these can be overwhelming at times, Wynn also added the ability to control the transparency of these new animations with `/toggle vfx <level>`. 
 
 ## Item Overhaul
+This update came with the fourth major change to the ways items function and the ways items display information.
 
-Items have been changed in their most fundamental way since the [Gavel Expansion](https://www.wynnvets.org/docs/major-changes/gavel/). The major changes include a new item GUI, the introduction of a new item type, and the removal of the set item rarity.
+### New item behaviours
+This update made it so that spells cast with one item persist across switches to another; if you try to drink a potion after casting a spell, it will no longer cancel the effects of your spell! Another change in a similar vein concerns item prerequisites: if your skillpoint distribution renders you unable to use an item, that item will now disable itself rather than unequipping..
 
-#### New Item Format
+### New item tooltips
+This update changed item tooltips such that their backgrounds are now custom texture assets. Unique items will have a plain gold box and a dark yellow background, mythic items will have a glowing purple frame outlining their purple background, etc.
 
-This update replaces the old item tooltips with a new custom GUI with three views. You can switch between these views using the swap item button, by default bound to f.
+Currently, these unique textures exist to differentiate normal (white), unique (yellow), rare (purple), legendary (blue), fabled (red), and mythic items (purple); crafted items (cyan); as well as ingredients (green).
 
-The first view contains any stat, level, and class requirements as well as the specific ID’s. Additionally, the specific rolls on each ID can be seen without the use of any mods!
+### New item display modes
+Items now display their information across three pages (i.e. display modes): you can cycle between these modes with your 'swap hand' button (default f). Switching your display mode will carry across all items and classes (i.e. if you are looking at an item's powder view, you will see that view for any item you hover over)
 
-The second view contains information on the item itself, such as whether it is an untradeable item or part of a set. This view also shows powder slots and powder specials, as well as the effects of the set bonus.
+The all pages detail the item's effects (dps/def), with the first page now specifically detailing its identifications major and minor (unique properties and abilities respectively) and prerequisite requirements (generally combat level, skill point allocations, and quest requirements). Identification percentages (rolls) are now visible without mods through a new coloured slider!
 
-The third and final view contains the lore description of the item, if it has one.
+The second page details information on the item itself (for instance, if it is untradable, part of a set, if it has powder slots, and if any powders have been applied in those slots. The third and final page contains the item's lore (description/story).
+
+
 
 <div class="columns-3" style="margin-top: -60px !important;">
-
 <figure class="inline-block">
 
-![image](https://i.wynnvets.org/i/d82c799d-145d-4301-b2c3-d9dfb0acf956.jpg)
+![View 1](https://i.wynnvets.org/i/d82c799d-145d-4301-b2c3-d9dfb0acf956.jpg)
 
 <figcaption style="margin-top: -20px !important;">The first item view.</figcaption></figure>
-
 <figure class="inline-block">
 
-![image](https://i.wynnvets.org/i/b23140c7-de5f-419c-8bb2-39949b590b21.jpg)
+![View 2](https://i.wynnvets.org/i/b23140c7-de5f-419c-8bb2-39949b590b21.jpg)
 
 <figcaption style="margin-top: -20px !important;">The second item view.</figcaption></figure>
-
 <figure class="inline-block">
 
-![image](https://i.wynnvets.org/i/aebb16dd-f567-4d2b-8f96-98a36fea2cc4.jpg)
+![View 3](https://i.wynnvets.org/i/aebb16dd-f567-4d2b-8f96-98a36fea2cc4.jpg)
 
 <figcaption style="margin-top: -20px !important;">The third item view.</figcaption></figure></div>
 
 #### Wards
+<small>Article written by akaPasta:</small>
 
 The Fruma Expansion brings an entire new category of items to the game: Wards. This includes the Yellow, Red, Blue and Purple Wards, found in raids, and the Green, Orange, and Pink Wards, found in lootrun end reward pools. These items are used for item ascension, a new feature covered below.
-![image](https://i.wynnvets.org/i/41aada92-9768-45c3-a4aa-faac8e0811bd.jpg)
+
+<div class="columns-2" style="margin-top: -60px !important;">
+<figure class="inline-block">
+
+![All seven wards](https://i.wynnvets.org/i/41aada92-9768-45c3-a4aa-faac8e0811bd.jpg)
 
 <figcaption style="text-align:center">All seven wards added in the Fruma update. On top, from left to right: Yellow, Blue, Purple, and Red wards. On Bottom, Orange, Green, and Pink wards.</figcaption>
+</div>
 
 #### Set Properties
+<small>Article written by akaPasta:</small>
 
 With the Fruma Expansion, set rarities were removed and replaced with special ‘set’ mechanics. Despite the visual change, sets function identically to set items before Fruma. Below is the full Morph set, which has been split up into Unique, Rare, and Legendary items.
 
-![image](https://i.wynnvets.org/i/510ba241-85fa-44d6-b22f-435d73ed8f13.jpg)
+<div class="columns-2" style="margin-top: -60px !important;">
+<figure class="inline-block">
 
-<small class="block leading-tight text-txt-s/85 dark:text-darkmode-txt-s/90">
+![All seven wards](https://i.wynnvets.org/i/510ba241-85fa-44d6-b22f-435d73ed8f13.jpg)
 
->  This section has not yet been written! We hope to have it ready soon!
+<figcaption style="text-align:center">Morph, an item set (formerly set rarity)</figcaption>
+</div>
 
 ## The Upgrader
 

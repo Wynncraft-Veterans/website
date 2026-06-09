@@ -4,7 +4,7 @@ description: Navigating the modern impacts of features added between w1.10 (F13)
 image: "@assets/docs/major-changes/update-thumbnails/Ocean-Update.png"
 imageAlt: The logo of the Wynncraft Ocean Update.
 pubDate: 2025-08-06
-modDate: 2026-01-22
+modDate: 2026-06-06
 ---
 
 This guide aims to acquaint pre-ocean players with the broad strokes of changes implemented between Wynn versions [1.10](http://wynnvets.org/history/2013) and [1.11.2](http://wynnvets.org/history/2014).
@@ -37,24 +37,11 @@ In addition to adding a multitude of new islands, this update updated all existi
 <small>Section written by Wenweia</small>
 
 ### Horses
-This update added horses! Although less useful than they once were, horses still have their place in the game. They are faster than walking, but not as fast as using spells on moderately leveled characters using [archetypes](https://www.wynnvets.org/docs/major-changes/spellbound/#archetypes) with good mobility, or by using high level walkspeed builds. In-game, horses are a saddle item: right-clicking it will spawn your horse.
+This update added horses! Historically, horses had four levels: Brown (1), Black (2), Chestnut (3), and White (4), upgradable via a mixture of gambling, dungeons, and riding. This system is no longer in the game, having been fully replaced by the new [mounts system](/docs/major-changes/fruma#Mounts); horses are now one of several types of mounts, and although less relevant than they once were, are still used within the game!
 
-**Horses have four levels: Brown (1), Black (2), Chestnut (3), and White (4). Level one (brown) horses can be purchased from merchants** in Ternaves (requres the Stable Story quest line to be completed) or from Bucie. **Higher level (black, chestnut, and white) horses can be purchased from the [trade market](https://www.wynnvets.org/docs/major-changes/economy/#trade-market)**.
+Note that your old horses will no longer function in current versions of Wynn: you will need to restore them through an [enclosure](/docs/major-changes/fruma#Enclosures).
 
-<div class="columns-2" style="margin-top: -60px !important;">
-<figure class="inline-block">
 
-![All 4 types of horses](@assets/docs/major-changes/update-content/ocean/3.png)
-
-<figcaption style="margin-top: -20px !important;">The 4 tiers of horses.</figcaption></figure><figure class="inline-block">
-
-![The ternaves horse merchant](@assets/docs/major-changes/update-content/ocean/4.png)
-
-<figcaption style="margin-top: -20px !important;">Ternaves' horse merchant.</figcaption></figure></div>
-
-There also exist three intermediate horse levels: Upgraded Brown (1.5), Upgraded Black (2.5), and Upgraded Chestnut (3.5). These can be obtained via the Ice Barrows, Galleon's Graveyard, and Corrupted Decrepit Sewers [dungeons](https://www.wynnvets.org/docs/major-changes/gavel/#dungeons-rework) respectively. Note that upgrading a horse makes it untradable and therefore eliminates any resale value.
-
-An alternative method to upgrade horses is gambling. Combining two horses of the same tier has a 20% chance of giving you a higher leveled horse, a 50% chance of doing nothing, and a 30% chance of making things worse. For historical reasons, statistically, this will almost always end up being more expensive then just buying a higher level horse on the trade market.
 
 ### Fast Travel
 With the release of the questing update, a new quest reward was introduced to the game: fast travel. Basically, these are locations that, following the completion of a quest, allow one to travel directly from one place to another without the delay of having to actually walk there.
@@ -114,6 +101,6 @@ Currently, the item tier ladder in the game is **Normal < Unique < Rare < Legend
 
 ![Items of each rarity](@assets/docs/major-changes/update-content/ocean/10.png)
 
-<figcaption style="margin-top: -20px !important;">One item of each rarity, highlighted by Wynntils..</figcaption></figure></div>
+<figcaption style="margin-top: -20px !important;">One item of each rarity, highlighted by Wynntils.</figcaption></figure></div>
 
-Several special tiers now also exist, namely the set and [crafted](https://www.wynnvets.org/docs/major-changes/economy/#types-of-crafted-items) tiers, which function differently in that their usefulness varies based respectively on the number of pieces you have and on the item's composition. Another tier, [fabled](https://www.wynnvets.org/docs/major-changes/expanse/#fabled-rarity) is a bit unique and detailed further in later sections.
+Some other tiers were subsequently added that warrant further note here. [Fableds](https://www.wynnvets.org/docs/major-changes/expanse/#fabled-rarity), for instance, are a bit unique and will be detailed further in later sections. Other unique tiers outside the above latter include [crafteds](https://www.wynnvets.org/docs/major-changes/economy/#types-of-crafted-items) and included sets (now-removed).

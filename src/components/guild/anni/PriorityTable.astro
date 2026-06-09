@@ -1,0 +1,252 @@
+---
+type Likelihood =
+	| "most-likely"
+	| "very-likely"
+	| "likely"
+	| "unlikely"
+	| "very-unlikely"
+	| "most-unlikely"
+	| "na";
+type Circumstance = "guild" | "community" | "allied" | "external";
+type SlotKind = "fill" | "nonfill" | "any";
+
+interface Cell {
+	label: string;
+	sub?: string;
+}
+interface Row {
+	circumstance: Cell & { kind: Circumstance };
+	slot: Cell & { kind: SlotKind };
+	early: Likelihood;
+	strongRsvp: Likelihood;
+	weakRsvp: Likelihood;
+}
+
+const LIKELIHOOD_LABEL: Record<Likelihood, string> = {
+	"most-likely": "Most Likely",
+	"very-likely": "Very Likely",
+	likely: "Likely",
+	unlikely: "Unlikely",
+	"very-unlikely": "Very Unlikely",
+	"most-unlikely": "Most Unlikely",
+	na: "—",
+};
+
+const rows: Row[] = [
+	{
+		circumstance: { kind: "guild", label: "Guild Member" },
+		slot: { kind: "nonfill", label: "Regular Slot" },
+		early: "most-likely",
+		strongRsvp: "most-likely",
+		weakRsvp: "likely",
+	},
+	{
+		circumstance: { kind: "guild", label: "Guild Member" },
+		slot: { kind: "fill", label: "Fill Slot", sub: "or not on AnniRoles" },
+		early: "most-likely",
+		strongRsvp: "very-likely",
+		weakRsvp: "unlikely",
+	},
+	{
+		circumstance: { kind: "guild", label: "Waitlist", sub: "or Honourary" },
+		slot: { kind: "nonfill", label: "Regular Slot" },
+		early: "most-likely",
+		strongRsvp: "very-likely",
+		weakRsvp: "likely",
+	},
+	{
+		circumstance: { kind: "guild", label: "Waitlist", sub: "or Honourary" },
+		slot: { kind: "fill", label: "Fill Slot", sub: "or not on AnniRoles" },
+		early: "very-likely",
+		strongRsvp: "likely",
+		weakRsvp: "unlikely",
+	},
+	{
+		circumstance: { kind: "community", label: "Community", sub: "Guildless" },
+		slot: { kind: "nonfill", label: "Regular Slot" },
+		early: "na",
+		strongRsvp: "unlikely",
+		weakRsvp: "very-unlikely",
+	},
+	{
+		circumstance: { kind: "community", label: "Community", sub: "Guildless" },
+		slot: { kind: "fill", label: "Fill Slot", sub: "or not on AnniRoles" },
+		early: "na",
+		strongRsvp: "unlikely",
+		weakRsvp: "most-unlikely",
+	},
+	{
+		circumstance: { kind: "allied", label: "Community", sub: "Allied Guild" },
+		slot: { kind: "nonfill", label: "Regular Slot" },
+		early: "na",
+		strongRsvp: "unlikely",
+		weakRsvp: "very-unlikely",
+	},
+	{
+		circumstance: { kind: "allied", label: "Community", sub: "Allied Guild" },
+		slot: { kind: "fill", label: "Fill Slot", sub: "or not on AnniRoles" },
+		early: "na",
+		strongRsvp: "very-unlikely",
+		weakRsvp: "most-unlikely",
+	},
+	{
+		circumstance: { kind: "external", label: "Community", sub: "Other Guild" },
+		slot: { kind: "any", label: "Any Slot" },
+		early: "na",
+		strongRsvp: "very-unlikely",
+		weakRsvp: "most-unlikely",
+	},
+];
+---
+
+<div class="anni-priority not-prose rounded p-2 my-4">
+	<details>
+		<summary><span style="color: #cecece;">Attendance Prioritization</span></summary>
+		<p style="color:#cecece; font-size:0.72rem; margin:0.45rem 0.4rem 0.55rem; line-height:1.35;">
+			Slot chances depend on your relationship to the community, the strength of your RSVP, and the
+			type of slot being requested.
+		</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Circumstances</th>
+					<th>Requested Slot</th>
+					<th>1hr+ Early</th>
+					<th>Strong RSVP<span class="sub">(and 20+ min early)</span></th>
+					<th>Weak RSVP<span class="sub">(and 40+ min early)</span></th>
+				</tr>
+			</thead>
+			<tbody>
+				{rows.map((row) => (
+					<tr>
+						<td class:list={[`circ-${row.circumstance.kind}`]}>
+							{row.circumstance.label}
+							{row.circumstance.sub && <span class="sub">{row.circumstance.sub}</span>}
+						</td>
+						<td class:list={[`role-${row.slot.kind}`]}>
+							{row.slot.label}
+							{row.slot.sub && <span class="sub">{row.slot.sub}</span>}
+						</td>
+						{(["early", "strongRsvp", "weakRsvp"] as const).map((field) => {
+							const kind = row[field];
+							const label = LIKELIHOOD_LABEL[kind];
+							return (
+								<td class:list={[`lk-${kind}`]}>
+									{kind === "most-likely" ? <strong>{label}</strong> : label}
+								</td>
+							);
+						})}
+					</tr>
+				))}
+			</tbody>
+		</table>
+	</details>
+</div>
+
+<style>
+	.anni-priority {
+		background: rgba(0, 0, 0, 0.25);
+		border: 1px solid rgba(255, 255, 255, 0.08);
+	}
+	.anni-priority details > summary {
+		font-weight: 600;
+		font-size: 0.95rem;
+		cursor: pointer;
+		list-style: none;
+		padding: 0.5rem 0.4rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.anni-priority details > summary::-webkit-details-marker {
+		display: none;
+	}
+	.anni-priority details > summary::after {
+		content: "▾";
+		opacity: 0.75;
+		transition: transform 0.15s ease;
+	}
+	.anni-priority details[open] > summary::after {
+		transform: rotate(180deg);
+	}
+	.anni-priority table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: 0.82rem;
+		line-height: 1.3;
+		background: rgba(255, 255, 255, 0.4);
+		border-radius: 0.375rem;
+		overflow: hidden;
+	}
+	.anni-priority thead th {
+		background: rgba(255, 255, 255, 0.15);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		padding: 0.35rem 0.55rem;
+		text-align: left;
+		font-weight: 700;
+		font-size: 0.72rem;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+		opacity: 0.85;
+	}
+	.anni-priority tbody td {
+		border: 1px solid rgba(255, 255, 255, 0.07);
+		padding: 0.3rem 0.55rem;
+		vertical-align: middle;
+	}
+	.anni-priority .sub {
+		display: block;
+		font-size: 0.65rem;
+		opacity: 0.45;
+		font-weight: 400;
+		line-height: 1.2;
+		margin-top: 1px;
+	}
+	.anni-priority .lk-most-likely {
+		background: rgba(34, 197, 94, 0.18);
+	}
+	.anni-priority .lk-very-likely {
+		background: rgba(45, 212, 191, 0.15);
+	}
+	.anni-priority .lk-likely {
+		background: rgba(234, 179, 8, 0.13);
+	}
+	.anni-priority .lk-unlikely {
+		background: rgba(249, 155, 22, 0.13);
+	}
+	.anni-priority .lk-very-unlikely {
+		background: rgba(239, 68, 68, 0.12);
+	}
+	.anni-priority .lk-most-unlikely {
+		background: rgba(239, 68, 68, 0.22);
+	}
+	.anni-priority .lk-na {
+		background: rgba(255, 255, 255, 0.04);
+		opacity: 0.5;
+		text-align: center;
+	}
+	.anni-priority .circ-guild {
+		background: rgba(99, 102, 241, 0.15);
+	}
+	.anni-priority .circ-community {
+		background: rgba(168, 85, 247, 0.12);
+	}
+	.anni-priority .circ-allied {
+		background: rgba(236, 72, 153, 0.12);
+	}
+	.anni-priority .circ-external {
+		background: rgba(239, 68, 68, 0.14);
+	}
+	.anni-priority .role-nonfill {
+		background: rgba(59, 130, 246, 0.14);
+	}
+	.anni-priority .role-fill {
+		background: rgba(156, 163, 175, 0.14);
+	}
+	:global(.dark) .anni-priority,
+	:global(.dark) .anni-priority details > summary,
+	:global(.dark) .anni-priority th,
+	:global(.dark) .anni-priority td {
+		color: #fff;
+	}
+</style>

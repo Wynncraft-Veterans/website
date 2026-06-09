@@ -25,10 +25,12 @@ const {
   date,
   category,
   location,
-  imageAlt
+  imageAlt,
 } = entry.data
 
 const entryDate = date ? formatDate(date) : null;
+const linkLabel =
+  entry.id.startsWith("community/") ? "Link to Community" : "Link to Tool";
 ---
 
 <BaseLayout title={title} description={description} image={image?.src}>
@@ -72,14 +74,13 @@ const entryDate = date ? formatDate(date) : null;
               <!-- Link -->
               {
                 description && (
-                  <div>
-                    <li class="m-4 justify-center inline-block">
-                      <Button
-                        label="Link to Tool or Community"
-                        link={location} 
-                        hoverInvert
-                      />
-                    </li>
+                  <div class="m-4 rounded-md bg-blue-500/40 dark:bg-blue-400/30">
+                    <Button
+                      label={linkLabel}
+                      link={location}
+                      hoverInvert
+                      fullWidth
+                    />
                   </div>
                 )
               }

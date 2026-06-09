@@ -1,0 +1,187 @@
+---
+interface TabEntry {
+	slug: string;
+	title: string;
+	icon: string;
+	subtitle?: string;
+	Content: any;
+}
+
+interface Props {
+	hashPrefix: string;
+	entries: TabEntry[];
+}
+
+const { hashPrefix, entries } = Astro.props;
+const idFor = (slug: string) => `${hashPrefix}-${slug}`;
+---
+
+<div class="icon-tabs-bar rounded p-2 my-6">
+	<div class="grid grid-cols-[auto_1fr_auto] gap-2 items-stretch">
+		<button type="button" data-icon-tabs-prev class="icon-tabs-cell rounded w-11 flex items-center justify-center" aria-label="Scroll left">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-6 w-6" aria-hidden="true">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+			</svg>
+		</button>
+
+		<div data-icon-tabs-scroller class="icon-tabs-scroller overflow-x-auto scroll-smooth snap-x snap-mandatory">
+			<div class="flex gap-2">
+				{entries.map(({ slug, title, icon }) => (
+					<a href={`#${idFor(slug)}`} data-icon-tabs-target={idFor(slug)} class="icon-tabs-cell icon-tabs-button rounded p-2 aspect-square w-32 flex-shrink-0 snap-start grid grid-rows-[2fr_1fr] text-center hover:no-underline no-underline overflow-hidden">
+						<div class="flex items-center justify-center min-h-0">
+							<img
+								src={`https://openmoji.org/data/black/svg/${icon}.svg`}
+								alt=""
+								aria-hidden="true"
+								class="max-h-full max-w-full dark:invert"
+							/>
+						</div>
+						<div class="flex items-start justify-center pt-1">
+							<span class="text-xs font-bold leading-tight line-clamp-3">{title}</span>
+						</div>
+					</a>
+				))}
+			</div>
+		</div>
+
+		<button type="button" data-icon-tabs-next class="icon-tabs-cell rounded w-11 flex items-center justify-center" aria-label="Scroll right">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-6 w-6" aria-hidden="true">
+				<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+			</svg>
+		</button>
+	</div>
+</div>
+
+{entries.map(({ slug, title, subtitle, Content }) => (
+	<div id={idFor(slug)} class="icon-tabs-panel">
+		<h2>{title}</h2>
+		{subtitle && <small>{subtitle}</small>}
+		<Content />
+	</div>
+))}
+
+<style is:global>
+	.icon-tabs-panel { display: none; }
+	.icon-tabs-panel.active { display: block; }
+	.icon-tabs-scroller { scrollbar-width: none; }
+	.icon-tabs-scroller::-webkit-scrollbar { display: none; }
+	.icon-tabs-bar {
+		background: rgba(0,0,0,0.3);
+		backdrop-filter: blur(12px);
+		border: 1px solid rgba(255,255,255,0.18);
+		box-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+	}
+	.dark .icon-tabs-bar {
+		background: rgba(0,0,0,0.5);
+		border-color: rgba(255,255,255,0.1);
+	}
+	.icon-tabs-cell {
+		background: rgba(255,255,255,0.2);
+		transition: background 0.15s, box-shadow 0.15s, transform 0.15s;
+	}
+	.icon-tabs-cell:hover {
+		background: rgba(255,255,255,0.32);
+	}
+	.icon-tabs-button.active,
+	.icon-tabs-button.active:hover {
+		background: rgba(255,255,255,0.45);
+	}
+	.dark .icon-tabs-cell {
+		background: rgba(255,255,255,0.12);
+	}
+	.dark .icon-tabs-cell:hover {
+		background: rgba(255,255,255,0.22);
+	}
+	.dark .icon-tabs-button.active,
+	.dark .icon-tabs-button.active:hover {
+		background: rgba(255,255,255,0.28);
+	}
+</style>
+
+<script is:inline define:vars={{ hashPrefix, tocEntries: entries.map(e => ({ id: `${hashPrefix}-${e.slug}`, title: e.title })) }}>
+	(function() {
+		const prefix = hashPrefix + '-';
+		function show(id) {
+			document.querySelectorAll('.icon-tabs-button').forEach(function(b) { b.classList.remove('active'); });
+			document.querySelectorAll('.icon-tabs-panel').forEach(function(s) { s.classList.remove('active'); });
+			if (!id || id.indexOf(prefix) !== 0) return;
+			const target = document.getElementById(id);
+			if (target) target.classList.add('active');
+			const btn = document.querySelector('[data-icon-tabs-target="' + id + '"]');
+			if (btn) {
+				btn.classList.add('active');
+				btn.scrollIntoView({ behavior: 'smooth', inline: 'nearest', block: 'nearest' });
+			}
+		}
+		function syncFromHash() {
+			show((location.hash || '').replace(/^#/, ''));
+		}
+		document.addEventListener('click', function(e) {
+			const link = e.target.closest && e.target.closest('a[href^="#' + prefix + '"]');
+			if (!link) return;
+			e.preventDefault();
+			const id = link.getAttribute('href').slice(1);
+			if (location.hash !== '#' + id) history.pushState(null, '', '#' + id);
+			show(id);
+		});
+		function bindNav() {
+			const scroller = document.querySelector('[data-icon-tabs-scroller]');
+			const prev = document.querySelector('[data-icon-tabs-prev]');
+			const next = document.querySelector('[data-icon-tabs-next]');
+			if (!scroller || !prev || !next) return;
+			if (scroller.dataset.bound) return;
+			scroller.dataset.bound = '1';
+			const step = function() {
+				const card = scroller.querySelector('.icon-tabs-button');
+				return card ? card.getBoundingClientRect().width + 8 : 140;
+			};
+			prev.addEventListener('click', function() { scroller.scrollBy({ left: -step(), behavior: 'smooth' }); });
+			next.addEventListener('click', function() { scroller.scrollBy({ left: step(), behavior: 'smooth' }); });
+			scroller.addEventListener('wheel', function(e) {
+				if (Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return;
+				e.preventDefault();
+				scroller.scrollBy({ left: e.deltaY, behavior: 'auto' });
+			}, { passive: false });
+		}
+		function populateToc() {
+			if (!document.querySelector('[data-icon-tabs-scroller]')) return true;
+			const tocHeading = Array.from(document.querySelectorAll('h2')).find(function(h) {
+				return h.textContent && h.textContent.trim() === 'Contents';
+			});
+			if (!tocHeading || !tocHeading.parentElement) return false;
+			if (tocHeading.dataset.iconTabsToc === prefix) return true;
+			let ul = tocHeading.parentElement.querySelector(':scope > ul');
+			if (!ul) {
+				ul = document.createElement('ul');
+				ul.className = 'list-none m-0';
+				tocHeading.insertAdjacentElement('afterend', ul);
+			}
+			tocEntries.forEach(function(entry) {
+				const li = document.createElement('li');
+				li.className = 'ml-0';
+				const a = document.createElement('a');
+				a.href = '#' + entry.id;
+				a.className = 'w-full leading-none no-underline';
+				a.textContent = entry.title;
+				li.appendChild(a);
+				ul.appendChild(li);
+			});
+			tocHeading.dataset.iconTabsToc = prefix;
+			return true;
+		}
+		function waitForToc() {
+			if (populateToc()) return;
+			const observer = new MutationObserver(function() {
+				if (populateToc()) observer.disconnect();
+			});
+			observer.observe(document.body, { childList: true, subtree: true });
+			setTimeout(function() { observer.disconnect(); }, 5000);
+		}
+		window.addEventListener('hashchange', syncFromHash);
+		window.addEventListener('popstate', syncFromHash);
+		document.addEventListener('astro:page-load', function() { bindNav(); waitForToc(); syncFromHash(); });
+		bindNav();
+		waitForToc();
+		syncFromHash();
+	})();
+</script>

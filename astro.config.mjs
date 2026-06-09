@@ -1,7 +1,7 @@
 import mdx from "@astrojs/mdx";
+import { unified } from "@astrojs/markdown-remark";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
-import tailwind from "@astrojs/tailwind";
 import AutoImport from "astro-auto-import";
 import { defineConfig } from "astro/config";
 import remarkCollapse from "remark-collapse";
@@ -14,24 +14,26 @@ export default defineConfig({
   site: "https://www.wynnvets.org",
   base: "",
   trailingSlash: "ignore",
+  redirects: {
+    "/subcommunities": "/subcommunities/community",
+  },
   prefetch: {
     prefetchAll: true
   },
-  integrations: [react(), sitemap(), tailwind({
-    config: {
-      applyBaseStyles: false
-    }
-  }), AutoImport({
+  integrations: [react(), sitemap(), AutoImport({
     imports: ["@components/common/Button.astro", "@shortcodes/Accordion", "@shortcodes/Notice", "@shortcodes/Youtube", "@shortcodes/Tabs", "@shortcodes/Tab"]
   }), mdx()],
   markdown: {
-    remarkPlugins: [remarkToc, [remarkCollapse, {
-      test: "Table of contents"
-    }], remarkMath],
-    rehypePlugins: [[rehypeKatex, {}]],
+    processor: unified({
+      remarkPlugins: [
+        remarkToc,
+        [remarkCollapse, { test: "Table of contents" }],
+        remarkMath,
+      ],
+      rehypePlugins: [[rehypeKatex, {}]],
+    }),
     shikiConfig: {
       theme: "dark-plus", // https://shiki.style/themes
     },
-    extendDefaultPlugins: true
   },
 });

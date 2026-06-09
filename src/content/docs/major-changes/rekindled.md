@@ -4,7 +4,7 @@ description: Navigating the modern impacts of features added between w2.0.4 (F23
 image: "@assets/docs/major-changes/update-thumbnails/Rekindled-Update.png"
 imageAlt: The logo of the Rekindled Update.
 pubDate: 2025-08-06
-modDate: 2025-12-31
+modDate: 2026-06-06
 ---
 
 This guide aims to acquaint pre-rekindled players with the broad strokes of changes implemented between Wynn versions 2.0.4 (F23) and 2.1.7 (W26).
@@ -105,9 +105,7 @@ Also from crates, these play a specific animation when you do /emote.
 
 <small>Section written by Wenweia</small>
 
-The Wynn website was redone again recently. Although the forums still exist, they are very much a legacy system. Instead, Wynn now allows you to make a single account that gets shared across all aspects of the website (store, stats, discord linking, apis, etc).
-
-The API has also become an acquired taste, by default hiding large portions of the stats older players are used to. Although these can be reenabled once you make an account, it is more common these days to view them through third party sites [such as this one](https://www.wynnpool.com/stats).
+The Wynn website was redone again recently. Although the forums still exist, they are very much a legacy system. Instead, Wynn now allows you to make a single account that gets shared across all elements of Wynn's online presence (store, stats, discord linking, apis, etc). Note that the official wynn stats website now by default hides most stats older players had grown used to: use of community-made leaderboards [such as this one](https://www.wynnpool.com/stats) provides a popular remedy Wynn's statistics interface simplification.
 
 ---
 

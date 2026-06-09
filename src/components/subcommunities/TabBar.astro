@@ -1,0 +1,42 @@
+---
+interface Props {
+  active: "tool" | "community";
+}
+
+const { active }: Props = Astro.props;
+
+const tabs: { id: "tool" | "community"; label: string; href: string }[] = [
+  { id: "tool", label: "Websites & Tools", href: "/subcommunities/tool/" },
+  { id: "community", label: "Communities", href: "/subcommunities/community/" },
+];
+---
+
+<section class="flex justify-center">
+  <div class="container text-center m-2">
+    <div class="rounded-lg p-0 bg-gradient-to-br gradient">
+      <div
+        class="glass rounded-lg p-2 flex flex-wrap justify-center gap-2 intersect:animate-fadeDown opacity-0"
+      >
+        {
+          tabs.map((tab) =>
+            tab.id === active ? (
+              <span
+                aria-current="page"
+                class="px-4 py-2 rounded font-semibold glass-t text-txt-p dark:text-darkmode-txt-p border border-txt-light dark:border-darkmode-txt-light"
+              >
+                {tab.label}
+              </span>
+            ) : (
+              <a
+                href={tab.href}
+                class="px-4 py-2 rounded font-semibold text-txt-p dark:text-darkmode-txt-p hover:glass-t transition-colors"
+              >
+                {tab.label}
+              </a>
+            ),
+          )
+        }
+      </div>
+    </div>
+  </div>
+</section>

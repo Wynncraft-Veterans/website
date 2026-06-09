@@ -21,26 +21,12 @@ modDate: 2026-02-18
 ### Activity Policy
 ​	We are designed around the principle that most of our members, having likely played Wynn long ago growing up, are at that stage in their life where free time is a precious commodity. As such, we are built around flexibility. **All guild activities, events, etc. are completely optional. There is no obligation.**
 
-​	The only caveat is that, due to limited slots in the guild, we may need to kick you if you are <u>away for more than two weeks</u>. If this happens, you can always re-join, no questions asked.
-
-<div class="glass rounded p-2 text-center">
-    <b>Fruma Policy</b><br/>
-    Due to high slot demand, temporarily, the bot's autokick has been reduced to 9 days.<br/>
-    As always, if you get kicked from this, you are welcome to rejoin no questions asked!<br/>
-    <small>This is a temporary measure which will be reverted once the fruma spike dies down.</small>
-</div>
+​	The only caveat is that, due to limited slots in the guild, we may need to kick you if you are <u>away for more than nine days</u>. If this happens, you can always re-join, no questions asked.
 
 ### Recruiting Others
-​	We love making new friends! **You can add others to the guild** with `gu invite <username>`! Just please make sure they are a good match for our atmosphere and that they joined Wynn <2018. 
+​	We love making new friends! If slots are available, **You can add others to an interim state** with `gu invite <username>`! Just please make sure they are a good match for our atmosphere and that they joined Wynn <2018. Staff will review your addition when they can, either kicking or promoting to recruiter.
 
-<div class="glass rounded p-2 text-center">
-    <b>Fruma Policy</b><br/>
-    <i>Usually</i> you can invite people directly to the guild!<br/>
-    Unfortunately, slots are currently in extremely high demand and we are full!<br/><br/>
-    Instead, for the time being, please add people to the waitlist on our discord<br/>
-    This can be done with `~waitlist add <username>`<br/><br/>
-    <small>This is a temporary measure which will be reverted once the fruma spike dies down.</small>
-</div>
+​	If slots are not available, refer them to discord to be added to our waitlist.
 
 ---
 
@@ -59,7 +45,7 @@ modDate: 2026-02-18
 ![Image of the VETS guild island](https://raw.githubusercontent.com/Wynncraft-Veterans/website/refs/heads/main/src/assets/docs/general/image-20250806210844962.png)![Image of some NPCs on the VETS island](https://raw.githubusercontent.com/Wynncraft-Veterans/website/refs/heads/main/src/assets/docs/general/image-20250806210956212.png)
 
 ### The Guild Discord
-​	The guild is only part of the VETS experience! **Most announcements get posted on our Discord, and a good portion of our community hangs out there!** You can join our discord [here](https://wynnvets.org/discord)
+​	The guild is only part of the VETS experience! **Most announcements get posted on our Discord, and a good portion of our community hangs out there!** You can join our discord [here](https://wynnvets.org/discord). To receive the best possible experience, make sure to link your account in [#roles](https://discord.com/channels/1313769181321236490/1318077157938954270/1500611826621091970) and/or link your [vetsmod](https://modrinth.com/mod/vetsmod) with `~vetsmod`.
 
 ---
 

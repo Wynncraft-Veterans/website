@@ -4,7 +4,7 @@ description: Navigating the modern impacts of features added between w1.19 (W19)
 image: "@assets/docs/major-changes/update-thumbnails/Expansion-Update.png"
 imageAlt: The logo of the Wynncraft Silent Expansion.
 pubDate: 2025-08-06
-modDate: 2025-12-31
+modDate: 2026-06-06
 ---
 
 This guide aims to acquaint pre-expanse players with the broad strokes of changes implemented between Wynn versions 1.19 and 1.19.4.
@@ -72,7 +72,7 @@ Being killed by another player in hunted mode causes some of your gear to drop.
 ## Ingredient Pouch
 <small>Article written by Wenweia:</small>
 
-Shortly after professions (and the ingredients associated with them) were added, a new utility slot got added to the inventory to accomodate the myriad of new items. This slot only accepts ingredients (and has a built-in option to blacksmith them), automatically collects any ingredients you pick up (as long as you have at least one open slot), and offers storage for up to 27 ingredient types and 1728 items (i.e. it is a 9x3x64 chest).
+Shortly after professions (and the ingredients associated with them) were added, a new utility slot got added to the inventory to accommodate the myriad of new items. This slot only accepts ingredients (and has a built-in option to blacksmith them), automatically collects any ingredients you pick up (as long as you have at least one open slot), and offers storage for up to 27 ingredient types and 1728 items (i.e. it is a 9x3x64 chest).
 
 Note that there are two common exceptions to the above:
 1. If you are a returning player who happened to have an item in that particular slot of your inventory when the pouch got added, said item will be put into your ingredient pouch. This is quite common among returning players, and is probably how you ended up with a single helmet in your ingredient pouch.

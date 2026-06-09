@@ -4,7 +4,7 @@ description: Navigating the modern impacts of features added between w2.0 (W21) 
 image: "@assets/docs/major-changes/update-thumbnails/Spellbound-Update.png"
 imageAlt: The logo of the Spellbound Update.
 pubDate: 2025-08-06
-modDate: 2026-01-19
+modDate: 2026-06-01
 ---
 
 This guide aims to acquaint pre-spellbound players with the broad strokes of changes implemented between Wynn versions 2.0 and 2.0.4.
@@ -17,12 +17,15 @@ This is **not a changelog**, and this is also **not a guide**. For exact changes
 
 ## The Ability Tree
 
-<small>Section written by Wenweia and Holidaze</small>
+<small>Section written by Wenweia, RealPuffy and Holidaze</small>
 
 <div class="glass px-4 my-2 py-2"><center>For further information, reference our <a href="https://www.wynnvets.org/docs/guides/classbuilding/" rel="external"><button class="glass font-semibold py-2 px-4 border border-gray-400 rounded shadow">Guide on Classbuilding</button></a></center></div>
 
 ### Abilities
 In one of the most fundamental gameplay reworks since the introduction of skill points, this version introduced the ability tree system! In addition to skill points, you now get ability points every few levels, which let you select abilities. Unlike skill points, *each* ability node allows to do some specific new thing (described by hovering over the node itself). As you get more ability points, you are able to progress further down the ability tree, and the nodes you select get increasingly powerful.
+
+#### Ultimate abilities
+A subsequent addition worth noting here, each archetype has a final ability one can activate with the *Swap Hand* button (Default F). These abilities are charged differently depending on the class, but usually involve filling a metre and attacking something your stored ability decreases.
 
 #### Resetting Abilities
 To clear your tree, you need to have completed [this quest](https://wynncraft.wiki.gg/wiki/Recover_the_Past) on any of your characters. Resetting your tree requires ability shards, but they are incredibly cheap/abundant. You will probably quickly end up with a surplus of them, and your guild probably likewise has an endless supply available should you ask.

@@ -1,0 +1,21 @@
+---
+import CollectionLayout from "@components/subcommunities/CollectionLayout.astro";
+import { getIndex, getEntriesInGroup } from "@lib/contentParser";
+import { sortByDate } from "@lib/sortFunctions";
+import type { SubcommunitiesEntry } from "@/types";
+
+const entryIndex = (await getIndex("subcommunities")) as SubcommunitiesEntry;
+const entries = (await getEntriesInGroup("subcommunities", "community", sortByDate)) as SubcommunitiesEntry[];
+
+const entriesPerPage = 6;
+const pageCount = Math.ceil(entries.length / entriesPerPage);
+const currentEntries = entries.slice(0, entriesPerPage);
+---
+
+<CollectionLayout
+  entryIndex={entryIndex}
+  entries={currentEntries}
+  pageIndex={1}
+  pageCount={pageCount}
+  activeTab="community"
+/>

@@ -1,7 +1,6 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": ".",
     "target": "es2022",
     "allowJs": true,
     "strict": true,
@@ -11,14 +10,14 @@
     "isolatedModules": true,
     "incremental": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["@astrojs/client"],
+    "types": ["astro/client"],
     "paths": {
       "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/components/*"],
-      "@helpers/*": ["src/components/helpers/*"],
-      "@lib/*": ["src/lib/*"],
-      "@shortcodes/*": ["src/components/common/shortcodes/*"],
-      "@types/*": ["src/types/*"],
+      "@helpers/*": ["./src/components/helpers/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@shortcodes/*": ["./src/components/common/shortcodes/*"],
+      "@types/*": ["./src/types/*"],
       "@/*": ["./src/*"]
     }
   },
