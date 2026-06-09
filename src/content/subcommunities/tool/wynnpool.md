@@ -1,5 +1,5 @@
 ---
-title: Statistics
+title: Wynnpool
 description: A utility integration for Wynncraft, using the up-to-date data with global statistics and more..
 date: 2025-08-06
 image: "@assets/subcommunities/wynnpool.png"
@@ -8,4 +8,10 @@ imageAlt: The wynnpool logo
 category:
   - Website
   - Information
+  - Player Statistics
+  - Guild Statistics
+  - Lootpool Viewer
+  - Item Rankings
+  - Aspect Directory
+  - World Event Trackers
 ---
