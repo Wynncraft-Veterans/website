@@ -1,0 +1,20 @@
+---
+interface Props {
+	id: "overview" | "preparing" | "attending" | "partaking";
+	showBackLink?: boolean;
+}
+
+const { id, showBackLink = id !== "overview" } = Astro.props;
+const isActive = id === "overview";
+---
+
+<div id={`section-${id}`} class:list={["anni-section", { active: isActive }]}>
+	{showBackLink && (
+		<div class="not-prose mb-4">
+			<a href="#overview" class="text-sm opacity-70 hover:opacity-100 no-underline">
+				<span aria-hidden="true">&larr;</span> Back to Overview
+			</a>
+		</div>
+	)}
+	<slot />
+</div>

@@ -1,0 +1,120 @@
+---
+interface Props {
+	id: string;
+	idPrefix: string;
+	ariaLabel: string;
+}
+
+const { id, idPrefix, ariaLabel } = Astro.props;
+
+const roles = [
+	{ key: "fill", label: "Fill", alt: "aka. Carry" },
+	{ key: "hmk", label: "Healing Mob Killer", alt: "aka. Tertiary" },
+	{ key: "sk", label: "Sun Killer", alt: "aka. Secondary" },
+	{ key: "bk", label: "Boss Killer", alt: "aka. Primary" },
+	{ key: "ph", label: "Party Healer", alt: "aka. Healer" },
+	{ key: "tank", label: "Party Tank", alt: "aka. Tank" },
+];
+---
+
+<div class="role-tabs rounded p-2" id={id}>
+	<div role="tablist" aria-label={ariaLabel}>
+		{roles.map((r, i) => (
+			<button
+				role="tab"
+				aria-selected={i === 0 ? "true" : "false"}
+				aria-controls={`${idPrefix}-${r.key}`}
+				id={`${idPrefix}-tab-${r.key}`}
+				tabindex={i === 0 ? 0 : -1}
+			>
+				{r.label}<span class="tab-alt">{r.alt}</span>
+			</button>
+		))}
+	</div>
+	<div role="tabpanel" id={`${idPrefix}-fill`} aria-labelledby={`${idPrefix}-tab-fill`} class="active">
+		<slot name="fill" />
+	</div>
+	<div role="tabpanel" id={`${idPrefix}-hmk`} aria-labelledby={`${idPrefix}-tab-hmk`}>
+		<slot name="hmk" />
+	</div>
+	<div role="tabpanel" id={`${idPrefix}-sk`} aria-labelledby={`${idPrefix}-tab-sk`}>
+		<slot name="sk" />
+	</div>
+	<div role="tabpanel" id={`${idPrefix}-bk`} aria-labelledby={`${idPrefix}-tab-bk`}>
+		<slot name="bk" />
+	</div>
+	<div role="tabpanel" id={`${idPrefix}-ph`} aria-labelledby={`${idPrefix}-tab-ph`}>
+		<slot name="ph" />
+	</div>
+	<div role="tabpanel" id={`${idPrefix}-tank`} aria-labelledby={`${idPrefix}-tab-tank`}>
+		<slot name="tank" />
+	</div>
+</div>
+
+<style>
+	.role-tabs {
+		background: rgba(0, 0, 0, 0.25);
+		border: 1px solid rgba(255, 255, 255, 0.08);
+	}
+	.role-tabs [role="tablist"] {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		position: relative;
+		z-index: 1;
+	}
+	.role-tabs [role="tab"] {
+		background: rgba(255, 255, 255, 0.2);
+		border: 1px solid rgba(255, 255, 255, 0.11);
+		border-bottom: none;
+		border-radius: 0.375rem 0.375rem 0 0;
+		padding: 0.4rem 0.75rem;
+		cursor: pointer;
+		color: inherit;
+		font-size: 0.85rem;
+		transition:
+			background 0.15s,
+			border-color 0.15s;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		line-height: 1.2;
+		margin-bottom: -1px;
+		opacity: 0.9;
+	}
+	.role-tabs [role="tab"] .tab-alt {
+		font-size: 0.6rem;
+		opacity: 0.55;
+		font-weight: 400;
+	}
+	.role-tabs [role="tab"]:hover {
+		background: rgba(255, 255, 255, 0.3);
+		opacity: 0.95;
+	}
+	.role-tabs [role="tab"][aria-selected="true"] {
+		background: rgba(255, 255, 255, 0.32);
+		border-color: rgba(255, 255, 255, 0.2);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.32);
+		border-bottom-color: transparent;
+		font-weight: 600;
+		opacity: 1;
+	}
+	.role-tabs [role="tabpanel"] {
+		display: none;
+	}
+	.role-tabs [role="tabpanel"].active {
+		display: block;
+		background: rgba(255, 255, 255, 0.32);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-top: none;
+		border-radius: 0 0 0.375rem 0.375rem;
+		padding: 1rem;
+	}
+	:global(.dark) .role-tabs [role="tabpanel"],
+	:global(.dark) .role-tabs [role="tab"],
+	:global(.dark) .role-tabs [role="tab"] .tab-alt {
+		color: #fff;
+	}
+</style>
