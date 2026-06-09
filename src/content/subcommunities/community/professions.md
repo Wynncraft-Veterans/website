@@ -1,7 +1,7 @@
 ---
 title: Professions
 description: A collection of resources concerning professions and the foremost gathering place of players dedicated to wynncraft proffing.
-date: 2025-08-06
+date: 2026-06-06
 image: "@assets/docs/guides/professions.png"
 location: https://discord.gg/eeddCZE
 imageAlt: The wynncraft prof logo

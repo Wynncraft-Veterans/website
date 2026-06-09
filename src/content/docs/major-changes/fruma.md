@@ -4,7 +4,7 @@ description: Navigating the modern impacts of features added between w2.2 (W26) 
 image: "@assets/docs/major-changes/update-thumbnails/Fruma-Update.png"
 imageAlt: The logo of the Fruma Expansion.
 pubDate: 2026-04-15
-modDate: 2026-04-15
+modDate: 2026-06-06
 ---
 
 <p class="!text-txt-p dark:!text-darkmode-txt-p">
