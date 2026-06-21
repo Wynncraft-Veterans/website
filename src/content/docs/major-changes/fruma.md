@@ -118,19 +118,28 @@ With the Fruma Expansion, set rarities were removed and replaced with special â€
 <figcaption style="text-align:center">Morph, an item set (formerly set rarity)</figcaption>
 </div>
 
-## The Upgrader
+## The Item Upgrader
+<small>Article written by dwarfenmore:</small>
 
->  This section has not yet been written! We hope to have it ready soon!
+The Item Upgrader has inherited the Powder Master's role while having some new features. Alongside upgrading powder tiers and removing powders from wepons/armor, the item upgrader now allows us to ascend mythics and tools, detailed below. 
+
+<div text-align: "left">
+<img src="/src/assets/docs/major-changes/update-content/fruma/ItemUpgraderMenu.png" width="300" height="200">
+</div>
+<figcaption style="text-align:left">The new interface, Top-Left is for Ascensions, Top-Right isfor upgrading powders and Bottom-Right is for removing powders</figcaption>
+</div>
 
 ### Item Ascension
 <small>Article written by dwarfenmore:</small>
 
-Using The Upgrader, two categories thus far can be Ascended; Gathering Tools and (select) Mythics. Gathering Tools can be ascended using dungeon fragments to their respective higher tier. As you increase in tier, both the level of dungeon fragments and the quantity of the fragments increase to ascend to the next tier. 
+Using the Item Upgrader, two categories thus far can be Ascended; Gathering Tools and (select) Mythics. Gathering Tools can be ascended using dungeon fragments to their respective higher tier. As you increase in tier, both the level of dungeon fragments and the quantity of the fragments increase to ascend to the next tier. 
 
-Some Mythics too can be ascended, with roughly the older mythics being prioritised. Mythic Ascension requires a full set of 7 wards for a 30% chance of ascension, which can be increased to 100% by sacrificing another of the same mythic. Ascended Mythics retain the original mythic roll percentages, though have increased base damges, increased floors on some IDs, can have entirely new IDs, or new Major IDs
+Some Mythics too can be ascended, with roughly the older mythics being prioritised. Mythic ascension requires a full set of 7 wards for a 30% chance of ascension, which can be increased to 100% by sacrificing another of the same mythic. Ascended mythics retain the original mythic roll percentages, though have increased base damges, increased floors/ceilings on some IDs, can have entirely new IDs, or new Major IDs
 
 <div text-align: "left">
 <img src="/src/assets/docs/major-changes/update-content/fruma/ascension1.png" width="300" height="200">
+</div>
+<figcaption style="text-align:left">Ascending an Idol</figcaption>
 </div>
 
 #### T7 Powders
