@@ -126,7 +126,7 @@ The Item Upgrader has inherited the Powder Master's role while having some new f
 <div>
 <img src="/src/assets/docs/major-changes/update-content/fruma/ItemUpgraderMenu.png" width="300" height="200">
 </div>
-<figcaption style="text-align:left">The new interface, Top-Left is for Ascensions, Top-Right is for upgrading powders and Bottom-Right is for removing powders</figcaption>
+<figcaption style="text-align:left">The new interface; Top-Left is for Ascensions, Top-Right is for upgrading powders and Bottom-Right is for removing powders</figcaption>
 </div>
 
 ### Item Ascension
@@ -134,7 +134,7 @@ The Item Upgrader has inherited the Powder Master's role while having some new f
 
 Using the Item Upgrader, two categories thus far can be Ascended; Gathering Tools and (select) Mythics. Gathering Tools can be ascended using dungeon fragments to their respective higher tier. As you increase in tier, both the level of dungeon fragments and the quantity of the fragments increase to ascend to the next tier. 
 
-Some Mythics too can be ascended, with roughly the older mythics being prioritised. Mythic ascension requires a full set of 7 wards for a 30% chance of ascension, which can be increased to 100% by sacrificing another of the same mythic. Ascended mythics retain the original mythic roll percentages, though have increased base damges, increased floors/ceilings on some IDs, can have entirely new IDs, or new Major IDs
+Eventually, all mythics will be ascendable, although only a handful are able to as of writing. Mythic ascension requires a full set of 7 wards for a 30% chance of ascension, which can be increased to 100% by sacrificing another of the same mythic. Ascended mythics retain the original mythic roll percentages, though have increased base damges, increased floors/ceilings on some IDs, can have entirely new IDs, or new Major IDs
 
 <div text-align: "left">
 <img src="/src/assets/docs/major-changes/update-content/fruma/ascension1.png" width="300" height="200">
