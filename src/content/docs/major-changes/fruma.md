@@ -123,10 +123,18 @@ With the Fruma Expansion, set rarities were removed and replaced with special â€
 >  This section has not yet been written! We hope to have it ready soon!
 
 ### Item Ascension
+<small>Article written by dwarfenmore:</small>
 
->  This section has not yet been written! We hope to have it ready soon!
+Using The Upgrader, two categories thus far can be Ascended; Gathering Tools and (select) Mythics. Gathering Tools can be ascended using dungeon fragments to their respective higher tier. As you increase in tier, both the level of dungeon fragments and the quantity of the fragments increase to ascend to the next tier. 
 
-### Powder Rework
+Some Mythics too can be ascended, with roughly the older mythics being prioritiesd. Mythic Ascension requires a full set of 7 wards for a 30% chance of ascension, which can be increased to 100% by sacrificing another of the same mythic. The sacrificial mythic can be of any roll percentage without affecting the ascension quality, so it it highly advisable to use a sacrificial low roll mythic. If not using a sacrificial mythic, and the ascension fails, the wards will be consumed and the original mythic will be returned. Ascended Mythics retain the original mythic roll percentages, though have increased base damges, increased floors on some IDs, can have entirely new IDs, or new Major IDs
+
+<figure class="inline-block">
+
+![View 3](https://i.wynnvets.org/i/aebb16dd-f567-4d2b-8f96-98a36fea2cc4.jpg)
+
+<figcaption style="margin-top: -20px !important;">The third item view.</figcaption></figure></div>
+
 
 #### T7 Powders
 
