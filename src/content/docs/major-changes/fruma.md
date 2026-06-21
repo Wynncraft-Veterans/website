@@ -123,10 +123,10 @@ With the Fruma Expansion, set rarities were removed and replaced with special â€
 
 The Item Upgrader has inherited the Powder Master's role while having some new features. Alongside upgrading powder tiers and removing powders from wepons/armor, the item upgrader now allows us to ascend mythics and tools, detailed below. 
 
-<div text-align: "left">
+<div>
 <img src="/src/assets/docs/major-changes/update-content/fruma/ItemUpgraderMenu.png" width="300" height="200">
 </div>
-<figcaption style="text-align:left">The new interface, Top-Left is for Ascensions, Top-Right isfor upgrading powders and Bottom-Right is for removing powders</figcaption>
+<figcaption style="text-align:left">The new interface, Top-Left is for Ascensions, Top-Right is for upgrading powders and Bottom-Right is for removing powders</figcaption>
 </div>
 
 ### Item Ascension
@@ -139,7 +139,7 @@ Some Mythics too can be ascended, with roughly the older mythics being prioritis
 <div text-align: "left">
 <img src="/src/assets/docs/major-changes/update-content/fruma/ascension1.png" width="300" height="200">
 </div>
-<figcaption style="text-align:left">Ascending an Idol</figcaption>
+<figcaption style="text-align:center">Ascending an Idol</figcaption>
 </div>
 
 #### T7 Powders
