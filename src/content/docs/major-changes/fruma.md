@@ -113,7 +113,7 @@ With the Fruma Expansion, set rarities were removed and replaced with special â€
 <div class="columns-2" style="margin-top: -60px !important;">
 <figure class="inline-block">
 
-![All seven wards](https://i.wynnvets.org/i/510ba241-85fa-44d6-b22f-435d73ed8f13.jpg)
+![The former morph set](https://i.wynnvets.org/i/510ba241-85fa-44d6-b22f-435d73ed8f13.jpg)
 
 <figcaption style="text-align:center">Morph, an item set (formerly set rarity)</figcaption></figure>
 </div>
@@ -125,7 +125,9 @@ The Item Upgrader has inherited the Powder Master's role while having some new f
 
 <div class="columns-2">
 <figure class="inline-block">
-<img src="/src/assets/docs/major-changes/update-content/fruma/ItemUpgraderMenu.png" width="300" height="200">
+
+![Upgrader Interface](@assets/docs/major-changes/update-content/fruma/ItemUpgraderMenu.png)
+
 <figcaption style="text-align:center">The new interface: Top-Left is for Ascensions, Top-Right is for upgrading powders and Bottom-Right is for removing powders.</figcaption></figure>
 </div>
 
@@ -138,10 +140,14 @@ Eventually, all mythics will be ascendable, although only a handful are able to 
 
 <div class="columns-2">
 <figure class="inline-block">
-<img src="/src/assets/docs/major-changes/update-content/fruma/ascension1.png" width="300" height="200">
+
+![Idol Ascension](@assets/docs/major-changes/update-content/fruma/ascension1.png)
+
 <figcaption style="text-align:center">Ascending an Idol</figcaption></figure>
 <figure class="inline-block">
-<img src="/src/assets/docs/major-changes/update-content/fruma/ascension2.png" width="300" height="200">
+
+![Ascension Submenu](@assets/docs/major-changes/update-content/fruma/ascension2.png)
+
 <figcaption style="text-align:center">The acension submenu for that idol, including the wards and sacrificial idol used to ascend it.</figcaption></figure>
 </div>
 
