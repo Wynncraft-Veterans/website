@@ -139,7 +139,7 @@ For this tutorial, we will be using [Modrinth](https://modrinth.com/app)'s launc
 
 Modrinth is a platform for hosting and downloading Minecraft mods, modpacks, resource packs, and more. It also has its own launcher that provides easy integration with the platform's content, allowing users to easily create and manage modded Minecraft instances. Modrinth's launcher is designed to be user-friendly and efficient, making it the ideal choice for this section of the guide.
 
-First things first, we need to fetch the Modrinth installer from [this page](https://modrinth.com/download/windows/)!
+First things first, we need to fetch the Modrinth installer from [this page](https://modrinth.com/app)!
 
 <details>
 <summary><strong>If you would like more details on installing your Modrinth client, expand this section!</strong></summary>
@@ -495,12 +495,12 @@ You are done! Feel free to launch your client!
 		if (!hash) return null;
 		var id = hash.replace('#', '');
 		if (!id) return null;
-
+	
 		var directSection = document.getElementById('section-' + id);
 		if (directSection && directSection.classList.contains('mod-section')) {
 			return { section: directSection, scrollTarget: null };
 		}
-
+	
 		var el = document.getElementById(id);
 		if (el) {
 			var parent = el.closest('.mod-section');
@@ -508,10 +508,10 @@ You are done! Feel free to launch your client!
 				return { section: parent, scrollTarget: el };
 			}
 		}
-
+	
 		return null;
 	}
-
+	
 	function handleHash() {
 		var hash = window.location.hash;
 		if (!hash) return;
@@ -520,7 +520,7 @@ You are done! Feel free to launch your client!
 			showSection(result.section, result.scrollTarget);
 		}
 	}
-
+	
 	if (!window._modClickBound) {
 		window._modClickBound = true;
 		document.addEventListener('click', function(e) {
@@ -528,11 +528,11 @@ You are done! Feel free to launch your client!
 			if (!link) return;
 			var href = link.getAttribute('href');
 			if (!href) return;
-
+	
 			var hashIdx = href.indexOf('#');
 			if (hashIdx === -1) return;
 			var hash = href.substring(hashIdx);
-
+	
 			var result = resolveHash(hash);
 			if (result) {
 				e.preventDefault();
@@ -541,7 +541,7 @@ You are done! Feel free to launch your client!
 			}
 		});
 	}
-
+	
 	handleHash();
 	document.addEventListener('astro:page-load', handleHash);
 	document.addEventListener('astro:after-swap', handleHash);
