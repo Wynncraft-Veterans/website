@@ -129,8 +129,8 @@ In rare cases where public church parties exist, they are usually the result of 
 
 This is the main end-game leveling party; there are always several bat parties active. Unfortunately, they are often full. To sneak into a full party, do /toggle ghosts all, look at the world that people are active in the batcave on, and join them. They usually won't mind.
 
-### (121+) Hegea Training Grounds
-> `1
+#### (121+) Hegea Training Grounds
+> `-1036 -769`
 > **Frequency:** Extremely Uncommon.
 
 If you need to grind past lvl 121, you are likely working towards either a guild or combat leaderboard. In both cases, this guide is a poor substitute for the types of minmaxed technical optimisations used by the small private groups operating in spots like these.
@@ -139,7 +139,7 @@ Although groups working on either leaderboard can occasionally be found here, th
 
 
 #### (121+) Citadel Lighthouse
-> `1050 -390`
+> `1036 -769`
 ** Frequency:** Extremely Uncommon
 
 If you need to grind past lvl 121, you are likely working towards either a guild or combat leaderboard. In both cases, this guide is a poor substitute for the types of minmaxed technical optimisations used by the small private groups operating in spots like these.
