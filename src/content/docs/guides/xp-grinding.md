@@ -4,7 +4,7 @@ description: "The intended way to level up is through quests, but in certain sit
 image: "@assets/docs/guides/knight.jpg"
 imageAlt: "A painting of a knight, for some reason."
 pubDate: 2025-08-16
-modDate: 2025-09-09
+modDate: 2026-08-30
 ---
 ## Introduction
 <small>This section was written by Wenweia</small>
@@ -17,7 +17,7 @@ In response to this discrepancy, grinding mechanics have always emerged. These a
 ### Should you Metagrind?
 Before detailing *how* to metagrind, we should first discuss if it is neccessary.
 
-**Metagrinding is no longer *required* to get to max level!** The entire questing system has been significantly reworked. Quests are far more polished and engaging than they once were and **there is now enough content in the game be able to get from level 1 to 105 without ever needing to grind/metagrind!**
+**Metagrinding is no longer *required* to get to max level!** The entire questing system has been significantly reworked. Quests are far more polished and engaging than they once were and **there is now enough content in the game be able to get from level 1 to 121 without ever needing to grind/metagrind!**
 
 **In fact, if you have not experienced the game's content since before 2020, we highly suggest leveling your first class through a playthrough (via the new quests).** It's a great way to get reintroduced to the game, to get used to new mechanics, and to get back into the swing of things.
 
@@ -78,7 +78,7 @@ Everyone gets XP from mob kills as long as they have participated in a kill with
 
 #### (1-10) Low Level Grinding
 > `NA`
-**Frequency:** Nonexistant
+**Frequency:** Extremely Uncommon
 
 Low levels are very quick to grind, and for this reason, lvl <10 grind parties are virtually nonexistant. You are better off following the solo guide for this level range.
 
@@ -100,7 +100,7 @@ Note that, on occasion, an orc will spawn. They aren't difficult for a properly 
 > `-1000 -5555`
 **Frequency:** Very Common
 
-This is probably the second most popular party in the game. You are quite likely to find someone hosting a party in this range on pfinder. Just be aware of the stitched amalgam, which does quite a bit of damage for its level range.
+This is probably the third most popular party in the game. You are quite likely to find someone hosting a party in this range on pfinder. Just be aware of the stitched amalgam, which does quite a bit of damage for its level range.
 
 #### (70-90) Waterfall (Living Scrap)
 > `-100 -4590`
@@ -108,17 +108,43 @@ This is probably the second most popular party in the game. You are quite likely
 
 On occasion, you might luck out and find a waterfall party. These are challenging to host and are therefore less frequent than flesh or scrapyard parties. If you can't find one, you can grind flesh to level 75 then switch to scrapyard.
 
-#### (85-106) Scrapyard
+#### (85-104) Scrapyard
 > `-1435 -2520`
-** Frequency:** Almost Nonstop
+** Frequency:** Very common
 
-This is the main end-game leveling party, and there are almost always a scrap party or two active. Unfortunately, they are often full. To sneak into a full party, do /toggle ghosts all, look at the world that people are active in the scrapyard on, and join them. They usually won't mind.
+The highest level quest-free grindspot, this area was formerly the most popular in the game! Although corkus is nominally quest-locked, you can still physically get to this location by taking the seaskipper to legendary island and using movement spells to hop onto corkus island.
 
-#### (106+) Church
+
+#### (100-114) Church
 > `1050 -390`
 ** Frequency:** Very Uncommon
 
-If you need to grind past lvl 106 (i.e. overflow), you are probably just grinding for guild XP. This is the spot to do it, but since it is mostly just used for guild XP, public parties here are very rare. Church parties are also difficult to organise. 
+Although faster than Scrapyard, this area is locked behind a long lvl 100 quest. Since batcave unlocks just four levels later, this spot has become very uncommon. 
+
+In rare cases where public church parties exist, they are usually the result of returning groups of expanse-era players leveling their already quest-unlocked lvl 106 classes. Apart from that, while this spot still sees some occasional private use as a result of certain scale techniques relevant for guild and leaderboard grinding, that is also exceptionally infrequent.
+
+#### (104-121) Bat (Fox) Cave
+> `-1710 -990`
+> **Frequency:** Extremely Common
+
+This is the main end-game leveling party; there are always several bat parties active. Unfortunately, they are often full. To sneak into a full party, do /toggle ghosts all, look at the world that people are active in the batcave on, and join them. They usually won't mind.
+
+### (121+) Hegea Training Grounds
+> `1
+> **Frequency:** Extremely Uncommon.
+
+If you need to grind past lvl 121, you are likely working towards either a guild or combat leaderboard. In both cases, this guide is a poor substitute for the types of minmaxed technical optimisations used by the small private groups operating in spots like these.
+
+Although groups working on either leaderboard can occasionally be found here, this spot in particular is more common with the former. For common use cases, this spot offers mediocre improvements over the far more accessible and sustainable batcave; it is therefore never used for public parties.
+
+
+#### (121+) Citadel Lighthouse
+> `1050 -390`
+** Frequency:** Extremely Uncommon
+
+If you need to grind past lvl 121, you are likely working towards either a guild or combat leaderboard. In both cases, this guide is a poor substitute for the types of minmaxed technical optimisations used by the small private groups operating in spots like these.
+
+Although groups working on either leaderboard can occasionally be found here, this spot in particular is more common with the latter. For common use cases, this spot offers mediocre improvements over the far more accessible and sustainable batcave; it is therefore never used for public parties.
 
 </details>
 
@@ -285,16 +311,21 @@ From here of out the grindspeed picks up again.
     *   **Coordinates:** X: -1435, Z: -2520
     *   **Mob-Level:** 99+
     *   This is most likely your final destination for your grind (until they release Fruma). It features a lot of powerful mobs, and solo play is not advised. A grind party for the Scrapyard (also called a "Scrap-Party") is the normal way to play here. You do not need the best equipment, but at least 7500 EHP is recommended. The most likely totem spot is around `X: -1400, Z: -2530`, as it gives the guild who holds this territory XP. How to grind here is covered in the party grind section. I personally don’t solo from level 76 to 105, as it takes way too long without a grind party.
-*   **Lvl 100+: Church**
-    *   **Coordinates:** X: 1050, Z: -390
-    *   **Mob-Level:** 110+
-    *   At this spot, you will likely not grind for character XP, as it is difficult for anything under level 100 to stay alive here. Rather, it's for grinding Guild XP. As a guild, we do this sometimes with a party. Either a solid build or a competent party is needed to survive here. More on that is in the Guild XP Grind section. This can be used as a solo grind spot without totems, but you need a tanky build and not a normal XP-grind build.
+
+> **This Section is Incomplete!**
+> The Fruma Update released semi-recently, and this section of this guide has not yet been updated! There are dozens of new caves past lvl 100 with solo potential which, as of yet, have not been explored for the purposes of updating this guide!
 
 </details>
 </details>
 
 ## Grinding Gear
 ### The Lazy/Simple Setup
+
+> **This Section is Outdated!**
+> The Fruma Update released semi-recently, and with it, the set rarity was removed!
+> While these items still exist, they are no longer optimal for the stated purposes!
+> This entire section will need to be redone!
+
 <small>Section by Wenweia</small>
 
 Sometimes, getting properly outfitted is just too much effort. This is especially true if you are leveling with a group since the group will, usually, be enough to keep you alive.
@@ -404,12 +435,14 @@ This should be your build at this point, excluding any optional quest items.
 *   **Lvl 95 Rings (Alternative):** Summa - More stats and mana sustain than Fehu, but has negative Health Regen.
 *   **Lvl 97 Rings:** Fehu - The best XP rings in the game.
 
-
 **Wynnbuilder Link:** [Final XP Build](https://wynnbuilder.github.io/builder/#CK0QZmB8qI2z2W24KWmS2y0GmDEC)
 
 Your final build should look like this. It is a comprehensive setup for reaching the level cap.
 
 This covers all the equipment that can or should be used in a full grind. 
+
+> **This Section is Incomplete!**
+> The Fruma Update released semi-recently, and with it, hundreds of new items entered the game! These items are likely integral to lvl >100+ leveling, but have not yet been evaluated!
 
 ---
 
@@ -464,6 +497,10 @@ There are a few sets that can replace some of the mentioned items if you don't w
 
 In terms of weapons, it gets a bit tricky. Every class has different strengths, and therefore, a guide is needed for each one. Not every weapon has an XP bonus, as it's often unnecessary. In most cases, you will likely want more damage rather than more XP. There are, however, a few overlaps with the weapons, which I call "weapon sets."
 
+> **This Section is Outdated!**
+> The Fruma Update released semi-recently, and with it, the set rarity was removed!
+> While these items still exist, they are no longer optimal for the stated purposes!
+> This entire section will need to be redone!
 
 #### **Weapon Sets**
 
@@ -544,6 +581,10 @@ Reliable DPS and Healing, a Mage does not need much in terms of survivability or
 *   **Lvl 96: Gearbox Stave** - Worse than Whimsy but can work if nothing else is available.
 *   **Lvl 100: Infused Hive Wand [Quest]** - Good sustain and damage. Requires completing the Qira Hive quest.
 
+
+> **This Section is Incomplete!**
+> The Fruma Update released semi-recently, and with it, hundreds of new items entered the game! These items are likely integral to lvl >100+ leveling, but have not yet been evaluated!
+
 </details>
 
 ##### **Archer**
@@ -587,6 +628,10 @@ Reliable DPS huge range, an archer has excellent AOE damage and can deal with en
 *   **Lvl 95: Gale's Force** - Another top-tier bow. It has a bit more damage than Return to Ether but less of an XP bonus and sustain.
 *   **Lvl 100: Infused Hive Bow [Quest]** - Good sustain and top-tier damage. Requires completing the Qira Hive quest.
 
+
+> **This Section is Incomplete!**
+> The Fruma Update released semi-recently, and with it, hundreds of new items entered the game! These items are likely integral to lvl >100+ leveling, but have not yet been evaluated!
+
 </details>
 
 ##### **Shaman**
@@ -623,6 +668,10 @@ Again, reliable DPS and healing, a Shaman works almost the same as a Mage in a g
 *   **Lvl 90: Wybel Carved Relic** - Part of the Wybel weapon set. Low damage but the best XP bonus.
 *   **Lvl 96: Hard Light** - A great relik, but it requires a lot of stats. It has great damage and sustain as well.
 *   **Lvl 100: Infused Hive Relik [Quest]** - Good sustain and top-tier damage. Requires completing the Qira Hive quest.
+
+
+> **This Section is Incomplete!**
+> The Fruma Update released semi-recently, and with it, hundreds of new items entered the game! These items are likely integral to lvl >100+ leveling, but have not yet been evaluated!
 
 </details>
 
@@ -666,6 +715,10 @@ Does good damage but has no inbuild healing, therefore it requires you to either
 *   **Lvl 85: Apotheosis [World]** - Very good damage and good XP. The stat requirements can be problematic. Can be found in a World Event.
 *   **Lvl 90: Wybel Horn Spear** - Part of the Wybel weapon set. Low damage but the best XP bonus.
 *   **Lvl 100: Infused Hive Spear [Quest]** - Good sustain and top-tier damage. Requires completing the Qira Hive quest.
+
+
+> **This Section is Incomplete!**
+> The Fruma Update released semi-recently, and with it, hundreds of new items entered the game! These items are likely integral to lvl >100+ leveling, but have not yet been evaluated!
 
 </details>
 
@@ -726,6 +779,10 @@ The list for Assassins is a bit longer because there are only a few XP-focused w
 *   **Lvl 89: Alizarin** - The best XP grinding dagger. It has a top-tier XP bonus, great damage, and keeps you alive. This should be the last dagger you will need until level 105.
 *   **Lvl 90: Wybel Tooth Dagger** - Part of the Wybel weapon set. Low damage but the best XP bonus.
 *   **Lvl 100: Infused Hive Dagger [Quest]** - Good sustain and top-tier damage. Requires completing the Qira Hive quest.
+
+
+> **This Section is Incomplete!**
+> The Fruma Update released semi-recently, and with it, hundreds of new items entered the game! These items are likely integral to lvl >100+ leveling, but have not yet been evaluated!
 
 </details>
 </details>
