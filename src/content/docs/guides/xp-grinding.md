@@ -151,6 +151,8 @@ Although groups working on either leaderboard can occasionally be found here, th
 ### Grinding Solo
 <small>This section was written by Felixfex</small>
 
+> **Outdated Section!** Due to the recent fruma update, information in this section may no longer be optimal level 95! We are working to update our guides!
+
 Although party grinding is almost always faster, it is nevertheless still possible to get levels grinding alone.
 
 <details>
@@ -320,13 +322,9 @@ From here of out the grindspeed picks up again.
 
 ## Grinding Gear
 ### The Lazy/Simple Setup
-
-> **This Section is Outdated!**
-> The Fruma Update released semi-recently, and with it, the set rarity was removed!
-> While these items still exist, they are no longer optimal for the stated purposes!
-> This entire section will need to be redone!
-
 <small>Section by Wenweia</small>
+
+> **Outdated Section!** Due to the recent fruma update, information in this section is likely completely incorrect! Among other things, the set rarity was removed! We are working to update our guides!
 
 Sometimes, getting properly outfitted is just too much effort. This is especially true if you are leveling with a group since the group will, usually, be enough to keep you alive.
 
@@ -345,6 +343,8 @@ Sometimes, getting properly outfitted is just too much effort. This is especiall
 
 ### The Proper/Elaborate Setup
 <small>Section by Felixfex</small>
+
+> **Outdated Section!** Due to the recent fruma update, information in this section is likely incomplete, especially past lvl >80! Among other things, numerous new items were added to the game!  We are working to update our guides!
 
 If you are grinding solo, or just want to blaze through your grind parties in record time, you can go with something a bit more elaborate.
 
