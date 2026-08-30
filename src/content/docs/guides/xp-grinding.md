@@ -78,19 +78,19 @@ Everyone gets XP from mob kills as long as they have participated in a kill with
 
 #### (1-10) Low Level Grinding
 > `NA`
-**Frequency:** Extremely Uncommon
+<br/>**Frequency:** Extremely Uncommon
 
 Low levels are very quick to grind, and for this reason, lvl <10 grind parties are virtually nonexistant. You are better off following the solo guide for this level range.
 
 #### (10-30) Mt. Wynn (Spider Pit)
 > `-20 -1950`
-**Frequency:** Very Uncommon
+<br/>**Frequency:** Very Uncommon
 
 If you are lucky, you might find a proper grind parties hosted at Mt. Wynn; if so, you will be rapidly boosted from lvl 10 to lvl 30. These are so rare though that you may be better off following the solo guide until lvl 30.
 
 #### (30-50) (Llevigar) Spider Nest
 > `-2150 -4720`
-**Frequency:** Common
+<br/>**Frequency:** Common
 
 Quite often, you will find parties in this cave west of Llevigar. Generally, this is by far the best way to get from 30-50.
 
@@ -98,26 +98,26 @@ Note that, on occasion, an orc will spawn. They aren't difficult for a properly 
 
 #### (50-75) Flesh (Visceral) Cave
 > `-1000 -5555`
-**Frequency:** Very Common
+<br/>**Frequency:** Very Common
 
 This is probably the third most popular party in the game. You are quite likely to find someone hosting a party in this range on pfinder. Just be aware of the stitched amalgam, which does quite a bit of damage for its level range.
 
 #### (70-90) Waterfall (Living Scrap)
 > `-100 -4590`
-** Frequency:** Uncommon
+<br/>**Frequency:** Uncommon
 
 On occasion, you might luck out and find a waterfall party. These are challenging to host and are therefore less frequent than flesh or scrapyard parties. If you can't find one, you can grind flesh to level 75 then switch to scrapyard.
 
 #### (85-104) Scrapyard
 > `-1435 -2520`
-** Frequency:** Very common
+<br/>**Frequency:** Very common
 
 The highest level quest-free grindspot, this area was formerly the most popular in the game! Although corkus is nominally quest-locked, you can still physically get to this location by taking the seaskipper to legendary island and using movement spells to hop onto corkus island.
 
 
 #### (100-114) Church
 > `1050 -390`
-** Frequency:** Very Uncommon
+<br/>**Frequency:** Very Uncommon
 
 Although faster than Scrapyard, this area is locked behind a long lvl 100 quest. Since batcave unlocks just four levels later, this spot has become very uncommon. 
 
@@ -125,13 +125,13 @@ In rare cases where public church parties exist, they are usually the result of 
 
 #### (104-121) Bat (Fox) Cave
 > `-1710 -990`
-> **Frequency:** Extremely Common
+<br/>**Frequency:** Extremely Common
 
 This is the main end-game leveling party; there are always several bat parties active. Unfortunately, they are often full. To sneak into a full party, do /toggle ghosts all, look at the world that people are active in the batcave on, and join them. They usually won't mind.
 
 #### (121+) Hegea Training Grounds
 > `-1036 -769`
-> **Frequency:** Extremely Uncommon.
+<br/>**Frequency:** Extremely Uncommon.
 
 If you need to grind past lvl 121, you are likely working towards either a guild or combat leaderboard. In both cases, this guide is a poor substitute for the types of minmaxed technical optimisations used by the small private groups operating in spots like these.
 
@@ -140,7 +140,7 @@ Although groups working on either leaderboard can occasionally be found here, th
 
 #### (121+) Citadel Lighthouse
 > `1036 -769`
-** Frequency:** Extremely Uncommon
+<br/>**Frequency:** Extremely Uncommon
 
 If you need to grind past lvl 121, you are likely working towards either a guild or combat leaderboard. In both cases, this guide is a poor substitute for the types of minmaxed technical optimisations used by the small private groups operating in spots like these.
 

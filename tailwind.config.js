@@ -41,6 +41,16 @@ module.exports = {
       padding: "2rem",
     },
     extend: {
+      // Kill @tailwindcss/typography's automatic curly quotes around
+      // blockquote content. Write them explicitly in the markdown if wanted.
+      typography: {
+        DEFAULT: {
+          css: {
+            "blockquote p:first-of-type::before": { content: "none" },
+            "blockquote p:last-of-type::after": { content: "none" },
+          },
+        },
+      },
       colors: {
         txt: {
           p: "#000",
