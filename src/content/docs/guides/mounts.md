@@ -37,7 +37,7 @@ This is to say colours are now purely cosmetic, and a lvl 1 white horse is now p
 
 To contextualise the below table, modern horses consist of eight [stats](#trainable-stats), each with a training level, a limit, and a maximum: `TRL/LIM (MAX)`, which you can read more about [here](#values). The potential of a mount is the sum of the combined maximum values for all eight skills. The maximum is determined by the legacy tier of the horse, with the limit being 75% of that.
 
-The initial training level is roughly analogous to how much training your horse had initially. This is to say, if you had a 15/20 and 20/20 horse, both would convert to x/60 (80) black-night mounts, but the latter would be have an x of 40, and the former would have a lower level value.
+The initial training level is roughly analogous to how much training your horse had initially. This is to say, if you had a 15/20 and 20/20 horse, both would convert to x/60 (80) black-night mounts, but the latter would be have an x of 40, and the x of the former be a lesser value.
 
 | Legacy Horse            | Converted To                              | Statistics   |
 | :---------------------- | ----------------------------------------- | ------------ |
