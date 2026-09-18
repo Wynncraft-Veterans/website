@@ -22,11 +22,11 @@ Mounts (originally just horses) have now received a **major overhaul**, deeply i
 | Adasaur | Aldwell  | Burning Bonds     | 114  | `-1235, -739` | `-1220, -729` |
 
 ### Mount Types
-**Horses** are the earliest mount available to you in your playthrough and provide a great way to travel, with **good speed & handling**.
+**Horses** are the earliest mount available to you in your playthrough and provide a great way to travel, with **good speed and handling handling** at the cost of acceleration.
 
-**Wyverns** are **able to fly** at a certain height above ground, making them perfect for **traversing difficult terrain** such as mountains, forests, or even seas.
+**Wyverns** are **able to fly** at a certain height above ground, making them perfect for **traversing difficult terrain** such as mountains, forests, or even seas. They are, however, a bit slower.
 
-**Adasaurs** are the **fastest mount type**, but unable to fly and with slightly tougher handling than horses.
+**Adasaurs** are the **fastest mount type**, but unable to fly and handle slightly tougher than horses.
 
 ### Legacy Horses
 Historically, the colour of a horse (Brown, Black, Chestnut, White) indicated its tier, with brown horses having the lowest statistics cap and white horses having the highest. **Colours are now unrelated to tiers or capabilities!**
