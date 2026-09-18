@@ -53,11 +53,11 @@ Converted legacy horses can be identified by the uniformity of their skill value
 
 ## Mechanics
 
-### Purchasing Your Mount
+### Purchasing
 
 After completing quest requirements, mounts can be purchased at their respective Mount Merchants. Upon purchase, you will receive a **saddle** (termed reins for wyverns and harnesses for adasaurs). Unlike before, this **does not allow you to summon the mount yet**!
 
-### Your Mount's Aesthetic
+### Aesthetics
 
 For modern mounts, **colours are now randomly assigned** upon purchase! Unlike the original single-colour horses, aesthetics are now bipartite: mounts now have **primary** and **secondary** and secondary colours, with the **resulting aesthetic being a combination** of the two.
 
@@ -71,7 +71,7 @@ For example, a “Mystic-Sapphire” (Mystic being the base, Sapphire being the 
 | Horse   | [Link](https://wynncraft.wiki.gg/wiki/Horses#Appearance)   |
 | Adasaur | [Link](https://wynncraft.wiki.gg/wiki/Adasaurs#Appearance) |
 
-### Summoning Your Mount
+### Summoning
 
 **Saddles** (reins for wyverns and harnesses for adasaurs) **need to be placed into a feeder** within an **enclosure** designated for that specific mount type .
 
@@ -79,13 +79,13 @@ After the saddle is placed into the feeder, you can click said saddle again to r
 
 Clicking on a saddle in a feeder with the respective whistle in your inventory picks the saddle back up from the feeder.
 
-### Feeding Your Mount
+### Feeding
 
 Riding your mount will slowly drain its energy bar. When at 0 energy, a mount will become slower. To regain energy, you can feed your mount by placing materials (such as gathered wheat, granite, willow, etc.) in your feeder onto the right side of your mount saddle.
 
 Higher level materials will replenish more energy, but you can only feed materials that are of the same level or lower as the highest stat of your mount. The tier of the material (1 star, 2 star, 3 star) is irrelevant. The time it takes for a mount to be fed a material increases with the mounts level.
 
-### Training Your Mount
+### Training
 
 #### Trainable Stats
 
@@ -118,7 +118,7 @@ Each material **type** (Ingot, Gem, Oil, Meat, etc.) influences **different stat
 
 A new mount from the Mount Merchant will always have a total Potential of 240, and all of its stats will be `1/10 (30)` -- `Training Level/Limit (Maximum).
 
-### Breeding Your Mount
+### Breeding
 
 **Breeding** two mounts together is done by **placing their saddles on the same row in a feeder**. **Both parents will be consumed when breeding finishes.**
 
