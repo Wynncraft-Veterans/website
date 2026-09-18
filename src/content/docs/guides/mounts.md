@@ -2,7 +2,7 @@
 title: Mount Guide
 description: "Learn how to ride, train and maintain your mounts."
 image: "https://www.wynnvets.org/landing/images/bwca-night.png"
-imageAlt: "An old item superimposed on an old wynn build"
+imageAlt: "A placeholder image for the time being."
 pubDate: 2026-09-16
 modDate: 2026-09-18
 ---
