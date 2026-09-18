@@ -1,6 +1,6 @@
 ---
-title: Mount Guide
-description: "Learn how to ride, train and maintain your mounts."
+title: The Mount System
+description: "Horses have been replaced with mounts! Learn how to ride, train, and maintain them!"
 image: "https://www.wynnvets.org/landing/images/bwca-night.png"
 imageAlt: "A placeholder image for the time being."
 pubDate: 2026-09-16
