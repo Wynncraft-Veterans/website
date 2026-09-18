@@ -104,7 +104,7 @@ Every mount has 8 stats:
 `2/30 (40)` -> `Level/Limit (Max)`<br/>
 Each of these stats has a **Training Level, a Limit, and a Maximum**.
 
-The **Training Level and Maximum** can be seen next to the respective stats while viewing your mount **in your inventory**, while the **Maximum** of each stat can only be seen by viewing your mount **in its feeder** or in trade market.
+The **Training Level and Limit** can be seen next to the respective stats while viewing your mount **in your inventory**, while the **Maximum** of each stat can only be seen by viewing your mount **in its feeder** or in trade market.
 
 ##### Training Level
 **The Training level** is the **current** level your mount has in a stat. It can be increased by training (picking up pickups that spawn around the world while riding your Mount).
