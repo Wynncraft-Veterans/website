@@ -1,8 +1,8 @@
 ---
 title: The Mount System
 description: "Horses have been replaced with mounts! Learn how to ride, train, and maintain them!"
-image: "https://www.wynnvets.org/landing/images/bwca-night.png"
-imageAlt: "A placeholder image for the time being."
+image: "@assets/docs/guides/mounts.png"
+imageAlt: "Loricality with eir mount."
 pubDate: 2026-09-16
 modDate: 2026-09-18
 ---
