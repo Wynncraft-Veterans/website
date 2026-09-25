@@ -55,9 +55,6 @@ There are certain locations on the map that are particularly well suited to grou
 
 **Any place on this list is virtually impossible to survive in solo as survival requires healing/tanking/crowd control!** This is all to say, if you join a (competent) party in one of these locations, you will probably survive, and will get a lot of experience. Another benefit to group grinding include the ability to use other people's totems/bombs.
 
-<details>
-<summary><strong>Click to see info on group grinding, including all the spots/parties/level ranges!</strong></summary>
-
 **Simply use `/partyfinder` and look for mob grinding parties (rotten flesh symbols) that include one of the following terms in their descriptions.** Then go to the specified coordinates, stand under their mob totem, and spam AOE (area of effect) spells. If the party is set up properly, you will be safe and will get loads of XP!
 
 <details>
@@ -145,8 +142,6 @@ Although groups working on either leaderboard can occasionally be found here, th
 If you need to grind past lvl 121, you are likely working towards either a guild or combat leaderboard. In both cases, this guide is a poor substitute for the types of minmaxed technical optimisations used by the small private groups operating in spots like these.
 
 Although groups working on either leaderboard can occasionally be found here, this spot in particular is more common with the latter. For common use cases, this spot offers mediocre improvements over the far more accessible and sustainable batcave; it is therefore never used for public parties.
-
-</details>
 
 ### Grinding Solo
 <small>This section was written by Felixfex</small>
