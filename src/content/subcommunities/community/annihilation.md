@@ -1,5 +1,5 @@
 ---
-title: Annhilation
+title: Annihilation
 description: A discord wherein users discuss, plan events concerning, and get notified of impending, Annihilation events.
 image: "@assets/docs/guides/anni.png"
 date: 2026-06-06
