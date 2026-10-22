@@ -58,6 +58,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+          # Resolve the newest 22.x on every run instead of the runner image's
+          # cached copy, which can lag a security release by about a week.
+          check-latest: true
           cache: ${{ steps.detect-package-manager.outputs.manager }}
           cache-dependency-path: ${{ env.BUILD_PATH }}/${{ steps.detect-package-manager.outputs.lockfile }}
       - name: Setup Pages
