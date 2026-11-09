@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PvP clients cause problems. Switching fixes them.</title>
+<meta name="description" content="Lunar (Badlion), Dawn (Feather), and the like are rarely supported by maintainers of Wynn's unofficial mods. Learn why and how you should switch to better options.">
+<meta name="theme-color" content="#2dd4bf">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PvP clients break things. The alternatives don't.">
+<meta property="og:description" content="Lunar (Badlion), Dawn (Feather), and the like are rarely supported by maintainers of Wynn's unofficial mods.&#10;&#10;Learn why and how you should switch to better options.">
+<meta property="og:image" content="https://i.wynnvets.org/TlYsCXdD.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@700&text=%F0%9F%8C%AF&display=swap">
+<style>
+  html { scroll-padding-top: 1rem; }
+  body { background: #0e0b1f; }
+  .hero { background-image: radial-gradient(55% 28% at 82% 22%, rgba(124, 184, 255, .13), transparent), radial-gradient(50% 26% at 14% 62%, rgba(249, 168, 212, .10), transparent), linear-gradient(170deg, #0a0817, #2c1f60, #46317f); }
+  #launchers { background-image: radial-gradient(55% 28% at 14% 24%, rgba(94, 234, 212, .10), transparent), radial-gradient(50% 26% at 86% 66%, rgba(124, 184, 255, .11), transparent), linear-gradient(190deg, #071c29, #0f3d4f, #18586b); }
+  #painful { background-image: radial-gradient(55% 28% at 84% 24%, rgba(253, 186, 116, .09), transparent), radial-gradient(50% 26% at 12% 64%, rgba(192, 132, 252, .11), transparent), linear-gradient(170deg, #280b24, #4a1538, #661f50); }
+  .sky-text, .rose-text { display: inline-block; -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sky-text { background-image: linear-gradient(90deg, #7dd3fc, #5eead4); }
+  .rose-text { background-image: linear-gradient(90deg, #fda4af, #fdba74); }
+  a:not(.btn, .cue) { color: #b4c0e0; text-decoration: none; }
+  sup { font-size: .6em; font-weight: 400; }
+  sup a:not(.btn, .cue) { color: #767d9c; }
+  .hero-line a:not(.btn, .cue) { color: #a3aef0; }
+  a:not(.btn, .cue):hover { text-decoration: underline; }
+  :root { --accent: linear-gradient(90deg, #a3e635, #2dd4bf); }
+  .blurple { display: inline-block; background: linear-gradient(90deg, #7cb8ff, #9a8fff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .accent { background: var(--accent); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+  .cue { position: absolute; left: 50%; bottom: .75rem; margin-left: -.5em; animation: bob 1.6s ease-in-out infinite alternate; }
+  @keyframes bob { to { transform: translateY(.5rem); } }
+
+  .page-title { font-size: clamp(1.25rem, min((100vw - 1.5rem) / 14.6, 9vh), 6rem); text-wrap: balance; }
+  .section-title { font-size: clamp(1.75rem, 4.6vw, 3rem); }
+  .page { padding-block: clamp(4rem, 10vh, 8rem); }
+  .hero { position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: clamp(1.5rem, 3vh, 2.5rem); padding-top: clamp(1rem, 4vh, 3rem); padding-bottom: clamp(5.5rem, 10vh, 8rem); }
+  @media (min-width: 768px) { .hero { display: grid; grid-template-rows: 1fr auto 1.35fr; justify-content: stretch; } }
+  .hero-bottom { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
+  .hero-line { font-size: clamp(1.75rem, min(3.1vw, 5.5vh), 4rem); margin-block: auto; }
+  .big-ic { display: block; flex-shrink: 0; color: #fff; font-size: clamp(3.5rem, min(10vw, 12vh), 11rem); line-height: 1.1; }
+  .emoji-ic { font-family: "Noto Emoji", sans-serif; font-style: normal; font-weight: 700; }
+  .pink-text { display: inline-block; background: linear-gradient(90deg, #fbd5e8, #f9a8d4, #fbd5e8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero-sub { font-size: min(2.05rem, 1.325rem + .9vw); text-wrap: balance; }
+  @media (max-width: 767.98px) {
+    .hero { justify-content: space-evenly; }
+    .hero-sub { font-size: 1.15rem; }
+    .hero-line { font-size: calc((100vw - 1.5rem) / 17.8); }
+    .hero-bottom .cta { font-size: clamp(1.15rem, 6vw, 1.5rem); }
+    .hero ul { max-width: 22rem; }
+    .hero .big-ic { width: 1.25em; text-align: center; }
+  }
+  #launchers h3 { color: #d3d6f0; font-size: clamp(1rem, (100vw - 5.5rem) / 50, 1.2rem); }
+  .reason { --bs-card-bg: rgba(255, 255, 255, .04); --bs-card-border-color: rgba(255, 255, 255, .14); --bs-card-cap-bg: rgba(255, 255, 255, .09); --bs-card-border-radius: 1rem; --bs-card-inner-border-radius: 1rem; }
+  #painful h3 { color: #c3d9e6; font-size: clamp(1rem, (100vw - 5.5rem) / 50, 1.2rem); }
+  .narrow { max-width: 64rem; }
+  .point { height: 100%; padding: .75rem; border: 1px solid rgba(255, 255, 255, .12); border-radius: .6rem; background: rgba(255, 255, 255, .03); }
+  .reason .big-ic { width: 1.125em; margin-inline: auto; }
+  @media (min-width: 768px) { #launchers .big-ic { text-align: left; } #launchers .flex-md-row-reverse .big-ic { text-align: right; } }
+  @media (min-width: 992px) { .reason { --ic: 7.625rem; } .reason .big-ic { font-size: var(--ic); line-height: 1; } #launchers .point { min-height: var(--ic); } }
+  #painful .point { padding-block: .25rem; }
+  .hero .big-ic { color: #fbd5e8; }
+  @media (min-width: 768px) { .hero ul { max-width: 57rem; } }
+  .credits { background: #141518; color: #7f838a; }
+  .credits a:not(.btn, .cue) { color: #9a9ea5; }
+  .credits p { text-wrap: balance; }
+  .pain-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; width: fit-content; max-width: 100%; margin-inline: auto; }
+  @media (min-width: 1200px) { .pain-grid { grid-template-columns: 1fr 1fr; } }
+  #painful .card-header { border-top: var(--bs-card-border-width) solid var(--bs-card-border-color); border-radius: 0; }
+  .wide { max-width: 90rem; }
+  .detail { color: var(--bs-gray-500); font-size: clamp(1rem, 1.6vw, 1.25rem); text-wrap: balance; }
+  .page .detail { font-size: 1rem; }
+  .cta { --bs-btn-color: #0e0b1f; --bs-btn-hover-color: #0e0b1f; --bs-btn-active-color: #0e0b1f; --bs-btn-border-width: 0; background-image: var(--accent); font-size: clamp(1.5rem, min(3.6vw, 5.5vh), 3rem); padding: .6em 1.6em; }
+  .cta:hover { filter: brightness(1.1); }
+
+  /* Scroll progress */
+  .progress-line { position: fixed; inset: 0 0 auto; z-index: 1000; height: 3px; background: linear-gradient(90deg, #7cb8ff, #2dd4bf, #fda4af); transform: scaleX(0); transform-origin: left; }
+
+  /* Side-sliding sections mustn't cause sideways scrolling before they arrive */
+  .page { overflow-x: clip; }
+
+  /* Hero entrance, one piece after another */
+  @keyframes rise { from { opacity: 0; transform: translateY(1.25rem); } }
+  .accent { display: inline-block; }
+  .hero h1 .blurple { animation: rise .2s ease-out backwards; }
+  .hero h1 .accent { animation: rise .2s .05s ease-out backwards; }
+  .hero-sub { animation: rise .2s .1s ease-out backwards; }
+  @keyframes appear { from { opacity: 0; } }
+  .hero li { animation: appear .2s ease-out backwards; }
+  .hero li:nth-child(1) { animation-delay: .14s; }
+  .hero li:nth-child(2) { animation-delay: .18s; }
+  .hero li:nth-child(3) { animation-delay: .22s; }
+  .hero-line { animation: rise .2s .26s ease-out backwards; }
+
+  /* The button arrives last */
+  .cta { transition: transform .2s, filter .2s; animation: rise .2s .3s ease-out backwards; }
+  .cta:hover { transform: scale(1.05); }
+  .cta:active { transform: scale(.98); }
+
+  /* Titles' gradients drift slowly. The pink line is left out to keep its symmetry */
+  @keyframes drift-grad { to { background-position: 100% 0; } }
+  .blurple, .accent, .sky-text, .rose-text { background-size: 200% 100%; animation-name: drift-grad; animation-duration: 9s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate; }
+  .hero h1 .blurple { animation: rise .2s ease-out backwards, drift-grad 9s ease-in-out infinite alternate; }
+  .hero h1 .accent { animation: rise .2s .05s ease-out backwards, drift-grad 9s ease-in-out infinite alternate; }
+
+  /* Every icon behaves the same: grows in on arrival, lifts when its group is hovered */
+  @keyframes icon-in { from { opacity: 0; transform: scale(.82); } }
+  .big-ic { transition: transform .25s; }
+  .hero .big-ic { animation: icon-in .2s .2s ease-out backwards; }
+  .aos-animate .big-ic { animation: icon-in .6s .3s ease-out backwards; }
+  .reason:hover .big-ic, .hero li:hover .big-ic { transform: scale(1.06); }
+
+  /* Page backgrounds slide slightly with the scroll position (--p runs from 0 to 1) */
+  .hero, #launchers, #painful { background-size: 100% 220%; background-repeat: no-repeat; background-position: 50% calc(var(--p, .5) * 100%); }
+
+  /* Boxes respond to the pointer */
+  .reason { transition: translate .25s, box-shadow .25s; }
+  #launchers .reason { transition-property: opacity, transform, translate, box-shadow !important; }
+  .reason:hover { translate: 0 -4px; box-shadow: 0 .75rem 1.75rem rgba(0, 0, 0, .35); }
+  .point { transition: background-color .2s, border-color .2s, color .2s; }
+  .point:hover { background: rgba(255, 255, 255, .09); border-color: rgba(255, 255, 255, .28); color: var(--bs-gray-300); }
+  .cue { transition: opacity .2s; opacity: .85; }
+  .cue:hover { opacity: 1; }
+
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .progress-line { display: none; } }
+</style>
+<noscript><style>[data-aos] { opacity: 1 !important; transform: none !important; }</style></noscript>
+</head>
+<body>
+<div class="progress-line" aria-hidden="true"></div>
+
+<header class="hero container-fluid px-lg-5 min-vh-100 text-center">
+  <h1 class="page-title fw-bold mb-0"><span class="blurple">PvP clients cause problems.</span><br><span class="accent">Switching fixes them.</span></h1>
+
+  <div>
+  <h2 class="hero-sub fw-medium mb-3"><span class="pink-text">You lose nothing<sup><a href="https://microcontrollersdev.github.io/Alternatives/latest/feather/" title="Feather alternatives" aria-label="Feather alternatives">1</a>,<a href="https://microcontrollersdev.github.io/Alternatives/latest/lunar/" title="Lunar alternatives" aria-label="Lunar alternatives">2</a>,<a href="https://microcontrollersdev.github.io/Alternatives/latest/badlion/" title="Badlion alternatives" aria-label="Badlion alternatives">3</a></sup> by switching. Devs will thank you.</span></h2>
+  <ul class="narrow list-unstyled row row-cols-1 row-cols-md-3 g-4 mx-auto mb-0">
+    <li class="col detail d-flex d-md-block align-items-center gap-3 text-start text-md-center"><i class="big-ic fa-solid fa-triangle-exclamation"></i><span>These launchers are <a href="#painful">a&nbsp;pain</a> for devs to support.</span></li>
+    <li class="col detail d-flex d-md-block align-items-center gap-3 text-start text-md-center"><i class="big-ic fa-solid fa-road-barrier"></i><span>Nothing but their profit <a href="#launchers">necessitates</a> these problems.</span></li>
+    <li class="col detail d-flex d-md-block align-items-center gap-3 text-start text-md-center"><i class="big-ic fa-solid fa-money-bill-transfer"></i><span>That profit doesn't reach mod or optimization authors<sup><a href="https://www.patreon.com/ims21" title="ims21 on Patreon" aria-label="ims21 on Patreon">4</a>,<a href="https://jellysquid.me/donate" title="Donate to JellySquid" aria-label="Donate to JellySquid">5</a>,<a href="https://www.patreon.com/Wynntils" title="Wynntils on Patreon" aria-label="Wynntils on Patreon">6</a></sup>.</span></li>
+  </ul>
+  </div>
+
+  <div class="hero-bottom">
+    <h2 class="hero-line fw-bold"><span class="blurple">You can get everything they offer<br>on a <a href="https://mc-launcher.tayou.org/">normal launcher</a>.</span></h2>
+    <a class="cta btn rounded-pill fw-semibold" href="https://wynnvets.org/modding">Learn how to switch</a>
+  </div>
+
+  <a class="cue fs-1 link-light" href="#launchers" aria-label="Scroll to the next section"><i class="fa-solid fa-chevron-down"></i></a>
+</header>
+
+<main>
+  <section id="launchers" class="page position-relative min-vh-100 d-flex align-items-center text-center">
+    <div class="container narrow px-4">
+      <h2 class="section-title fw-bold mb-5" data-aos="zoom-in"><span class="sky-text">Clients Aren't Built to be Launchers!</span></h2>
+
+      <div class="reason card mb-4" data-aos="fade-right">
+        <div class="card-body">
+          <div class="row align-items-center g-4">
+            <div class="col-md-auto"><i class="big-ic fa-solid fa-life-ring"></i></div>
+            <div class="col-md">
+              <div class="row row-cols-1 row-cols-lg-3 g-2">
+                <div class="col" data-aos="fade" data-aos-delay="100"><p class="point detail d-flex align-items-center justify-content-center mb-0">The competitive PvP community kept using 1.8 well after Mojang stopped updating it.</p></div>
+                <div class="col" data-aos="fade" data-aos-delay="200"><p class="point detail d-flex align-items-center justify-content-center mb-0">To keep it stable, supported, and optimised, a fair bit of work went into 1.8 client modifications.</p></div>
+                <div class="col" data-aos="fade" data-aos-delay="300"><p class="point detail d-flex align-items-center justify-content-center mb-0">This need combined with a desire for client security (for anticheats) and uniformity (for allowlists).</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-md-start" data-aos="fade" data-aos-delay="350"><h3 class="fw-semibold mb-0">Many 2016 competitive PvP servers made their own clients.</h3></div>
+      </div>
+
+      <div class="reason card mb-4" data-aos="fade-left">
+        <div class="card-body">
+          <div class="row align-items-center flex-md-row-reverse g-4">
+            <div class="col-md-auto"><i class="big-ic fa-solid fa-bullhorn"></i></div>
+            <div class="col-md">
+              <div class="row row-cols-1 row-cols-lg-3 g-2">
+                <div class="col" data-aos="fade" data-aos-delay="100"><p class="point detail d-flex align-items-center justify-content-center mb-0">Soon, these clients realised how profitable having cosmetics, adverts, and partnerships could be.</p></div>
+                <div class="col" data-aos="fade" data-aos-delay="200"><p class="point detail d-flex align-items-center justify-content-center mb-0">Most of these clients outgrew their founding servers and became standalone products.</p></div>
+                <div class="col" data-aos="fade" data-aos-delay="300"><p class="point detail d-flex align-items-center justify-content-center mb-0">These clients then spent tens of millions of dollars buying each other into consolidated ecosystems.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-md-end" data-aos="fade" data-aos-delay="350"><h3 class="fw-semibold mb-0">These PvP products pivoted, switching to trying to monetize MC's general userbase.</h3></div>
+      </div>
+
+      <div class="reason card mb-4" data-aos="fade-right">
+        <div class="card-body">
+          <div class="row align-items-center g-4">
+            <div class="col-md-auto"><i class="big-ic fa-solid fa-recycle"></i></div>
+            <div class="col-md">
+              <div class="row row-cols-1 row-cols-lg-3 g-2">
+                <div class="col" data-aos="fade" data-aos-delay="100"><p class="point detail d-flex align-items-center justify-content-center mb-0"><span>1.8 (<em>and the value of these clients</em>) is not relevant outside of PvP! The modern ecosystem is unique!</span></p></div>
+                <div class="col" data-aos="fade" data-aos-delay="200"><p class="point detail d-flex align-items-center justify-content-center mb-0">The community's modern modding efforts stem from a fundamentally different base from these clients.</p></div>
+                <div class="col" data-aos="fade" data-aos-delay="300"><p class="point detail d-flex align-items-center justify-content-center mb-0">The current modern support of these clients is just a grafting of modern features from elsewhere.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-md-start" data-aos="fade" data-aos-delay="350"><h3 class="fw-semibold mb-0">The modern 'optimizations' of PvP clients are repackagings of community work supported elsewhere.</h3></div>
+      </div>
+
+      <div class="reason card" data-aos="fade-left">
+        <div class="card-body">
+          <div class="row align-items-center flex-md-row-reverse g-4">
+            <div class="col-md-auto"><i class="big-ic fa-solid fa-house-chimney"></i></div>
+            <div class="col-md">
+              <div class="row row-cols-1 row-cols-lg-3 g-2">
+                <div class="col" data-aos="fade" data-aos-delay="100"><p class="point detail d-flex align-items-center justify-content-center mb-0">These client groups self-perpetuate: large monetized userbases are profitable, which funds marketing.</p></div>
+                <div class="col" data-aos="fade" data-aos-delay="200"><p class="point detail d-flex align-items-center justify-content-center mb-0">The reason these clients are still widespread is due to that marketing, not their inherent value.</p></div>
+                <div class="col" data-aos="fade" data-aos-delay="300"><p class="point detail d-flex align-items-center justify-content-center mb-0">Even the main value-add of these launchers (cosmetics/friends) can be found elsewhere for free.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-md-end" data-aos="fade" data-aos-delay="350"><h3 class="fw-semibold mb-0">Everything PvP clients repackage is better used directly within its original ecosystems.</h3></div>
+      </div>
+    </div>
+    <a class="cue fs-1 link-light" href="#painful" aria-label="Scroll to the next section"><i class="fa-solid fa-chevron-down"></i></a>
+  </section>
+
+  <section id="painful" class="page position-relative min-vh-100 d-flex align-items-center text-center">
+    <div class="container wide px-4">
+      <h2 class="section-title fw-bold mb-5" data-aos="zoom-in"><span class="rose-text">PvP products are painful to support.</span></h2>
+      <div class="pain-grid">
+        <div data-aos="fade-right">
+          <div class="reason card h-100">
+            <div class="card-body"><i class="big-ic fa-solid fa-eye-slash"></i></div>
+            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0">They are scrambled: we can't see inside them.</h3></div>
+            <div class="card-body">
+              <ul class="list-unstyled d-grid gap-2 mb-0">
+                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center">PvP clients are closed source and obfuscated.</div></li>
+                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center">When something breaks, we don't know why.</div></li>
+                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center">Finding out why takes hours of reverse-engineering.</div></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <div class="reason card h-100">
+            <div class="card-body"><i class="big-ic fa-solid fa-shuffle"></i></div>
+            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0">That scramble changes every update.</h3></div>
+            <div class="card-body">
+              <ul class="list-unstyled d-grid gap-2 mb-0">
+                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center">Obfuscation renames everything to random letters.</div></li>
+                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center">For Lunar in particular, these random letters change.</div></li>
+                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center">If we target something, it will break constantly.</div></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right">
+          <div class="reason card h-100">
+            <div class="card-body"><i class="big-ic fa-solid fa-layer-group"></i></div>
+            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0">These clients quietly change what we build on.</h3></div>
+            <div class="card-body">
+              <ul class="list-unstyled d-grid gap-2 mb-0">
+                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center">Normally, we build on MC's shared public foundation.</div></li>
+                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center">These swap parts of that out with private scrambled copies.</div></li>
+                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center">Stuff attached to the original quietly does nothing.</div></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <div class="reason card h-100">
+            <div class="card-body"><i class="big-ic emoji-ic" aria-hidden="true">&#x1F32F;</i></div>
+            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0">The community's loader is Fabric: Lunar's isn't.</h3></div>
+            <div class="card-body">
+              <ul class="list-unstyled d-grid gap-2 mb-0">
+                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center">Lunar runs mods on something that looks like Fabric.</div></li>
+                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center">It's actually their old core wrapped around Fabric.</div></li>
+                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center">Things quietly behave differently than we expect.</div></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right">
+          <div class="reason card h-100">
+            <div class="card-body"><i class="big-ic fa-solid fa-box-open"></i></div>
+            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0">These clients 'optimize' by bundling others' work.</h3></div>
+            <div class="card-body">
+              <ul class="list-unstyled d-grid gap-2 mb-0">
+                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center">Most 'optimizations' in PvP clients are modified FOSS.</div></li>
+                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center">We know public mods, not privately changed copies.</div></li>
+                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center">Original authors can't help debug unknown changes.</div></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <div class="reason card h-100">
+            <div class="card-body"><i class="big-ic fa-solid fa-clock-rotate-left"></i></div>
+            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0">These clients ship ancient 'official' preset packs.</h3></div>
+            <div class="card-body">
+              <ul class="list-unstyled d-grid gap-2 mb-0">
+                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center">Wynn and its mods update often; these clients don't.</div></li>
+                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center">The version of wynn mods packaged is dozens behind.</div></li>
+                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center">Old versions result in old bugs long since fixed.</div></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="cue fs-1 link-light" href="#top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></a>
+  </section>
+</main>
+
+<footer class="credits small text-center px-3 py-3">
+  <p class="mb-1">Built with <a href="https://getbootstrap.com/">Bootstrap</a> (MIT) &middot; Icons by <a href="https://fontawesome.com/">Font Awesome Free</a> (CC BY 4.0) &middot; Burrito icon from <a href="https://fonts.google.com/noto/specimen/Noto+Emoji">Noto Emoji</a> (OFL 1.1) &middot; Scroll animations by <a href="https://michalsnik.github.io/aos/">AOS</a> (MIT)</p>
+  <p class="mb-0">Minecraft is a trademark of Mojang. Not affiliated with Mojang, Microsoft, or any client or launcher named here. This page: <a href="https://unlicense.org/">Unlicense</a>.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({ once: true, disable: matchMedia('(prefers-reduced-motion: reduce)').matches });</script>
+<script>
+  // On scroll: fill the progress line, and slide each page's background as it passes through view.
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const line = document.querySelector('.progress-line');
+    const pages = document.querySelectorAll('.hero, .page');
+    let queued = false;
+    const update = () => {
+      queued = false;
+      const room = document.documentElement.scrollHeight - innerHeight;
+      line.style.transform = `scaleX(${room > 0 ? scrollY / room : 0})`;
+      pages.forEach(page => {
+        const box = page.getBoundingClientRect();
+        const through = (innerHeight - box.top) / (box.height + innerHeight);
+        page.style.setProperty('--p', Math.min(1, Math.max(0, through)).toFixed(3));
+      });
+    };
+    const queue = () => { if (!queued) { queued = true; requestAnimationFrame(update); } };
+    addEventListener('scroll', queue, { passive: true });
+    addEventListener('resize', queue);
+    update();
+  }
+</script>
+</body>
+</html>
