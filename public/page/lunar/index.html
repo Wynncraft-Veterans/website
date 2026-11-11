@@ -126,8 +126,12 @@
   .cue { transition: opacity .2s; opacity: .85; }
   .cue:hover { opacity: 1; }
 
+  /* ?technical=true swaps plain wording for technical wording */
+  html:not(.technical) .tech, html.technical .plain { display: none; }
+
   @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .progress-line { display: none; } }
 </style>
+<script>if (['', 'true', '1'].includes(new URLSearchParams(location.search).get('technical'))) document.documentElement.classList.add('technical');</script>
 <noscript><style>[data-aos] { opacity: 1 !important; transform: none !important; }</style></noscript>
 </head>
 <body>
@@ -139,14 +143,14 @@
   <div>
   <h2 class="hero-sub fw-medium mb-3"><span class="pink-text">You lose nothing<sup><a href="https://microcontrollersdev.github.io/Alternatives/latest/feather/" title="Feather alternatives" aria-label="Feather alternatives">1</a>,<a href="https://microcontrollersdev.github.io/Alternatives/latest/lunar/" title="Lunar alternatives" aria-label="Lunar alternatives">2</a>,<a href="https://microcontrollersdev.github.io/Alternatives/latest/badlion/" title="Badlion alternatives" aria-label="Badlion alternatives">3</a></sup> by switching. Devs will thank you.</span></h2>
   <ul class="narrow list-unstyled row row-cols-1 row-cols-md-3 g-4 mx-auto mb-0">
-    <li class="col detail d-flex d-md-block align-items-center gap-3 text-start text-md-center"><i class="big-ic fa-solid fa-triangle-exclamation"></i><span>These launchers are <a href="#painful">a&nbsp;pain</a> for devs to support.</span></li>
-    <li class="col detail d-flex d-md-block align-items-center gap-3 text-start text-md-center"><i class="big-ic fa-solid fa-road-barrier"></i><span>Nothing but their profit <a href="#launchers">necessitates</a> these problems.</span></li>
-    <li class="col detail d-flex d-md-block align-items-center gap-3 text-start text-md-center"><i class="big-ic fa-solid fa-money-bill-transfer"></i><span>That profit doesn't reach mod or optimization authors<sup><a href="https://www.patreon.com/ims21" title="ims21 on Patreon" aria-label="ims21 on Patreon">4</a>,<a href="https://jellysquid.me/donate" title="Donate to JellySquid" aria-label="Donate to JellySquid">5</a>,<a href="https://www.patreon.com/Wynntils" title="Wynntils on Patreon" aria-label="Wynntils on Patreon">6</a></sup>.</span></li>
+    <li class="col detail d-flex d-md-block align-items-center gap-3 text-start text-md-center"><i class="big-ic fa-solid fa-triangle-exclamation"></i><span><span class="plain">These launchers are <a href="#painful">a&nbsp;pain</a> for devs to support.</span><span class="tech">Their obfuscated internals are <a href="#painful">a&nbsp;pain</a> to support.</span></span></li>
+    <li class="col detail d-flex d-md-block align-items-center gap-3 text-start text-md-center"><i class="big-ic fa-solid fa-road-barrier"></i><span><span class="plain">Nothing but their profit <a href="#launchers">necessitates</a> these problems.</span><span class="tech">None of this is <a href="#launchers">technically necessary</a>; it's for profit.</span></span></li>
+    <li class="col detail d-flex d-md-block align-items-center gap-3 text-start text-md-center"><i class="big-ic fa-solid fa-money-bill-transfer"></i><span>That profit doesn't reach <span class="plain">mod or optimization authors</span><span class="tech">the FOSS mod authors</span><sup><a href="https://www.patreon.com/ims21" title="ims21 on Patreon" aria-label="ims21 on Patreon">4</a>,<a href="https://jellysquid.me/donate" title="Donate to JellySquid" aria-label="Donate to JellySquid">5</a>,<a href="https://www.patreon.com/Wynntils" title="Wynntils on Patreon" aria-label="Wynntils on Patreon">6</a></sup>.</span></li>
   </ul>
   </div>
 
   <div class="hero-bottom">
-    <h2 class="hero-line fw-bold"><span class="blurple">You can get everything they offer<br>on a <a href="https://mc-launcher.tayou.org/">normal launcher</a>.</span></h2>
+    <h2 class="hero-line fw-bold"><span class="blurple">You can get everything they offer<br>on a <a href="https://mc-launcher.tayou.org/">normal launcher</a><span class="tech"> with Fabric</span>.</span></h2>
     <a class="cta btn rounded-pill fw-semibold" href="https://wynnvets.org/modding">Learn how to switch</a>
   </div>
 
@@ -164,14 +168,14 @@
             <div class="col-md-auto"><i class="big-ic fa-solid fa-life-ring"></i></div>
             <div class="col-md">
               <div class="row row-cols-1 row-cols-lg-3 g-2">
-                <div class="col" data-aos="fade" data-aos-delay="100"><p class="point detail d-flex align-items-center justify-content-center mb-0">The competitive PvP community kept using 1.8 well after Mojang stopped updating it.</p></div>
-                <div class="col" data-aos="fade" data-aos-delay="200"><p class="point detail d-flex align-items-center justify-content-center mb-0">To keep it stable, supported, and optimised, a fair bit of work went into 1.8 client modifications.</p></div>
-                <div class="col" data-aos="fade" data-aos-delay="300"><p class="point detail d-flex align-items-center justify-content-center mb-0">This need combined with a desire for client security (for anticheats) and uniformity (for allowlists).</p></div>
+                <div class="col" data-aos="fade" data-aos-delay="100"><p class="point detail d-flex align-items-center justify-content-center mb-0"><span class="plain">The competitive PvP community kept using 1.8 well after Mojang stopped updating it.</span><span class="tech">Many PvP servers kept 1.8.9 for native pre-1.9 combat, long past its EOL.</span></p></div>
+                <div class="col" data-aos="fade" data-aos-delay="200"><p class="point detail d-flex align-items-center justify-content-center mb-0"><span class="plain">To keep it stable, supported, and optimised, a fair bit of work went into 1.8 client modifications.</span><span class="tech">Keeping 1.8.9 usable years past EOL took heavy optimisations and fix backports.</span></p></div>
+                <div class="col" data-aos="fade" data-aos-delay="300"><p class="point detail d-flex align-items-center justify-content-center mb-0"><span class="plain">This need combined with a desire for client security (for anticheats) and uniformity (for allowlists).</span><span class="tech">This need for upkeep gave servers an opening to enforce CSA and mod allowlists.</span></p></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card-footer text-md-start" data-aos="fade" data-aos-delay="350"><h3 class="fw-semibold mb-0">Many 2016 competitive PvP servers made their own clients.</h3></div>
+        <div class="card-footer text-md-start" data-aos="fade" data-aos-delay="350"><h3 class="fw-semibold mb-0"><span class="plain">Many 2016 competitive PvP servers made their own clients.</span><span class="tech">Many 2016 PvP networks shipped their own closed 1.8.9 clients.</span></h3></div>
       </div>
 
       <div class="reason card mb-4" data-aos="fade-left">
@@ -180,14 +184,14 @@
             <div class="col-md-auto"><i class="big-ic fa-solid fa-bullhorn"></i></div>
             <div class="col-md">
               <div class="row row-cols-1 row-cols-lg-3 g-2">
-                <div class="col" data-aos="fade" data-aos-delay="100"><p class="point detail d-flex align-items-center justify-content-center mb-0">Soon, these clients realised how profitable having cosmetics, adverts, and partnerships could be.</p></div>
+                <div class="col" data-aos="fade" data-aos-delay="100"><p class="point detail d-flex align-items-center justify-content-center mb-0"><span class="plain">Soon, these clients realised how profitable having cosmetics, adverts, and partnerships could be.</span><span class="tech">They soon found cosmetics, ads, and server partnerships very profitable.</span></p></div>
                 <div class="col" data-aos="fade" data-aos-delay="200"><p class="point detail d-flex align-items-center justify-content-center mb-0">Most of these clients outgrew their founding servers and became standalone products.</p></div>
-                <div class="col" data-aos="fade" data-aos-delay="300"><p class="point detail d-flex align-items-center justify-content-center mb-0">These clients then spent tens of millions of dollars buying each other into consolidated ecosystems.</p></div>
+                <div class="col" data-aos="fade" data-aos-delay="300"><p class="point detail d-flex align-items-center justify-content-center mb-0"><span class="plain">These clients then spent tens of millions of dollars buying each other into consolidated ecosystems.</span><span class="tech">They then spent tens of millions acquiring each other, consolidating the market.</span></p></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card-footer text-md-end" data-aos="fade" data-aos-delay="350"><h3 class="fw-semibold mb-0">These PvP products pivoted, switching to trying to monetize MC's general userbase.</h3></div>
+        <div class="card-footer text-md-end" data-aos="fade" data-aos-delay="350"><h3 class="fw-semibold mb-0"><span class="plain">These PvP products pivoted, switching to trying to monetize MC's general userbase.</span><span class="tech">These PvP products pivoted to monetizing MC's general, modern-version userbase.</span></h3></div>
       </div>
 
       <div class="reason card mb-4" data-aos="fade-right">
@@ -196,14 +200,14 @@
             <div class="col-md-auto"><i class="big-ic fa-solid fa-recycle"></i></div>
             <div class="col-md">
               <div class="row row-cols-1 row-cols-lg-3 g-2">
-                <div class="col" data-aos="fade" data-aos-delay="100"><p class="point detail d-flex align-items-center justify-content-center mb-0"><span>1.8 (<em>and the value of these clients</em>) is not relevant outside of PvP! The modern ecosystem is unique!</span></p></div>
-                <div class="col" data-aos="fade" data-aos-delay="200"><p class="point detail d-flex align-items-center justify-content-center mb-0">The community's modern modding efforts stem from a fundamentally different base from these clients.</p></div>
-                <div class="col" data-aos="fade" data-aos-delay="300"><p class="point detail d-flex align-items-center justify-content-center mb-0">The current modern support of these clients is just a grafting of modern features from elsewhere.</p></div>
+                <div class="col" data-aos="fade" data-aos-delay="100"><p class="point detail d-flex align-items-center justify-content-center mb-0"><span class="plain">1.8 (<em>and the value of these clients</em>) is not relevant outside of PvP! The modern ecosystem is unique!</span><span class="tech">1.8.9 patching (<em>their core value</em>) is irrelevant outside PvP! Modern MC is distinct!</span></p></div>
+                <div class="col" data-aos="fade" data-aos-delay="200"><p class="point detail d-flex align-items-center justify-content-center mb-0"><span class="plain">The community's modern modding efforts stem from a fundamentally different base from these clients.</span><span class="tech">Mods target open loaders like Fabric and NeoForge, not closed layers hijacking them.</span></p></div>
+                <div class="col" data-aos="fade" data-aos-delay="300"><p class="point detail d-flex align-items-center justify-content-center mb-0"><span class="plain">The current modern support of these clients is just a grafting of modern features from elsewhere.</span><span class="tech">Modern optimization is FOSS work by CaffeineMC et al.; these clients just vendor it.</span></p></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card-footer text-md-start" data-aos="fade" data-aos-delay="350"><h3 class="fw-semibold mb-0">The modern 'optimizations' of PvP clients are repackagings of community work supported elsewhere.</h3></div>
+        <div class="card-footer text-md-start" data-aos="fade" data-aos-delay="350"><h3 class="fw-semibold mb-0"><span class="plain">The modern 'optimizations' of PvP clients are repackagings of community work supported elsewhere.</span><span class="tech">PvP clients' modern 'optimizations' are repackaged FOSS mods, maintained and supported upstream.</span></h3></div>
       </div>
 
       <div class="reason card" data-aos="fade-left">
@@ -212,14 +216,14 @@
             <div class="col-md-auto"><i class="big-ic fa-solid fa-house-chimney"></i></div>
             <div class="col-md">
               <div class="row row-cols-1 row-cols-lg-3 g-2">
-                <div class="col" data-aos="fade" data-aos-delay="100"><p class="point detail d-flex align-items-center justify-content-center mb-0">These client groups self-perpetuate: large monetized userbases are profitable, which funds marketing.</p></div>
-                <div class="col" data-aos="fade" data-aos-delay="200"><p class="point detail d-flex align-items-center justify-content-center mb-0">The reason these clients are still widespread is due to that marketing, not their inherent value.</p></div>
-                <div class="col" data-aos="fade" data-aos-delay="300"><p class="point detail d-flex align-items-center justify-content-center mb-0">Even the main value-add of these launchers (cosmetics/friends) can be found elsewhere for free.</p></div>
+                <div class="col" data-aos="fade" data-aos-delay="100"><p class="point detail d-flex align-items-center justify-content-center mb-0"><span class="plain">These client groups self-perpetuate: large monetized userbases are profitable, which funds marketing.</span><span class="tech">These clients' market share comes from marketing, not from technical merit.</span></p></div>
+                <div class="col" data-aos="fade" data-aos-delay="200"><p class="point detail d-flex align-items-center justify-content-center mb-0"><span class="plain">The reason these clients are still widespread is due to that marketing, not their inherent value.</span><span class="tech">This causes a feedback loop, as monetized userbases fund more marketing.</span></p></div>
+                <div class="col" data-aos="fade" data-aos-delay="300"><p class="point detail d-flex align-items-center justify-content-center mb-0"><span class="plain">Even the main value-add of these launchers (cosmetics/friends) can be found elsewhere for free.</span><span class="tech">Even their main value-adds (cosmetics, friends lists) are available elsewhere for free.</span></p></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card-footer text-md-end" data-aos="fade" data-aos-delay="350"><h3 class="fw-semibold mb-0">Everything PvP clients repackage is better used directly within its original ecosystems.</h3></div>
+        <div class="card-footer text-md-end" data-aos="fade" data-aos-delay="350"><h3 class="fw-semibold mb-0"><span class="plain">Everything PvP clients repackage is better used directly within its original ecosystems.</span><span class="tech">Everything PvP clients repackage works better installed directly from upstream.</span></h3></div>
       </div>
     </div>
     <a class="cue fs-1 link-light" href="#painful" aria-label="Scroll to the next section"><i class="fa-solid fa-chevron-down"></i></a>
@@ -232,12 +236,12 @@
         <div data-aos="fade-right">
           <div class="reason card h-100">
             <div class="card-body"><i class="big-ic fa-solid fa-eye-slash"></i></div>
-            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0">They are scrambled: we can't see inside them.</h3></div>
+            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0"><span class="plain">They are scrambled: we can't see inside them.</span><span class="tech">They're obfuscated: mod devs can't read their code.</span></h3></div>
             <div class="card-body">
               <ul class="list-unstyled d-grid gap-2 mb-0">
-                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center">PvP clients are closed source and obfuscated.</div></li>
-                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center">When something breaks, we don't know why.</div></li>
-                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center">Finding out why takes hours of reverse-engineering.</div></li>
+                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">PvP clients are closed source and obfuscated.</span><span class="tech">No source, no mappings: just obfuscated bytecode.</span></div></li>
+                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">When something breaks, we don't know why.</span><span class="tech">Stack traces point into meaningless names.</span></div></li>
+                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">Finding out why takes hours of reverse-engineering.</span><span class="tech">Each bug means decompiling and reverse-engineering.</span></div></li>
                   </ul>
             </div>
           </div>
@@ -245,12 +249,12 @@
         <div data-aos="fade-left">
           <div class="reason card h-100">
             <div class="card-body"><i class="big-ic fa-solid fa-shuffle"></i></div>
-            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0">That scramble changes every update.</h3></div>
+            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0"><span class="plain">That scramble changes every update.</span><span class="tech">Their obfuscation changes every update.</span></h3></div>
             <div class="card-body">
               <ul class="list-unstyled d-grid gap-2 mb-0">
-                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center">Obfuscation renames everything to random letters.</div></li>
-                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center">For Lunar in particular, these random letters change.</div></li>
-                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center">If we target something, it will break constantly.</div></li>
+                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">Obfuscation renames everything to random letters.</span><span class="tech">MC's own obfuscation is undone by official mappings.</span></div></li>
+                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">For Lunar in particular, these random letters change.</span><span class="tech">Lunar's has none; ad-hoc per-bug maps die every release.</span></div></li>
+                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">If we target something, it will break constantly.</span><span class="tech">Any mixin or reflection into them breaks on update.</span></div></li>
                   </ul>
             </div>
           </div>
@@ -258,12 +262,12 @@
         <div data-aos="fade-right">
           <div class="reason card h-100">
             <div class="card-body"><i class="big-ic fa-solid fa-layer-group"></i></div>
-            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0">These clients quietly change what we build on.</h3></div>
+            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0"><span class="plain">These clients quietly change what we build on.</span><span class="tech">They silently replace the code mods build on.</span></h3></div>
             <div class="card-body">
               <ul class="list-unstyled d-grid gap-2 mb-0">
-                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center">Normally, we build on MC's shared public foundation.</div></li>
-                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center">These swap parts of that out with private scrambled copies.</div></li>
-                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center">Stuff attached to the original quietly does nothing.</div></li>
+                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">Normally, we build on MC's shared public foundation.</span><span class="tech">Lunar cancels vanilla methods for obfuscated rewrites.</span></div></li>
+                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">These swap parts of that out with private scrambled copies.</span><span class="tech">Mod mixins into them apply cleanly, then never run.</span></div></li>
+                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">Stuff attached to the original quietly does nothing.</span><span class="tech">It also substitutes its own build of Fabric API.</span></div></li>
                   </ul>
             </div>
           </div>
@@ -271,12 +275,12 @@
         <div data-aos="fade-left">
           <div class="reason card h-100">
             <div class="card-body"><i class="big-ic emoji-ic" aria-hidden="true">&#x1F32F;</i></div>
-            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0">The community's loader is Fabric: Lunar's isn't.</h3></div>
+            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0"><span class="plain">The community's loader is Fabric: Lunar's isn't.</span><span class="tech">Mods expect open Fabric: Lunar wraps it in Ichor.</span></h3></div>
             <div class="card-body">
               <ul class="list-unstyled d-grid gap-2 mb-0">
-                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center">Lunar runs mods on something that looks like Fabric.</div></li>
-                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center">It's actually their old core wrapped around Fabric.</div></li>
-                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center">Things quietly behave differently than we expect.</div></li>
+                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">Lunar runs mods on something that looks like Fabric.</span><span class="tech">Lunar runs mods on a forked '-lunar' Fabric Loader.</span></div></li>
+                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">It's actually their old core wrapped around Fabric.</span><span class="tech">Closed-source Ichor hijacks its classloading and Mixin.</span></div></li>
+                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">Things quietly behave differently than we expect.</span><span class="tech">Mods quietly load and inject differently than on Fabric.</span></div></li>
                   </ul>
             </div>
           </div>
@@ -284,12 +288,12 @@
         <div data-aos="fade-right">
           <div class="reason card h-100">
             <div class="card-body"><i class="big-ic fa-solid fa-box-open"></i></div>
-            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0">These clients 'optimize' by bundling others' work.</h3></div>
+            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0"><span class="plain">These clients 'optimize' by bundling others' work.</span><span class="tech">These clients 'optimize' by bundling patched FOSS mods.</span></h3></div>
             <div class="card-body">
               <ul class="list-unstyled d-grid gap-2 mb-0">
-                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center">Most 'optimizations' in PvP clients are modified FOSS.</div></li>
-                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center">We know public mods, not privately changed copies.</div></li>
-                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center">Original authors can't help debug unknown changes.</div></li>
+                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">Most 'optimizations' in PvP clients are modified FOSS.</span><span class="tech">Bundled performance mods ship with closed patches to run on Ichor.</span></div></li>
+                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">We know public mods, not privately changed copies.</span><span class="tech">Bugs from those patches land with the original devs.</span></div></li>
+                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">Original authors can't help debug unknown changes.</span><span class="tech">Original devs can't debug them, or help other mod devs.</span></div></li>
                   </ul>
             </div>
           </div>
@@ -297,12 +301,12 @@
         <div data-aos="fade-left">
           <div class="reason card h-100">
             <div class="card-body"><i class="big-ic fa-solid fa-clock-rotate-left"></i></div>
-            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0">These clients ship ancient 'official' preset packs.</h3></div>
+            <div class="card-header" data-aos="fade" data-aos-delay="150"><h3 class="fw-semibold mb-0"><span class="plain">These clients ship ancient 'official' preset packs.</span><span class="tech">These clients ship ancient 'official' modpacks.</span></h3></div>
             <div class="card-body">
               <ul class="list-unstyled d-grid gap-2 mb-0">
-                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center">Wynn and its mods update often; these clients don't.</div></li>
-                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center">The version of wynn mods packaged is dozens behind.</div></li>
-                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center">Old versions result in old bugs long since fixed.</div></li>
+                <li data-aos="fade" data-aos-delay="150"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">Wynn and its mods update often; these clients don't.</span><span class="tech">Wynn and its mods release often; these packs don't.</span></div></li>
+                <li data-aos="fade" data-aos-delay="250"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">The version of wynn mods packaged is dozens behind.</span><span class="tech">Bundled Wynn mods are dozens of releases behind.</span></div></li>
+                <li data-aos="fade" data-aos-delay="350"><div class="point detail d-flex align-items-center justify-content-center"><span class="plain">Old versions result in old bugs long since fixed.</span><span class="tech">Users hit bugs that upstream fixed long ago.</span></div></li>
                   </ul>
             </div>
           </div>
